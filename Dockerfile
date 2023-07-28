@@ -6,7 +6,7 @@ WORKDIR /home/payment_bot
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 COPY . .
-RUN hypercorn --bind 0.0.0.0:5000 app.py:app
+ENTRYPOINT  ["hypercorn", "--bind", "0.0.0.0:5000",  "app.py:app"]
 
 
 

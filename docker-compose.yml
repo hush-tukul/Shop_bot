@@ -1,7 +1,17 @@
 version: '3.7'
 
 services:
-
+  db:
+    image: postgres:alpine
+    restart: always
+    environment:
+      POSTGRES_USER: main_user
+      POSTGRES_PASSWORD: 7aB8xYp3
+      POSTGRES_DB: bot
+    ports:
+      - "5432:5432"
+    networks:
+      - bot
 
   quart:
     build: .
@@ -14,19 +24,7 @@ services:
       - bot
 
 
-  db:
-    image: postgres
-    restart: always
-    environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: 123456
-      POSTGRES_DB: postgres
-    ports:
-      - "5432:5432"
-    volumes:
-      - ./pgdata:/var/lib/postgresql/data
-    networks:
-      - bot
+
 
   adminer:
     image: adminer

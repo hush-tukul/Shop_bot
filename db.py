@@ -12,7 +12,7 @@ import hashlib
 
 from run import db_login, db_password, db_host_name, db_name
 
-engine = create_engine(f'postgresql://{db_login}:{db_password}@{db_host_name}:5432/{db_name}')
+engine = create_engine(f'postgresql://main_user:7aB8xYp3@db:5432/bot')
 Base = declarative_base()
 
 
