@@ -1,0 +1,154 @@
+version: '3.7'
+
+services:
+  bot:
+    image: "${BOT_IMAGE_NAME:-tg_bot-image}"
+    container_name: "${BOT_CONTAINER_NAME:-tg_bot-container}"
+    build:
+      context: ../new_abilities
+    working_dir: "/usr/src/app/${BOT_NAME:-tg_bot}"
+    stop_signal: SIGINT
+    volumes:
+      - .:/usr/src/app/${BOT_NAME:-tg_bot}
+      - /var/lib/telegram-bot-api:/var/lib/telegram-bot-api
+    command: python3 -m bot
+    restart: unless-stopped
+    env_file:
+      - ".env"
+    networks:
+      - bot
+    depends_on:
+      - db
+      - quart
+
+  quart:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "5000:5000"
+    depends_on:
+      - db
+    networks:
+      - bot
+
+
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123456
+      POSTGRES_DB: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
+    networks:
+      - bot
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 80:8080
+    networks:
+      - bot
+
+  api:
+    image: aiogram/telegram-bot-api:latest
+    restart: always
+    env_file:
+      - ".env"
+    ports:
+      - "8080:8080"
+    volumes:
+      - /var/lib/telegram-bot-api:/var/lib/telegram-bot-api
+
+    networks:
+      - bot
+
+
+networks:
+  bot:
+    driver: bridge
+
+
+
+
+
+#    version: '3.7'
+#
+#    services:
+#      bot:
+#        image: "${BOT_IMAGE_NAME:-tg_bot-image}"
+#        container_name: "${BOT_CONTAINER_NAME:-tg_bot-container}"
+#        build:
+#          context: .
+#        working_dir: "/usr/src/app/${BOT_NAME:-tg_bot}"
+#        stop_signal: SIGINT
+#        volumes:
+#          - .:/usr/src/app/${BOT_NAME:-tg_bot}
+#          - /var/lib/telegram-bot-api:/var/lib/telegram-bot-api
+#        command: python3 -m bot
+#        restart: unless-stopped
+#        env_file:
+#          - "../new_abilities/.env"
+#        networks:
+#          - bot
+#        depends_on:
+#          - db
+#          - quart
+#
+#      quart:
+#        build:
+#          context: .
+#          dockerfile: Dockerfile
+#        command: hypercorn --bind 0.0.0.0:5000 app.py:app
+#        restart: unless-stopped
+#        ports:
+#          - "5000:5000"
+#        depends_on:
+#          - db
+#        networks:
+#          - bot
+#
+#
+#      db:
+#        image: postgres
+#        restart: always
+#        environment:
+#          POSTGRES_USER: Priferiti
+#          POSTGRES_PASSWORD: c3r3f43g334t43
+#          POSTGRES_DB: ref_db
+#        ports:
+#          - "5432:5432"
+#        volumes:
+#          - ./pgdata:/var/lib/postgresql/data
+#        networks:
+#          - bot
+#
+#      adminer:
+#        image: adminer
+#        restart: always
+#        ports:
+#          - 80:8080
+#        networks:
+#          - bot
+#
+#      api:
+#        image: aiogram/telegram-bot-api:latest
+#        restart: always
+#        env_file:
+#          - "../new_abilities/.env"
+#        ports:
+#          - "8080:8080"
+#        volumes:
+#          - /var/lib/telegram-bot-api:/var/lib/telegram-bot-api
+#
+#        networks:
+#          - bot
+#
+#
+#    networks:
+#      bot:
+#        driver: bridge
