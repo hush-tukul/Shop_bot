@@ -1,0 +1,9 @@
+bot.py:42 #INFO     [2023-07-29 04:52:59,403] - root - Starting bot!
+broadcaster.py:20 #INFO     [2023-07-29 04:52:59,891] - root - Target [ID:6188512171]: success
+broadcaster.py:20 #INFO     [2023-07-29 04:53:00,238] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-07-29 04:53:00,288] - root - 2 messages successful sent.
+dispatcher.py:493 #INFO     [2023-07-29 04:53:00,289] - aiogram.dispatcher - Start polling
+dispatcher.py:329 #INFO     [2023-07-29 04:53:00,332] - aiogram.dispatcher - Run polling for bot @vvspin_bot id=6506365433 - 'VVSPIN_BOT'
+dispatcher.py:439 #WARNING  [2023-07-29 04:53:29,953] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:345 #INFO     [2023-07-29 04:53:29,955] - aiogram.dispatcher - Polling stopped for bot @vvspin_bot id=6506365433 - 'VVSPIN_BOT'
+dispatcher.py:520 #INFO     [2023-07-29 04:53:29,955] - aiogram.dispatcher - Polling stopped
