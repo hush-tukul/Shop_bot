@@ -1,10 +1,10 @@
 from aiogram.fsm.state import StatesGroup, State
 
 
-class LinkBot(StatesGroup):
-    """"""
+class States(StatesGroup):
     """FOR NEW USERS / ZERO WINDOW"""
-    choose_lang_state = State()
+    phone_number_state = State()
+
 
     """FIRST WINDOW FOR REGULAR USERS"""
     main_menu_state = State()
@@ -12,29 +12,54 @@ class LinkBot(StatesGroup):
     """SECOND WINDOW"""
     menu_option_state = State()
 
-    """THIRD WINDOW"""
-    links_list_state = State()
-    global_stats_state = State()
-    chosen_service_info_state = State()
-    lang_was_changed_state = State()
-    reasons_feedback_state = State()
-
-    """FORTH WINDOW"""
-    link_options_state = State()
-    add_link_state = State()
-
-    """FIFTH WINDOW"""
-    link_was_created_state = State()
-    chosen_link_options_state = State()
-    feedback_write_state = State()
 
 
-    """SIXTH WINDOW"""
-    option_action_state = State()
-    statslink_reflink_state = State()
 
-    """SEVENTH WINDOW"""
-    del_link_state = State()
+
+
+
+
+
+
+
+
+
+
+
+
+    """"""
+    # """FOR NEW USERS / ZERO WINDOW"""
+    # choose_lang_state = State()
+    #
+    # """FIRST WINDOW FOR REGULAR USERS"""
+    # main_menu_state = State()
+    #
+    # """SECOND WINDOW"""
+    # menu_option_state = State()
+    #
+    # """THIRD WINDOW"""
+    # links_list_state = State()
+    # global_stats_state = State()
+    # chosen_service_info_state = State()
+    # lang_was_changed_state = State()
+    # reasons_feedback_state = State()
+    #
+    # """FORTH WINDOW"""
+    # link_options_state = State()
+    # add_link_state = State()
+    #
+    # """FIFTH WINDOW"""
+    # link_was_created_state = State()
+    # chosen_link_options_state = State()
+    # feedback_write_state = State()
+    #
+    #
+    # """SIXTH WINDOW"""
+    # option_action_state = State()
+    # statslink_reflink_state = State()
+    #
+    # """SEVENTH WINDOW"""
+    # del_link_state = State()
 
 
 

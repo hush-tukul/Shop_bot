@@ -12,6 +12,7 @@ from tgbot.handlers.admin import admin_router
 from tgbot.handlers.echo import echo_router
 
 from tgbot.handlers.user import user_router
+from tgbot.keyboards.windows import phone_window
 # from tgbot.keyboards.windows import choose_lang_window, main_menu_window, links_list_window, link_options_window, \
 #     option_action_window, del_link_window, add_link_window
 from tgbot.middlewares.config import ConfigMiddleware
@@ -44,19 +45,18 @@ async def main():
     storage = MemoryStorage()
     bot = Bot(token=config.tg_bot.token, parse_mode="HTML")
     dp = Dispatcher(storage=storage)
-    # dialog = Dialog(
-    #     choose_lang_window, main_menu_window, links_list_window, link_options_window,
-    #     option_action_window, del_link_window, add_link_window
-    #     )
-    # for router in [
-    #     admin_router,
-    #     user_router,
-    #     echo_router
-    # ]:
-    #     dp.include_router(router)
+    dialog = Dialog(
+        phone_window
+        )
+    for router in [
+        admin_router,
+        user_router,
+        echo_router
+    ]:
+        dp.include_router(router)
 
     registry = DialogRegistry(dp)
-    # registry.register(dialog)
+    registry.register(dialog)
     registry.setup_dp(dp)
     register_global_middlewares(dp, config)
     await bot.delete_webhook(drop_pending_updates=True)
@@ -68,4 +68,4 @@ if __name__ == '__main__':
     try:
         asyncio.run(main())
     except (KeyboardInterrupt, SystemExit):
-        logging.error("Bot was shutted down!")
+        logging.error("Bot was shut down!")

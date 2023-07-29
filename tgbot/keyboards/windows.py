@@ -6,11 +6,45 @@ from aiogram_dialog.widgets.input import MessageInput
 from aiogram_dialog.widgets.kbd import Row, Select, SwitchTo, Column
 from aiogram_dialog.widgets.text import Const, Format
 
+from tgbot.keyboards.inline import phone_number_inline
+from tgbot.keyboards.reply import phone_number_reply
+from tgbot.keyboards.states import States
+
 # from tgbot.keyboards.inline import main_menu_inline, choose_lang, links_list_inline, link_options_inline, \
 #     option_action_inline, del_action_inline, add_link_inline
 # from tgbot.keyboards.reply import choose_lang_reply, main_menu_reply, links_list_reply, new_link_reply, \
 #     link_options_reply, del_action_reply
 # from tgbot.keyboards.states import LinkBot
+
+
+
+phone_window = Window(
+    Format("{phone_permission}"),
+    Column(
+        Select(
+            Format("{item[0]}"),
+            id="menu",
+            item_id_getter=operator.itemgetter(1),
+            items='option_action_data',
+            on_click=phone_number_reply
+        ),
+    ),
+    MessageInput(phone_number_reply, ContentType.CONTACT),
+    parse_mode=ParseMode.HTML,
+    state=States.phone_number_state,
+    getter=phone_number_inline
+)
+
+# option_action_window = Window(
+#     Format("{title}"),
+#     Format("{confirm_button}"),
+#     Format("{option_action_data}"),
+#     MessageInput(new_link_reply, ContentType.TEXT),
+#     SwitchTo(Const("Back"), id="Back", state=LinkBot.link_options_state),
+#     parse_mode=ParseMode.HTML,
+#     state=LinkBot.option_action_state,
+#     getter=option_action_inline
+# )
 
 
 

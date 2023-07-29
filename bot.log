@@ -7,3 +7,1099 @@ dispatcher.py:329 #INFO     [2023-07-29 04:53:00,332] - aiogram.dispatcher - Run
 dispatcher.py:439 #WARNING  [2023-07-29 04:53:29,953] - aiogram.dispatcher - Received SIGINT signal
 dispatcher.py:345 #INFO     [2023-07-29 04:53:29,955] - aiogram.dispatcher - Polling stopped for bot @vvspin_bot id=6506365433 - 'VVSPIN_BOT'
 dispatcher.py:520 #INFO     [2023-07-29 04:53:29,955] - aiogram.dispatcher - Polling stopped
+bot.py:42 #INFO     [2023-07-29 04:58:35,900] - root - Starting bot!
+broadcaster.py:20 #INFO     [2023-07-29 04:58:36,371] - root - Target [ID:6188512171]: success
+broadcaster.py:20 #INFO     [2023-07-29 04:58:36,655] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-07-29 04:58:36,705] - root - 2 messages successful sent.
+dispatcher.py:493 #INFO     [2023-07-29 04:58:36,706] - aiogram.dispatcher - Start polling
+dispatcher.py:329 #INFO     [2023-07-29 04:58:36,748] - aiogram.dispatcher - Run polling for bot @vvspin_bot id=6506365433 - 'VVSPIN_BOT'
+dispatcher.py:160 #INFO     [2023-07-29 04:58:41,700] - aiogram.event - Update id=896828957 is not handled. Duration 0 ms by bot id=6506365433
+dispatcher.py:160 #INFO     [2023-07-29 04:58:44,857] - aiogram.event - Update id=896828958 is not handled. Duration 0 ms by bot id=6506365433
+dispatcher.py:439 #WARNING  [2023-07-29 04:58:50,452] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:345 #INFO     [2023-07-29 04:58:50,453] - aiogram.dispatcher - Polling stopped for bot @vvspin_bot id=6506365433 - 'VVSPIN_BOT'
+dispatcher.py:520 #INFO     [2023-07-29 04:58:50,453] - aiogram.dispatcher - Polling stopped
+bot.py:42 #INFO     [2023-07-29 05:01:16,491] - root - Starting bot!
+broadcaster.py:20 #INFO     [2023-07-29 05:01:16,943] - root - Target [ID:6188512171]: success
+broadcaster.py:20 #INFO     [2023-07-29 05:01:17,240] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-07-29 05:01:17,291] - root - 2 messages successful sent.
+dispatcher.py:493 #INFO     [2023-07-29 05:01:17,292] - aiogram.dispatcher - Start polling
+dispatcher.py:329 #INFO     [2023-07-29 05:01:17,337] - aiogram.dispatcher - Run polling for bot @vvspin_bot id=6506365433 - 'VVSPIN_BOT'
+dispatcher.py:160 #INFO     [2023-07-29 05:01:19,737] - aiogram.event - Update id=896828959 is handled. Duration 413 ms by bot id=6506365433
+dispatcher.py:160 #INFO     [2023-07-29 05:02:38,761] - aiogram.event - Update id=896828960 is handled. Duration 409 ms by bot id=6506365433
+dispatcher.py:439 #WARNING  [2023-07-29 05:05:05,711] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:345 #INFO     [2023-07-29 05:05:05,712] - aiogram.dispatcher - Polling stopped for bot @vvspin_bot id=6506365433 - 'VVSPIN_BOT'
+dispatcher.py:520 #INFO     [2023-07-29 05:05:05,713] - aiogram.dispatcher - Polling stopped
+bot.py:42 #INFO     [2023-07-29 05:05:16,602] - root - Starting bot!
+broadcaster.py:20 #INFO     [2023-07-29 05:05:17,047] - root - Target [ID:6188512171]: success
+broadcaster.py:20 #INFO     [2023-07-29 05:05:17,330] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-07-29 05:05:17,381] - root - 2 messages successful sent.
+dispatcher.py:493 #INFO     [2023-07-29 05:05:17,381] - aiogram.dispatcher - Start polling
+dispatcher.py:329 #INFO     [2023-07-29 05:05:17,427] - aiogram.dispatcher - Run polling for bot @vvspin_bot id=6506365433 - 'VVSPIN_BOT'
+dispatcher.py:160 #INFO     [2023-07-29 05:08:32,323] - aiogram.event - Update id=896828961 is handled. Duration 428 ms by bot id=6506365433
+dispatcher.py:160 #INFO     [2023-07-29 05:09:49,695] - aiogram.event - Update id=896828962 is handled. Duration 407 ms by bot id=6506365433
+dispatcher.py:160 #INFO     [2023-07-29 05:10:02,055] - aiogram.event - Update id=896828963 is handled. Duration 245 ms by bot id=6506365433
+dispatcher.py:439 #WARNING  [2023-07-29 07:07:41,636] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:345 #INFO     [2023-07-29 07:07:41,637] - aiogram.dispatcher - Polling stopped for bot @vvspin_bot id=6506365433 - 'VVSPIN_BOT'
+dispatcher.py:520 #INFO     [2023-07-29 07:07:41,637] - aiogram.dispatcher - Polling stopped
+bot.py:42 #INFO     [2023-07-29 07:13:12,047] - root - Starting bot!
+broadcaster.py:20 #INFO     [2023-07-29 07:13:12,545] - root - Target [ID:6188512171]: success
+broadcaster.py:20 #INFO     [2023-07-29 07:13:12,823] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-07-29 07:13:12,873] - root - 2 messages successful sent.
+dispatcher.py:493 #INFO     [2023-07-29 07:13:12,874] - aiogram.dispatcher - Start polling
+dispatcher.py:329 #INFO     [2023-07-29 07:13:12,917] - aiogram.dispatcher - Run polling for bot @vvspin_bot id=6506365433 - 'VVSPIN_BOT'
+dispatcher.py:160 #INFO     [2023-07-29 07:13:56,413] - aiogram.event - Update id=896828968 is handled. Duration 404 ms by bot id=6506365433
+dispatcher.py:160 #INFO     [2023-07-29 07:14:14,979] - aiogram.event - Update id=896828969 is handled. Duration 528 ms by bot id=6506365433
+dispatcher.py:208 #ERROR    [2023-07-29 07:15:01,461] - aiogram.dispatcher - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says Unauthorized
+dispatcher.py:210 #WARNING  [2023-07-29 07:15:01,462] - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 6506365433)
+dispatcher.py:208 #ERROR    [2023-07-29 07:15:02,502] - aiogram.dispatcher - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says Unauthorized
+dispatcher.py:210 #WARNING  [2023-07-29 07:15:02,502] - aiogram.dispatcher - Sleep for 1.365931 seconds and try again... (tryings = 1, bot id = 6506365433)
+dispatcher.py:208 #ERROR    [2023-07-29 07:15:03,910] - aiogram.dispatcher - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says Unauthorized
+dispatcher.py:210 #WARNING  [2023-07-29 07:15:03,911] - aiogram.dispatcher - Sleep for 1.660808 seconds and try again... (tryings = 2, bot id = 6506365433)
+dispatcher.py:208 #ERROR    [2023-07-29 07:15:05,618] - aiogram.dispatcher - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says Unauthorized
+dispatcher.py:210 #WARNING  [2023-07-29 07:15:05,619] - aiogram.dispatcher - Sleep for 2.094166 seconds and try again... (tryings = 3, bot id = 6506365433)
+dispatcher.py:208 #ERROR    [2023-07-29 07:15:07,760] - aiogram.dispatcher - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says Unauthorized
+dispatcher.py:210 #WARNING  [2023-07-29 07:15:07,760] - aiogram.dispatcher - Sleep for 2.792524 seconds and try again... (tryings = 4, bot id = 6506365433)
+dispatcher.py:208 #ERROR    [2023-07-29 07:15:10,600] - aiogram.dispatcher - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says Unauthorized
+dispatcher.py:210 #WARNING  [2023-07-29 07:15:10,601] - aiogram.dispatcher - Sleep for 3.677093 seconds and try again... (tryings = 5, bot id = 6506365433)
+dispatcher.py:208 #ERROR    [2023-07-29 07:15:14,325] - aiogram.dispatcher - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says Unauthorized
+dispatcher.py:210 #WARNING  [2023-07-29 07:15:14,325] - aiogram.dispatcher - Sleep for 4.659437 seconds and try again... (tryings = 6, bot id = 6506365433)
+dispatcher.py:208 #ERROR    [2023-07-29 07:15:19,030] - aiogram.dispatcher - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says Unauthorized
+dispatcher.py:210 #WARNING  [2023-07-29 07:15:19,031] - aiogram.dispatcher - Sleep for 4.913897 seconds and try again... (tryings = 7, bot id = 6506365433)
+dispatcher.py:208 #ERROR    [2023-07-29 07:15:23,996] - aiogram.dispatcher - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says Unauthorized
+dispatcher.py:210 #WARNING  [2023-07-29 07:15:23,997] - aiogram.dispatcher - Sleep for 5.132795 seconds and try again... (tryings = 8, bot id = 6506365433)
+dispatcher.py:208 #ERROR    [2023-07-29 07:15:29,178] - aiogram.dispatcher - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says Unauthorized
+dispatcher.py:210 #WARNING  [2023-07-29 07:15:29,179] - aiogram.dispatcher - Sleep for 5.039978 seconds and try again... (tryings = 9, bot id = 6506365433)
+dispatcher.py:208 #ERROR    [2023-07-29 07:15:34,260] - aiogram.dispatcher - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says Unauthorized
+dispatcher.py:210 #WARNING  [2023-07-29 07:15:34,261] - aiogram.dispatcher - Sleep for 5.195426 seconds and try again... (tryings = 10, bot id = 6506365433)
+dispatcher.py:208 #ERROR    [2023-07-29 07:15:39,504] - aiogram.dispatcher - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says Unauthorized
+dispatcher.py:210 #WARNING  [2023-07-29 07:15:39,505] - aiogram.dispatcher - Sleep for 5.134388 seconds and try again... (tryings = 11, bot id = 6506365433)
+dispatcher.py:208 #ERROR    [2023-07-29 07:15:44,746] - aiogram.dispatcher - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says Unauthorized
+dispatcher.py:210 #WARNING  [2023-07-29 07:15:44,746] - aiogram.dispatcher - Sleep for 5.047381 seconds and try again... (tryings = 12, bot id = 6506365433)
+dispatcher.py:208 #ERROR    [2023-07-29 07:15:49,840] - aiogram.dispatcher - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says Unauthorized
+dispatcher.py:210 #WARNING  [2023-07-29 07:15:49,840] - aiogram.dispatcher - Sleep for 5.070772 seconds and try again... (tryings = 13, bot id = 6506365433)
+dispatcher.py:208 #ERROR    [2023-07-29 07:15:54,957] - aiogram.dispatcher - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says Unauthorized
+dispatcher.py:210 #WARNING  [2023-07-29 07:15:54,958] - aiogram.dispatcher - Sleep for 4.932635 seconds and try again... (tryings = 14, bot id = 6506365433)
+dispatcher.py:208 #ERROR    [2023-07-29 07:15:59,934] - aiogram.dispatcher - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says Unauthorized
+dispatcher.py:210 #WARNING  [2023-07-29 07:15:59,934] - aiogram.dispatcher - Sleep for 4.915873 seconds and try again... (tryings = 15, bot id = 6506365433)
+dispatcher.py:208 #ERROR    [2023-07-29 07:16:04,894] - aiogram.dispatcher - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says Unauthorized
+dispatcher.py:210 #WARNING  [2023-07-29 07:16:04,894] - aiogram.dispatcher - Sleep for 5.067627 seconds and try again... (tryings = 16, bot id = 6506365433)
+dispatcher.py:208 #ERROR    [2023-07-29 07:16:10,012] - aiogram.dispatcher - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says Unauthorized
+dispatcher.py:210 #WARNING  [2023-07-29 07:16:10,013] - aiogram.dispatcher - Sleep for 5.058350 seconds and try again... (tryings = 17, bot id = 6506365433)
+dispatcher.py:208 #ERROR    [2023-07-29 07:16:15,125] - aiogram.dispatcher - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says Unauthorized
+dispatcher.py:210 #WARNING  [2023-07-29 07:16:15,125] - aiogram.dispatcher - Sleep for 5.070333 seconds and try again... (tryings = 18, bot id = 6506365433)
+dispatcher.py:208 #ERROR    [2023-07-29 07:16:20,246] - aiogram.dispatcher - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says Unauthorized
+dispatcher.py:210 #WARNING  [2023-07-29 07:16:20,247] - aiogram.dispatcher - Sleep for 4.969163 seconds and try again... (tryings = 19, bot id = 6506365433)
+dispatcher.py:208 #ERROR    [2023-07-29 07:16:25,261] - aiogram.dispatcher - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says Unauthorized
+dispatcher.py:210 #WARNING  [2023-07-29 07:16:25,261] - aiogram.dispatcher - Sleep for 5.006889 seconds and try again... (tryings = 20, bot id = 6506365433)
+dispatcher.py:208 #ERROR    [2023-07-29 07:16:30,313] - aiogram.dispatcher - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says Unauthorized
+dispatcher.py:210 #WARNING  [2023-07-29 07:16:30,314] - aiogram.dispatcher - Sleep for 4.965992 seconds and try again... (tryings = 21, bot id = 6506365433)
+dispatcher.py:208 #ERROR    [2023-07-29 07:16:35,326] - aiogram.dispatcher - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says Unauthorized
+dispatcher.py:210 #WARNING  [2023-07-29 07:16:35,327] - aiogram.dispatcher - Sleep for 5.023278 seconds and try again... (tryings = 22, bot id = 6506365433)
+dispatcher.py:208 #ERROR    [2023-07-29 07:16:40,397] - aiogram.dispatcher - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says Unauthorized
+dispatcher.py:210 #WARNING  [2023-07-29 07:16:40,397] - aiogram.dispatcher - Sleep for 4.869469 seconds and try again... (tryings = 23, bot id = 6506365433)
+dispatcher.py:208 #ERROR    [2023-07-29 07:16:45,315] - aiogram.dispatcher - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says Unauthorized
+dispatcher.py:210 #WARNING  [2023-07-29 07:16:45,316] - aiogram.dispatcher - Sleep for 5.187799 seconds and try again... (tryings = 24, bot id = 6506365433)
+dispatcher.py:208 #ERROR    [2023-07-29 07:16:50,548] - aiogram.dispatcher - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says Unauthorized
+dispatcher.py:210 #WARNING  [2023-07-29 07:16:50,548] - aiogram.dispatcher - Sleep for 5.238679 seconds and try again... (tryings = 25, bot id = 6506365433)
+dispatcher.py:208 #ERROR    [2023-07-29 07:16:55,842] - aiogram.dispatcher - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says Unauthorized
+dispatcher.py:210 #WARNING  [2023-07-29 07:16:55,842] - aiogram.dispatcher - Sleep for 5.102037 seconds and try again... (tryings = 26, bot id = 6506365433)
+dispatcher.py:208 #ERROR    [2023-07-29 07:17:00,990] - aiogram.dispatcher - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says Unauthorized
+dispatcher.py:210 #WARNING  [2023-07-29 07:17:00,990] - aiogram.dispatcher - Sleep for 5.022865 seconds and try again... (tryings = 27, bot id = 6506365433)
+dispatcher.py:208 #ERROR    [2023-07-29 07:17:06,058] - aiogram.dispatcher - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says Unauthorized
+dispatcher.py:210 #WARNING  [2023-07-29 07:17:06,059] - aiogram.dispatcher - Sleep for 5.091253 seconds and try again... (tryings = 28, bot id = 6506365433)
+dispatcher.py:208 #ERROR    [2023-07-29 07:17:11,193] - aiogram.dispatcher - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says Unauthorized
+dispatcher.py:210 #WARNING  [2023-07-29 07:17:11,193] - aiogram.dispatcher - Sleep for 4.935985 seconds and try again... (tryings = 29, bot id = 6506365433)
+dispatcher.py:208 #ERROR    [2023-07-29 07:17:16,180] - aiogram.dispatcher - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says Unauthorized
+dispatcher.py:210 #WARNING  [2023-07-29 07:17:16,180] - aiogram.dispatcher - Sleep for 5.104565 seconds and try again... (tryings = 30, bot id = 6506365433)
+dispatcher.py:208 #ERROR    [2023-07-29 07:17:21,334] - aiogram.dispatcher - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says Unauthorized
+dispatcher.py:210 #WARNING  [2023-07-29 07:17:21,335] - aiogram.dispatcher - Sleep for 5.129132 seconds and try again... (tryings = 31, bot id = 6506365433)
+dispatcher.py:208 #ERROR    [2023-07-29 07:17:26,510] - aiogram.dispatcher - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says Unauthorized
+dispatcher.py:210 #WARNING  [2023-07-29 07:17:26,511] - aiogram.dispatcher - Sleep for 4.883557 seconds and try again... (tryings = 32, bot id = 6506365433)
+dispatcher.py:208 #ERROR    [2023-07-29 07:17:31,443] - aiogram.dispatcher - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says Unauthorized
+dispatcher.py:210 #WARNING  [2023-07-29 07:17:31,443] - aiogram.dispatcher - Sleep for 4.919809 seconds and try again... (tryings = 33, bot id = 6506365433)
+dispatcher.py:208 #ERROR    [2023-07-29 07:17:36,409] - aiogram.dispatcher - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says Unauthorized
+dispatcher.py:210 #WARNING  [2023-07-29 07:17:36,410] - aiogram.dispatcher - Sleep for 5.023079 seconds and try again... (tryings = 34, bot id = 6506365433)
+dispatcher.py:208 #ERROR    [2023-07-29 07:17:41,479] - aiogram.dispatcher - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says Unauthorized
+dispatcher.py:210 #WARNING  [2023-07-29 07:17:41,480] - aiogram.dispatcher - Sleep for 5.086267 seconds and try again... (tryings = 35, bot id = 6506365433)
+dispatcher.py:208 #ERROR    [2023-07-29 07:17:46,614] - aiogram.dispatcher - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says Unauthorized
+dispatcher.py:210 #WARNING  [2023-07-29 07:17:46,614] - aiogram.dispatcher - Sleep for 5.096988 seconds and try again... (tryings = 36, bot id = 6506365433)
+dispatcher.py:208 #ERROR    [2023-07-29 07:17:51,758] - aiogram.dispatcher - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says Unauthorized
+dispatcher.py:210 #WARNING  [2023-07-29 07:17:51,758] - aiogram.dispatcher - Sleep for 5.074088 seconds and try again... (tryings = 37, bot id = 6506365433)
+dispatcher.py:208 #ERROR    [2023-07-29 07:17:56,875] - aiogram.dispatcher - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says Unauthorized
+dispatcher.py:210 #WARNING  [2023-07-29 07:17:56,875] - aiogram.dispatcher - Sleep for 4.982690 seconds and try again... (tryings = 38, bot id = 6506365433)
+dispatcher.py:208 #ERROR    [2023-07-29 07:18:01,912] - aiogram.dispatcher - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says Unauthorized
+dispatcher.py:210 #WARNING  [2023-07-29 07:18:01,912] - aiogram.dispatcher - Sleep for 5.008717 seconds and try again... (tryings = 39, bot id = 6506365433)
+dispatcher.py:208 #ERROR    [2023-07-29 07:18:06,970] - aiogram.dispatcher - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says Unauthorized
+dispatcher.py:210 #WARNING  [2023-07-29 07:18:06,970] - aiogram.dispatcher - Sleep for 5.096383 seconds and try again... (tryings = 40, bot id = 6506365433)
+dispatcher.py:208 #ERROR    [2023-07-29 07:18:12,111] - aiogram.dispatcher - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says Unauthorized
+dispatcher.py:210 #WARNING  [2023-07-29 07:18:12,112] - aiogram.dispatcher - Sleep for 4.997018 seconds and try again... (tryings = 41, bot id = 6506365433)
+dispatcher.py:208 #ERROR    [2023-07-29 07:18:17,156] - aiogram.dispatcher - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says Unauthorized
+dispatcher.py:210 #WARNING  [2023-07-29 07:18:17,156] - aiogram.dispatcher - Sleep for 4.940170 seconds and try again... (tryings = 42, bot id = 6506365433)
+dispatcher.py:208 #ERROR    [2023-07-29 07:18:22,147] - aiogram.dispatcher - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says Unauthorized
+dispatcher.py:210 #WARNING  [2023-07-29 07:18:22,147] - aiogram.dispatcher - Sleep for 4.993663 seconds and try again... (tryings = 43, bot id = 6506365433)
+dispatcher.py:208 #ERROR    [2023-07-29 07:18:27,194] - aiogram.dispatcher - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says Unauthorized
+dispatcher.py:210 #WARNING  [2023-07-29 07:18:27,194] - aiogram.dispatcher - Sleep for 4.725386 seconds and try again... (tryings = 44, bot id = 6506365433)
+dispatcher.py:439 #WARNING  [2023-07-29 07:18:28,939] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:345 #INFO     [2023-07-29 07:18:28,940] - aiogram.dispatcher - Polling stopped for bot @vvspin_bot id=6506365433 - 'VVSPIN_BOT'
+dispatcher.py:520 #INFO     [2023-07-29 07:18:28,941] - aiogram.dispatcher - Polling stopped
+bot.py:42 #INFO     [2023-07-29 07:18:36,699] - root - Starting bot!
+broadcaster.py:20 #INFO     [2023-07-29 07:18:40,562] - root - Target [ID:6188512171]: success
+broadcaster.py:20 #INFO     [2023-07-29 07:18:41,007] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-07-29 07:18:41,058] - root - 2 messages successful sent.
+dispatcher.py:493 #INFO     [2023-07-29 07:18:41,059] - aiogram.dispatcher - Start polling
+dispatcher.py:329 #INFO     [2023-07-29 07:18:41,098] - aiogram.dispatcher - Run polling for bot @vvspin_bot id=6578436252 - 'VVSPIN_BOT'
+dispatcher.py:160 #INFO     [2023-07-29 07:18:48,450] - aiogram.event - Update id=61482795 is handled. Duration 462 ms by bot id=6578436252
+dispatcher.py:439 #WARNING  [2023-07-29 07:39:28,745] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:345 #INFO     [2023-07-29 07:39:28,747] - aiogram.dispatcher - Polling stopped for bot @vvspin_bot id=6578436252 - 'VVSPIN_BOT'
+dispatcher.py:520 #INFO     [2023-07-29 07:39:28,747] - aiogram.dispatcher - Polling stopped
+bot.py:42 #INFO     [2023-07-29 07:48:39,312] - root - Starting bot!
+broadcaster.py:20 #INFO     [2023-07-29 07:48:39,783] - root - Target [ID:6188512171]: success
+broadcaster.py:20 #INFO     [2023-07-29 07:48:40,072] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-07-29 07:48:40,123] - root - 2 messages successful sent.
+dispatcher.py:493 #INFO     [2023-07-29 07:48:40,124] - aiogram.dispatcher - Start polling
+dispatcher.py:329 #INFO     [2023-07-29 07:48:40,161] - aiogram.dispatcher - Run polling for bot @vvspin_bot id=6578436252 - 'VVSPIN_BOT'
+dispatcher.py:160 #INFO     [2023-07-29 07:48:47,423] - aiogram.event - Update id=61482796 is not handled. Duration 0 ms by bot id=6578436252
+dispatcher.py:303 #ERROR    [2023-07-29 07:48:47,423] - aiogram.event - Cause exception while process update id=61482796 by bot id=6578436252
+AttributeError: 'NoneType' object has no attribute 'phone_number'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 297, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 146, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 23, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 123, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 264, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 115, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 120, in process_message
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/app/VVSPIN_BOT/tgbot/middlewares/config.py", line 18, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 131, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 115, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 124, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 123, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager_middleware.py", line 44, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 167, in context_saver_middleware
+    result = await handler(event, data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/src/app/VVSPIN_BOT/tgbot/handlers/admin.py", line 20, in admin_start
+    phone_number = m.contact.phone_number
+                   ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'phone_number'
+dispatcher.py:439 #WARNING  [2023-07-29 07:49:03,665] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:345 #INFO     [2023-07-29 07:49:03,666] - aiogram.dispatcher - Polling stopped for bot @vvspin_bot id=6578436252 - 'VVSPIN_BOT'
+dispatcher.py:520 #INFO     [2023-07-29 07:49:03,666] - aiogram.dispatcher - Polling stopped
+bot.py:42 #INFO     [2023-07-29 07:49:10,927] - root - Starting bot!
+broadcaster.py:20 #INFO     [2023-07-29 07:49:11,404] - root - Target [ID:6188512171]: success
+broadcaster.py:20 #INFO     [2023-07-29 07:49:11,739] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-07-29 07:49:11,789] - root - 2 messages successful sent.
+dispatcher.py:493 #INFO     [2023-07-29 07:49:11,790] - aiogram.dispatcher - Start polling
+dispatcher.py:329 #INFO     [2023-07-29 07:49:11,826] - aiogram.dispatcher - Run polling for bot @vvspin_bot id=6578436252 - 'VVSPIN_BOT'
+dispatcher.py:160 #INFO     [2023-07-29 07:49:15,845] - aiogram.event - Update id=61482797 is not handled. Duration 0 ms by bot id=6578436252
+dispatcher.py:303 #ERROR    [2023-07-29 07:49:15,845] - aiogram.event - Cause exception while process update id=61482797 by bot id=6578436252
+AttributeError: 'NoneType' object has no attribute 'phone_number'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 297, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 146, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 23, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 123, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 264, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 115, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 120, in process_message
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/app/VVSPIN_BOT/tgbot/middlewares/config.py", line 18, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 131, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 115, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 124, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 123, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager_middleware.py", line 44, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 167, in context_saver_middleware
+    result = await handler(event, data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/src/app/VVSPIN_BOT/tgbot/handlers/admin.py", line 20, in admin_start
+    phone_number = m.contact.phone_number
+                   ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'phone_number'
+dispatcher.py:439 #WARNING  [2023-07-29 07:51:30,762] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:345 #INFO     [2023-07-29 07:51:30,763] - aiogram.dispatcher - Polling stopped for bot @vvspin_bot id=6578436252 - 'VVSPIN_BOT'
+dispatcher.py:520 #INFO     [2023-07-29 07:51:30,763] - aiogram.dispatcher - Polling stopped
+bot.py:42 #INFO     [2023-07-29 07:51:38,576] - root - Starting bot!
+broadcaster.py:20 #INFO     [2023-07-29 07:51:39,027] - root - Target [ID:6188512171]: success
+broadcaster.py:20 #INFO     [2023-07-29 07:51:39,306] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-07-29 07:51:39,356] - root - 2 messages successful sent.
+dispatcher.py:493 #INFO     [2023-07-29 07:51:39,359] - aiogram.dispatcher - Start polling
+dispatcher.py:329 #INFO     [2023-07-29 07:51:39,397] - aiogram.dispatcher - Run polling for bot @vvspin_bot id=6578436252 - 'VVSPIN_BOT'
+dispatcher.py:160 #INFO     [2023-07-29 07:51:42,365] - aiogram.event - Update id=61482798 is not handled. Duration 0 ms by bot id=6578436252
+dispatcher.py:303 #ERROR    [2023-07-29 07:51:42,365] - aiogram.event - Cause exception while process update id=61482798 by bot id=6578436252
+AttributeError: 'NoneType' object has no attribute 'phone_number'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 297, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 146, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 23, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 123, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 264, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 115, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 120, in process_message
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/app/VVSPIN_BOT/tgbot/middlewares/config.py", line 18, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 131, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 115, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 124, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 123, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager_middleware.py", line 44, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 167, in context_saver_middleware
+    result = await handler(event, data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/src/app/VVSPIN_BOT/tgbot/handlers/admin.py", line 20, in admin_start
+    phone_number = m.contact.phone_number
+                   ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'phone_number'
+dispatcher.py:439 #WARNING  [2023-07-29 07:52:49,755] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:345 #INFO     [2023-07-29 07:52:49,756] - aiogram.dispatcher - Polling stopped for bot @vvspin_bot id=6578436252 - 'VVSPIN_BOT'
+dispatcher.py:520 #INFO     [2023-07-29 07:52:49,757] - aiogram.dispatcher - Polling stopped
+bot.py:42 #INFO     [2023-07-29 07:52:58,992] - root - Starting bot!
+broadcaster.py:20 #INFO     [2023-07-29 07:52:59,430] - root - Target [ID:6188512171]: success
+broadcaster.py:20 #INFO     [2023-07-29 07:52:59,704] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-07-29 07:52:59,754] - root - 2 messages successful sent.
+dispatcher.py:493 #INFO     [2023-07-29 07:52:59,755] - aiogram.dispatcher - Start polling
+dispatcher.py:329 #INFO     [2023-07-29 07:52:59,791] - aiogram.dispatcher - Run polling for bot @vvspin_bot id=6578436252 - 'VVSPIN_BOT'
+dispatcher.py:160 #INFO     [2023-07-29 07:53:04,578] - aiogram.event - Update id=61482799 is not handled. Duration 0 ms by bot id=6578436252
+dispatcher.py:303 #ERROR    [2023-07-29 07:53:04,579] - aiogram.event - Cause exception while process update id=61482799 by bot id=6578436252
+AttributeError: 'NoneType' object has no attribute 'phone_number'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 297, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 146, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 23, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 123, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 264, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 115, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 120, in process_message
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/app/VVSPIN_BOT/tgbot/middlewares/config.py", line 18, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 131, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 115, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 124, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 123, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager_middleware.py", line 44, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 167, in context_saver_middleware
+    result = await handler(event, data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/src/app/VVSPIN_BOT/tgbot/handlers/admin.py", line 20, in admin_start
+    phone_number = m.contact.phone_number
+                   ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'phone_number'
+dispatcher.py:439 #WARNING  [2023-07-29 07:53:19,796] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:345 #INFO     [2023-07-29 07:53:19,797] - aiogram.dispatcher - Polling stopped for bot @vvspin_bot id=6578436252 - 'VVSPIN_BOT'
+dispatcher.py:520 #INFO     [2023-07-29 07:53:19,797] - aiogram.dispatcher - Polling stopped
+bot.py:42 #INFO     [2023-07-29 07:53:28,342] - root - Starting bot!
+broadcaster.py:20 #INFO     [2023-07-29 07:53:28,788] - root - Target [ID:6188512171]: success
+broadcaster.py:20 #INFO     [2023-07-29 07:53:29,071] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-07-29 07:53:29,122] - root - 2 messages successful sent.
+dispatcher.py:493 #INFO     [2023-07-29 07:53:29,123] - aiogram.dispatcher - Start polling
+dispatcher.py:329 #INFO     [2023-07-29 07:53:29,157] - aiogram.dispatcher - Run polling for bot @vvspin_bot id=6578436252 - 'VVSPIN_BOT'
+dispatcher.py:160 #INFO     [2023-07-29 07:53:44,245] - aiogram.event - Update id=61482800 is handled. Duration 405 ms by bot id=6578436252
+dispatcher.py:439 #WARNING  [2023-07-29 09:17:38,686] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:345 #INFO     [2023-07-29 09:17:38,691] - aiogram.dispatcher - Polling stopped for bot @vvspin_bot id=6578436252 - 'VVSPIN_BOT'
+dispatcher.py:520 #INFO     [2023-07-29 09:17:38,692] - aiogram.dispatcher - Polling stopped
+bot.py:42 #INFO     [2023-07-29 09:34:59,722] - root - Starting bot!
+broadcaster.py:20 #INFO     [2023-07-29 09:35:00,171] - root - Target [ID:6188512171]: success
+broadcaster.py:20 #INFO     [2023-07-29 09:35:00,460] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-07-29 09:35:00,510] - root - 2 messages successful sent.
+dispatcher.py:493 #INFO     [2023-07-29 09:35:00,511] - aiogram.dispatcher - Start polling
+dispatcher.py:329 #INFO     [2023-07-29 09:35:00,550] - aiogram.dispatcher - Run polling for bot @vvspin_bot id=6578436252 - 'VVSPIN_BOT'
+dispatcher.py:160 #INFO     [2023-07-29 09:35:05,707] - aiogram.event - Update id=61482801 is not handled. Duration 0 ms by bot id=6578436252
+dispatcher.py:303 #ERROR    [2023-07-29 09:35:05,707] - aiogram.event - Cause exception while process update id=61482801 by bot id=6578436252
+AttributeError: type object 'Users' has no attribute 'get_user'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 297, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 146, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 23, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 123, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 264, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 115, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 120, in process_message
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/app/VVSPIN_BOT/tgbot/middlewares/config.py", line 18, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 131, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 115, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 124, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 123, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager_middleware.py", line 44, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 167, in context_saver_middleware
+    result = await handler(event, data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/src/app/VVSPIN_BOT/tgbot/handlers/admin.py", line 23, in admin_start
+    user_data = Users.get_user(user_id)
+                ^^^^^^^^^^^^^^
+AttributeError: type object 'Users' has no attribute 'get_user'
+dispatcher.py:439 #WARNING  [2023-07-29 09:35:13,809] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:345 #INFO     [2023-07-29 09:35:13,811] - aiogram.dispatcher - Polling stopped for bot @vvspin_bot id=6578436252 - 'VVSPIN_BOT'
+dispatcher.py:520 #INFO     [2023-07-29 09:35:13,811] - aiogram.dispatcher - Polling stopped
+bot.py:43 #INFO     [2023-07-29 09:37:15,775] - root - Starting bot!
+broadcaster.py:20 #INFO     [2023-07-29 09:37:16,212] - root - Target [ID:6188512171]: success
+broadcaster.py:20 #INFO     [2023-07-29 09:37:16,485] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-07-29 09:37:16,536] - root - 2 messages successful sent.
+dispatcher.py:493 #INFO     [2023-07-29 09:37:16,536] - aiogram.dispatcher - Start polling
+dispatcher.py:329 #INFO     [2023-07-29 09:37:16,576] - aiogram.dispatcher - Run polling for bot @vvspin_bot id=6578436252 - 'VVSPIN_BOT'
+dispatcher.py:160 #INFO     [2023-07-29 09:37:20,157] - aiogram.event - Update id=61482802 is not handled. Duration 0 ms by bot id=6578436252
+dispatcher.py:303 #ERROR    [2023-07-29 09:37:20,158] - aiogram.event - Cause exception while process update id=61482802 by bot id=6578436252
+AttributeError: type object 'Users' has no attribute 'get_user'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 297, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 146, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 23, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 123, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 264, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 115, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 120, in process_message
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/app/VVSPIN_BOT/tgbot/middlewares/config.py", line 18, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 131, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 115, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 124, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 123, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager_middleware.py", line 44, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 167, in context_saver_middleware
+    result = await handler(event, data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/src/app/VVSPIN_BOT/tgbot/handlers/admin.py", line 23, in admin_start
+    user_data = Users.get_user(user_id)
+                ^^^^^^^^^^^^^^
+AttributeError: type object 'Users' has no attribute 'get_user'
+dispatcher.py:439 #WARNING  [2023-07-29 09:41:37,632] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:345 #INFO     [2023-07-29 09:41:37,633] - aiogram.dispatcher - Polling stopped for bot @vvspin_bot id=6578436252 - 'VVSPIN_BOT'
+dispatcher.py:520 #INFO     [2023-07-29 09:41:37,634] - aiogram.dispatcher - Polling stopped
+bot.py:43 #INFO     [2023-07-29 09:41:46,196] - root - Starting bot!
+broadcaster.py:20 #INFO     [2023-07-29 09:41:46,854] - root - Target [ID:6188512171]: success
+broadcaster.py:20 #INFO     [2023-07-29 09:41:47,148] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-07-29 09:41:47,198] - root - 2 messages successful sent.
+dispatcher.py:493 #INFO     [2023-07-29 09:41:47,199] - aiogram.dispatcher - Start polling
+dispatcher.py:329 #INFO     [2023-07-29 09:41:47,242] - aiogram.dispatcher - Run polling for bot @vvspin_bot id=6578436252 - 'VVSPIN_BOT'
+dispatcher.py:160 #INFO     [2023-07-29 09:41:50,246] - aiogram.event - Update id=61482803 is not handled. Duration 0 ms by bot id=6578436252
+dispatcher.py:303 #ERROR    [2023-07-29 09:41:50,246] - aiogram.event - Cause exception while process update id=61482803 by bot id=6578436252
+AttributeError: type object 'Users' has no attribute 'get_user'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 297, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 146, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 23, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 123, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 264, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 115, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 120, in process_message
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/app/VVSPIN_BOT/tgbot/middlewares/config.py", line 18, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 131, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 115, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 124, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 123, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager_middleware.py", line 44, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 167, in context_saver_middleware
+    result = await handler(event, data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/src/app/VVSPIN_BOT/tgbot/handlers/admin.py", line 23, in admin_start
+    user_data = Users.get_user(user_id)
+                ^^^^^^^^^^^^^^
+AttributeError: type object 'Users' has no attribute 'get_user'
+dispatcher.py:439 #WARNING  [2023-07-29 09:46:05,329] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:345 #INFO     [2023-07-29 09:46:05,330] - aiogram.dispatcher - Polling stopped for bot @vvspin_bot id=6578436252 - 'VVSPIN_BOT'
+dispatcher.py:520 #INFO     [2023-07-29 09:46:05,331] - aiogram.dispatcher - Polling stopped
+bot.py:43 #INFO     [2023-07-29 09:47:48,340] - root - Starting bot!
+broadcaster.py:20 #INFO     [2023-07-29 09:47:48,828] - root - Target [ID:6188512171]: success
+broadcaster.py:20 #INFO     [2023-07-29 09:47:49,110] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-07-29 09:47:49,161] - root - 2 messages successful sent.
+dispatcher.py:493 #INFO     [2023-07-29 09:47:49,161] - aiogram.dispatcher - Start polling
+dispatcher.py:329 #INFO     [2023-07-29 09:47:49,201] - aiogram.dispatcher - Run polling for bot @vvspin_bot id=6578436252 - 'VVSPIN_BOT'
+dispatcher.py:160 #INFO     [2023-07-29 09:47:53,718] - aiogram.event - Update id=61482804 is not handled. Duration 0 ms by bot id=6578436252
+dispatcher.py:303 #ERROR    [2023-07-29 09:47:53,719] - aiogram.event - Cause exception while process update id=61482804 by bot id=6578436252
+AttributeError: type object 'Users' has no attribute 'get_user'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 297, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 146, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 23, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 123, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 264, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 115, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 120, in process_message
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/app/VVSPIN_BOT/tgbot/middlewares/config.py", line 18, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 131, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 115, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 124, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 123, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager_middleware.py", line 44, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 167, in context_saver_middleware
+    result = await handler(event, data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/src/app/VVSPIN_BOT/tgbot/handlers/admin.py", line 23, in admin_start
+    user_data = Users.get_user(user_id)
+                ^^^^^^^^^^^^^^
+AttributeError: type object 'Users' has no attribute 'get_user'
+dispatcher.py:160 #INFO     [2023-07-29 09:47:58,175] - aiogram.event - Update id=61482805 is not handled. Duration 0 ms by bot id=6578436252
+dispatcher.py:303 #ERROR    [2023-07-29 09:47:58,175] - aiogram.event - Cause exception while process update id=61482805 by bot id=6578436252
+AttributeError: type object 'Users' has no attribute 'get_user'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 297, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 146, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 23, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 123, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 264, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 115, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 120, in process_message
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/app/VVSPIN_BOT/tgbot/middlewares/config.py", line 18, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 131, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 115, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 124, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 123, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager_middleware.py", line 44, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 167, in context_saver_middleware
+    result = await handler(event, data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/src/app/VVSPIN_BOT/tgbot/handlers/admin.py", line 23, in admin_start
+    user_data = Users.get_user(user_id)
+                ^^^^^^^^^^^^^^
+AttributeError: type object 'Users' has no attribute 'get_user'
+dispatcher.py:439 #WARNING  [2023-07-29 09:48:00,117] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:345 #INFO     [2023-07-29 09:48:00,118] - aiogram.dispatcher - Polling stopped for bot @vvspin_bot id=6578436252 - 'VVSPIN_BOT'
+dispatcher.py:520 #INFO     [2023-07-29 09:48:00,118] - aiogram.dispatcher - Polling stopped
+bot.py:43 #INFO     [2023-07-29 09:49:58,723] - root - Starting bot!
+broadcaster.py:20 #INFO     [2023-07-29 09:49:59,173] - root - Target [ID:6188512171]: success
+broadcaster.py:20 #INFO     [2023-07-29 09:49:59,475] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-07-29 09:49:59,526] - root - 2 messages successful sent.
+dispatcher.py:493 #INFO     [2023-07-29 09:49:59,526] - aiogram.dispatcher - Start polling
+dispatcher.py:329 #INFO     [2023-07-29 09:49:59,563] - aiogram.dispatcher - Run polling for bot @vvspin_bot id=6578436252 - 'VVSPIN_BOT'
+dispatcher.py:160 #INFO     [2023-07-29 09:50:04,880] - aiogram.event - Update id=61482806 is not handled. Duration 0 ms by bot id=6578436252
+dispatcher.py:303 #ERROR    [2023-07-29 09:50:04,880] - aiogram.event - Cause exception while process update id=61482806 by bot id=6578436252
+AttributeError: type object 'Users' has no attribute 'get_user'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 297, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 146, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 23, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 123, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 264, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 115, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 120, in process_message
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/app/VVSPIN_BOT/tgbot/middlewares/config.py", line 18, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 131, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 115, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 124, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 123, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager_middleware.py", line 44, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 167, in context_saver_middleware
+    result = await handler(event, data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/src/app/VVSPIN_BOT/tgbot/handlers/admin.py", line 23, in admin_start
+    user_data = Users.get_user(user_id)
+                ^^^^^^^^^^^^^^
+AttributeError: type object 'Users' has no attribute 'get_user'
+dispatcher.py:439 #WARNING  [2023-07-29 09:51:35,702] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:345 #INFO     [2023-07-29 09:51:35,703] - aiogram.dispatcher - Polling stopped for bot @vvspin_bot id=6578436252 - 'VVSPIN_BOT'
+dispatcher.py:520 #INFO     [2023-07-29 09:51:35,703] - aiogram.dispatcher - Polling stopped
+bot.py:43 #INFO     [2023-07-29 09:51:43,246] - root - Starting bot!
+broadcaster.py:20 #INFO     [2023-07-29 09:51:43,683] - root - Target [ID:6188512171]: success
+broadcaster.py:20 #INFO     [2023-07-29 09:51:43,953] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-07-29 09:51:44,003] - root - 2 messages successful sent.
+dispatcher.py:493 #INFO     [2023-07-29 09:51:44,004] - aiogram.dispatcher - Start polling
+dispatcher.py:329 #INFO     [2023-07-29 09:51:44,042] - aiogram.dispatcher - Run polling for bot @vvspin_bot id=6578436252 - 'VVSPIN_BOT'
+admin.py:25 #INFO     [2023-07-29 09:51:46,956] - root - None
+db.py:30 #INFO     [2023-07-29 09:51:46,956] - root - Trying to save user.
+db.py:35 #INFO     [2023-07-29 09:51:46,961] - root - User successfully saved!
+admin.py:40 #INFO     [2023-07-29 09:51:47,274] - root - ManagerImpl.start() missing 1 required positional argument: 'state'
+dispatcher.py:160 #INFO     [2023-07-29 09:51:47,275] - aiogram.event - Update id=61482807 is handled. Duration 328 ms by bot id=6578436252
+dispatcher.py:439 #WARNING  [2023-07-29 09:52:34,039] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:345 #INFO     [2023-07-29 09:52:34,040] - aiogram.dispatcher - Polling stopped for bot @vvspin_bot id=6578436252 - 'VVSPIN_BOT'
+dispatcher.py:520 #INFO     [2023-07-29 09:52:34,040] - aiogram.dispatcher - Polling stopped
+bot.py:39 #INFO     [2023-07-29 10:05:00,294] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-07-29 10:05:00,767] - root - Target [ID:6188512171]: success
+broadcaster.py:20 #INFO     [2023-07-29 10:05:01,067] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-07-29 10:05:01,117] - root - 2 messages successful sent.
+dispatcher.py:493 #INFO     [2023-07-29 10:05:01,118] - aiogram.dispatcher - Start polling
+dispatcher.py:329 #INFO     [2023-07-29 10:05:01,158] - aiogram.dispatcher - Run polling for bot @vvspin_bot id=6578436252 - 'VVSPIN_BOT'
+admin.py:26 #INFO     [2023-07-29 10:05:04,487] - tgbot.handlers.admin - [683497406, 'dankondankon', None, None, datetime.datetime(2023, 7, 29, 9, 51, 46, 947415)]
+admin.py:41 #INFO     [2023-07-29 10:05:05,040] - tgbot.handlers.admin - ManagerImpl.start() missing 1 required positional argument: 'state'
+dispatcher.py:160 #INFO     [2023-07-29 10:05:05,041] - aiogram.event - Update id=61482808 is handled. Duration 559 ms by bot id=6578436252
+dispatcher.py:439 #WARNING  [2023-07-29 10:06:35,612] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:345 #INFO     [2023-07-29 10:06:35,613] - aiogram.dispatcher - Polling stopped for bot @vvspin_bot id=6578436252 - 'VVSPIN_BOT'
+dispatcher.py:520 #INFO     [2023-07-29 10:06:35,613] - aiogram.dispatcher - Polling stopped
+bot.py:39 #INFO     [2023-07-29 10:07:37,446] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-07-29 10:07:37,850] - root - Target [ID:6188512171]: success
+broadcaster.py:20 #INFO     [2023-07-29 10:07:38,189] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-07-29 10:07:38,239] - root - 2 messages successful sent.
+dispatcher.py:493 #INFO     [2023-07-29 10:07:38,240] - aiogram.dispatcher - Start polling
+dispatcher.py:329 #INFO     [2023-07-29 10:07:38,280] - aiogram.dispatcher - Run polling for bot @vvspin_bot id=6578436252 - 'VVSPIN_BOT'
+admin.py:26 #INFO     [2023-07-29 10:07:42,273] - tgbot.handlers.admin - [683497406, 'dankondankon', None, None, datetime.datetime(2023, 7, 29, 9, 51, 46, 947415)]
+admin.py:27 #INFO     [2023-07-29 10:07:42,274] - tgbot.handlers.admin - Hello admin!
+admin.py:42 #INFO     [2023-07-29 10:07:42,582] - tgbot.handlers.admin - ManagerImpl.start() missing 1 required positional argument: 'state'
+dispatcher.py:160 #INFO     [2023-07-29 10:07:42,582] - aiogram.event - Update id=61482809 is handled. Duration 313 ms by bot id=6578436252
+dispatcher.py:439 #WARNING  [2023-07-29 10:09:08,891] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:345 #INFO     [2023-07-29 10:09:08,892] - aiogram.dispatcher - Polling stopped for bot @vvspin_bot id=6578436252 - 'VVSPIN_BOT'
+dispatcher.py:520 #INFO     [2023-07-29 10:09:08,893] - aiogram.dispatcher - Polling stopped
+bot.py:40 #INFO     [2023-07-29 10:09:17,146] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-07-29 10:09:17,618] - root - Target [ID:6188512171]: success
+broadcaster.py:20 #INFO     [2023-07-29 10:09:17,896] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-07-29 10:09:17,946] - root - 2 messages successful sent.
+dispatcher.py:493 #INFO     [2023-07-29 10:09:17,947] - aiogram.dispatcher - Start polling
+dispatcher.py:329 #INFO     [2023-07-29 10:09:17,984] - aiogram.dispatcher - Run polling for bot @vvspin_bot id=6578436252 - 'VVSPIN_BOT'
+admin.py:26 #INFO     [2023-07-29 10:09:21,857] - tgbot.handlers.admin - [683497406, 'dankondankon', None, None, datetime.datetime(2023, 7, 29, 9, 51, 46, 947415)]
+admin.py:27 #INFO     [2023-07-29 10:09:21,857] - tgbot.handlers.admin - Hello admin!
+admin.py:42 #INFO     [2023-07-29 10:09:22,165] - tgbot.handlers.admin - ManagerImpl.start() missing 1 required positional argument: 'state'
+dispatcher.py:160 #INFO     [2023-07-29 10:09:22,165] - aiogram.event - Update id=61482810 is handled. Duration 313 ms by bot id=6578436252
+dispatcher.py:439 #WARNING  [2023-07-29 10:31:14,384] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:345 #INFO     [2023-07-29 10:31:14,386] - aiogram.dispatcher - Polling stopped for bot @vvspin_bot id=6578436252 - 'VVSPIN_BOT'
+dispatcher.py:520 #INFO     [2023-07-29 10:31:14,386] - aiogram.dispatcher - Polling stopped
+bot.py:43 #INFO     [2023-07-29 10:33:10,458] - root - Starting bot!
+broadcaster.py:20 #INFO     [2023-07-29 10:33:11,097] - root - Target [ID:6188512171]: success
+broadcaster.py:20 #INFO     [2023-07-29 10:33:11,379] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-07-29 10:33:11,430] - root - 2 messages successful sent.
+dispatcher.py:493 #INFO     [2023-07-29 10:33:11,430] - aiogram.dispatcher - Start polling
+dispatcher.py:329 #INFO     [2023-07-29 10:33:11,470] - aiogram.dispatcher - Run polling for bot @vvspin_bot id=6578436252 - 'VVSPIN_BOT'
+admin.py:24 #INFO     [2023-07-29 10:33:15,701] - root - [683497406, 'dankondankon', None, None, datetime.datetime(2023, 7, 29, 9, 51, 46, 947415)]
+admin.py:39 #INFO     [2023-07-29 10:33:16,021] - root - ManagerImpl.start() missing 1 required positional argument: 'state'
+dispatcher.py:160 #INFO     [2023-07-29 10:33:16,021] - aiogram.event - Update id=61482811 is handled. Duration 325 ms by bot id=6578436252
+admin.py:24 #INFO     [2023-07-29 10:34:11,925] - root - [683497406, 'dankondankon', None, None, datetime.datetime(2023, 7, 29, 9, 51, 46, 947415)]
+admin.py:39 #INFO     [2023-07-29 10:34:12,315] - root - ManagerImpl.start() missing 1 required positional argument: 'state'
+dispatcher.py:160 #INFO     [2023-07-29 10:34:12,316] - aiogram.event - Update id=61482812 is handled. Duration 391 ms by bot id=6578436252
+dispatcher.py:439 #WARNING  [2023-07-29 10:35:08,881] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:345 #INFO     [2023-07-29 10:35:08,882] - aiogram.dispatcher - Polling stopped for bot @vvspin_bot id=6578436252 - 'VVSPIN_BOT'
+dispatcher.py:520 #INFO     [2023-07-29 10:35:08,882] - aiogram.dispatcher - Polling stopped
+bot.py:43 #INFO     [2023-07-29 10:35:16,143] - root - Starting bot!
+broadcaster.py:20 #INFO     [2023-07-29 10:35:16,600] - root - Target [ID:6188512171]: success
+broadcaster.py:20 #INFO     [2023-07-29 10:35:16,880] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-07-29 10:35:16,931] - root - 2 messages successful sent.
+dispatcher.py:493 #INFO     [2023-07-29 10:35:16,932] - aiogram.dispatcher - Start polling
+dispatcher.py:329 #INFO     [2023-07-29 10:35:16,965] - aiogram.dispatcher - Run polling for bot @vvspin_bot id=6578436252 - 'VVSPIN_BOT'
+admin.py:24 #INFO     [2023-07-29 10:35:18,079] - root - [683497406, 'dankondankon', None, None, datetime.datetime(2023, 7, 29, 9, 51, 46, 947415)]
+dispatcher.py:160 #INFO     [2023-07-29 10:35:18,646] - aiogram.event - Update id=61482813 is handled. Duration 577 ms by bot id=6578436252
+dispatcher.py:439 #WARNING  [2023-07-29 10:55:18,743] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:345 #INFO     [2023-07-29 10:55:18,744] - aiogram.dispatcher - Polling stopped for bot @vvspin_bot id=6578436252 - 'VVSPIN_BOT'
+dispatcher.py:520 #INFO     [2023-07-29 10:55:18,745] - aiogram.dispatcher - Polling stopped
+bot.py:43 #INFO     [2023-07-29 10:55:27,828] - root - Starting bot!
+broadcaster.py:20 #INFO     [2023-07-29 10:55:28,296] - root - Target [ID:6188512171]: success
+broadcaster.py:20 #INFO     [2023-07-29 10:55:28,588] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-07-29 10:55:28,638] - root - 2 messages successful sent.
+dispatcher.py:493 #INFO     [2023-07-29 10:55:28,639] - aiogram.dispatcher - Start polling
+dispatcher.py:329 #INFO     [2023-07-29 10:55:28,675] - aiogram.dispatcher - Run polling for bot @vvspin_bot id=6578436252 - 'VVSPIN_BOT'
+admin.py:24 #INFO     [2023-07-29 10:55:31,753] - root - [683497406, 'dankondankon', None, None, datetime.datetime(2023, 7, 29, 9, 51, 46, 947415)]
+admin.py:40 #INFO     [2023-07-29 10:55:32,120] - root - 'links_info'
+dispatcher.py:160 #INFO     [2023-07-29 10:55:32,121] - aiogram.event - Update id=61482814 is handled. Duration 371 ms by bot id=6578436252
+dispatcher.py:439 #WARNING  [2023-07-29 10:57:33,344] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:345 #INFO     [2023-07-29 10:57:33,346] - aiogram.dispatcher - Polling stopped for bot @vvspin_bot id=6578436252 - 'VVSPIN_BOT'
+dispatcher.py:520 #INFO     [2023-07-29 10:57:33,346] - aiogram.dispatcher - Polling stopped
+bot.py:43 #INFO     [2023-07-29 10:57:40,534] - root - Starting bot!
+broadcaster.py:20 #INFO     [2023-07-29 10:57:40,980] - root - Target [ID:6188512171]: success
+broadcaster.py:20 #INFO     [2023-07-29 10:57:41,276] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-07-29 10:57:41,327] - root - 2 messages successful sent.
+dispatcher.py:493 #INFO     [2023-07-29 10:57:41,328] - aiogram.dispatcher - Start polling
+dispatcher.py:329 #INFO     [2023-07-29 10:57:41,365] - aiogram.dispatcher - Run polling for bot @vvspin_bot id=6578436252 - 'VVSPIN_BOT'
+admin.py:24 #INFO     [2023-07-29 10:57:43,994] - root - [683497406, 'dankondankon', None, None, datetime.datetime(2023, 7, 29, 9, 51, 46, 947415)]
+admin.py:40 #INFO     [2023-07-29 10:57:44,323] - root - 'links_info'
+dispatcher.py:160 #INFO     [2023-07-29 10:57:44,324] - aiogram.event - Update id=61482815 is handled. Duration 333 ms by bot id=6578436252
+dispatcher.py:439 #WARNING  [2023-07-29 11:03:36,516] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:345 #INFO     [2023-07-29 11:03:36,517] - aiogram.dispatcher - Polling stopped for bot @vvspin_bot id=6578436252 - 'VVSPIN_BOT'
+dispatcher.py:520 #INFO     [2023-07-29 11:03:36,518] - aiogram.dispatcher - Polling stopped
+bot.py:43 #INFO     [2023-07-29 11:03:44,727] - root - Starting bot!
+broadcaster.py:20 #INFO     [2023-07-29 11:03:45,187] - root - Target [ID:6188512171]: success
+broadcaster.py:20 #INFO     [2023-07-29 11:03:45,502] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-07-29 11:03:45,553] - root - 2 messages successful sent.
+dispatcher.py:493 #INFO     [2023-07-29 11:03:45,554] - aiogram.dispatcher - Start polling
+dispatcher.py:329 #INFO     [2023-07-29 11:03:45,589] - aiogram.dispatcher - Run polling for bot @vvspin_bot id=6578436252 - 'VVSPIN_BOT'
+admin.py:24 #INFO     [2023-07-29 11:03:50,425] - root - [683497406, 'dankondankon', None, None, datetime.datetime(2023, 7, 29, 9, 51, 46, 947415)]
+dispatcher.py:160 #INFO     [2023-07-29 11:03:51,015] - aiogram.event - Update id=61482816 is handled. Duration 593 ms by bot id=6578436252
+dispatcher.py:439 #WARNING  [2023-07-29 11:03:58,880] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:345 #INFO     [2023-07-29 11:03:58,881] - aiogram.dispatcher - Polling stopped for bot @vvspin_bot id=6578436252 - 'VVSPIN_BOT'
+dispatcher.py:520 #INFO     [2023-07-29 11:03:58,882] - aiogram.dispatcher - Polling stopped
+bot.py:43 #INFO     [2023-07-29 11:04:07,315] - root - Starting bot!
+broadcaster.py:20 #INFO     [2023-07-29 11:04:07,741] - root - Target [ID:6188512171]: success
+broadcaster.py:20 #INFO     [2023-07-29 11:04:08,016] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-07-29 11:04:08,066] - root - 2 messages successful sent.
+dispatcher.py:493 #INFO     [2023-07-29 11:04:08,067] - aiogram.dispatcher - Start polling
+dispatcher.py:329 #INFO     [2023-07-29 11:04:08,103] - aiogram.dispatcher - Run polling for bot @vvspin_bot id=6578436252 - 'VVSPIN_BOT'
+admin.py:24 #INFO     [2023-07-29 11:04:10,484] - root - [683497406, 'dankondankon', None, None, datetime.datetime(2023, 7, 29, 9, 51, 46, 947415)]
+dispatcher.py:160 #INFO     [2023-07-29 11:04:11,078] - aiogram.event - Update id=61482817 is handled. Duration 599 ms by bot id=6578436252
+dispatcher.py:439 #WARNING  [2023-07-29 11:05:13,299] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:345 #INFO     [2023-07-29 11:05:13,300] - aiogram.dispatcher - Polling stopped for bot @vvspin_bot id=6578436252 - 'VVSPIN_BOT'
+dispatcher.py:520 #INFO     [2023-07-29 11:05:13,300] - aiogram.dispatcher - Polling stopped
+bot.py:43 #INFO     [2023-07-29 11:05:20,579] - root - Starting bot!
+broadcaster.py:20 #INFO     [2023-07-29 11:05:21,090] - root - Target [ID:6188512171]: success
+broadcaster.py:20 #INFO     [2023-07-29 11:05:21,372] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-07-29 11:05:21,422] - root - 2 messages successful sent.
+dispatcher.py:493 #INFO     [2023-07-29 11:05:21,423] - aiogram.dispatcher - Start polling
+dispatcher.py:329 #INFO     [2023-07-29 11:05:21,463] - aiogram.dispatcher - Run polling for bot @vvspin_bot id=6578436252 - 'VVSPIN_BOT'
+admin.py:24 #INFO     [2023-07-29 11:05:25,850] - root - [683497406, 'dankondankon', None, None, datetime.datetime(2023, 7, 29, 9, 51, 46, 947415)]
+admin.py:40 #INFO     [2023-07-29 11:05:26,184] - root - 'NoneType' object is not iterable
+dispatcher.py:160 #INFO     [2023-07-29 11:05:26,184] - aiogram.event - Update id=61482818 is handled. Duration 345 ms by bot id=6578436252
+dispatcher.py:439 #WARNING  [2023-07-29 11:05:57,690] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:345 #INFO     [2023-07-29 11:05:57,691] - aiogram.dispatcher - Polling stopped for bot @vvspin_bot id=6578436252 - 'VVSPIN_BOT'
+dispatcher.py:520 #INFO     [2023-07-29 11:05:57,691] - aiogram.dispatcher - Polling stopped
+bot.py:43 #INFO     [2023-07-29 11:06:04,677] - root - Starting bot!
+broadcaster.py:20 #INFO     [2023-07-29 11:06:05,142] - root - Target [ID:6188512171]: success
+broadcaster.py:20 #INFO     [2023-07-29 11:06:05,411] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-07-29 11:06:05,461] - root - 2 messages successful sent.
+dispatcher.py:493 #INFO     [2023-07-29 11:06:05,462] - aiogram.dispatcher - Start polling
+dispatcher.py:329 #INFO     [2023-07-29 11:06:05,502] - aiogram.dispatcher - Run polling for bot @vvspin_bot id=6578436252 - 'VVSPIN_BOT'
+admin.py:24 #INFO     [2023-07-29 11:06:07,068] - root - [683497406, 'dankondankon', None, None, datetime.datetime(2023, 7, 29, 9, 51, 46, 947415)]
+dispatcher.py:160 #INFO     [2023-07-29 11:06:07,721] - aiogram.event - Update id=61482819 is handled. Duration 660 ms by bot id=6578436252
+dispatcher.py:439 #WARNING  [2023-07-29 12:31:02,659] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:345 #INFO     [2023-07-29 12:31:02,660] - aiogram.dispatcher - Polling stopped for bot @vvspin_bot id=6578436252 - 'VVSPIN_BOT'
+dispatcher.py:520 #INFO     [2023-07-29 12:31:02,661] - aiogram.dispatcher - Polling stopped
+bot.py:43 #INFO     [2023-07-29 12:31:12,475] - root - Starting bot!
+broadcaster.py:20 #INFO     [2023-07-29 12:31:12,887] - root - Target [ID:6188512171]: success
+broadcaster.py:20 #INFO     [2023-07-29 12:31:13,169] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-07-29 12:31:13,220] - root - 2 messages successful sent.
+dispatcher.py:493 #INFO     [2023-07-29 12:31:13,220] - aiogram.dispatcher - Start polling
+dispatcher.py:329 #INFO     [2023-07-29 12:31:13,278] - aiogram.dispatcher - Run polling for bot @vvspin_bot id=6578436252 - 'VVSPIN_BOT'
+admin.py:24 #INFO     [2023-07-29 12:31:14,803] - root - [683497406, 'dankondankon', None, None, datetime.datetime(2023, 7, 29, 9, 51, 46, 947415)]
+dispatcher.py:160 #INFO     [2023-07-29 12:31:15,352] - aiogram.event - Update id=61482820 is handled. Duration 555 ms by bot id=6578436252
+dispatcher.py:439 #WARNING  [2023-07-29 12:32:37,712] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:345 #INFO     [2023-07-29 12:32:37,713] - aiogram.dispatcher - Polling stopped for bot @vvspin_bot id=6578436252 - 'VVSPIN_BOT'
+dispatcher.py:520 #INFO     [2023-07-29 12:32:37,713] - aiogram.dispatcher - Polling stopped
+bot.py:43 #INFO     [2023-07-29 12:32:45,106] - root - Starting bot!
+broadcaster.py:20 #INFO     [2023-07-29 12:32:45,707] - root - Target [ID:6188512171]: success
+broadcaster.py:20 #INFO     [2023-07-29 12:32:46,088] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-07-29 12:32:46,139] - root - 2 messages successful sent.
+dispatcher.py:493 #INFO     [2023-07-29 12:32:46,139] - aiogram.dispatcher - Start polling
+dispatcher.py:329 #INFO     [2023-07-29 12:32:46,178] - aiogram.dispatcher - Run polling for bot @vvspin_bot id=6578436252 - 'VVSPIN_BOT'
+admin.py:24 #INFO     [2023-07-29 12:32:47,933] - root - [683497406, 'dankondankon', None, None, datetime.datetime(2023, 7, 29, 9, 51, 46, 947415)]
+dispatcher.py:160 #INFO     [2023-07-29 12:32:48,476] - aiogram.event - Update id=61482821 is handled. Duration 546 ms by bot id=6578436252
+dispatcher.py:439 #WARNING  [2023-07-29 12:33:00,457] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:345 #INFO     [2023-07-29 12:33:00,458] - aiogram.dispatcher - Polling stopped for bot @vvspin_bot id=6578436252 - 'VVSPIN_BOT'
+dispatcher.py:520 #INFO     [2023-07-29 12:33:00,459] - aiogram.dispatcher - Polling stopped
+bot.py:43 #INFO     [2023-07-29 12:33:07,932] - root - Starting bot!
+broadcaster.py:20 #INFO     [2023-07-29 12:33:08,349] - root - Target [ID:6188512171]: success
+broadcaster.py:20 #INFO     [2023-07-29 12:33:08,632] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-07-29 12:33:08,683] - root - 2 messages successful sent.
+dispatcher.py:493 #INFO     [2023-07-29 12:33:08,686] - aiogram.dispatcher - Start polling
+dispatcher.py:329 #INFO     [2023-07-29 12:33:08,721] - aiogram.dispatcher - Run polling for bot @vvspin_bot id=6578436252 - 'VVSPIN_BOT'
+admin.py:24 #INFO     [2023-07-29 12:33:10,251] - root - [683497406, 'dankondankon', None, None, datetime.datetime(2023, 7, 29, 9, 51, 46, 947415)]
+dispatcher.py:160 #INFO     [2023-07-29 12:33:10,922] - aiogram.event - Update id=61482822 is handled. Duration 676 ms by bot id=6578436252
+dispatcher.py:439 #WARNING  [2023-07-29 12:34:06,198] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:345 #INFO     [2023-07-29 12:34:06,199] - aiogram.dispatcher - Polling stopped for bot @vvspin_bot id=6578436252 - 'VVSPIN_BOT'
+dispatcher.py:520 #INFO     [2023-07-29 12:34:06,199] - aiogram.dispatcher - Polling stopped

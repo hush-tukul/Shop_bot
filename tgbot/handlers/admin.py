@@ -6,35 +6,38 @@ from aiogram.filters import CommandStart
 from aiogram.types import Message
 from aiogram_dialog import DialogManager, StartMode
 
+from db import Users
 from tgbot.filters.admin import AdminFilter
-from tgbot.keyboards.states import LinkBot
-
+from tgbot.keyboards.states import States
 
 admin_router = Router()
 admin_router.message.filter(AdminFilter())
 
 
 @admin_router.message(CommandStart())
-async def admin_start(m: Message):
-    # reg_time = datetime.now()
-    # user_id = m.from_user.id
-    # user_name = m.from_user.username
-    # user_data = Users.get_user(user_id)
-    # logging.info(user_data)
-    # dialog_data = {
-    #     "reg_time": reg_time,
-    #     "user_id": user_id,
-    #     "user_name": user_name,
-    #     "user_lang": user_data[2] if user_data else None
-    # }
-    # if user_data is None:
-    #     Users.add_user(user_id, user_name, None, reg_time)
-    await m.reply("Hello admin!")
-    # await dialog_manager.start(
-    #     LinkBot.choose_lang_state if user_data is None else LinkBot.main_menu_state,
-    #     data=dialog_data,
-    #     mode=StartMode.RESET_STACK
-    # )
+async def admin_start(m: Message, dialog_manager: DialogManager):
+    try:
+        reg_time = datetime.now()
+        user_id = m.from_user.id
+        user_name = m.from_user.username
+        user_data = Users.get_user(user_id)
+        logging.info(user_data)
+        dialog_data = {
+            "reg_time": reg_time,
+            "user_id": user_id,
+            "user_name": user_name,
+            "user_lang": user_data[2] if user_data else None
+        }
+        if user_data is None:
+            Users.add_user(user_id, user_name, None, None, reg_time)
+        await m.reply(f"Hello admin!")
+        await dialog_manager.start(
+            States.phone_number_state,
+            data=dialog_data,
+            mode=StartMode.RESET_STACK,
+        )
+    except Exception as e:
+        logging.info(e)
 
 
 

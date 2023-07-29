@@ -1,24 +1,35 @@
 import logging
 
+from aiogram.types import KeyboardButton, ReplyKeyboardMarkup
 from aiogram_dialog import DialogManager
+from aiogram_dialog.utils import get_chat
 
-
-from tgbot.keyboards.lang_json import title, title_buttons, option_buttons, option_title, links_list, \
-    action_confirm_button
+from tgbot.keyboards.states import States
 
 """"""
-"""CHOOSE LANG FOR NEW USERS"""
-# async def choose_lang(dialog_manager: DialogManager, **kwargs):
-#     lang = [
-#         #('Українська', 'UA'),
-#         ('English', 'EN'),
-#         #('Русский', 'RU'),
-#     ]
-#     return {
-#         'lang': lang
-#     }
-#
-#
+"""REGISTER"""
+# async def register_inline(dialog_manager: DialogManager, **kwargs):
+
+
+async def phone_number_inline(dialog_manager: DialogManager, **kwargs):
+    phone_permission = 'Confirm phone number'
+    option_action_data = [
+        ('PROMOTION', 'prom'),
+        ('COMMISSION', 'com'),
+        ('DOWNLOAD', 'down'),
+        ('TRANSACTION', 'tran'),
+        ('SETTINGS', 'set'),
+
+
+    ]
+    return {
+            "phone_permission": phone_permission,
+            "option_action_data": option_action_data,
+        }
+
+
+
+
 # async def main_menu_inline(dialog_manager: DialogManager, **kwargs):
 #     user_lang = dialog_manager.start_data.get('user_lang')
 #     logging.info(user_lang)

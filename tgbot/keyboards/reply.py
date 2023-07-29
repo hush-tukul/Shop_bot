@@ -2,13 +2,35 @@ import logging
 from typing import Any
 
 import requests
-from aiogram.types import CallbackQuery, Message
+from aiogram import Bot
+from aiogram.types import CallbackQuery, Message, KeyboardButton, ReplyKeyboardMarkup
 from aiogram_dialog import DialogManager
 from aiogram_dialog.widgets.input import MessageInput
 
+from db import Users
+
+
 # from db import Users, shorten_url, Reflink
 # from run import bot
-from tgbot.keyboards.states import LinkBot
+
+
+
+
+async def phone_number_reply(message: Message, input: MessageInput, dialog_manager: DialogManager):
+    logging.info('You in phone_number_reply')
+    kb_phone = [[
+        KeyboardButton(text="Сообщить номер телефона", request_contact=True)
+    ]]
+    markup_phone = ReplyKeyboardMarkup(keyboard=kb_phone, resize_keyboard=True,
+                                             input_field_placeholder="Отправить телефон")
+    await message.answer('PLease confirm Your phone number', reply_markup=markup_phone)
+
+
+
+
+
+
+
 
 
 

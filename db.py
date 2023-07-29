@@ -15,6 +15,42 @@ import hashlib
 engine = create_engine('postgresql://postgres:123456@db:5432/postgres')
 Base = declarative_base()
 
+class Users(Base):
+    __tablename__ = 'users'
+
+    user_id = Column(BigInteger, primary_key=True)
+    user_tg_name = Column(String)
+    user_real_name = Column(String)
+    user_phone_number = Column(String)
+    registry_datetime = Column(DateTime)
+
+
+    @classmethod
+    def add_user(cls, user_id, user_tg_name, user_real_name, user_phone_number, registry_datetime):
+        logging.info("Trying to save user.")
+        new_user = Users(user_id=user_id, user_tg_name=user_tg_name, user_real_name=user_real_name,
+                         user_phone_number=user_phone_number, registry_datetime=registry_datetime)
+        session.add(new_user)
+        session.commit()
+        logging.info("User successfully saved!")
+
+    @classmethod
+    def get_user(cls, user_id):
+        user = session.query(Users).filter_by(user_id=user_id).first()
+        if user is not None:
+            return [user.user_id, user.user_tg_name, user.user_real_name, user.user_phone_number, user.registry_datetime]
+        else:
+            return None
+    #
+    # @classmethod
+    # def update_user_lang(cls, user_id, new_lang):
+    #     user = session.query(Users).filter_by(user_id=user_id).first()
+    #     if user:
+    #         user.user_lang = new_lang
+    #         session.commit()
+    #         logging.info("User language updated successfully!")
+    #     else:
+    #         logging.warning("User not found.")
 
 
 
@@ -246,119 +282,6 @@ async def shorten_url(url):
 # del_table('files')
 #g = [[i.datetime, i.filename] for i in session.query(File).all()]
 #print(len(g), *g, sep='\n')
-
-
-
-
-
-
-
-
-
-
-
-
-# def items(item: str):
-#     g = {
-#         'planets': [(i.planet_name, i.planet_name) for i in session.query(Planets).all()],
-#         'passengers': [(i.passenger_name, i.passenger_name) for i in session.query(Passengers).all()],
-#         'ships': [(i.ship_name, i.ship_name) for i in session.query(Ships).all()]
-#
-#     }
-#     return g[item]
-#
-#
-#
-#
-# def table_info(tablename: str, item = None):
-#     pl = session.query(Planets).filter(Planets.planet_name == item).all()
-#     ps = session.query(Passengers).filter(Passengers.passenger_name == item).all()
-#     sh = session.query(Ships).filter(Ships.ship_name == item).all()
-#
-#     tables = {
-#         'planets': {
-#             False: '\n'.join([f"Space object: {i.planet_name}\nType: {i.planet_class}\nMain parameters: {i.parameters}\nAge (th.years): {i.age}"
-#                              for i in session.query(Planets).all()]),
-#             True: f"Planet name: {pl[0].planet_name}\nType: {pl[0].planet_class}\nMain parameters: {pl[0].parameters}\nAge (th.years): {pl[0].age}"
-#             if session.query(exists().where(Planets.planet_name == item)).scalar() else 'No such planet in our database'
-#             },
-#         'passengers': {
-#             False: '\n'.join([f"Passenger name: {i.passenger_name}\nMain data: {i.parameters}\nAge (years): {i.age}"
-#                              for i in session.query(Passengers).all()]),
-#             True: f"Passenger name: {ps[0].passenger_name}\nMain data: {ps[0].parameters}\nAge (years): {ps[0].age}"
-#             if session.query(exists().where(Passengers.passenger_name == item)).scalar() else 'No such passenger in our database'
-#         },
-#         'ships': {
-#             False: '\n'.join(
-#                 [f"Ship name: {i.ship_name}\nShip class: {i.ship_class}\nMain parameter: {i.parameters}"
-#                  for i in session.query(Ships).all()]),
-#             True: f"Ship name: {sh[0].ship_name}\nShip class: {sh[0].ship_class}\nMain parameter: {sh[0].parameters}"
-#             if session.query(
-#                 exists().where(Ships.ship_name == item)).scalar() else 'No such ship in our database'
-#         }
-#         }
-#     return tables[tablename][bool(item)]
-#
-#
-#
-# def del_table(table):
-#     session.query(Planets).delete()
-#     session.commit()
-#
-#
-# def del_item(kind, item):
-#     g = {
-#         'planets': session.query(Planets).where(Planets.planet_name == item).delete(),
-#         'passengers': session.query(Passengers).where(Passengers.passenger_name == item).delete(),
-#         'ships': session.query(Ships).where(Ships.ship_name == item).delete(),
-#     }
-#     g[kind]
-#     session.commit()
-#
-#
-#
-# def add_new_object(tablename, *args):
-#     g = list(args)
-#     if len(args) < 4:
-#         g.append(None)
-#     tables = {
-#         'planets': Planets(
-#             planet_name=g[0],
-#             planet_class=g[1],
-#             parameters=g[2],
-#             age=g[3]
-#         ),
-#         'passengers': Passengers(
-#             passenger_name=g[0],
-#             parameters=g[1],
-#             age=g[2]
-#         ),
-#         'ships': Ships(
-#             ship_name=g[0],
-#             ship_class=g[1],
-#             parameters=g[2]
-#         )
-#     }
-#     session.add(tables[tablename])
-#     session.commit()
-
-
-
-#add_new_object('planets', 'Tatooine', 'desert planet', "Homeland of person who had to fight evil Not to join it! And his kidness son.", 8)
-
-#add_new_object('passengers', 'Luke Skywalker', 'experience - New Hope of Jedi kind - 83kg, height - 183cm, sex - man', 25)
-#
-#add_new_object('ships', 'Millennium Falcon', 'YT-series', "weight - 30 t. tons, length - 34 m, width - 25 m, height - 8 m")
-
-#print(table_info('planets'))
-#del_item('passengers', 'ps_Serg.Ripley')
-
-# print(items('ships'))
-
-
-
-
-
 
 
 
