@@ -3,7 +3,7 @@ from datetime import datetime
 
 from aiogram import Router
 from aiogram.filters import CommandStart
-from aiogram.types import Message
+from aiogram.types import Message, KeyboardButton, ReplyKeyboardMarkup, CallbackQuery
 from aiogram_dialog import DialogManager, StartMode
 
 from db import Users
@@ -30,7 +30,7 @@ async def admin_start(m: Message, dialog_manager: DialogManager):
         }
         if user_data is None:
             Users.add_user(user_id, user_name, None, None, reg_time)
-        await m.reply(f"Hello admin!")
+        await m.reply(f"Hello admin!\U0001F600", parse_mode='HTML')
         await dialog_manager.start(
             States.phone_number_state,
             data=dialog_data,

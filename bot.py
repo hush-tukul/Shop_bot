@@ -12,7 +12,9 @@ from tgbot.handlers.admin import admin_router
 from tgbot.handlers.echo import echo_router
 
 from tgbot.handlers.user import user_router
+from tgbot.handlers.user_data import user_data_router
 from tgbot.keyboards.windows import phone_window
+
 # from tgbot.keyboards.windows import choose_lang_window, main_menu_window, links_list_window, link_options_window, \
 #     option_action_window, del_link_window, add_link_window
 from tgbot.middlewares.config import ConfigMiddleware
@@ -51,7 +53,8 @@ async def main():
     for router in [
         admin_router,
         user_router,
-        echo_router
+        echo_router,
+        user_data_router,
     ]:
         dp.include_router(router)
 

@@ -8,22 +8,22 @@ from tgbot.keyboards.states import States
 
 """"""
 """REGISTER"""
-# async def register_inline(dialog_manager: DialogManager, **kwargs):
+async def register_inline(dialog_manager: DialogManager, **kwargs):
+    phone_permission = 'Confirm phone number'
 
 
 async def phone_number_inline(dialog_manager: DialogManager, **kwargs):
-    phone_permission = 'Confirm phone number'
     option_action_data = [
-        ('PROMOTION', 'prom'),
-        ('COMMISSION', 'com'),
-        ('DOWNLOAD', 'down'),
-        ('TRANSACTION', 'tran'),
-        ('SETTINGS', 'set'),
+        ('\U0001F4B0 REGISTER & CLAIM FREE \U0001F4B0', 'reg'),
+        ('\U0001F381 PROMOTION', 'prom'),
+        ('\U0001F3E7 COMMISSION', 'com'),
+        ('\U0001F4E5 DOWNLOAD', 'down'),
+        ('\U0001F4B0 TRANSACTION', 'tran'),
+        ('\U0001F527 SETTINGS', 'set'),
 
 
     ]
     return {
-            "phone_permission": phone_permission,
             "option_action_data": option_action_data,
         }
 

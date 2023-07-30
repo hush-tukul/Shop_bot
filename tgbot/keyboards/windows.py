@@ -4,10 +4,12 @@ from aiogram.enums import ParseMode, ContentType
 from aiogram_dialog import Window
 from aiogram_dialog.widgets.input import MessageInput
 from aiogram_dialog.widgets.kbd import Row, Select, SwitchTo, Column
+from aiogram_dialog.widgets.media import StaticMedia
 from aiogram_dialog.widgets.text import Const, Format
 
 from tgbot.keyboards.inline import phone_number_inline
 from tgbot.keyboards.reply import phone_number_reply
+
 from tgbot.keyboards.states import States
 
 # from tgbot.keyboards.inline import main_menu_inline, choose_lang, links_list_inline, link_options_inline, \
@@ -19,7 +21,14 @@ from tgbot.keyboards.states import States
 
 
 phone_window = Window(
-    Format("{phone_permission}"),
+
+    Const('Welcome to Winbot33!'
+          '\nAgent-free, Exclusive & Direct HQ'
+          '\nPlease select an option below :'
+          ),
+    # StaticMedia(
+    #     path="/usr/src/app/VVSPIN_BOT/photo_2023-05-15_10-18-24.png"
+    #     ),
     Column(
         Select(
             Format("{item[0]}"),
@@ -29,7 +38,7 @@ phone_window = Window(
             on_click=phone_number_reply
         ),
     ),
-    MessageInput(phone_number_reply, ContentType.CONTACT),
+    # MessageInput(phone_number_reply, ContentType.CONTACT),
     parse_mode=ParseMode.HTML,
     state=States.phone_number_state,
     getter=phone_number_inline
