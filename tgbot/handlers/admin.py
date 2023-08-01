@@ -2,7 +2,7 @@ import logging
 from datetime import datetime
 
 from aiogram import Router
-from aiogram.filters import CommandStart
+from aiogram.filters import CommandStart, Text
 from aiogram.types import Message, KeyboardButton, ReplyKeyboardMarkup, CallbackQuery
 from aiogram_dialog import DialogManager, StartMode
 
@@ -16,32 +16,41 @@ admin_router.message.filter(AdminFilter())
 
 @admin_router.message(CommandStart())
 async def admin_start(m: Message, dialog_manager: DialogManager):
-    try:
-        reg_time = datetime.now()
-        user_id = m.from_user.id
-        user_name = m.from_user.username
-        user_data = Users.get_user(user_id)
-        logging.info(user_data)
-        dialog_data = {
-            "reg_time": reg_time,
-            "user_id": user_id,
-            "user_name": user_name,
-            "user_lang": user_data[2] if user_data else None
-        }
-        if user_data is None:
-            Users.add_user(user_id, user_name, None, None, reg_time)
-        await m.reply(f"Hello admin!\U0001F600", parse_mode='HTML')
-        await dialog_manager.start(
-            States.phone_number_state,
-            data=dialog_data,
-            mode=StartMode.RESET_STACK,
-        )
-    except Exception as e:
-        logging.info(e)
+    reg_time = datetime.now()
+    user_id = m.from_user.id
+    user_name = m.from_user.username
+    user_data = Users.get_user(user_id)
+    logging.info(user_data)
+    dialog_data = {
+        "reg_time": reg_time,
+        "user_id": user_id,
+        "user_name": user_name,
+        "user_lang": user_data[2] if user_data else None
+    }
+    if user_data is None:
+        Users.add_user(user_id, user_name, None, None, reg_time)
+    await m.reply(f"Hello admin!\U0001F600", parse_mode='HTML')
+    await dialog_manager.start(
+        States.main_menu_state,
+        data=dialog_data,
+        mode=StartMode.RESET_STACK,
+    )
+
+
+@admin_router.message(Text('Back'))
+async def user_start(m: Message, dialog_manager: DialogManager):
+    await dialog_manager.start(
+        States.main_menu_state,
+        mode=StartMode.RESET_STACK,
+    )
 
 
 
 
+# @user_router.message(F.photo)
+# async def user_start(m: Message):
+#     photo_id = m.photo[0]
+#     await m.reply(f"{photo_id}", parse_mode='HTML')
 
 
 

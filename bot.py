@@ -12,8 +12,8 @@ from tgbot.handlers.admin import admin_router
 from tgbot.handlers.echo import echo_router
 
 from tgbot.handlers.user import user_router
-from tgbot.handlers.user_data import user_data_router
-from tgbot.keyboards.windows import phone_window
+
+from tgbot.keyboards.windows import main_window, register_window
 
 # from tgbot.keyboards.windows import choose_lang_window, main_menu_window, links_list_window, link_options_window, \
 #     option_action_window, del_link_window, add_link_window
@@ -21,8 +21,13 @@ from tgbot.middlewares.config import ConfigMiddleware
 from tgbot.services import broadcaster
 from aiogram_dialog import Dialog, DialogRegistry
 
+logging.basicConfig(
+        level=logging.INFO,
+        format=u'%(filename)s:%(lineno)d #%(levelname)-8s [%(asctime)s] - %(name)s - %(message)s',
+        filename='bot.log',  # Specify the file name and location
+        filemode='a'
 
-
+    )
 
 async def on_startup(bot: Bot, admin_ids: list[int]):
     await broadcaster.broadcast(bot, admin_ids, "Bot has been started!")
@@ -35,26 +40,23 @@ def register_global_middlewares(dp: Dispatcher, config):
 
 
 async def main():
-    logging.basicConfig(
-        level=logging.INFO,
-        format=u'%(filename)s:%(lineno)d #%(levelname)-8s [%(asctime)s] - %(name)s - %(message)s',
-        filename='bot.log',  # Specify the file name and location
-        filemode='a'
 
-    )
-    logging.info("Starting bot!")
+
+    logger = logging.getLogger(__name__)
+    logger.info("Starting bot!")
     config = load_config(".env")
     storage = MemoryStorage()
     bot = Bot(token=config.tg_bot.token, parse_mode="HTML")
     dp = Dispatcher(storage=storage)
     dialog = Dialog(
-        phone_window
+        main_window,
+        register_window
+
         )
     for router in [
         admin_router,
         user_router,
         echo_router,
-        user_data_router,
     ]:
         dp.include_router(router)
 

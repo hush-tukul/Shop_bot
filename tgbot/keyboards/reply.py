@@ -2,27 +2,57 @@ import logging
 from typing import Any
 
 import requests
-from aiogram import Bot, Router
+from aiogram import Bot, Router, F
+from aiogram.fsm.context import FSMContext
 from aiogram.types import CallbackQuery, Message, KeyboardButton, ReplyKeyboardMarkup
 from aiogram_dialog import DialogManager
 from aiogram_dialog.widgets.input import MessageInput
 
 from db import Users
+from tgbot.keyboards.states import States
 
 
 # from db import Users, shorten_url, Reflink
 # from run import bot
 
+user_data_router = Router()
+
+
+@user_data_router.message(F.text == "Back")
+async def back_reply(m: Message, state: FSMContext, dialog_manager: DialogManager, bot: Bot):
+
+    message_id = dialog_manager.dialog_data.get('message_id')
+    await bot.delete_message(message_id)
+    await dialog_manager.switch_to(States.main_menu_state)
+
+
+async def main_window_reply(c: CallbackQuery, widget: Any, dialog_manager: DialogManager, menu_option: str):
+    # states_list = {
+    #     'reg': States.register_state
+    # }
+
+    """Ask for phone version"""
+    kb_phone = [[
+        KeyboardButton(text="REGISTER Winbot33", request_contact=True)
+    ], [
+        KeyboardButton(text="Back")
+    ]]
+    markup_phone = ReplyKeyboardMarkup(keyboard=kb_phone, resize_keyboard=True,
+                                       input_field_placeholder="Send phone number")
+
+    await dialog_manager.switch_to(States.register_state)
+    message = await c.message.answer(text="Please tap on [🎁 REGISTER Winbot33 🎁] & CLAIM FREE ANGPAO\n🧧 🧧 🧧 🧧 🧧 🧧 🧧 🧧\n⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️",
+                           reply_markup=markup_phone)
+    dialog_manager.dialog_data.update(
+                message_id=message.message_id
+            )
 
 
 
-async def phone_number_reply(c: CallbackQuery, widget: Any, dialog_manager: DialogManager, user_lang: str):
 
 
-
-    await c.answer(text='Test', show_alert=True)
-
-
+    # await dialog_manager.switch_to(states_list[menu_option])
+    # await c.answer(text='Test', show_alert=True)
 
 
 
@@ -31,6 +61,8 @@ async def phone_number_reply(c: CallbackQuery, widget: Any, dialog_manager: Dial
 
 
 
+
+"""Ask for phone version"""
 # kb_phone = [[
     #     KeyboardButton(text="Сообщить номер телефона", request_contact=True)
     # ]]

@@ -4,11 +4,11 @@ from aiogram.enums import ParseMode, ContentType
 from aiogram_dialog import Window
 from aiogram_dialog.widgets.input import MessageInput
 from aiogram_dialog.widgets.kbd import Row, Select, SwitchTo, Column
-from aiogram_dialog.widgets.media import StaticMedia
+from aiogram_dialog.widgets.media import StaticMedia, DynamicMedia
 from aiogram_dialog.widgets.text import Const, Format
 
-from tgbot.keyboards.inline import phone_number_inline
-from tgbot.keyboards.reply import phone_number_reply
+from tgbot.keyboards.inline import main_window_inline, register_window_inline
+from tgbot.keyboards.reply import main_window_reply
 
 from tgbot.keyboards.states import States
 
@@ -20,29 +20,34 @@ from tgbot.keyboards.states import States
 
 
 
-phone_window = Window(
-
-    Const('Welcome to Winbot33!'
-          '\nAgent-free, Exclusive & Direct HQ'
-          '\nPlease select an option below :'
-          ),
-    # StaticMedia(
-    #     path="/usr/src/app/VVSPIN_BOT/photo_2023-05-15_10-18-24.png"
-    #     ),
+main_window = Window(
+    Format('{header}'),
+    # DynamicMedia("pic"),
     Column(
         Select(
             Format("{item[0]}"),
             id="menu",
             item_id_getter=operator.itemgetter(1),
-            items='option_action_data',
-            on_click=phone_number_reply
+            items='main_options',
+            on_click=main_window_reply
         ),
     ),
     # MessageInput(phone_number_reply, ContentType.CONTACT),
     parse_mode=ParseMode.HTML,
-    state=States.phone_number_state,
-    getter=phone_number_inline
+    state=States.main_menu_state,
+    getter=main_window_inline
 )
+
+
+
+register_window = Window(
+    parse_mode=ParseMode.HTML,
+    state=States.register_state,
+
+)
+
+
+
 
 # option_action_window = Window(
 #     Format("{title}"),

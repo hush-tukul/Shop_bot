@@ -1,7 +1,9 @@
 import logging
 
+from aiogram.enums import ContentType
 from aiogram.types import KeyboardButton, ReplyKeyboardMarkup
 from aiogram_dialog import DialogManager
+from aiogram_dialog.api.entities import MediaAttachment, MediaId
 from aiogram_dialog.utils import get_chat
 
 from tgbot.keyboards.states import States
@@ -12,8 +14,13 @@ async def register_inline(dialog_manager: DialogManager, **kwargs):
     phone_permission = 'Confirm phone number'
 
 
-async def phone_number_inline(dialog_manager: DialogManager, **kwargs):
-    option_action_data = [
+async def main_window_inline(dialog_manager: DialogManager, **kwargs):
+    header = 'Welcome to Winbot33!' \
+             '\nAgent-free, Exclusive & Direct HQ'\
+             '\nPlease select an option below :'
+    pic = 'AgACAgUAAxkBAAIBmmTH_Q9wDWVJw9E0_aIGEYDbiG26AAJ-tzEbMPpAViqBFy2ZJ2o5AQADAgADcwADLwQ'
+    image = MediaAttachment(ContentType.PHOTO, file_id=MediaId(pic))
+    main_options = [
         ('\U0001F4B0 REGISTER & CLAIM FREE \U0001F4B0', 'reg'),
         ('\U0001F381 PROMOTION', 'prom'),
         ('\U0001F3E7 COMMISSION', 'com'),
@@ -24,10 +31,18 @@ async def phone_number_inline(dialog_manager: DialogManager, **kwargs):
 
     ]
     return {
-            "option_action_data": option_action_data,
+            'header': header,
+            'pic': image,
+            "main_options": main_options,
         }
 
 
+async def register_window_inline(dialog_manager: DialogManager, **kwargs):
+    header = 'Please tap on REGISTER Winbot33 & CLAIM FREE ANGPAO'
+
+    return {
+        'header': header
+    }
 
 
 # async def main_menu_inline(dialog_manager: DialogManager, **kwargs):
