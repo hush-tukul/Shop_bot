@@ -3,7 +3,8 @@ from aiogram.fsm.state import StatesGroup, State
 
 class States(StatesGroup):
     """FOR NEW USERS / ZERO WINDOW"""
-    register_state = State()
+    gate_state = State()
+    access_state = State()
 
 
     """FIRST WINDOW FOR REGULAR USERS"""

@@ -20,16 +20,34 @@ class Users(Base):
 
     user_id = Column(BigInteger, primary_key=True)
     user_tg_name = Column(String)
-    user_real_name = Column(String)
-    user_phone_number = Column(String)
+    user_key = Column(String)
+    access_key = Column(String)
+    user_balance = Column(BigInteger)
     registry_datetime = Column(DateTime)
 
 
+
     @classmethod
-    def add_user(cls, user_id, user_tg_name, user_real_name, user_phone_number, registry_datetime):
+    def add_user_key(cls, user_id, user_tg_name):
+        hash_object = hashlib.sha256(f"{user_id}{user_tg_name}".encode())
+        hash_digest = hash_object.hexdigest()
+        short_key = hash_digest[:8]
+        return short_key
+
+    @classmethod
+    def find_user_by_key(cls, access_key):
+        logging.info(access_key)
+        user = session.query(Users).filter_by(user_key=access_key).first()
+        if user is not None:
+            return [user.user_id, user.user_tg_name, user.user_key, user.registry_datetime]
+        else:
+            return None
+
+    @classmethod
+    def add_user(cls, user_id, user_tg_name, access_key, user_balance, registry_datetime):
         logging.info("Trying to save user.")
-        new_user = Users(user_id=user_id, user_tg_name=user_tg_name, user_real_name=user_real_name,
-                         user_phone_number=user_phone_number, registry_datetime=registry_datetime)
+        new_user = Users(user_id=user_id, user_tg_name=user_tg_name, user_key=cls.add_user_key(user_id, user_tg_name),
+                         access_key=access_key, user_balance=user_balance, registry_datetime=registry_datetime)
         session.add(new_user)
         session.commit()
         logging.info("User successfully saved!")
@@ -38,19 +56,30 @@ class Users(Base):
     def get_user(cls, user_id):
         user = session.query(Users).filter_by(user_id=user_id).first()
         if user is not None:
-            return [user.user_id, user.user_tg_name, user.user_real_name, user.user_phone_number, user.registry_datetime]
+            return [user.user_id, user.user_tg_name, user.user_key, user.access_key, user.user_balance, user.registry_datetime]
         else:
             return None
-    #
-    # @classmethod
-    # def update_user_lang(cls, user_id, new_lang):
-    #     user = session.query(Users).filter_by(user_id=user_id).first()
-    #     if user:
-    #         user.user_lang = new_lang
-    #         session.commit()
-    #         logging.info("User language updated successfully!")
-    #     else:
-    #         logging.warning("User not found.")
+
+    @classmethod
+    def update_access_key(cls, user_id, access_key):
+        user = session.query(Users).filter_by(user_id=user_id).first()
+        if user:
+            user.access_key = access_key
+            session.commit()
+            logging.info("User_key updated successfully!")
+        else:
+            logging.warning("User not found.")
+
+    @classmethod
+    def referral_bonus(cls, access_key):
+        referrer = session.query(Users).filter_by(user_key=access_key).first()
+        if referrer:
+            referral_bonus_points = 10
+            referrer.user_balance += referral_bonus_points
+            session.commit()
+            logging.info(f"Referral bonus of {referral_bonus_points} points added to user {referrer.user_id} balance.")
+        else:
+            logging.warning("Referrer not found.")
 
 
 

@@ -7,8 +7,8 @@ from aiogram_dialog.widgets.kbd import Row, Select, SwitchTo, Column
 from aiogram_dialog.widgets.media import StaticMedia, DynamicMedia
 from aiogram_dialog.widgets.text import Const, Format
 
-from tgbot.keyboards.inline import main_window_inline, register_window_inline
-from tgbot.keyboards.reply import main_window_reply
+from tgbot.keyboards.inline import gate_inline, access_inline, main_window_inline
+from tgbot.keyboards.reply import gate_reply, access_reply, main_menu_reply
 
 from tgbot.keyboards.states import States
 
@@ -20,18 +20,54 @@ from tgbot.keyboards.states import States
 
 
 
-main_window = Window(
-    Format('{header}'),
-    # DynamicMedia("pic"),
+
+gate_window = Window(
+    Format('{access_denied_info}'),
     Column(
         Select(
             Format("{item[0]}"),
-            id="menu",
+            id="gate",
             item_id_getter=operator.itemgetter(1),
-            items='main_options',
-            on_click=main_window_reply
+            items='access_button',
+            on_click=gate_reply
         ),
     ),
+    parse_mode=ParseMode.HTML,
+    state=States.gate_state,
+    getter=gate_inline
+)
+
+
+access_window = Window(
+    Format('{header}'),
+    MessageInput(access_reply, ContentType.TEXT),
+    parse_mode=ParseMode.HTML,
+    state=States.access_state,
+    getter=access_inline
+)
+
+
+main_window = Window(
+    Format("{title}"),
+    Row(
+        Select(
+            Format("{item[0]}"),
+            id="menu1",
+            item_id_getter=operator.itemgetter(1),
+            items='main_menu_1',
+            on_click=main_menu_reply
+        ),
+    ),
+    Row(
+        Select(
+            Format("{item[0]}"),
+            id="menu2",
+            item_id_getter=operator.itemgetter(1),
+            items='main_menu_2',
+            on_click=main_menu_reply
+        ),
+    ),
+
     # MessageInput(phone_number_reply, ContentType.CONTACT),
     parse_mode=ParseMode.HTML,
     state=States.main_menu_state,
@@ -40,11 +76,16 @@ main_window = Window(
 
 
 
-register_window = Window(
-    parse_mode=ParseMode.HTML,
-    state=States.register_state,
 
-)
+# DynamicMedia("pic"),
+#
+#
+#
+# register_window = Window(
+#     parse_mode=ParseMode.HTML,
+#     state=States.register_state,
+#
+# )
 
 
 

@@ -12,8 +12,7 @@ from tgbot.handlers.admin import admin_router
 from tgbot.handlers.echo import echo_router
 
 from tgbot.handlers.user import user_router
-
-from tgbot.keyboards.windows import main_window, register_window
+from tgbot.keyboards.windows import gate_window, access_window, main_window
 
 # from tgbot.keyboards.windows import choose_lang_window, main_menu_window, links_list_window, link_options_window, \
 #     option_action_window, del_link_window, add_link_window
@@ -49,8 +48,9 @@ async def main():
     bot = Bot(token=config.tg_bot.token, parse_mode="HTML")
     dp = Dispatcher(storage=storage)
     dialog = Dialog(
+        gate_window,
+        access_window,
         main_window,
-        register_window
 
         )
     for router in [

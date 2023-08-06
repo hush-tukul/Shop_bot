@@ -36,8 +36,8 @@ services:
 
   quart:
     build:
-      context: ../Payment_bot
-      dockerfile: ../Payment_bot/Dockerfile
+      context: ../Shop_bot
+      dockerfile: ../Shop_bot/Dockerfile
     command: hypercorn --bind 0.0.0.0:5000 app.py:app
     restart: unless-stopped
     ports:

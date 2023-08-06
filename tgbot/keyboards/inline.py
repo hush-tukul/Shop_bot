@@ -5,44 +5,112 @@ from aiogram.types import KeyboardButton, ReplyKeyboardMarkup
 from aiogram_dialog import DialogManager
 from aiogram_dialog.api.entities import MediaAttachment, MediaId
 from aiogram_dialog.utils import get_chat
+from environs import Env
 
+from db import Users
 from tgbot.keyboards.states import States
 
-""""""
-"""REGISTER"""
-async def register_inline(dialog_manager: DialogManager, **kwargs):
-    phone_permission = 'Confirm phone number'
+
+env = Env()
 
 
-async def main_window_inline(dialog_manager: DialogManager, **kwargs):
-    header = 'Welcome to Winbot33!' \
-             '\nAgent-free, Exclusive & Direct HQ'\
-             '\nPlease select an option below :'
-    pic = 'AgACAgUAAxkBAAIBmmTH_Q9wDWVJw9E0_aIGEYDbiG26AAJ-tzEbMPpAViqBFy2ZJ2o5AQADAgADcwADLwQ'
-    image = MediaAttachment(ContentType.PHOTO, file_id=MediaId(pic))
-    main_options = [
-        ('\U0001F4B0 REGISTER & CLAIM FREE \U0001F4B0', 'reg'),
-        ('\U0001F381 PROMOTION', 'prom'),
-        ('\U0001F3E7 COMMISSION', 'com'),
-        ('\U0001F4E5 DOWNLOAD', 'down'),
-        ('\U0001F4B0 TRANSACTION', 'tran'),
-        ('\U0001F527 SETTINGS', 'set'),
 
 
-    ]
+
+
+
+
+async def gate_inline(dialog_manager: DialogManager, **kwargs):
+    user_name = dialog_manager.start_data.get('user_name')
+    access_denied_info = f"Access denied for user {user_name}!\nPlease provide access code or use referral-link to access the bot: "
+    access_button = [
+            ('🔑 Access key', 'access'),
+        ]
     return {
-            'header': header,
-            'pic': image,
-            "main_options": main_options,
+            "access_denied_info": access_denied_info,
+            "access_button": access_button,
         }
 
 
-async def register_window_inline(dialog_manager: DialogManager, **kwargs):
-    header = 'Please tap on REGISTER Winbot33 & CLAIM FREE ANGPAO'
+async def access_inline(dialog_manager: DialogManager, **kwargs):
+    user_id = dialog_manager.start_data.get('user_id')
+    user_name = dialog_manager.start_data.get('user_name')
+    user_data = Users.get_user(user_id)
+    header = "Please provide access code below: "
 
     return {
-        'header': header
+        "header": header,
     }
+
+
+
+
+
+async def main_window_inline(dialog_manager: DialogManager, **kwargs):
+    user_id = dialog_manager.start_data.get('user_id')
+    user_name = dialog_manager.start_data.get('user_name')
+    user_data = Users.get_user(user_id)
+    title = "Main Menu"
+    main_menu = [('🛒 Market', 'access'), ('Feedback / Contact', 'contact'), ('Referral link / key', 'key'), ('Admin panel', 'admin_panel') if user_id in list(map(int, env.list("ADMINS"))) else None]
+
+    return {
+        "title": title,
+        "main_menu_1": main_menu[:2],
+        "main_menu_2": main_menu[2:] if main_menu[-1] else main_menu[2:3],
+
+    }
+
+
+
+
+
+
+
+
+# """"""
+# """REGISTER"""
+# async def register_inline(dialog_manager: DialogManager, **kwargs):
+#     phone_permission = 'Confirm phone number'
+#
+#
+# async def main_window_inline(dialog_manager: DialogManager, **kwargs):
+#     header = 'Welcome to Winbot33!' \
+#              '\nAgent-free, Exclusive & Direct HQ'\
+#              '\nPlease select an option below :'
+#     pic = 'AgACAgUAAxkBAAIBmmTH_Q9wDWVJw9E0_aIGEYDbiG26AAJ-tzEbMPpAViqBFy2ZJ2o5AQADAgADcwADLwQ'
+#     image = MediaAttachment(ContentType.PHOTO, file_id=MediaId(pic))
+#     main_options = [
+#         ('\U0001F4B0 REGISTER & CLAIM FREE \U0001F4B0', 'reg'),
+#     ]
+#     return {
+#             'header': header,
+#             'pic': image,
+#             "main_options": main_options,
+#         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# async def register_window_inline(dialog_manager: DialogManager, **kwargs):
+#     header = 'Please tap on REGISTER Winbot33 & CLAIM FREE ANGPAO'
+#
+#     return {
+#         'header': header
+#     }
 
 
 # async def main_menu_inline(dialog_manager: DialogManager, **kwargs):

@@ -15,37 +15,99 @@ from tgbot.keyboards.states import States
 # from db import Users, shorten_url, Reflink
 # from run import bot
 
-user_data_router = Router()
+# user_data_router = Router()
+
+# async def close_menu(c: CallbackQuery, widget: Any, dialog_manager: DialogManager):
+#     await dialog_manager.done()
 
 
-@user_data_router.message(F.text == "Back")
-async def back_reply(m: Message, state: FSMContext, dialog_manager: DialogManager, bot: Bot):
-
-    message_id = dialog_manager.dialog_data.get('message_id')
-    await bot.delete_message(message_id)
-    await dialog_manager.switch_to(States.main_menu_state)
 
 
-async def main_window_reply(c: CallbackQuery, widget: Any, dialog_manager: DialogManager, menu_option: str):
-    # states_list = {
-    #     'reg': States.register_state
-    # }
+async def gate_reply(c: CallbackQuery, widget: Any, dialog_manager: DialogManager):
+    logging.info('You in gate_reply')
+    await dialog_manager.switch_to(States.access_state)
 
-    """Ask for phone version"""
-    kb_phone = [[
-        KeyboardButton(text="REGISTER Winbot33", request_contact=True)
-    ], [
-        KeyboardButton(text="Back")
-    ]]
-    markup_phone = ReplyKeyboardMarkup(keyboard=kb_phone, resize_keyboard=True,
-                                       input_field_placeholder="Send phone number")
 
-    await dialog_manager.switch_to(States.register_state)
-    message = await c.message.answer(text="Please tap on [🎁 REGISTER Winbot33 🎁] & CLAIM FREE ANGPAO\n🧧 🧧 🧧 🧧 🧧 🧧 🧧 🧧\n⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️",
-                           reply_markup=markup_phone)
-    dialog_manager.dialog_data.update(
-                message_id=message.message_id
-            )
+async def access_reply(m: Message, input: MessageInput, dialog_manager: DialogManager):
+    logging.info('You in access_reply')
+    user_id = dialog_manager.start_data.get('user_id')
+    user_name = dialog_manager.start_data.get('user_name')
+    key = m.text
+    user_key = Users.get_user(user_id)[2]
+    friend = Users.find_user_by_key(key)
+    if key.isalnum() and len(key) == 8:
+        if friend:
+            Users.update_access_key(user_id, key)
+            Users.referral_bonus(key)
+            await m.reply(f"Access granted! Congratulations!!! - {user_name}!"
+                          f"\nYou was recommended to Our Shop_bot by user - {friend[1]}"
+                          f"\nPlease find below Your referral link that You can share with Your friends to get 10 extra points!"
+                          f"\nhttps://t.me/Clstl_bot?start={user_key}", parse_mode="HTML")
+            await dialog_manager.switch_to(States.main_menu_state)
+        else:
+            await m.reply(f"Unfortunately We can`t find Your key in Our base. "
+                          f"Ask a friend for an up-to-date access key or referral link.", parse_mode="HTML")
+    else:
+        await m.reply(f"Your key contains letters or has an incorrect length!\nPlease provide correct access key.",
+                      parse_mode="HTML")
+
+
+
+
+async def main_menu_reply(c: CallbackQuery, widget: Any, dialog_manager: DialogManager, menu_option: str):
+    dialog_manager.dialog_data.update(menu_option=menu_option)
+
+
+
+
+
+
+
+
+
+# @user_data_router.message(F.text == "Back")
+# async def back_reply(m: Message, state: FSMContext, dialog_manager: DialogManager, bot: Bot):
+#
+#     message_id = dialog_manager.dialog_data.get('message_id')
+#     await bot.delete_message(message_id)
+#     await dialog_manager.switch_to(States.main_menu_state)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# async def main_window_reply(c: CallbackQuery, widget: Any, dialog_manager: DialogManager, menu_option: str):
+#     # states_list = {
+#     #     'reg': States.register_state
+#     # }
+#
+#     """Ask for phone version"""
+#     kb_phone = [[
+#         KeyboardButton(text="REGISTER Winbot33", request_contact=True)
+#     ], [
+#         KeyboardButton(text="Back")
+#     ]]
+#     markup_phone = ReplyKeyboardMarkup(keyboard=kb_phone, resize_keyboard=True,
+#                                        input_field_placeholder="Send phone number")
+#
+#     await dialog_manager.switch_to(States.register_state)
+#     message = await c.message.answer(text="Please tap on [🎁 REGISTER Winbot33 🎁] & CLAIM FREE ANGPAO\n🧧 🧧 🧧 🧧 🧧 🧧 🧧 🧧\n⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️",
+#                            reply_markup=markup_phone)
+#     dialog_manager.dialog_data.update(
+#                 message_id=message.message_id
+#             )
 
 
 
