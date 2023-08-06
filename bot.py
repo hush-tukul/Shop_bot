@@ -20,6 +20,7 @@ from tgbot.middlewares.config import ConfigMiddleware
 from tgbot.services import broadcaster
 from aiogram_dialog import Dialog, DialogRegistry
 
+
 logging.basicConfig(
         level=logging.INFO,
         format=u'%(filename)s:%(lineno)d #%(levelname)-8s [%(asctime)s] - %(name)s - %(message)s',

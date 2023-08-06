@@ -3,6 +3,7 @@ from typing import Any
 
 import requests
 from aiogram import Bot, Router, F
+from aiogram.filters import CommandObject
 from aiogram.fsm.context import FSMContext
 from aiogram.types import CallbackQuery, Message, KeyboardButton, ReplyKeyboardMarkup
 from aiogram_dialog import DialogManager
@@ -23,7 +24,7 @@ from tgbot.keyboards.states import States
 
 
 
-async def gate_reply(c: CallbackQuery, widget: Any, dialog_manager: DialogManager):
+async def gate_reply(c: CallbackQuery, widget: Any, dialog_manager: DialogManager, access_button:str):
     logging.info('You in gate_reply')
     await dialog_manager.switch_to(States.access_state)
 

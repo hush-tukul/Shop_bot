@@ -25,6 +25,7 @@ async def user_dl_start(m: Message, command: CommandObject, dialog_manager: Dial
     user_id = m.from_user.id
     user_name = m.from_user.username
     user_data = Users.get_user(user_id)
+    friend = Users.find_user_by_key(parameter)
     logging.info(user_data)
     dialog_data = {
         "reg_time": reg_time,
@@ -33,8 +34,7 @@ async def user_dl_start(m: Message, command: CommandObject, dialog_manager: Dial
         "access_key": user_data[3] if user_data else None,
         "user_balance": user_data[4] if user_data else 0,
     }
-    if parameter in Users.find_user_by_key(parameter):
-        friend = Users.find_user_by_key(parameter)
+    if friend:
         Users.referral_bonus(parameter)
         if user_data is None:
             Users.add_user(user_id, user_name, None, 0, reg_time)
@@ -54,11 +54,18 @@ async def user_dl_start(m: Message, command: CommandObject, dialog_manager: Dial
         if user_data is None:
             Users.add_user(user_id, user_name, None, 0, reg_time)
         #await m.reply(f"Access denied! Wrong access key - {parameter}!\nPlease provide correct key below or use correct referral link.", parse_mode="HTML")
-        await dialog_manager.start(
-            States.gate_state,
-            data=dialog_data,
-            mode=StartMode.RESET_STACK,
-        )
+            await dialog_manager.start(
+                States.gate_state,
+                data=dialog_data,
+                mode=StartMode.RESET_STACK,
+            )
+        else:
+            await dialog_manager.start(
+                States.gate_state,
+                data=dialog_data,
+                mode=StartMode.RESET_STACK,
+            )
+
     # await m.reply(f"{parameter}", parse_mode="HTML")
 
 
@@ -89,7 +96,12 @@ async def user_start(m: Message, dialog_manager: DialogManager):
             data=dialog_data,
             mode=StartMode.RESET_STACK,
         )
-
+    else:
+        await dialog_manager.start(
+            States.access_state,
+            data=dialog_data,
+            mode=StartMode.RESET_STACK,
+        )
 
 
 

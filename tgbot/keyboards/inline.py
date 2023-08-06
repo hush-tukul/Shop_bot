@@ -36,7 +36,7 @@ async def access_inline(dialog_manager: DialogManager, **kwargs):
     user_id = dialog_manager.start_data.get('user_id')
     user_name = dialog_manager.start_data.get('user_name')
     user_data = Users.get_user(user_id)
-    header = "Please provide access code below: "
+    header = "Please provide 8-digit access code below: "
 
     return {
         "header": header,
