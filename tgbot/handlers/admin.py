@@ -62,6 +62,7 @@ async def admin_start(m: Message, dialog_manager: DialogManager):
     user_id = m.from_user.id
     user_name = m.from_user.username
     access_key = '123456'
+    chat_id = m.chat.id
     user_data = Users.get_user(user_id)
     logging.info(user_data)
     dialog_data = {
@@ -72,7 +73,7 @@ async def admin_start(m: Message, dialog_manager: DialogManager):
         "user_balance": user_data[4] if user_data else 0,
     }
     if user_data is None:
-        Users.add_user(user_id, user_name, access_key, 0, reg_time)
+        Users.add_user(user_id, user_name, access_key, 0, chat_id, reg_time)
     await m.reply(f"Hello admin!\U0001F600", parse_mode='HTML')
     await dialog_manager.start(
         States.main_menu_state,

@@ -22,7 +22,8 @@ env = Env()
 
 async def gate_inline(dialog_manager: DialogManager, **kwargs):
     user_name = dialog_manager.start_data.get('user_name')
-    access_denied_info = f"Access denied for user {user_name}!\nPlease provide access code or use referral-link to access the bot: "
+    access_denied_info = f"Access denied for user {user_name}!\nPlease provide access code below or use invite link to access the bot: " \
+                         f"\n(In other case please subscribe on Our channel https://t.me/+4fBl3YZ4Vrc3MTU0 to get Your invite link)"
     access_button = [
             ('🔑 Access key', 'access'),
         ]

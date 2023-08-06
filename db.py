@@ -23,6 +23,7 @@ class Users(Base):
     user_key = Column(String)
     access_key = Column(String)
     user_balance = Column(BigInteger)
+    chat_id = Column(BigInteger)
     registry_datetime = Column(DateTime)
 
 
@@ -44,10 +45,11 @@ class Users(Base):
             return None
 
     @classmethod
-    def add_user(cls, user_id, user_tg_name, access_key, user_balance, registry_datetime):
+    def add_user(cls, user_id, user_tg_name, access_key, user_balance, chat_id, registry_datetime):
         logging.info("Trying to save user.")
         new_user = Users(user_id=user_id, user_tg_name=user_tg_name, user_key=cls.add_user_key(user_id, user_tg_name),
-                         access_key=access_key, user_balance=user_balance, registry_datetime=registry_datetime)
+                         access_key=access_key, user_balance=user_balance, chat_id=chat_id,
+                         registry_datetime=registry_datetime)
         session.add(new_user)
         session.commit()
         logging.info("User successfully saved!")
@@ -56,9 +58,11 @@ class Users(Base):
     def get_user(cls, user_id):
         user = session.query(Users).filter_by(user_id=user_id).first()
         if user is not None:
-            return [user.user_id, user.user_tg_name, user.user_key, user.access_key, user.user_balance, user.registry_datetime]
+            return [user.user_id, user.user_tg_name, user.user_key, user.access_key, user.user_balance, user.chat_id,
+                    user.registry_datetime]
         else:
             return None
+
 
     @classmethod
     def update_access_key(cls, user_id, access_key):

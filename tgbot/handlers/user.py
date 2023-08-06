@@ -2,15 +2,31 @@ import logging
 import time
 from datetime import datetime
 
-from aiogram import Router, F
-from aiogram.filters import CommandStart, Text, CommandObject
-from aiogram.types import Message, InlineQuery
+from aiogram import Router, F, Bot
+from aiogram.enums import ContentType, ChatType
+from aiogram.filters import CommandStart, CommandObject, ChatMemberUpdatedFilter, IS_NOT_MEMBER, IS_MEMBER
+from aiogram.types import Message, chat_member, ChatMemberUpdated
 from aiogram_dialog import DialogManager, StartMode
 
 from db import Users
 from tgbot.keyboards.states import States
 
 user_router = Router()
+
+@user_router.chat_member(ChatMemberUpdatedFilter(IS_MEMBER >> IS_NOT_MEMBER), F.chat.type == ChatType.CHANNEL)
+async def on_user_leave(event: ChatMemberUpdated):
+    user_id = event.from_user.id
+    logging.info(user_id)
+
+
+
+@user_router.chat_member(ChatMemberUpdatedFilter(IS_NOT_MEMBER >> IS_MEMBER), F.chat.type == ChatType.CHANNEL)
+async def on_user_join(event: ChatMemberUpdated, bot: Bot):
+    user_id = event.from_user.id
+    chat_id = Users.get_user(user_id)[5]
+    Users.update_access_key(user_id, 'be31fd64')
+    logging.info(user_id)
+    await bot.send_message(chat_id=chat_id, text=f"Access granted.\nPlease enter /start command to use Our Shop_bot.")
 
 
 
@@ -24,6 +40,7 @@ async def user_dl_start(m: Message, command: CommandObject, dialog_manager: Dial
     reg_time = datetime.now()
     user_id = m.from_user.id
     user_name = m.from_user.username
+    chat_id = m.chat.id
     user_data = Users.get_user(user_id)
     friend = Users.find_user_by_key(parameter)
     logging.info(user_data)
@@ -37,7 +54,7 @@ async def user_dl_start(m: Message, command: CommandObject, dialog_manager: Dial
     if friend:
         Users.referral_bonus(parameter)
         if user_data is None:
-            Users.add_user(user_id, user_name, None, 0, reg_time)
+            Users.add_user(user_id, user_name, None, 0, chat_id, reg_time)
         Users.update_access_key(user_id, parameter)
         user_key = Users.get_user(user_id)[2]
         await m.reply(f"Access granted! Congratulations!!! - {user_name}!"
@@ -52,7 +69,7 @@ async def user_dl_start(m: Message, command: CommandObject, dialog_manager: Dial
         )
     else:
         if user_data is None:
-            Users.add_user(user_id, user_name, None, 0, reg_time)
+            Users.add_user(user_id, user_name, None, 0, chat_id, reg_time)
         #await m.reply(f"Access denied! Wrong access key - {parameter}!\nPlease provide correct key below or use correct referral link.", parse_mode="HTML")
             await dialog_manager.start(
                 States.gate_state,
@@ -74,6 +91,7 @@ async def user_start(m: Message, dialog_manager: DialogManager):
     reg_time = datetime.now()
     user_id = m.from_user.id
     user_name = m.from_user.username
+    chat_id = m.chat.id
     user_data = Users.get_user(user_id)
     logging.info(user_data)
     dialog_data = {
@@ -84,7 +102,7 @@ async def user_start(m: Message, dialog_manager: DialogManager):
         "user_balance": user_data[4] if user_data else 0,
     }
     if user_data is None:
-        Users.add_user(user_id, user_name, None, 0, reg_time)
+        Users.add_user(user_id, user_name, None, 0, chat_id, reg_time)
         await dialog_manager.start(
             States.access_state,
             data=dialog_data,
@@ -105,8 +123,8 @@ async def user_start(m: Message, dialog_manager: DialogManager):
 
 
 
-
-
+# ChatMemberMember
+#ContentType
 
 
 # @user_router.message(CommandStart(deep_link=True))
