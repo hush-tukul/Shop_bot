@@ -11,7 +11,7 @@ class States(StatesGroup):
     main_menu_state = State()
 
     """SECOND WINDOW"""
-    menu_option_state = State()
+    admin_panel_state = State()
 
 
 

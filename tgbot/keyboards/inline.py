@@ -49,10 +49,11 @@ async def access_inline(dialog_manager: DialogManager, **kwargs):
 
 async def main_window_inline(dialog_manager: DialogManager, **kwargs):
     user_id = dialog_manager.start_data.get('user_id')
-    user_name = dialog_manager.start_data.get('user_name')
-    user_data = Users.get_user(user_id)
-    title = "Main Menu"
-    main_menu = [('🛒 Market', 'access'), ('Feedback / Contact', 'contact'), ('Referral link / key', 'key'), ('Admin panel', 'admin_panel') if user_id in list(map(int, env.list("ADMINS"))) else None]
+    title = "┏━━━━━ 🛍️ Main Menu 🛍️ ━━━━━┓"
+    main_menu = [
+        ('🛒 Market 🛒', 'access'), ('📝 Feedback / Contact 📝', 'contact'), ('🎁 Referral link / key 🎁', 'key'),
+                 ('🕹️Admin panel🕹️', 'admin_panel') if user_id in list(map(int, env.list("ADMINS"))) else None
+    ]
 
     return {
         "title": title,
@@ -60,6 +61,25 @@ async def main_window_inline(dialog_manager: DialogManager, **kwargs):
         "main_menu_2": main_menu[2:] if main_menu[-1] else main_menu[2:3],
 
     }
+
+
+async def admin_panel_inline(dialog_manager: DialogManager, **kwargs):
+    user_id = dialog_manager.start_data.get('user_id')
+    user_name = dialog_manager.start_data.get('user_name')
+    user_data = Users.get_user(user_id)
+    title = "🕹️Admin panel🕹️"
+    admin_buttons = [
+        ('➕ Add item ➕', 'add'), ('❌ Delete item ❌', 'delete'),
+        ('📊 User stats 📊', 'user_stats')
+    ]
+
+    return {
+        "title": title,
+        "admin_1": admin_buttons[:2],
+        "admin_2": admin_buttons[2:],
+    }
+
+
 
 
 

@@ -57,10 +57,16 @@ async def access_reply(m: Message, input: MessageInput, dialog_manager: DialogMa
 
 async def main_menu_reply(c: CallbackQuery, widget: Any, dialog_manager: DialogManager, menu_option: str):
     dialog_manager.dialog_data.update(menu_option=menu_option)
+    logging.info('You in main_menu_reply')
+    g = {
+        'admin_panel': States.admin_panel_state,
+
+    }
+    await dialog_manager.switch_to(g[menu_option])
 
 
-
-
+async def admin_panel_reply(c: CallbackQuery, widget: Any, dialog_manager: DialogManager, admin_option: str):
+    dialog_manager.dialog_data.update(admin_option=admin_option)
 
 
 

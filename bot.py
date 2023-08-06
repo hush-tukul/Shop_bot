@@ -12,7 +12,7 @@ from tgbot.handlers.admin import admin_router
 from tgbot.handlers.echo import echo_router
 
 from tgbot.handlers.user import user_router
-from tgbot.keyboards.windows import gate_window, access_window, main_window
+from tgbot.keyboards.windows import gate_window, access_window, main_window, admin_window
 
 # from tgbot.keyboards.windows import choose_lang_window, main_menu_window, links_list_window, link_options_window, \
 #     option_action_window, del_link_window, add_link_window
@@ -40,8 +40,6 @@ def register_global_middlewares(dp: Dispatcher, config):
 
 
 async def main():
-
-
     logger = logging.getLogger(__name__)
     logger.info("Starting bot!")
     config = load_config(".env")
@@ -52,6 +50,7 @@ async def main():
         gate_window,
         access_window,
         main_window,
+        admin_window
 
         )
     for router in [

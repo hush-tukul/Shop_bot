@@ -7,8 +7,8 @@ from aiogram_dialog.widgets.kbd import Row, Select, SwitchTo, Column
 from aiogram_dialog.widgets.media import StaticMedia, DynamicMedia
 from aiogram_dialog.widgets.text import Const, Format
 
-from tgbot.keyboards.inline import gate_inline, access_inline, main_window_inline
-from tgbot.keyboards.reply import gate_reply, access_reply, main_menu_reply
+from tgbot.keyboards.inline import gate_inline, access_inline, main_window_inline, admin_panel_inline
+from tgbot.keyboards.reply import gate_reply, access_reply, main_menu_reply, admin_panel_reply
 
 from tgbot.keyboards.states import States
 
@@ -67,13 +67,37 @@ main_window = Window(
             on_click=main_menu_reply
         ),
     ),
-
-    # MessageInput(phone_number_reply, ContentType.CONTACT),
     parse_mode=ParseMode.HTML,
     state=States.main_menu_state,
     getter=main_window_inline
 )
 
+
+admin_window = Window(
+    Format("{title}"),
+    Row(
+        Select(
+            Format("{item[0]}"),
+            id="admin1",
+            item_id_getter=operator.itemgetter(1),
+            items='admin_1',
+            on_click=admin_panel_reply
+        ),
+    ),
+    Row(
+        Select(
+            Format("{item[0]}"),
+            id="admin2",
+            item_id_getter=operator.itemgetter(1),
+            items='admin_2',
+            on_click=admin_panel_reply
+        ),
+    ),
+    SwitchTo(Const("Back"), id="Back", state=States.main_menu_state),
+    parse_mode=ParseMode.HTML,
+    state=States.admin_panel_state,
+    getter=admin_panel_inline
+)
 
 
 
