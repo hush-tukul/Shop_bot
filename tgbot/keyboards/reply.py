@@ -1,4 +1,5 @@
 import logging
+import re
 from typing import Any
 
 import requests
@@ -22,15 +23,17 @@ from tgbot.keyboards.states import States
 #     await dialog_manager.done()
 
 
-
+async def filter(input_str):
+    pattern = re.compile("^[a-zA-Z0-9 ]+$")
+    return pattern.match(input_str) is not None
 
 async def gate_reply(c: CallbackQuery, widget: Any, dialog_manager: DialogManager, access_button:str):
-    logging.info('You in gate_reply')
+    logging.info('You are in gate_reply')
     await dialog_manager.switch_to(States.access_state)
 
 
 async def access_reply(m: Message, input: MessageInput, dialog_manager: DialogManager):
-    logging.info('You in access_reply')
+    logging.info('You are in access_reply')
     user_id = dialog_manager.start_data.get('user_id')
     user_name = dialog_manager.start_data.get('user_name')
     key = m.text
@@ -57,7 +60,7 @@ async def access_reply(m: Message, input: MessageInput, dialog_manager: DialogMa
 
 async def main_menu_reply(c: CallbackQuery, widget: Any, dialog_manager: DialogManager, menu_option: str):
     dialog_manager.dialog_data.update(menu_option=menu_option)
-    logging.info('You in main_menu_reply')
+    logging.info('You are in main_menu_reply')
     g = {
         'admin_panel': States.admin_panel_state,
 
@@ -67,9 +70,74 @@ async def main_menu_reply(c: CallbackQuery, widget: Any, dialog_manager: DialogM
 
 async def admin_panel_reply(c: CallbackQuery, widget: Any, dialog_manager: DialogManager, admin_option: str):
     dialog_manager.dialog_data.update(admin_option=admin_option)
+    g = {
+        'add': States.add_item_state,
+        'delete': States.delete_item_state,
+        'user_stats': States.us_state
+
+    }
+    await dialog_manager.switch_to(g[admin_option])
 
 
 
+async def add_item_reply(m: Message, input: MessageInput, dialog_manager: DialogManager):
+    logging.info('You are in add_item_reply')
+    user_id = dialog_manager.start_data.get('user_id')
+    user_name = dialog_manager.start_data.get('user_name')
+    item_name = m.text
+    correct_item_name = await filter(item_name)
+
+    if item_name and correct_item_name:
+        dialog_manager.dialog_data.update(item_name=item_name)
+        await dialog_manager.switch_to(States.add_description_state)
+    else:
+        await m.reply(text="No no no, please type the name of the item, using only letters and digits. Thanks!",
+                      parse_mode="HTML")
+
+
+async def add_description_reply(m: Message, input: MessageInput, dialog_manager: DialogManager):
+    logging.info('You are in add_description_reply')
+    user_id = dialog_manager.start_data.get('user_id')
+    user_name = dialog_manager.start_data.get('user_name')
+    item_description = m.text
+    correct_item_name = await filter(item_description)
+
+    if item_description and correct_item_name:
+        dialog_manager.dialog_data.update(item_description=item_description)
+        await dialog_manager.switch_to(States.add_price_state)
+    else:
+        await m.reply(text="No no no, please type the description of the item, using only letters and digits. Thanks!",
+                      parse_mode="HTML")
+
+
+
+async def add_price_reply(m: Message, input: MessageInput, dialog_manager: DialogManager):
+    logging.info('You are in add_price_reply')
+    user_id = dialog_manager.start_data.get('user_id')
+    user_name = dialog_manager.start_data.get('user_name')
+    item_price = m.text
+    correct_item_name = await filter(item_price)
+    if item_price and correct_item_name:
+        dialog_manager.dialog_data.update(item_price=item_price)
+        await dialog_manager.switch_to(States.add_photo_state)
+    else:
+        await m.reply(text="No no no, please type the price of the item, using only letters and digits. Thanks!",
+                      parse_mode="HTML")
+
+
+async def add_photo_reply(m: Message, input: MessageInput, dialog_manager: DialogManager):
+    logging.info('You are in add_photo_reply')
+    user_id = dialog_manager.start_data.get('user_id')
+    user_name = dialog_manager.start_data.get('user_name')
+    item_price = m.photo["file_id"]
+    correct_item_name = await filter(item_price)
+
+    if item_price and correct_item_name:
+        dialog_manager.dialog_data.update(item_price=item_price)
+        await dialog_manager.switch_to(States.add_photo_state)
+    else:
+        await m.reply(text="No no no, please type the price of the item, using only letters and digits. Thanks!",
+                      parse_mode="HTML")
 
 
 # @user_data_router.message(F.text == "Back")

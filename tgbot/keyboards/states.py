@@ -13,12 +13,23 @@ class States(StatesGroup):
     """SECOND WINDOW"""
     admin_panel_state = State()
 
+    """THIRD WINDOW"""
 
+    add_item_state = State()
+    delete_item_state = State()
+    us_state = State()
 
+    """FORTH WINDOW"""
+    add_description_state = State()
 
+    """FIFTH WINDOW"""
+    add_price_state = State()
 
+    """SIXTH WINDOW"""
+    add_photo_state = State()
 
-
+    """SEVENTH WINDOW"""
+    add_item_confirmation_state = State()
 
 
 

@@ -7,8 +7,10 @@ from aiogram_dialog.widgets.kbd import Row, Select, SwitchTo, Column
 from aiogram_dialog.widgets.media import StaticMedia, DynamicMedia
 from aiogram_dialog.widgets.text import Const, Format
 
-from tgbot.keyboards.inline import gate_inline, access_inline, main_window_inline, admin_panel_inline
-from tgbot.keyboards.reply import gate_reply, access_reply, main_menu_reply, admin_panel_reply
+from tgbot.keyboards.inline import gate_inline, access_inline, main_window_inline, admin_panel_inline, add_item_inline, \
+    add_description_inline, add_price_inline, add_photo_inline, add_item_confirmation_inline
+from tgbot.keyboards.reply import gate_reply, access_reply, main_menu_reply, admin_panel_reply, add_item_reply, \
+    add_description_reply, add_price_reply, add_photo_reply
 
 from tgbot.keyboards.states import States
 
@@ -98,6 +100,131 @@ admin_window = Window(
     state=States.admin_panel_state,
     getter=admin_panel_inline
 )
+
+
+add_item_window = Window(
+    Format("{title}"),
+    Format("{condition}"),
+    MessageInput(add_item_reply, ContentType.TEXT),
+    SwitchTo(Const("Back"), id="Back", state=States.admin_panel_state),
+    parse_mode=ParseMode.HTML,
+    state=States.add_item_state,
+    getter=add_item_inline
+)
+
+
+
+
+add_description_window = Window(
+    Format("{title}"),
+    Format("{title_item}"),
+    Format("{condition}"),
+    MessageInput(add_description_reply, ContentType.TEXT),
+    SwitchTo(Const("Back"), id="Back", state=States.add_item_state),
+    parse_mode=ParseMode.HTML,
+    state=States.add_description_state,
+    getter=add_description_inline,
+)
+
+
+
+add_price_window = Window(
+    Format("{title}"),
+    Format("{title_item}"),
+    Format("{title_description}"),
+    Format("{condition}"),
+    MessageInput(add_price_reply, ContentType.TEXT),
+    SwitchTo(Const("Back"), id="Back", state=States.add_description_state),
+    parse_mode=ParseMode.HTML,
+    state=States.add_price_state,
+    getter=add_price_inline,
+)
+
+
+
+add_photo_window = Window(
+    Format("{title}"),
+    Format("{title_item}"),
+    Format("{title_description}"),
+    Format("{title_price}"),
+    Format("{condition}"),
+    MessageInput(add_photo_reply, ContentType.PHOTO),
+    SwitchTo(Const("Back"), id="Back", state=States.add_price_state),
+    parse_mode=ParseMode.HTML,
+    state=States.add_photo_state,
+    getter=add_photo_inline,
+)
+
+
+add_item_confirmation_window = Window(
+    Format("{title}"),
+    DynamicMedia("title_photo"),
+    Format("{title_item}"),
+    Format("{title_description}"),
+    Format("{title_price}"),
+    Format("{condition}"),
+    MessageInput(add_photo_reply, ContentType.PHOTO),
+    SwitchTo(Const("Back"), id="Back", state=States.add_photo_state),
+    parse_mode=ParseMode.HTML,
+    state=States.add_item_confirmation_state,
+    getter=add_item_confirmation_inline,
+)
+
+item_added_window = Window(
+    Format("{title}"),
+    DynamicMedia("title_photo"),
+    Format("{title_item}"),
+    Format("{title_description}"),
+    Format("{title_price}"),
+    Format("{condition}"),
+    MessageInput(add_photo_reply, ContentType.PHOTO),
+    SwitchTo(Const("Back"), id="Back", state=States.add_photo_state),
+    parse_mode=ParseMode.HTML,
+    state=States.add_item_confirmation_state,
+    getter=add_item_confirmation_inline,
+)
+
+
+delete_window = Window(
+    Format("{title}"),
+    Row(
+        Select(
+            Format("{item[0]}"),
+            id="delete",
+            item_id_getter=operator.itemgetter(1),
+            items='delete_item',
+            on_click=
+        ),
+    ),
+    SwitchTo(Const("Back"), id="Back", state=States.admin_panel_state),
+    parse_mode=ParseMode.HTML,
+    state=States.delete_item_state,
+    getter=admin_panel_inline
+)
+
+# us_window = Window(
+#     Format("{title}"),
+#     Row(
+#         Select(
+#             Format("{item[0]}"),
+#             id="add",
+#             item_id_getter=operator.itemgetter(1),
+#             items='add_item',
+#             on_click=
+#         ),
+#     ),
+#     SwitchTo(Const("Back"), id="Back", state=States.admin_panel_state),
+#     parse_mode=ParseMode.HTML,
+#     state=States.,
+#     getter=admin_panel_inline
+# )
+
+
+
+
+
+
+
 
 
 

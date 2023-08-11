@@ -10,7 +10,7 @@ from sqlalchemy import Column, String
 from sqlalchemy.orm import sessionmaker, declarative_base
 import hashlib
 
-
+logger = logging.getLogger(__name__)
 
 engine = create_engine('postgresql://postgres:123456@db:5432/postgres')
 Base = declarative_base()
@@ -37,16 +37,16 @@ class Users(Base):
 
     @classmethod
     def find_user_by_key(cls, access_key):
-        logging.info(access_key)
+        logger.info(access_key)
         user = session.query(Users).filter_by(user_key=access_key).first()
-        if user is not None:
+        if user:
             return [user.user_id, user.user_tg_name, user.user_key, user.registry_datetime]
         else:
             return None
 
     @classmethod
     def add_user(cls, user_id, user_tg_name, access_key, user_balance, chat_id, registry_datetime):
-        logging.info("Trying to save user.")
+        logger.info("Trying to save user.")
         new_user = Users(user_id=user_id, user_tg_name=user_tg_name, user_key=cls.add_user_key(user_id, user_tg_name),
                          access_key=access_key, user_balance=user_balance, chat_id=chat_id,
                          registry_datetime=registry_datetime)
@@ -57,7 +57,7 @@ class Users(Base):
     @classmethod
     def get_user(cls, user_id):
         user = session.query(Users).filter_by(user_id=user_id).first()
-        if user is not None:
+        if user:
             return [user.user_id, user.user_tg_name, user.user_key, user.access_key, user.user_balance, user.chat_id,
                     user.registry_datetime]
         else:
@@ -70,9 +70,9 @@ class Users(Base):
         if user:
             user.access_key = access_key
             session.commit()
-            logging.info("User_key updated successfully!")
+            logger.info("User_key updated successfully!")
         else:
-            logging.warning("User not found.")
+            logger.warning("User not found.")
 
     @classmethod
     def referral_bonus(cls, access_key):
@@ -81,9 +81,70 @@ class Users(Base):
             referral_bonus_points = 10
             referrer.user_balance += referral_bonus_points
             session.commit()
-            logging.info(f"Referral bonus of {referral_bonus_points} points added to user {referrer.user_id} balance.")
+            logger.info(f"Referral bonus of {referral_bonus_points} points added to user {referrer.user_id} balance.")
         else:
-            logging.warning("Referrer not found.")
+            logger.warning("Referrer not found.")
+
+
+
+
+
+
+
+class Items(Base):
+    __tablename__ = 'items'
+
+    item = Column(String, primary_key=True)
+    user_id = Column(String)
+    user_tg_name = Column(String)
+    item_details = Column(String)
+    item_price = Column(String)
+    item_quantity = Column(BigInteger)
+    registry_datetime = Column(DateTime)
+
+    @classmethod
+    def add_item(cls, item, user_id, user_tg_name, item_details, item_price, item_quantity, registry_datetime):
+        logger.info("Trying to save user.")
+        new_item = Users(item=item, user_id=user_id, user_tg_name=user_tg_name, item_details=item_details,
+                         item_price=item_price, item_quantity=item_quantity,
+                         registry_datetime=registry_datetime)
+        session.add(new_item)
+        session.commit()
+        logger.info("Item successfully saved!")
+
+    @classmethod
+    def get_item(cls, item):
+        item = session.query(Users).filter_by(item=item).first()
+        if item:
+            return [item.user_id, item.user_tg_name, item.item_details, item.item_price, item.item_quantity,
+                    item.registry_datetime]
+        else:
+            return None
+
+    @classmethod
+    def delete_item(cls, item):
+        logger.info("Trying to delete item.")
+        item_to_delete = session.query(Items).filter_by(item=item).first()
+
+        if item_to_delete:
+            session.delete(item_to_delete)
+            session.commit()
+            logger.info("Item successfully deleted!")
+        else:
+            logger.warning("Item not found.")
+            return None
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -79,9 +79,147 @@ async def admin_panel_inline(dialog_manager: DialogManager, **kwargs):
         "admin_2": admin_buttons[2:],
     }
 
+async def add_item_inline(dialog_manager: DialogManager, **kwargs):
+    user_id = dialog_manager.start_data.get('user_id')
+    user_name = dialog_manager.start_data.get('user_name')
+    user_data = Users.get_user(user_id)
+    title = "➕ Add item ➕"
+    condition = "Please enter item name with no special signs."
+
+    return {
+        "title": title,
+        "condition": condition,
+    }
 
 
 
+async def add_description_inline(dialog_manager: DialogManager, **kwargs):
+    user_id = dialog_manager.start_data.get('user_id')
+    user_name = dialog_manager.start_data.get('user_name')
+    item_name = dialog_manager.dialog_data.get('item_name')
+    user_data = Users.get_user(user_id)
+    title = "➕ Add item ➕"
+    title_item = f"Item name: {item_name}"
+    condition = "Good! Please enter some description for item with no special signs."
+
+    return {
+        "title": title,
+        "title_item": title_item,
+        "condition": condition,
+    }
+
+
+async def add_price_inline(dialog_manager: DialogManager, **kwargs):
+    user_id = dialog_manager.start_data.get('user_id')
+    user_name = dialog_manager.start_data.get('user_name')
+    item_name = dialog_manager.dialog_data.get('item_name')
+    item_description = dialog_manager.dialog_data.get('item_description')
+    user_data = Users.get_user(user_id)
+    title = "➕ Add item ➕"
+    title_item = f"Item name: {item_name}"
+    title_description = f"Item description: {item_description}"
+    condition = "Awesome!! Please enter the price of item with no special signs."
+
+    return {
+        "title": title,
+        "title_item": title_item,
+        "title_description": title_description,
+        "condition": condition,
+    }
+
+
+
+async def add_photo_inline(dialog_manager: DialogManager, **kwargs):
+    user_id = dialog_manager.start_data.get('user_id')
+    user_name = dialog_manager.start_data.get('user_name')
+    item_name = dialog_manager.dialog_data.get('item_name')
+    item_description = dialog_manager.dialog_data.get('item_description')
+    item_price = dialog_manager.dialog_data.get('item_price')
+    user_data = Users.get_user(user_id)
+    title = "➕ Add item ➕"
+    title_item = f"Item name: {item_name}"
+    title_description = f"Item description: {item_description}"
+    title_price = f"Item price: {item_price}"
+    condition = "Excellent! Please add a photo of item, so We could see it."
+
+    return {
+        "title": title,
+        "title_item": title_item,
+        "title_description": title_description,
+        "title_price": title_price,
+        "condition": condition,
+    }
+
+
+
+
+async def add_item_confirmation_inline(dialog_manager: DialogManager, **kwargs):
+    user_id = dialog_manager.start_data.get('user_id')
+    user_name = dialog_manager.start_data.get('user_name')
+    item_name = dialog_manager.dialog_data.get('item_name')
+    item_description = dialog_manager.dialog_data.get('item_description')
+    item_price = dialog_manager.dialog_data.get('item_price')
+    item_photo = dialog_manager.dialog_data.get('item_photo')
+    user_data = Users.get_user(user_id)
+    title = "➕ Add item ➕"
+    title_photo = MediaAttachment(ContentType.PHOTO, file_id=MediaId(item_photo))
+    title_item = f"Item name: {item_name}"
+    title_description = f"Item description: {item_description}"
+    title_price = f"Item price: {item_price}"
+    condition = "Good job! Please confirm that all data is correct: "
+    buttons = [
+        ('➕ Confirm item ➕', 'confirm'), ('❌ Cancel ❌', 'cancel'),
+        ('📊 User stats 📊', 'user_stats')
+    ]
+
+
+    return {
+        "title": title,
+        "title_photo": title_photo,
+        "title_item": title_item,
+        "title_description": title_description,
+        "title_price": title_price,
+        "condition": condition,
+    }
+
+
+
+async def item_added_inline(dialog_manager: DialogManager, **kwargs):
+    user_id = dialog_manager.start_data.get('user_id')
+    user_name = dialog_manager.start_data.get('user_name')
+    item_name = dialog_manager.dialog_data.get('item_name')
+    item_description = dialog_manager.dialog_data.get('item_description')
+    item_price = dialog_manager.dialog_data.get('item_price')
+    item_photo = dialog_manager.dialog_data.get('item_photo')
+    user_data = Users.get_user(user_id)
+    title = "➕ Add item ➕"
+    title_photo = MediaAttachment(ContentType.PHOTO, file_id=MediaId(item_photo))
+    title_item = f"Item name: {item_name}"
+    title_description = f"Item description: {item_description}"
+    title_price = f"Item price: {item_price}"
+    condition = "Excellent! Please add a photo of item, so We could see it."
+
+    return {
+        "title": title,
+        "title_photo": title_photo,
+        "title_item": title_item,
+        "title_description": title_description,
+        "title_price": title_price,
+        "condition": condition,
+    }
+
+
+# async def delete_item_inline(dialog_manager: DialogManager, **kwargs):
+#     user_id = dialog_manager.start_data.get('user_id')
+#     user_name = dialog_manager.start_data.get('user_name')
+#     user_data = Users.get_user(user_id)
+#     title = "➕ Add item ➕"
+#     description = "Please enter item name with no special signs."
+#
+#     return {
+#         "title": title,
+#         "description": description,
+#     }
 
 
 
