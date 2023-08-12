@@ -84,7 +84,7 @@ async def add_item_inline(dialog_manager: DialogManager, **kwargs):
     user_name = dialog_manager.start_data.get('user_name')
     user_data = Users.get_user(user_id)
     title = "➕ Add item ➕"
-    condition = "Please enter item name with no special signs."
+    condition = "\n\nPlease enter item name with no special signs."
 
     return {
         "title": title,
@@ -100,7 +100,7 @@ async def add_description_inline(dialog_manager: DialogManager, **kwargs):
     user_data = Users.get_user(user_id)
     title = "➕ Add item ➕"
     title_item = f"Item name: {item_name}"
-    condition = "Good! Please enter some description for item with no special signs."
+    condition = "\n\nGood! Please type some description for item with no special signs."
 
     return {
         "title": title,
@@ -118,12 +118,33 @@ async def add_price_inline(dialog_manager: DialogManager, **kwargs):
     title = "➕ Add item ➕"
     title_item = f"Item name: {item_name}"
     title_description = f"Item description: {item_description}"
-    condition = "Awesome!! Please enter the price of item with no special signs."
+    condition = "\n\nAwesome!! Please enter the price of item with no special signs."
 
     return {
         "title": title,
         "title_item": title_item,
         "title_description": title_description,
+        "condition": condition,
+    }
+
+async def add_quantity_inline(dialog_manager: DialogManager, **kwargs):
+    user_id = dialog_manager.start_data.get('user_id')
+    user_name = dialog_manager.start_data.get('user_name')
+    item_name = dialog_manager.dialog_data.get('item_name')
+    item_description = dialog_manager.dialog_data.get('item_description')
+    item_price = dialog_manager.dialog_data.get('item_price')
+    user_data = Users.get_user(user_id)
+    title = "➕ Add item ➕"
+    title_item = f"Item name: {item_name}"
+    title_description = f"Item description: {item_description}"
+    title_price = f"Item price: {item_price}"
+    condition = "\n\nAwesome!! Please enter the quantity of item with no special signs."
+
+    return {
+        "title": title,
+        "title_item": title_item,
+        "title_description": title_description,
+        "title_price": title_price,
         "condition": condition,
     }
 
@@ -135,18 +156,21 @@ async def add_photo_inline(dialog_manager: DialogManager, **kwargs):
     item_name = dialog_manager.dialog_data.get('item_name')
     item_description = dialog_manager.dialog_data.get('item_description')
     item_price = dialog_manager.dialog_data.get('item_price')
+    item_quantity = dialog_manager.dialog_data.get('item_quantity')
     user_data = Users.get_user(user_id)
     title = "➕ Add item ➕"
     title_item = f"Item name: {item_name}"
     title_description = f"Item description: {item_description}"
     title_price = f"Item price: {item_price}"
-    condition = "Excellent! Please add a photo of item, so We could see it."
+    title_quantity = f"Item quantity: {item_quantity}"
+    condition = "\n\nExcellent! Please add a photo of item, so We could see it."
 
     return {
         "title": title,
         "title_item": title_item,
         "title_description": title_description,
         "title_price": title_price,
+        "title_quantity": title_quantity,
         "condition": condition,
     }
 
@@ -168,8 +192,7 @@ async def add_item_confirmation_inline(dialog_manager: DialogManager, **kwargs):
     title_price = f"Item price: {item_price}"
     condition = "Good job! Please confirm that all data is correct: "
     buttons = [
-        ('➕ Confirm item ➕', 'confirm'), ('❌ Cancel ❌', 'cancel'),
-        ('📊 User stats 📊', 'user_stats')
+        ('👍 Confirm item', 'confirm'), ('🗑️ Cancel', 'cancel'),
     ]
 
 
@@ -180,6 +203,7 @@ async def add_item_confirmation_inline(dialog_manager: DialogManager, **kwargs):
         "title_description": title_description,
         "title_price": title_price,
         "condition": condition,
+        "buttons": buttons,
     }
 
 
@@ -197,7 +221,10 @@ async def item_added_inline(dialog_manager: DialogManager, **kwargs):
     title_item = f"Item name: {item_name}"
     title_description = f"Item description: {item_description}"
     title_price = f"Item price: {item_price}"
-    condition = "Excellent! Please add a photo of item, so We could see it."
+    condition = "Item was added successfully!"
+    buttons = [
+        ('To Admin Panel', 'admin_panel'),
+    ]
 
     return {
         "title": title,
@@ -206,6 +233,7 @@ async def item_added_inline(dialog_manager: DialogManager, **kwargs):
         "title_description": title_description,
         "title_price": title_price,
         "condition": condition,
+        "buttons": buttons,
     }
 
 

@@ -6,6 +6,7 @@ from aiogram import Bot, Dispatcher
 from aiogram.fsm.storage.memory import MemoryStorage
 
 from aiogram.types import BotCommand
+from aiogram_dialog import Dialog, setup_dialogs
 
 from tgbot.config import load_config
 from tgbot.handlers.admin import admin_router
@@ -13,13 +14,14 @@ from tgbot.handlers.echo import echo_router
 
 from tgbot.handlers.user import user_router
 from tgbot.keyboards.windows import gate_window, access_window, main_window, admin_window, add_item_window, \
-    add_description_window, add_price_window, add_photo_window
+    add_description_window, add_price_window, add_photo_window, add_item_confirmation_window, item_added_window, \
+    add_quantity_window
 
 # from tgbot.keyboards.windows import choose_lang_window, main_menu_window, links_list_window, link_options_window, \
 #     option_action_window, del_link_window, add_link_window
 from tgbot.middlewares.config import ConfigMiddleware
 from tgbot.services import broadcaster
-from aiogram_dialog import Dialog, DialogRegistry
+
 
 
 logging.basicConfig(
@@ -55,20 +57,19 @@ async def main():
         add_item_window,
         add_description_window,
         add_price_window,
+        add_quantity_window,
         add_photo_window,
-
-
+        add_item_confirmation_window,
+        item_added_window,
         )
-    for router in [
+    routers = [
         admin_router,
         user_router,
         echo_router,
-    ]:
-        dp.include_router(router)
+    ]
 
-    registry = DialogRegistry(dp)
-    registry.register(dialog)
-    registry.setup_dp(dp)
+    dp.include_routers(*routers, dialog)
+    setup_dialogs(dp)
     register_global_middlewares(dp, config)
     await bot.delete_webhook(drop_pending_updates=True)
     await on_startup(bot, config.tg_bot.admin_ids)

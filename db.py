@@ -100,13 +100,15 @@ class Items(Base):
     item_details = Column(String)
     item_price = Column(String)
     item_quantity = Column(BigInteger)
+    item_photo = Column(String)
     registry_datetime = Column(DateTime)
 
     @classmethod
-    def add_item(cls, item, user_id, user_tg_name, item_details, item_price, item_quantity, registry_datetime):
-        logger.info("Trying to save user.")
-        new_item = Users(item=item, user_id=user_id, user_tg_name=user_tg_name, item_details=item_details,
-                         item_price=item_price, item_quantity=item_quantity,
+    def add_item(cls, item, user_id, user_tg_name, item_details, item_price, item_quantity, item_photo, registry_datetime):
+        logger.info("Trying to save item.")
+
+        new_item = Items(item=item, user_id=user_id, user_tg_name=user_tg_name, item_details=item_details,
+                         item_price=item_price, item_quantity=item_quantity, item_photo=item_photo,
                          registry_datetime=registry_datetime)
         session.add(new_item)
         session.commit()
@@ -114,10 +116,10 @@ class Items(Base):
 
     @classmethod
     def get_item(cls, item):
-        item = session.query(Users).filter_by(item=item).first()
-        if item:
-            return [item.user_id, item.user_tg_name, item.item_details, item.item_price, item.item_quantity,
-                    item.registry_datetime]
+        item_data = session.query(Items).filter_by(item=item).first()
+        if item_data:
+            return [item_data.item, item_data.user_id, item_data.user_tg_name, item_data.item_details, item_data.item_price, item_data.item_quantity,
+                    item_data.registry_datetime]
         else:
             return None
 

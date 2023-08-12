@@ -8,9 +8,11 @@ from aiogram_dialog.widgets.media import StaticMedia, DynamicMedia
 from aiogram_dialog.widgets.text import Const, Format
 
 from tgbot.keyboards.inline import gate_inline, access_inline, main_window_inline, admin_panel_inline, add_item_inline, \
-    add_description_inline, add_price_inline, add_photo_inline, add_item_confirmation_inline
+    add_description_inline, add_price_inline, add_photo_inline, add_item_confirmation_inline, item_added_inline, \
+    add_quantity_inline
 from tgbot.keyboards.reply import gate_reply, access_reply, main_menu_reply, admin_panel_reply, add_item_reply, \
-    add_description_reply, add_price_reply, add_photo_reply
+    add_description_reply, add_price_reply, add_photo_reply, item_added_reply, add_item_confirmation_reply, \
+    add_quantity_reply
 
 from tgbot.keyboards.states import States
 
@@ -140,16 +142,28 @@ add_price_window = Window(
     getter=add_price_inline,
 )
 
-
+add_quantity_window = Window(
+    Format("{title}"),
+    Format("{title_item}"),
+    Format("{title_description}"),
+    Format("{title_price}"),
+    Format("{condition}"),
+    MessageInput(add_quantity_reply, ContentType.TEXT),
+    SwitchTo(Const("Back"), id="Back", state=States.add_price_state),
+    parse_mode=ParseMode.HTML,
+    state=States.add_quantity_state,
+    getter=add_quantity_inline,
+)
 
 add_photo_window = Window(
     Format("{title}"),
     Format("{title_item}"),
     Format("{title_description}"),
     Format("{title_price}"),
+    Format("{title_quantity}"),
     Format("{condition}"),
     MessageInput(add_photo_reply, ContentType.PHOTO),
-    SwitchTo(Const("Back"), id="Back", state=States.add_price_state),
+    SwitchTo(Const("Back"), id="Back", state=States.add_quantity_state),
     parse_mode=ParseMode.HTML,
     state=States.add_photo_state,
     getter=add_photo_inline,
@@ -164,6 +178,15 @@ add_item_confirmation_window = Window(
     Format("{title_price}"),
     Format("{condition}"),
     MessageInput(add_photo_reply, ContentType.PHOTO),
+    Row(
+        Select(
+            Format("{item[0]}"),
+            id="buttons",
+            item_id_getter=operator.itemgetter(1),
+            items='buttons',
+            on_click=add_item_confirmation_reply
+        ),
+    ),
     SwitchTo(Const("Back"), id="Back", state=States.add_photo_state),
     parse_mode=ParseMode.HTML,
     state=States.add_item_confirmation_state,
@@ -177,30 +200,38 @@ item_added_window = Window(
     Format("{title_description}"),
     Format("{title_price}"),
     Format("{condition}"),
-    MessageInput(add_photo_reply, ContentType.PHOTO),
-    SwitchTo(Const("Back"), id="Back", state=States.add_photo_state),
-    parse_mode=ParseMode.HTML,
-    state=States.add_item_confirmation_state,
-    getter=add_item_confirmation_inline,
-)
-
-
-delete_window = Window(
-    Format("{title}"),
     Row(
         Select(
             Format("{item[0]}"),
-            id="delete",
+            id="buttons",
             item_id_getter=operator.itemgetter(1),
-            items='delete_item',
-            on_click=
+            items='buttons',
+            on_click=item_added_reply
         ),
     ),
-    SwitchTo(Const("Back"), id="Back", state=States.admin_panel_state),
+
     parse_mode=ParseMode.HTML,
-    state=States.delete_item_state,
-    getter=admin_panel_inline
+    state=States.item_added_state,
+    getter=item_added_inline,
 )
+
+
+# delete_window = Window(
+#     Format("{title}"),
+#     Row(
+#         Select(
+#             Format("{item[0]}"),
+#             id="delete",
+#             item_id_getter=operator.itemgetter(1),
+#             items='delete_item',
+#             on_click=
+#         ),
+#     ),
+#     SwitchTo(Const("Back"), id="Back", state=States.admin_panel_state),
+#     parse_mode=ParseMode.HTML,
+#     state=States.delete_item_state,
+#     getter=admin_panel_inline
+# )
 
 # us_window = Window(
 #     Format("{title}"),

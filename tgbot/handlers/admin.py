@@ -2,8 +2,8 @@ import logging
 from datetime import datetime
 
 from aiogram import Router
-from aiogram.filters import CommandStart, Text, CommandObject
-from aiogram.types import Message, KeyboardButton, ReplyKeyboardMarkup, CallbackQuery, InlineQuery
+from aiogram.filters import CommandStart
+from aiogram.types import Message
 from aiogram_dialog import DialogManager, StartMode
 
 from db import Users

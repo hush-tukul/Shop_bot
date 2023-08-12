@@ -1,11 +1,8 @@
-aiogram==3.0.0b7
+aiogram==3.0.0b9
 environs~=9.0
 redis
 betterlogging
-instagrapi>=1.17.6
-Pillow>=9.4.0
-imap_tools>=1.0.0
-aiogram-dialog==2.0.0b17
+aiogram-dialog==2.0.0b21
 quart==0.18.4
 sqlalchemy>=1.4.47
 psycopg2>=2.9.5

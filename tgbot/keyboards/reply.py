@@ -1,21 +1,21 @@
+
 import logging
 import re
+from datetime import datetime
 from typing import Any
 
-import requests
-from aiogram import Bot, Router, F
-from aiogram.filters import CommandObject
-from aiogram.fsm.context import FSMContext
-from aiogram.types import CallbackQuery, Message, KeyboardButton, ReplyKeyboardMarkup
+
+
+from aiogram.types import CallbackQuery, Message
 from aiogram_dialog import DialogManager
 from aiogram_dialog.widgets.input import MessageInput
 
-from db import Users
+
+from db import Users, Items
 from tgbot.keyboards.states import States
 
+logger = logging.getLogger(__name__)
 
-# from db import Users, shorten_url, Reflink
-# from run import bot
 
 # user_data_router = Router()
 
@@ -23,9 +23,37 @@ from tgbot.keyboards.states import States
 #     await dialog_manager.done()
 
 
-async def filter(input_str):
-    pattern = re.compile("^[a-zA-Z0-9 ]+$")
-    return pattern.match(input_str) is not None
+
+async def filter_float(input_str):
+    pattern_comma = re.compile(r"^\d+(\,\d+)?$")
+    pattern_dot = re.compile(r"^\d+(\.\d+)?$")
+
+    if pattern_comma.match(input_str):
+        float_str = input_str.replace(',', '.')
+        try:
+            result = float(float_str)
+            return result
+        except ValueError:
+            return None
+
+    elif pattern_dot.match(input_str):
+        try:
+            result = float(input_str)
+            return result
+        except ValueError:
+            return None
+    else:
+        return None
+
+async def filter_int(input_str):
+    try:
+        check = int(input_str)
+        return check
+    except ValueError as e:
+        logger.error(e)
+        return None
+
+
 
 async def gate_reply(c: CallbackQuery, widget: Any, dialog_manager: DialogManager, access_button:str):
     logging.info('You are in gate_reply')
@@ -33,7 +61,7 @@ async def gate_reply(c: CallbackQuery, widget: Any, dialog_manager: DialogManage
 
 
 async def access_reply(m: Message, input: MessageInput, dialog_manager: DialogManager):
-    logging.info('You are in access_reply')
+    logger.info('You are in access_reply')
     user_id = dialog_manager.start_data.get('user_id')
     user_name = dialog_manager.start_data.get('user_name')
     key = m.text
@@ -60,7 +88,7 @@ async def access_reply(m: Message, input: MessageInput, dialog_manager: DialogMa
 
 async def main_menu_reply(c: CallbackQuery, widget: Any, dialog_manager: DialogManager, menu_option: str):
     dialog_manager.dialog_data.update(menu_option=menu_option)
-    logging.info('You are in main_menu_reply')
+    logger.info('You are in main_menu_reply')
     g = {
         'admin_panel': States.admin_panel_state,
 
@@ -81,63 +109,113 @@ async def admin_panel_reply(c: CallbackQuery, widget: Any, dialog_manager: Dialo
 
 
 async def add_item_reply(m: Message, input: MessageInput, dialog_manager: DialogManager):
-    logging.info('You are in add_item_reply')
+    logger.info('You are in add_item_reply')
     user_id = dialog_manager.start_data.get('user_id')
     user_name = dialog_manager.start_data.get('user_name')
     item_name = m.text
-    correct_item_name = await filter(item_name)
-
-    if item_name and correct_item_name:
+    logger.info(item_name)
+    if 15 < len(item_name) < 100:
         dialog_manager.dialog_data.update(item_name=item_name)
         await dialog_manager.switch_to(States.add_description_state)
     else:
-        await m.reply(text="No no no, please type the name of the item, using only letters and digits. Thanks!",
+        await m.reply(text="Please provide the name of the item using only letters and digits, "
+                           "and make sure it's not empty and doesn't exceed 100 characters.\n Thanks!",
                       parse_mode="HTML")
 
 
 async def add_description_reply(m: Message, input: MessageInput, dialog_manager: DialogManager):
-    logging.info('You are in add_description_reply')
+    logger.info('You are in add_description_reply')
     user_id = dialog_manager.start_data.get('user_id')
     user_name = dialog_manager.start_data.get('user_name')
     item_description = m.text
-    correct_item_name = await filter(item_description)
-
-    if item_description and correct_item_name:
+    if 50 < len(item_description) < 300:
         dialog_manager.dialog_data.update(item_description=item_description)
         await dialog_manager.switch_to(States.add_price_state)
     else:
-        await m.reply(text="No no no, please type the description of the item, using only letters and digits. Thanks!",
+        await m.reply(text="Please provide a description of the item using only letters and digits, "
+                           "ensuring it falls within the character limit of 50 to 300 characters.\nThanks!",
                       parse_mode="HTML")
 
 
 
 async def add_price_reply(m: Message, input: MessageInput, dialog_manager: DialogManager):
-    logging.info('You are in add_price_reply')
+    logger.info('You are in add_price_reply')
     user_id = dialog_manager.start_data.get('user_id')
     user_name = dialog_manager.start_data.get('user_name')
     item_price = m.text
-    correct_item_name = await filter(item_price)
-    if item_price and correct_item_name:
+    correct_price_format = await filter_float(item_price)
+    if item_price and correct_price_format:
         dialog_manager.dialog_data.update(item_price=item_price)
+        await dialog_manager.switch_to(States.add_quantity_state)
+    else:
+        await m.reply(text="No no no, please type the price of the item, using format '0.0'. Thanks!",
+                      parse_mode="HTML")
+
+
+
+async def add_quantity_reply(m: Message, input: MessageInput, dialog_manager: DialogManager):
+    logger.info('You are in add_price_reply')
+    user_id = dialog_manager.start_data.get('user_id')
+    user_name = dialog_manager.start_data.get('user_name')
+    item_quantity = m.text
+    correct_quantity_format = await filter_int(item_quantity)
+    if item_quantity and correct_quantity_format:
+        dialog_manager.dialog_data.update(item_quantity=correct_quantity_format)
         await dialog_manager.switch_to(States.add_photo_state)
     else:
-        await m.reply(text="No no no, please type the price of the item, using only letters and digits. Thanks!",
+        await m.reply(text="No no no, please type the quantity of the item, using format '123'. Thanks!",
                       parse_mode="HTML")
+
 
 
 async def add_photo_reply(m: Message, input: MessageInput, dialog_manager: DialogManager):
-    logging.info('You are in add_photo_reply')
+    logger.info('You are in add_photo_reply')
     user_id = dialog_manager.start_data.get('user_id')
     user_name = dialog_manager.start_data.get('user_name')
-    item_price = m.photo["file_id"]
-    correct_item_name = await filter(item_price)
-
-    if item_price and correct_item_name:
-        dialog_manager.dialog_data.update(item_price=item_price)
-        await dialog_manager.switch_to(States.add_photo_state)
+    item_photo = m.photo[0].file_id
+    logger.info(item_photo)
+    if item_photo:
+        dialog_manager.dialog_data.update(item_photo=item_photo)
+        await dialog_manager.switch_to(States.add_item_confirmation_state)
     else:
-        await m.reply(text="No no no, please type the price of the item, using only letters and digits. Thanks!",
+        await m.reply(text="Please upload correct photo, using one of the formats -> JPEG or PNG."
+                           "\nPlease refrain from uploading files larger than 20 mb, "
+                           "as it may affect the performance and usability of the bot. Thanks!",
                       parse_mode="HTML")
+
+
+
+async def add_item_confirmation_reply(c: CallbackQuery, widget: Any, dialog_manager: DialogManager, button: str):
+    logger.info("You are in add_item_confirmation_reply")
+    item_name = dialog_manager.dialog_data.get('item_name')
+    user_id = dialog_manager.start_data.get('user_id')
+    user_name = dialog_manager.start_data.get('user_name')
+    item_description = dialog_manager.dialog_data.get('item_description')
+    item_price = dialog_manager.dialog_data.get('item_price')
+    item_photo = dialog_manager.dialog_data.get('item_photo')
+    item_quantity = dialog_manager.dialog_data.get('item_quantity')
+    registry_datetime = datetime.now()
+    dialog_manager.dialog_data.update(button=button)
+    Items.add_item(item_name, user_id, user_name, item_description, item_price, item_quantity, item_photo, registry_datetime)
+    g = {
+        'confirm': States.item_added_state,
+        'cancel': States.admin_panel_state,
+    }
+    await dialog_manager.switch_to(g[button])
+
+async def item_added_reply(c: CallbackQuery, widget: Any, dialog_manager: DialogManager, button: str):
+    logger.info("You are in item_added_reply")
+
+
+    g = {
+        'admin_panel': States.admin_panel_state,
+    }
+    await dialog_manager.switch_to(g[button])
+
+
+
+
+
 
 
 # @user_data_router.message(F.text == "Back")

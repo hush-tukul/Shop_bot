@@ -26,10 +26,14 @@ class States(StatesGroup):
     add_price_state = State()
 
     """SIXTH WINDOW"""
-    add_photo_state = State()
+    add_quantity_state = State()
 
     """SEVENTH WINDOW"""
+    add_photo_state = State()
+
+    """EIGHTH WINDOW"""
     add_item_confirmation_state = State()
+    item_added_state = State()
 
 
 
