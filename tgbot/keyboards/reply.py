@@ -2,14 +2,12 @@
 import logging
 import re
 from datetime import datetime
+from io import BytesIO
 from typing import Any
 
-
-
-from aiogram.types import CallbackQuery, Message
+from aiogram.types import CallbackQuery, Message, BufferedInputFile
 from aiogram_dialog import DialogManager
 from aiogram_dialog.widgets.input import MessageInput
-
 
 from db import Users, Items
 from tgbot.keyboards.states import States
@@ -170,10 +168,16 @@ async def add_photo_reply(m: Message, input: MessageInput, dialog_manager: Dialo
     logger.info('You are in add_photo_reply')
     user_id = dialog_manager.start_data.get('user_id')
     user_name = dialog_manager.start_data.get('user_name')
-    item_photo = m.photo[0].file_id
-    logger.info(item_photo)
+    item_photo = m.photo[-1].file_id
+    save_to_io = BytesIO()
+    await m.bot.download(item_photo, destination=save_to_io)
+    input_file_p = BufferedInputFile(save_to_io.getvalue(), filename=f"{item_photo}")
+    r = await m.bot.send_photo(chat_id=-1001911085133, photo=input_file_p, caption="Test")
+    logger.info(r.get_url())
+
     if item_photo:
         dialog_manager.dialog_data.update(item_photo=item_photo)
+        dialog_manager.dialog_data.update(photo_url=r.get_url())
         await dialog_manager.switch_to(States.add_item_confirmation_state)
     else:
         await m.reply(text="Please upload correct photo, using one of the formats -> JPEG or PNG."
@@ -192,9 +196,10 @@ async def add_item_confirmation_reply(c: CallbackQuery, widget: Any, dialog_mana
     item_price = dialog_manager.dialog_data.get('item_price')
     item_photo = dialog_manager.dialog_data.get('item_photo')
     item_quantity = dialog_manager.dialog_data.get('item_quantity')
+    photo_url = dialog_manager.dialog_data.get('photo_url')
     registry_datetime = datetime.now()
     dialog_manager.dialog_data.update(button=button)
-    Items.add_item(item_name, user_id, user_name, item_description, item_price, item_quantity, item_photo, registry_datetime)
+    Items.add_item(item_name, photo_url, user_id, user_name, item_description, item_price, item_quantity, item_photo, registry_datetime)
     g = {
         'confirm': States.item_added_state,
         'cancel': States.admin_panel_state,

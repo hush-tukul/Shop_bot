@@ -14,12 +14,23 @@ from aiogram_dialog import DialogManager, StartMode
 from db import Users, Items
 from tgbot.keyboards.states import States
 
+logger = logging.getLogger(__name__)
+
+
 user_router = Router()
+
+
+
+
+
+
+
 
 @user_router.chat_member(ChatMemberUpdatedFilter(IS_MEMBER >> IS_NOT_MEMBER), F.chat.type == ChatType.CHANNEL)
 async def on_user_leave(event: ChatMemberUpdated):
     user_id = event.from_user.id
-    logging.info(user_id)
+    logger.info(event.chat.id)
+    #logging.info(user_id)
 
 
 
@@ -28,7 +39,8 @@ async def on_user_join(event: ChatMemberUpdated, bot: Bot):
     user_id = event.from_user.id
     chat_id = Users.get_user(user_id)[5]
     Users.update_access_key(user_id, 'be31fd64')
-    logging.info(user_id)
+    logger.info(user_id)
+    logger.info(event.chat.id)
     await bot.send_message(chat_id=chat_id, text=f"Access granted.\nPlease enter /start command to use Our Shop_bot.")
 
 
@@ -39,7 +51,7 @@ async def on_user_join(event: ChatMemberUpdated, bot: Bot):
 @user_router.message(CommandStart(deep_link=True))
 async def user_dl_start(m: Message, command: CommandObject, dialog_manager: DialogManager):
     parameter = command.args
-    logging.info(parameter)
+    logger.info(parameter)
     reg_time = datetime.now()
     user_id = m.from_user.id
     user_name = m.from_user.username
@@ -96,7 +108,7 @@ async def user_start(m: Message, dialog_manager: DialogManager):
     user_name = m.from_user.username
     chat_id = m.chat.id
     user_data = Users.get_user(user_id)
-    logging.info(user_data)
+    logger.info(user_data)
     dialog_data = {
         "reg_time": reg_time,
         "user_id": user_id,
@@ -180,6 +192,18 @@ async def some_query(query: InlineQuery):
         ))
 
     await query.answer(results, is_personal=True, cache_time=5)
+
+
+
+# @user_router.channel_post()
+# async def photo_link(m: Message):
+#     logger.info("You are in photo_link")
+#     logger.info(m.text)
+#     #dialog_manager.dialog_data.update(photo_url=m.get_url())
+#     logger.info("Photo link successfully saved!")
+
+
+
 
 
 # @user_router.inline_query()

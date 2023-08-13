@@ -95,6 +95,7 @@ class Items(Base):
     __tablename__ = 'items'
     id = Column(BigInteger, primary_key=True, autoincrement=True)
     item = Column(String)
+    item_url = Column(String)
     user_id = Column(String)
     user_tg_name = Column(String)
     item_details = Column(String)
@@ -104,10 +105,10 @@ class Items(Base):
     registry_datetime = Column(DateTime)
 
     @classmethod
-    def add_item(cls, item, user_id, user_tg_name, item_details, item_price, item_quantity, item_photo, registry_datetime):
+    def add_item(cls, item, item_url, user_id, user_tg_name, item_details, item_price, item_quantity, item_photo, registry_datetime):
         logger.info("Trying to save item.")
 
-        new_item = Items(item=item, user_id=user_id, user_tg_name=user_tg_name, item_details=item_details,
+        new_item = Items(item=item, item_url=item_url, user_id=user_id, user_tg_name=user_tg_name, item_details=item_details,
                          item_price=item_price, item_quantity=item_quantity, item_photo=item_photo,
                          registry_datetime=registry_datetime)
         session.add(new_item)
@@ -121,6 +122,7 @@ class Items(Base):
             item_list = [{
                 "id": str(i.id),
                 "item": i.item,
+                "item_url": i.item_url,
                 "user_id": i.user_id,
                 "user_tg_name": i.user_tg_name,
                 "item_details": i.item_details,

@@ -1,12 +1,16 @@
 import html
 import logging
 from datetime import datetime
+from io import BytesIO
 from typing import Optional
 
-from aiogram import Router, F
+from aiogram import Router, F, Bot
+from aiogram.enums import ContentType
 from aiogram.filters import CommandStart
-from aiogram.types import Message, InlineQuery, InlineQueryResultArticle, InputTextMessageContent
+from aiogram.types import Message, InlineQuery, InlineQueryResultArticle, InputTextMessageContent, \
+    InlineQueryResultCachedPhoto, BufferedInputFile
 from aiogram_dialog import DialogManager, StartMode
+from aiogram_dialog.api.entities import MediaAttachment, MediaId
 
 from db import Users, Items
 from tgbot.filters.admin import AdminFilter
@@ -21,8 +25,28 @@ admin_router.message.filter(AdminFilter())
 # @admin_router.inline_query()
 # async def admin_start(query: InlineQuery):
 
+# @admin_router.message(F.photo)
+# async def send_photo_to_channel(m: Message, bot: Bot):
+#     logger.info("You are in send_photo_to_channel")
+#     item_photo = m.photo[-1].file_id
+#     save_to_io = BytesIO()
+#     await bot.download(item_photo, destination=save_to_io)
+#     input_file_p = BufferedInputFile(save_to_io.getvalue(), filename=f"{item_photo}")
+#     r = await bot.send_photo(chat_id=-1001911085133, photo=input_file_p, caption="Test")
+#     logger.info(r.get_url())
+    #dialog_manager.dialog_data.update(photo_url=m.get_url())
 
 
+
+# @admin_router.channel_post()
+# async def photo_link(m: Message):
+#     logger.info("You are in photo_link")
+#     logger.info(m.text)
+#     #dialog_manager.dialog_data.update(photo_url=m.get_url())
+#     logger.info("Photo link successfully saved!")
+
+
+#@admin_router.chat_member
 
 # @admin_router.message(CommandStart(deep_link=True))
 # async def admin_dl_start(m: Message, command: CommandObject, dialog_manager: DialogManager):
@@ -62,6 +86,7 @@ admin_router.message.filter(AdminFilter())
 
 @admin_router.message(CommandStart())
 async def admin_start(m: Message, dialog_manager: DialogManager):
+
     reg_time = datetime.now()
     user_id = m.from_user.id
     user_name = m.from_user.username
@@ -86,8 +111,6 @@ async def admin_start(m: Message, dialog_manager: DialogManager):
     )
 
 
-
-
 @admin_router.inline_query(F.query == "")
 async def show_user_links(query: InlineQuery):
     results = []
@@ -96,8 +119,7 @@ async def show_user_links(query: InlineQuery):
 
 
     for item in Items.get_items():
-        results.append(
-            InlineQueryResultArticle(
+        results.append(InlineQueryResultArticle(
                 id=str(item["id"]),
                 title=item["item"],
                 input_message_content=InputTextMessageContent(
