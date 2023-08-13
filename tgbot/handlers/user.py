@@ -163,6 +163,24 @@ async def some_query(query: InlineQuery):
         )
         return
 
+    item_list = Items.get_items()
+    results = []
+
+    for item in item_list:
+        results.append(InlineQueryResultArticle(
+            id=item["id"],
+            title=item["item"],
+            description=item["item_details"],
+            input_message_content=InputTextMessageContent(
+                message_text="TEST",
+                parse_mode="HTML"
+            ),
+
+
+        ))
+
+    await query.answer(results, is_personal=True, cache_time=5)
+
 
 # @user_router.inline_query()
 # async def show_user_links(inline_query: InlineQuery):

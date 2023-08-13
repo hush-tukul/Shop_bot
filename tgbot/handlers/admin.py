@@ -12,6 +12,8 @@ from db import Users, Items
 from tgbot.filters.admin import AdminFilter
 from tgbot.keyboards.states import States
 
+logger = logging.getLogger(__name__)
+
 admin_router = Router()
 admin_router.message.filter(AdminFilter())
 
@@ -88,19 +90,29 @@ async def admin_start(m: Message, dialog_manager: DialogManager):
 
 @admin_router.inline_query(F.query == "")
 async def show_user_links(query: InlineQuery):
-    await query.answer(
-        results=[
+    results = []
+    logger.info(Items.get_items())
+
+
+
+    for item in Items.get_items():
+        results.append(
             InlineQueryResultArticle(
-                id="list",
-                title="Type something...",
+                id=str(item["id"]),
+                title=item["item"],
                 input_message_content=InputTextMessageContent(
                     message_text="You don`t need to press it",
 
-                )
-
+                ),
+                description=item["item_details"],
+                parse_mode="HTML",
             )
-        ],
-        cache_time=5
+        )
+
+    await query.answer(
+        results=results,
+        cache_time=5,
+        is_personal=True,
     )
 
 @admin_router.inline_query()
@@ -115,6 +127,23 @@ async def some_query(query: InlineQuery):
 
         )
         return
+
+    item_list = Items.get_items()
+    results = []
+
+    for item in item_list:
+        results.append(InlineQueryResultArticle(
+            id=item["id"],
+            title=item["item"],
+            description=item["item_details"],
+            input_message_content=InputTextMessageContent(
+                message_text="TEST",
+                parse_mode="HTML"
+            ),
+
+        ))
+
+    await query.answer(results, is_personal=True, cache_time=5)
 
 
 

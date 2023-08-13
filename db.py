@@ -113,38 +113,25 @@ class Items(Base):
         session.add(new_item)
         session.commit()
         logger.info("Item successfully saved!")
-
-    @classmethod
-    def get_item(cls, item):
-        item_data = session.query(Items).filter_by(item=item).first()
-        if item_data:
-            return {
-                "id": item_data.id,
-                "item": item_data.item,
-                "user_id": item_data.user_id,
-                "user_tg_name": item_data.user_tg_name,
-                "item_details": item_data.item_details,
-                "item_price": item_data.item_price,
-                "item_quantity": item_data.item_quantity,
-                "registry_datetime": item_data.registry_datetime
-            }
-        else:
-            return None
-
     @classmethod
     def get_items(cls):
+        logger.info("Trying to get all items")
         item_data = session.query(Items).all()
         if item_data:
-            return {
-                "id": item_data.id,
-                "item": item_data.item,
-                "user_id": item_data.user_id,
-                "user_tg_name": item_data.user_tg_name,
-                "item_details": item_data.item_details,
-                "item_price": item_data.item_price,
-                "item_quantity": item_data.item_quantity,
-                "registry_datetime": item_data.registry_datetime
-            }
+            item_list = [{
+                "id": str(i.id),
+                "item": i.item,
+                "user_id": i.user_id,
+                "user_tg_name": i.user_tg_name,
+                "item_details": i.item_details,
+                "item_price": i.item_price,
+                "item_quantity": i.item_quantity,
+                "item_photo": i.item_photo,
+                "registry_datetime": i.registry_datetime
+            } for i in item_data]
+
+            return item_list
+            logger.info("All items were extracted")
         else:
             return None
 
