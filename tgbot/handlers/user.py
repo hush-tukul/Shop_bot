@@ -1,14 +1,17 @@
+import html
 import logging
 import time
 from datetime import datetime
+from typing import Optional
 
 from aiogram import Router, F, Bot
 from aiogram.enums import ContentType, ChatType
 from aiogram.filters import CommandStart, CommandObject, ChatMemberUpdatedFilter, IS_NOT_MEMBER, IS_MEMBER
-from aiogram.types import Message, chat_member, ChatMemberUpdated
+from aiogram.types import Message, chat_member, ChatMemberUpdated, InlineQuery, InlineQueryResultArticle, \
+    InputTextMessageContent
 from aiogram_dialog import DialogManager, StartMode
 
-from db import Users
+from db import Users, Items
 from tgbot.keyboards.states import States
 
 user_router = Router()
@@ -120,6 +123,89 @@ async def user_start(m: Message, dialog_manager: DialogManager):
             data=dialog_data,
             mode=StartMode.RESET_STACK,
         )
+
+
+
+
+
+
+
+
+
+
+@user_router.inline_query(F.query == "")
+async def show_user_links(query: InlineQuery):
+    await query.answer(
+        results=[
+            InlineQueryResultArticle(
+                id="list",
+                title="Type something...",
+                input_message_content=InputTextMessageContent(
+                    message_text="You don`t need to press it",
+
+                )
+
+            )
+        ],
+        cache_time=5
+    )
+
+@user_router.inline_query()
+async def some_query(query: InlineQuery):
+    user_id = query.from_user.id
+    if Users.get_user(user_id) is None:
+        await query.answer(
+            results=[],
+            switch_pm_text="Bot is unavailable. Please register first",
+            switch_pm_parameter="connect_user",
+            cache_time=5,
+
+        )
+        return
+
+
+# @user_router.inline_query()
+# async def show_user_links(inline_query: InlineQuery):
+#
+#     # Эта функция просто собирает текст, который будет
+#     # отправлен при нажатии на вариант в инлайн-режиме
+#     def get_message_text(
+#             item: str,
+#             title: str,
+#             description: Optional[str]
+#     ) -> str:
+#         text_parts = [f'{html.bold(html.quote(title))}']
+#         if description:
+#             text_parts.append(html.quote(description))
+#         text_parts.append("")  # добавим пустую строку
+#         text_parts.append(id)
+#         return "\n".join(text_parts)
+#
+#
+#     item_list = Items.get_items()
+#     results = []
+#
+#     for item in item_list:
+#         results.append(InlineQueryResultArticle(
+#             id=item["id"],
+#             title=item["item"],
+#             description=item["item_details"],
+#             input_message_content=InputTextMessageContent(
+#                 message_text=get_message_text(
+#                     item=item["item"],
+#                     title=item["item"],
+#                     description=item["item_details"]
+#                 ),
+#                 parse_mode="HTML"
+#             )
+#         ))
+#
+#     await inline_query.answer(results, is_personal=True, cache_time=5)
+
+
+
+
+
 
 
 

@@ -14789,3 +14789,253 @@ dispatcher.py:171 #INFO     [2023-08-12 15:43:23,285] - aiogram.event - Update i
 dispatcher.py:451 #WARNING  [2023-08-12 15:43:47,968] - aiogram.dispatcher - Received SIGINT signal
 dispatcher.py:355 #INFO     [2023-08-12 15:43:47,969] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
 dispatcher.py:547 #INFO     [2023-08-12 15:43:47,969] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-08-13 08:27:31,654] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-08-13 08:27:32,033] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-08-13 08:27:32,083] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-08-13 08:27:32,085] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-08-13 08:27:32,122] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:451 #WARNING  [2023-08-13 08:27:37,224] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-08-13 08:27:37,226] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:547 #INFO     [2023-08-13 08:27:37,226] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-08-13 08:27:47,974] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-08-13 08:27:48,282] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-08-13 08:27:48,333] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-08-13 08:27:48,334] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-08-13 08:27:48,370] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:451 #WARNING  [2023-08-13 08:28:10,631] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-08-13 08:28:10,633] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:547 #INFO     [2023-08-13 08:28:10,633] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-08-13 08:28:19,181] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-08-13 08:28:19,498] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-08-13 08:28:19,548] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-08-13 08:28:19,550] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-08-13 08:28:19,587] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:451 #WARNING  [2023-08-13 08:28:34,442] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-08-13 08:28:34,442] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:547 #INFO     [2023-08-13 08:28:34,443] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-08-13 08:41:36,508] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-08-13 08:41:36,832] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-08-13 08:41:36,882] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-08-13 08:41:36,884] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-08-13 08:41:36,923] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:171 #INFO     [2023-08-13 08:41:44,319] - aiogram.event - Update id=449044861 is not handled. Duration 0 ms by bot id=6027584024
+dispatcher.py:171 #INFO     [2023-08-13 08:44:16,592] - aiogram.event - Update id=449044862 is not handled. Duration 0 ms by bot id=6027584024
+dispatcher.py:171 #INFO     [2023-08-13 08:44:23,221] - aiogram.event - Update id=449044863 is not handled. Duration 0 ms by bot id=6027584024
+admin.py:67 #INFO     [2023-08-13 08:44:29,378] - root - [683497406, 'd_w_y_t', 'be31fd64', '123456', 0, 683497406, datetime.datetime(2023, 8, 12, 15, 18, 52, 400765)]
+dispatcher.py:171 #INFO     [2023-08-13 08:44:29,697] - aiogram.event - Update id=449044864 is handled. Duration 327 ms by bot id=6027584024
+dispatcher.py:451 #WARNING  [2023-08-13 08:59:46,805] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-08-13 08:59:46,806] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:547 #INFO     [2023-08-13 08:59:46,806] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-08-13 08:59:56,447] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-08-13 08:59:56,736] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-08-13 08:59:56,787] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-08-13 08:59:56,788] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-08-13 08:59:56,825] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:171 #INFO     [2023-08-13 09:00:03,137] - aiogram.event - Update id=449044865 is not handled. Duration 0 ms by bot id=6027584024
+dispatcher.py:451 #WARNING  [2023-08-13 09:18:10,131] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-08-13 09:18:10,132] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:547 #INFO     [2023-08-13 09:18:10,132] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-08-13 09:40:26,239] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-08-13 09:40:26,610] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-08-13 09:40:26,660] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-08-13 09:40:26,661] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-08-13 09:40:26,707] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:171 #INFO     [2023-08-13 09:40:33,393] - aiogram.event - Update id=449044866 is not handled. Duration 0 ms by bot id=6027584024
+admin.py:69 #INFO     [2023-08-13 09:40:36,686] - root - [683497406, 'd_w_y_t', 'be31fd64', '123456', 0, 683497406, datetime.datetime(2023, 8, 12, 15, 18, 52, 400765)]
+dispatcher.py:171 #INFO     [2023-08-13 09:40:36,996] - aiogram.event - Update id=449044867 is handled. Duration 315 ms by bot id=6027584024
+dispatcher.py:451 #WARNING  [2023-08-13 10:03:18,685] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-08-13 10:03:18,686] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:547 #INFO     [2023-08-13 10:03:18,687] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-08-13 10:03:35,602] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-08-13 10:03:35,914] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-08-13 10:03:35,965] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-08-13 10:03:35,966] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-08-13 10:03:36,004] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:171 #INFO     [2023-08-13 10:03:57,523] - aiogram.event - Update id=449044868 is not handled. Duration 0 ms by bot id=6027584024
+admin.py:69 #INFO     [2023-08-13 10:03:59,700] - root - [683497406, 'd_w_y_t', 'be31fd64', '123456', 0, 683497406, datetime.datetime(2023, 8, 12, 15, 18, 52, 400765)]
+dispatcher.py:171 #INFO     [2023-08-13 10:03:59,962] - aiogram.event - Update id=449044869 is handled. Duration 267 ms by bot id=6027584024
+dispatcher.py:171 #INFO     [2023-08-13 10:04:03,292] - aiogram.event - Update id=449044870 is handled. Duration 158 ms by bot id=6027584024
+dispatcher.py:451 #WARNING  [2023-08-13 10:05:30,006] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-08-13 10:05:30,008] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:547 #INFO     [2023-08-13 10:05:30,008] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-08-13 10:05:39,838] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-08-13 10:05:40,112] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-08-13 10:05:40,162] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-08-13 10:05:40,163] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-08-13 10:05:40,204] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Celestial'
+admin.py:69 #INFO     [2023-08-13 10:05:45,290] - root - [683497406, 'd_w_y_t', 'be31fd64', '123456', 0, 683497406, datetime.datetime(2023, 8, 12, 15, 18, 52, 400765)]
+dispatcher.py:171 #INFO     [2023-08-13 10:05:45,527] - aiogram.event - Update id=449044871 is handled. Duration 241 ms by bot id=6027584024
+dispatcher.py:171 #INFO     [2023-08-13 10:05:52,158] - aiogram.event - Update id=449044872 is handled. Duration 189 ms by bot id=6027584024
+dispatcher.py:171 #INFO     [2023-08-13 10:07:39,945] - aiogram.event - Update id=449044873 is not handled. Duration 0 ms by bot id=6027584024
+user.py:99 #INFO     [2023-08-13 10:07:43,483] - root - None
+db.py:49 #INFO     [2023-08-13 10:07:43,483] - db - Trying to save user.
+db.py:55 #INFO     [2023-08-13 10:07:43,489] - root - User successfully saved!
+dispatcher.py:171 #INFO     [2023-08-13 10:07:43,727] - aiogram.event - Update id=449044874 is handled. Duration 245 ms by bot id=6027584024
+reply.py:64 #INFO     [2023-08-13 10:07:49,407] - tgbot.keyboards.reply - You are in access_reply
+db.py:40 #INFO     [2023-08-13 10:07:49,408] - db - @Clstl_bot
+dispatcher.py:171 #INFO     [2023-08-13 10:07:49,636] - aiogram.event - Update id=449044875 is handled. Duration 229 ms by bot id=6027584024
+admin.py:69 #INFO     [2023-08-13 10:08:40,139] - root - [683497406, 'd_w_y_t', 'be31fd64', '123456', 0, 683497406, datetime.datetime(2023, 8, 12, 15, 18, 52, 400765)]
+dispatcher.py:171 #INFO     [2023-08-13 10:08:40,527] - aiogram.event - Update id=449044876 is handled. Duration 389 ms by bot id=6027584024
+dispatcher.py:171 #INFO     [2023-08-13 10:11:34,171] - aiogram.event - Update id=449044877 is handled. Duration 217 ms by bot id=6027584024
+dispatcher.py:171 #INFO     [2023-08-13 10:11:42,131] - aiogram.event - Update id=449044878 is handled. Duration 168 ms by bot id=6027584024
+dispatcher.py:171 #INFO     [2023-08-13 10:12:03,979] - aiogram.event - Update id=449044879 is handled. Duration 167 ms by bot id=6027584024
+dispatcher.py:171 #INFO     [2023-08-13 10:12:16,698] - aiogram.event - Update id=449044880 is handled. Duration 159 ms by bot id=6027584024
+dispatcher.py:171 #INFO     [2023-08-13 10:15:23,989] - aiogram.event - Update id=449044881 is handled. Duration 191 ms by bot id=6027584024
+dispatcher.py:171 #INFO     [2023-08-13 10:15:29,853] - aiogram.event - Update id=449044882 is handled. Duration 47 ms by bot id=6027584024
+reply.py:64 #INFO     [2023-08-13 10:15:36,653] - tgbot.keyboards.reply - You are in access_reply
+db.py:40 #INFO     [2023-08-13 10:15:36,654] - db - You don`t need to press it
+dispatcher.py:171 #INFO     [2023-08-13 10:15:36,864] - aiogram.event - Update id=449044883 is handled. Duration 211 ms by bot id=6027584024
+dispatcher.py:171 #INFO     [2023-08-13 10:15:48,117] - aiogram.event - Update id=449044884 is handled. Duration 48 ms by bot id=6027584024
+dispatcher.py:171 #INFO     [2023-08-13 10:15:49,293] - aiogram.event - Update id=449044885 is handled. Duration 41 ms by bot id=6027584024
+dispatcher.py:171 #INFO     [2023-08-13 10:15:51,759] - aiogram.event - Update id=449044886 is handled. Duration 97 ms by bot id=6027584024
+dispatcher.py:171 #INFO     [2023-08-13 10:16:02,030] - aiogram.event - Update id=449044887 is handled. Duration 52 ms by bot id=6027584024
+dispatcher.py:171 #INFO     [2023-08-13 10:16:09,718] - aiogram.event - Update id=449044888 is handled. Duration 130 ms by bot id=6027584024
+user.py:99 #INFO     [2023-08-13 10:17:11,412] - root - [5675977680, 'emperor_priferiti', 'c921ff44', None, 0, 5675977680, datetime.datetime(2023, 8, 13, 10, 7, 43, 482269)]
+dispatcher.py:171 #INFO     [2023-08-13 10:17:11,690] - aiogram.event - Update id=449044889 is handled. Duration 280 ms by bot id=6027584024
+dispatcher.py:171 #INFO     [2023-08-13 10:17:16,509] - aiogram.event - Update id=449044890 is handled. Duration 47 ms by bot id=6027584024
+dispatcher.py:171 #INFO     [2023-08-13 10:17:21,052] - aiogram.event - Update id=449044891 is handled. Duration 81 ms by bot id=6027584024
+reply.py:64 #INFO     [2023-08-13 10:17:26,382] - tgbot.keyboards.reply - You are in access_reply
+db.py:40 #INFO     [2023-08-13 10:17:26,383] - db - You don`t need to press it
+dispatcher.py:171 #INFO     [2023-08-13 10:17:26,741] - aiogram.event - Update id=449044892 is handled. Duration 359 ms by bot id=6027584024
+dispatcher.py:171 #INFO     [2023-08-13 10:18:18,300] - aiogram.event - Update id=449044893 is handled. Duration 217 ms by bot id=6027584024
+reply.py:64 #INFO     [2023-08-13 10:18:19,825] - tgbot.keyboards.reply - You are in access_reply
+dispatcher.py:171 #INFO     [2023-08-13 10:18:19,827] - aiogram.event - Update id=449044894 is not handled. Duration 2 ms by bot id=6027584024
+dispatcher.py:313 #ERROR    [2023-08-13 10:18:19,827] - aiogram.event - Cause exception while process update id=449044894 by bot id=6027584024
+TypeError: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 307, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 274, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 118, in process_message
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/app/Celestial/tgbot/middlewares/config.py", line 18, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 135, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 128, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager_middleware.py", line 45, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 165, in context_saver_middleware
+    result = await handler(event, data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/dialog.py", line 134, in _message_handler
+    await window.process_message(message, self, dialog_manager)
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/window.py", line 83, in process_message
+    await self.on_message.process_message(message, dialog, manager)
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/input/base.py", line 65, in process_message
+    await self.func.process_event(message, self, manager)
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/widget_event.py", line 34, in process_event
+    await self.callback(event, source, manager, *args, **kwargs)
+  File "/usr/src/app/Celestial/tgbot/keyboards/reply.py", line 68, in access_reply
+    user_key = Users.get_user(user_id)[2]
+               ~~~~~~~~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+dispatcher.py:451 #WARNING  [2023-08-13 10:19:00,171] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-08-13 10:19:00,172] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:547 #INFO     [2023-08-13 10:19:00,173] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-08-13 10:19:08,903] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-08-13 10:19:09,183] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-08-13 10:19:09,234] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-08-13 10:19:09,235] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-08-13 10:19:09,271] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:171 #INFO     [2023-08-13 10:19:13,973] - aiogram.event - Update id=449044895 is handled. Duration 137 ms by bot id=6027584024
+dispatcher.py:171 #INFO     [2023-08-13 10:19:15,284] - aiogram.event - Update id=449044896 is not handled. Duration 0 ms by bot id=6027584024
+user.py:99 #INFO     [2023-08-13 10:19:18,455] - root - None
+db.py:49 #INFO     [2023-08-13 10:19:18,455] - db - Trying to save user.
+db.py:55 #INFO     [2023-08-13 10:19:18,464] - root - User successfully saved!
+dispatcher.py:171 #INFO     [2023-08-13 10:19:18,570] - aiogram.event - Update id=449044897 is handled. Duration 119 ms by bot id=6027584024
+dispatcher.py:171 #INFO     [2023-08-13 10:19:22,039] - aiogram.event - Update id=449044898 is handled. Duration 54 ms by bot id=6027584024
+reply.py:64 #INFO     [2023-08-13 10:19:25,553] - tgbot.keyboards.reply - You are in access_reply
+db.py:40 #INFO     [2023-08-13 10:19:25,555] - db - You don`t need to press it
+dispatcher.py:171 #INFO     [2023-08-13 10:19:25,858] - aiogram.event - Update id=449044899 is handled. Duration 304 ms by bot id=6027584024
+dispatcher.py:451 #WARNING  [2023-08-13 10:21:12,160] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-08-13 10:21:12,162] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:547 #INFO     [2023-08-13 10:21:12,162] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-08-13 10:21:21,020] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-08-13 10:21:21,361] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-08-13 10:21:21,412] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-08-13 10:21:21,413] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-08-13 10:21:21,455] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:171 #INFO     [2023-08-13 10:21:25,584] - aiogram.event - Update id=449044900 is handled. Duration 150 ms by bot id=6027584024
+dispatcher.py:171 #INFO     [2023-08-13 10:21:29,445] - aiogram.event - Update id=449044901 is not handled. Duration 0 ms by bot id=6027584024
+dispatcher.py:171 #INFO     [2023-08-13 10:22:01,058] - aiogram.event - Update id=449044902 is handled. Duration 159 ms by bot id=6027584024
+dispatcher.py:171 #INFO     [2023-08-13 10:22:05,161] - aiogram.event - Update id=449044903 is not handled. Duration 0 ms by bot id=6027584024
+dispatcher.py:171 #INFO     [2023-08-13 10:22:19,332] - aiogram.event - Update id=449044904 is handled. Duration 290 ms by bot id=6027584024
+dispatcher.py:171 #INFO     [2023-08-13 10:22:23,406] - aiogram.event - Update id=449044905 is not handled. Duration 0 ms by bot id=6027584024
+dispatcher.py:451 #WARNING  [2023-08-13 10:23:13,589] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-08-13 10:23:13,590] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:547 #INFO     [2023-08-13 10:23:13,590] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-08-13 10:23:40,870] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-08-13 10:23:41,183] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-08-13 10:23:41,234] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-08-13 10:23:41,235] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-08-13 10:23:41,274] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:171 #INFO     [2023-08-13 10:23:45,444] - aiogram.event - Update id=449044906 is handled. Duration 145 ms by bot id=6027584024
+dispatcher.py:171 #INFO     [2023-08-13 10:23:46,471] - aiogram.event - Update id=449044907 is not handled. Duration 0 ms by bot id=6027584024
+dispatcher.py:171 #INFO     [2023-08-13 10:23:51,710] - aiogram.event - Update id=449044908 is handled. Duration 50 ms by bot id=6027584024
+dispatcher.py:451 #WARNING  [2023-08-13 10:24:21,521] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-08-13 10:24:21,522] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:547 #INFO     [2023-08-13 10:24:21,522] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-08-13 10:24:32,807] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-08-13 10:24:33,147] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-08-13 10:24:33,198] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-08-13 10:24:33,199] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-08-13 10:24:33,237] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:171 #INFO     [2023-08-13 10:24:36,252] - aiogram.event - Update id=449044909 is handled. Duration 213 ms by bot id=6027584024
+dispatcher.py:171 #INFO     [2023-08-13 10:24:37,231] - aiogram.event - Update id=449044910 is not handled. Duration 0 ms by bot id=6027584024
+dispatcher.py:171 #INFO     [2023-08-13 10:26:07,976] - aiogram.event - Update id=449044911 is handled. Duration 398 ms by bot id=6027584024
+dispatcher.py:171 #INFO     [2023-08-13 10:26:09,106] - aiogram.event - Update id=449044912 is handled. Duration 60 ms by bot id=6027584024
+user.py:42 #INFO     [2023-08-13 10:26:11,915] - root - connect_user
+db.py:40 #INFO     [2023-08-13 10:26:11,916] - db - connect_user
+user.py:49 #INFO     [2023-08-13 10:26:11,917] - root - None
+db.py:49 #INFO     [2023-08-13 10:26:11,918] - db - Trying to save user.
+db.py:55 #INFO     [2023-08-13 10:26:11,922] - root - User successfully saved!
+dispatcher.py:171 #INFO     [2023-08-13 10:26:12,026] - aiogram.event - Update id=449044913 is handled. Duration 111 ms by bot id=6027584024
+dispatcher.py:451 #WARNING  [2023-08-13 10:45:40,823] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-08-13 10:45:40,825] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:547 #INFO     [2023-08-13 10:45:40,825] - aiogram.dispatcher - Polling stopped

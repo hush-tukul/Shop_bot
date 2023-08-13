@@ -101,8 +101,6 @@ async def admin_panel_reply(c: CallbackQuery, widget: Any, dialog_manager: Dialo
     g = {
         'add': States.add_item_state,
         'delete': States.delete_item_state,
-        'user_stats': States.us_state
-
     }
     await dialog_manager.switch_to(g[admin_option])
 
@@ -214,6 +212,21 @@ async def item_added_reply(c: CallbackQuery, widget: Any, dialog_manager: Dialog
 
 
 
+
+async def delete_item_reply(c: CallbackQuery, widget: Any, dialog_manager: DialogManager, button: str):
+    logger.info('You are in delete_item_reply')
+    user_id = dialog_manager.start_data.get('user_id')
+    user_name = dialog_manager.start_data.get('user_name')
+    #Items.delete_item()
+    #await dialog_manager.switch_to(States.confirmed_item_delete_state)
+
+
+
+async def confirmed_item_delete_reply(c: CallbackQuery, widget: Any, dialog_manager: DialogManager, button: str):
+    logger.info('You are in delete_item_reply')
+    user_id = dialog_manager.start_data.get('user_id')
+    user_name = dialog_manager.start_data.get('user_name')
+    await dialog_manager.switch_to(States.confirmed_item_delete_state)
 
 
 

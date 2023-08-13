@@ -21,6 +21,7 @@ class States(StatesGroup):
 
     """FORTH WINDOW"""
     add_description_state = State()
+    confirmed_item_delete_state = State()
 
     """FIFTH WINDOW"""
     add_price_state = State()

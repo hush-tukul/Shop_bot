@@ -93,8 +93,8 @@ class Users(Base):
 
 class Items(Base):
     __tablename__ = 'items'
-
-    item = Column(String, primary_key=True)
+    id = Column(BigInteger, primary_key=True, autoincrement=True)
+    item = Column(String)
     user_id = Column(String)
     user_tg_name = Column(String)
     item_details = Column(String)
@@ -118,8 +118,33 @@ class Items(Base):
     def get_item(cls, item):
         item_data = session.query(Items).filter_by(item=item).first()
         if item_data:
-            return [item_data.item, item_data.user_id, item_data.user_tg_name, item_data.item_details, item_data.item_price, item_data.item_quantity,
-                    item_data.registry_datetime]
+            return {
+                "id": item_data.id,
+                "item": item_data.item,
+                "user_id": item_data.user_id,
+                "user_tg_name": item_data.user_tg_name,
+                "item_details": item_data.item_details,
+                "item_price": item_data.item_price,
+                "item_quantity": item_data.item_quantity,
+                "registry_datetime": item_data.registry_datetime
+            }
+        else:
+            return None
+
+    @classmethod
+    def get_items(cls):
+        item_data = session.query(Items).all()
+        if item_data:
+            return {
+                "id": item_data.id,
+                "item": item_data.item,
+                "user_id": item_data.user_id,
+                "user_tg_name": item_data.user_tg_name,
+                "item_details": item_data.item_details,
+                "item_price": item_data.item_price,
+                "item_quantity": item_data.item_quantity,
+                "registry_datetime": item_data.registry_datetime
+            }
         else:
             return None
 

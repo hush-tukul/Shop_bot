@@ -70,7 +70,7 @@ async def admin_panel_inline(dialog_manager: DialogManager, **kwargs):
     title = "🕹️Admin panel🕹️"
     admin_buttons = [
         ('➕ Add item ➕', 'add'), ('❌ Delete item ❌', 'delete'),
-        ('📊 User stats 📊', 'user_stats')
+        ('📋 Items list 📋', 'items_list')
     ]
 
     return {
@@ -237,20 +237,28 @@ async def item_added_inline(dialog_manager: DialogManager, **kwargs):
     }
 
 
-# async def delete_item_inline(dialog_manager: DialogManager, **kwargs):
-#     user_id = dialog_manager.start_data.get('user_id')
-#     user_name = dialog_manager.start_data.get('user_name')
-#     user_data = Users.get_user(user_id)
-#     title = "➕ Add item ➕"
-#     description = "Please enter item name with no special signs."
-#
-#     return {
-#         "title": title,
-#         "description": description,
-#     }
+async def delete_item_inline(dialog_manager: DialogManager, **kwargs):
+    user_id = dialog_manager.start_data.get('user_id')
+    user_name = dialog_manager.start_data.get('user_name')
+    user_data = Users.get_user(user_id)
+    title = "❌ Delete item ❌"
+    description = "Please enter item name with no special signs."
+
+    return {
+        "title": title,
+        "description": description,
+    }
 
 
+async def confirmed_item_delete_inline(dialog_manager: DialogManager, **kwargs):
+    user_id = dialog_manager.start_data.get('user_id')
+    user_name = dialog_manager.start_data.get('user_name')
+    user_data = Users.get_user(user_id)
+    title = "🙆‍♂️➡️🗑️ Item was successfully deleted!👍"
 
+    return {
+        "title": title,
+    }
 
 
 

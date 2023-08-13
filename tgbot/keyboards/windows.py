@@ -9,10 +9,10 @@ from aiogram_dialog.widgets.text import Const, Format
 
 from tgbot.keyboards.inline import gate_inline, access_inline, main_window_inline, admin_panel_inline, add_item_inline, \
     add_description_inline, add_price_inline, add_photo_inline, add_item_confirmation_inline, item_added_inline, \
-    add_quantity_inline
+    add_quantity_inline, delete_item_inline, confirmed_item_delete_inline
 from tgbot.keyboards.reply import gate_reply, access_reply, main_menu_reply, admin_panel_reply, add_item_reply, \
     add_description_reply, add_price_reply, add_photo_reply, item_added_reply, add_item_confirmation_reply, \
-    add_quantity_reply
+    add_quantity_reply, delete_item_reply
 
 from tgbot.keyboards.states import States
 
@@ -216,22 +216,31 @@ item_added_window = Window(
 )
 
 
-# delete_window = Window(
-#     Format("{title}"),
-#     Row(
-#         Select(
-#             Format("{item[0]}"),
-#             id="delete",
-#             item_id_getter=operator.itemgetter(1),
-#             items='delete_item',
-#             on_click=
-#         ),
-#     ),
-#     SwitchTo(Const("Back"), id="Back", state=States.admin_panel_state),
-#     parse_mode=ParseMode.HTML,
-#     state=States.delete_item_state,
-#     getter=admin_panel_inline
-# )
+delete_window = Window(
+    Format("{title}"),
+    Row(
+        Select(
+            Format("{item[0]}"),
+            id="delete",
+            item_id_getter=operator.itemgetter(1),
+            items='delete_item',
+            on_click=delete_item_reply
+        ),
+    ),
+    SwitchTo(Const("Back"), id="Back", state=States.admin_panel_state),
+    parse_mode=ParseMode.HTML,
+    state=States.delete_item_state,
+    getter=delete_item_inline
+)
+
+
+confirmed_item_delete_window = Window(
+    Format("{title}"),
+    SwitchTo(Const("To Admin Panel"), id="admin_panel", state=States.admin_panel_state),
+    parse_mode=ParseMode.HTML,
+    state=States.confirmed_item_delete_state,
+    getter=confirmed_item_delete_inline
+)
 
 # us_window = Window(
 #     Format("{title}"),
