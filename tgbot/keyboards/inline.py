@@ -51,7 +51,7 @@ async def main_window_inline(dialog_manager: DialogManager, **kwargs):
     user_id = dialog_manager.start_data.get('user_id')
     title = "┏━━━━━ 🛍️ Main Menu 🛍️ ━━━━━┓"
     main_menu = [
-        ('🛒 Market 🛒', 'access'), ('📝 Feedback / Contact 📝', 'contact'), ('🎁 Referral link / key 🎁', 'key'),
+         ('📝 Feedback / Contact 📝', 'contact'), ('🎁 Referral link / key 🎁', 'key'),
                  ('🕹️Admin panel🕹️', 'admin_panel') if user_id in list(map(int, env.list("ADMINS"))) else None
     ]
 

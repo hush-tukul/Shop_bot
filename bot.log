@@ -19965,3 +19965,938 @@ dispatcher.py:171 #INFO     [2023-08-15 12:29:45,003] - aiogram.event - Update i
 dispatcher.py:451 #WARNING  [2023-08-15 12:30:43,043] - aiogram.dispatcher - Received SIGINT signal
 dispatcher.py:355 #INFO     [2023-08-15 12:30:43,044] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
 dispatcher.py:547 #INFO     [2023-08-15 12:30:43,045] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-08-15 12:59:49,258] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-08-15 12:59:49,668] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-08-15 12:59:49,719] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-08-15 12:59:49,720] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-08-15 12:59:49,762] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:171 #INFO     [2023-08-15 13:00:17,894] - aiogram.event - Update id=449045356 is not handled. Duration 0 ms by bot id=6027584024
+db.py:119 #INFO     [2023-08-15 13:00:28,762] - db - Trying to get all items
+admin.py:117 #INFO     [2023-08-15 13:00:28,768] - tgbot.handlers.admin - [{'id': '4', 'item': 'Monitor iiyama G-Master G2450HS-B1 Black Hawk', 'item_url': 'https://telegra.ph//file/b513af8aea5589aecb7c0.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 21.5", 1920 x 1080px, VA\r\nCzęstotliwość odświeżania obrazu [Hz]: 75\r\nCzas reakcji matrycy [ms]: 1\r\nJasność ekranu [cd/m2]: 250\r\nProporcje ekranu: 16:9\r\nZłącza: Wyjście liniowe audio, HDMI x 1, DisplayPort x 1', 'item_price': '9,99', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIU9WTbb7W9b4pPcw1WxSaqTsgqLna3AAIkuzEbeNjZUi-Nj9DNo2QxAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 12, 29, 44, 861985)}]
+db.py:119 #INFO     [2023-08-15 13:00:28,768] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-15 13:00:29,008] - aiogram.event - Update id=449045357 is handled. Duration 245 ms by bot id=6027584024
+dispatcher.py:171 #INFO     [2023-08-15 13:00:57,028] - aiogram.event - Update id=449045358 is not handled. Duration 0 ms by bot id=6027584024
+db.py:119 #INFO     [2023-08-15 13:01:06,899] - db - Trying to get all items
+admin.py:117 #INFO     [2023-08-15 13:01:06,901] - tgbot.handlers.admin - [{'id': '4', 'item': 'Monitor iiyama G-Master G2450HS-B1 Black Hawk', 'item_url': 'https://telegra.ph//file/b513af8aea5589aecb7c0.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 21.5", 1920 x 1080px, VA\r\nCzęstotliwość odświeżania obrazu [Hz]: 75\r\nCzas reakcji matrycy [ms]: 1\r\nJasność ekranu [cd/m2]: 250\r\nProporcje ekranu: 16:9\r\nZłącza: Wyjście liniowe audio, HDMI x 1, DisplayPort x 1', 'item_price': '9,99', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIU9WTbb7W9b4pPcw1WxSaqTsgqLna3AAIkuzEbeNjZUi-Nj9DNo2QxAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 12, 29, 44, 861985)}]
+db.py:119 #INFO     [2023-08-15 13:01:06,901] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-15 13:01:07,043] - aiogram.event - Update id=449045359 is handled. Duration 144 ms by bot id=6027584024
+dispatcher.py:171 #INFO     [2023-08-15 13:01:14,007] - aiogram.event - Update id=449045360 is not handled. Duration 0 ms by bot id=6027584024
+db.py:119 #INFO     [2023-08-15 13:01:20,551] - db - Trying to get all items
+admin.py:117 #INFO     [2023-08-15 13:01:20,552] - tgbot.handlers.admin - [{'id': '4', 'item': 'Monitor iiyama G-Master G2450HS-B1 Black Hawk', 'item_url': 'https://telegra.ph//file/b513af8aea5589aecb7c0.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 21.5", 1920 x 1080px, VA\r\nCzęstotliwość odświeżania obrazu [Hz]: 75\r\nCzas reakcji matrycy [ms]: 1\r\nJasność ekranu [cd/m2]: 250\r\nProporcje ekranu: 16:9\r\nZłącza: Wyjście liniowe audio, HDMI x 1, DisplayPort x 1', 'item_price': '9,99', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIU9WTbb7W9b4pPcw1WxSaqTsgqLna3AAIkuzEbeNjZUi-Nj9DNo2QxAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 12, 29, 44, 861985)}]
+db.py:119 #INFO     [2023-08-15 13:01:20,552] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-15 13:01:20,752] - aiogram.event - Update id=449045361 is handled. Duration 202 ms by bot id=6027584024
+dispatcher.py:451 #WARNING  [2023-08-15 13:02:10,481] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-08-15 13:02:10,483] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:547 #INFO     [2023-08-15 13:02:10,483] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-08-15 13:02:40,551] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-08-15 13:02:40,977] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-08-15 13:02:41,028] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-08-15 13:02:41,029] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-08-15 13:02:41,066] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Celestial'
+db.py:119 #INFO     [2023-08-15 13:02:47,039] - db - Trying to get all items
+admin.py:117 #INFO     [2023-08-15 13:02:47,045] - tgbot.handlers.admin - None
+db.py:119 #INFO     [2023-08-15 13:02:47,045] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-15 13:02:47,046] - aiogram.event - Update id=449045362 is not handled. Duration 7 ms by bot id=6027584024
+dispatcher.py:313 #ERROR    [2023-08-15 13:02:47,046] - aiogram.event - Cause exception while process update id=449045362 by bot id=6027584024
+TypeError: 'NoneType' object is not iterable
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 307, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 274, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 135, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 128, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/src/app/Celestial/tgbot/handlers/admin.py", line 118, in show_user_links
+    for item in Items.get_items():
+TypeError: 'NoneType' object is not iterable
+admin.py:96 #INFO     [2023-08-15 13:02:51,034] - root - [683497406, 'd_w_y_t', 'be31fd64', '123456', 0, 683497406, datetime.datetime(2023, 8, 15, 11, 27, 38, 100178)]
+dispatcher.py:171 #INFO     [2023-08-15 13:02:51,286] - aiogram.event - Update id=449045363 is handled. Duration 255 ms by bot id=6027584024
+reply.py:96 #INFO     [2023-08-15 13:02:52,426] - tgbot.keyboards.reply - You are in main_menu_reply
+dispatcher.py:171 #INFO     [2023-08-15 13:02:52,633] - aiogram.event - Update id=449045364 is handled. Duration 207 ms by bot id=6027584024
+dispatcher.py:171 #INFO     [2023-08-15 13:02:53,442] - aiogram.event - Update id=449045365 is handled. Duration 118 ms by bot id=6027584024
+reply.py:115 #INFO     [2023-08-15 13:03:25,972] - tgbot.keyboards.reply - You are in add_item_reply
+reply.py:119 #INFO     [2023-08-15 13:03:25,973] - tgbot.keyboards.reply - Monitor iiyama G-Master G2450HS-B1 Black Hawk
+dispatcher.py:171 #INFO     [2023-08-15 13:03:26,264] - aiogram.event - Update id=449045366 is handled. Duration 292 ms by bot id=6027584024
+reply.py:130 #INFO     [2023-08-15 13:03:27,531] - tgbot.keyboards.reply - You are in add_description_reply
+dispatcher.py:171 #INFO     [2023-08-15 13:03:27,751] - aiogram.event - Update id=449045367 is handled. Duration 221 ms by bot id=6027584024
+reply.py:145 #INFO     [2023-08-15 13:03:28,954] - tgbot.keyboards.reply - You are in add_price_reply
+dispatcher.py:171 #INFO     [2023-08-15 13:03:29,278] - aiogram.event - Update id=449045368 is handled. Duration 325 ms by bot id=6027584024
+reply.py:145 #INFO     [2023-08-15 13:03:32,184] - tgbot.keyboards.reply - You are in add_price_reply
+dispatcher.py:171 #INFO     [2023-08-15 13:03:32,461] - aiogram.event - Update id=449045369 is handled. Duration 276 ms by bot id=6027584024
+reply.py:160 #INFO     [2023-08-15 13:03:33,170] - tgbot.keyboards.reply - You are in add_price_reply
+dispatcher.py:171 #INFO     [2023-08-15 13:03:33,342] - aiogram.event - Update id=449045370 is handled. Duration 172 ms by bot id=6027584024
+reply.py:175 #INFO     [2023-08-15 13:03:39,590] - tgbot.keyboards.reply - You are in add_photo_reply
+reply.py:196 #INFO     [2023-08-15 13:03:40,353] - tgbot.keyboards.reply - https://telegra.ph/upload
+reply.py:199 #INFO     [2023-08-15 13:03:40,354] - tgbot.keyboards.reply - link='https://telegra.ph//file/167693e3591605ff63c82.jpg'
+dispatcher.py:171 #INFO     [2023-08-15 13:03:40,550] - aiogram.event - Update id=449045371 is handled. Duration 961 ms by bot id=6027584024
+reply.py:227 #INFO     [2023-08-15 13:03:41,616] - tgbot.keyboards.reply - You are in add_item_confirmation_reply
+db.py:109 #INFO     [2023-08-15 13:03:41,617] - db - Trying to save item.
+dispatcher.py:171 #INFO     [2023-08-15 13:03:41,619] - aiogram.event - Update id=449045372 is not handled. Duration 3 ms by bot id=6027584024
+dispatcher.py:313 #ERROR    [2023-08-15 13:03:41,619] - aiogram.event - Cause exception while process update id=449045372 by bot id=6027584024
+ProgrammingError: (psycopg2.ProgrammingError) can't adapt type 'UploadedFile'
+[SQL: INSERT INTO items (item, item_url, user_id, user_tg_name, item_details, item_price, item_quantity, item_photo, registry_datetime) VALUES (%(item)s, %(item_url)s, %(user_id)s, %(user_tg_name)s, %(item_details)s, %(item_price)s, %(item_quantity)s, %(item_photo)s, %(registry_datetime)s) RETURNING items.id]
+[parameters: {'item': 'Monitor iiyama G-Master G2450HS-B1 Black Hawk', 'item_url': UploadedFile(link='https://telegra.ph//file/167693e3591605ff63c82.jpg'), 'user_id': 683497406, 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 21.5", 1920 x 1080px, VA\nCzęstotliwość odświeżania obrazu [Hz]: 75\nCzas reakcji matrycy [ms]: 1\nJasność ekranu [cd/m2]: 250\nProporcje ekranu: 16:9\nZłącza: Wyjście liniowe audio, HDMI x 1, DisplayPort x 1', 'item_price': '9.99', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVCmTbd6usZCgmRDaa6HVSaKkE5MpYAAIkuzEbeNjZUi-Nj9DNo2QxAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 3, 41, 617175)}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1965, in _exec_single_context
+    self.dialect.do_execute(
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 921, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.ProgrammingError: can't adapt type 'UploadedFile'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 307, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 274, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 153, in process_callback_query
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/app/Celestial/tgbot/middlewares/config.py", line 18, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 135, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 128, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager_middleware.py", line 45, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 165, in context_saver_middleware
+    result = await handler(event, data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/dialog.py", line 150, in _callback_handler
+    await window.process_callback(cleaned_callback, self, dialog_manager)
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/window.py", line 90, in process_callback
+    await self.keyboard.process_callback(callback, dialog, manager)
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 79, in process_callback
+    return await self._process_other_callback(callback, dialog, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/group.py", line 73, in _process_other_callback
+    if await b.process_callback(callback, dialog, manager):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 79, in process_callback
+    return await self._process_other_callback(callback, dialog, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/group.py", line 73, in _process_other_callback
+    if await b.process_callback(callback, dialog, manager):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 73, in process_callback
+    return await self._process_item_callback(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/select.py", line 88, in _process_item_callback
+    await self.on_click.process_event(
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/widget_event.py", line 34, in process_event
+    await self.callback(event, source, manager, *args, **kwargs)
+  File "/usr/src/app/Celestial/tgbot/keyboards/reply.py", line 238, in add_item_confirmation_reply
+    Items.add_item(item_name, photo_url, user_id, user_name, item_description, item_price, item_quantity, item_photo, registry_datetime)
+  File "/usr/src/app/Celestial/db.py", line 115, in add_item
+    session.commit()
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1920, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1236, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1211, in _prepare_impl
+    self.session.flush()
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4163, in flush
+    self._flush(objects)
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4298, in _flush
+    with util.safe_reraise():
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 147, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4259, in _flush
+    flush_context.execute()
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py", line 1226, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1412, in execute
+    return meth(
+           ^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/sql/elements.py", line 483, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1635, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1844, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1984, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2339, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1965, in _exec_single_context
+    self.dialect.do_execute(
+  File "/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 921, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.ProgrammingError) can't adapt type 'UploadedFile'
+[SQL: INSERT INTO items (item, item_url, user_id, user_tg_name, item_details, item_price, item_quantity, item_photo, registry_datetime) VALUES (%(item)s, %(item_url)s, %(user_id)s, %(user_tg_name)s, %(item_details)s, %(item_price)s, %(item_quantity)s, %(item_photo)s, %(registry_datetime)s) RETURNING items.id]
+[parameters: {'item': 'Monitor iiyama G-Master G2450HS-B1 Black Hawk', 'item_url': UploadedFile(link='https://telegra.ph//file/167693e3591605ff63c82.jpg'), 'user_id': 683497406, 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 21.5", 1920 x 1080px, VA\nCzęstotliwość odświeżania obrazu [Hz]: 75\nCzas reakcji matrycy [ms]: 1\nJasność ekranu [cd/m2]: 250\nProporcje ekranu: 16:9\nZłącza: Wyjście liniowe audio, HDMI x 1, DisplayPort x 1', 'item_price': '9.99', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVCmTbd6usZCgmRDaa6HVSaKkE5MpYAAIkuzEbeNjZUi-Nj9DNo2QxAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 3, 41, 617175)}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+dispatcher.py:451 #WARNING  [2023-08-15 13:05:41,039] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-08-15 13:05:41,041] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:547 #INFO     [2023-08-15 13:05:41,041] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-08-15 13:05:51,427] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-08-15 13:05:51,850] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-08-15 13:05:51,901] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-08-15 13:05:51,902] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-08-15 13:05:51,947] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Celestial'
+admin.py:96 #INFO     [2023-08-15 13:05:53,375] - root - [683497406, 'd_w_y_t', 'be31fd64', '123456', 0, 683497406, datetime.datetime(2023, 8, 15, 11, 27, 38, 100178)]
+dispatcher.py:171 #INFO     [2023-08-15 13:05:53,658] - aiogram.event - Update id=449045373 is handled. Duration 288 ms by bot id=6027584024
+reply.py:96 #INFO     [2023-08-15 13:05:55,640] - tgbot.keyboards.reply - You are in main_menu_reply
+dispatcher.py:171 #INFO     [2023-08-15 13:05:55,864] - aiogram.event - Update id=449045374 is handled. Duration 224 ms by bot id=6027584024
+dispatcher.py:171 #INFO     [2023-08-15 13:05:56,584] - aiogram.event - Update id=449045375 is handled. Duration 204 ms by bot id=6027584024
+reply.py:115 #INFO     [2023-08-15 13:06:02,458] - tgbot.keyboards.reply - You are in add_item_reply
+reply.py:119 #INFO     [2023-08-15 13:06:02,458] - tgbot.keyboards.reply - Monitor iiyama G-Master G2450HS-B1 Black Hawk
+dispatcher.py:171 #INFO     [2023-08-15 13:06:02,622] - aiogram.event - Update id=449045376 is handled. Duration 164 ms by bot id=6027584024
+reply.py:130 #INFO     [2023-08-15 13:06:03,958] - tgbot.keyboards.reply - You are in add_description_reply
+dispatcher.py:171 #INFO     [2023-08-15 13:06:04,122] - aiogram.event - Update id=449045377 is handled. Duration 163 ms by bot id=6027584024
+reply.py:145 #INFO     [2023-08-15 13:06:05,645] - tgbot.keyboards.reply - You are in add_price_reply
+dispatcher.py:171 #INFO     [2023-08-15 13:06:05,799] - aiogram.event - Update id=449045378 is handled. Duration 154 ms by bot id=6027584024
+reply.py:160 #INFO     [2023-08-15 13:06:06,742] - tgbot.keyboards.reply - You are in add_price_reply
+dispatcher.py:171 #INFO     [2023-08-15 13:06:06,957] - aiogram.event - Update id=449045379 is handled. Duration 214 ms by bot id=6027584024
+reply.py:175 #INFO     [2023-08-15 13:06:12,223] - tgbot.keyboards.reply - You are in add_photo_reply
+reply.py:196 #INFO     [2023-08-15 13:06:12,765] - tgbot.keyboards.reply - https://telegra.ph/upload
+reply.py:199 #INFO     [2023-08-15 13:06:12,766] - tgbot.keyboards.reply - https://telegra.ph//file/9a9d724e992a3ae0f2806.jpg
+dispatcher.py:171 #INFO     [2023-08-15 13:06:12,957] - aiogram.event - Update id=449045380 is handled. Duration 734 ms by bot id=6027584024
+reply.py:227 #INFO     [2023-08-15 13:06:16,538] - tgbot.keyboards.reply - You are in add_item_confirmation_reply
+db.py:109 #INFO     [2023-08-15 13:06:16,539] - db - Trying to save item.
+db.py:116 #INFO     [2023-08-15 13:06:16,546] - db - Item successfully saved!
+dispatcher.py:171 #INFO     [2023-08-15 13:06:16,687] - aiogram.event - Update id=449045381 is handled. Duration 149 ms by bot id=6027584024
+db.py:119 #INFO     [2023-08-15 13:06:40,399] - db - Trying to get all items
+admin.py:117 #INFO     [2023-08-15 13:06:40,401] - tgbot.handlers.admin - [{'id': '5', 'item': 'Monitor iiyama G-Master G2450HS-B1 Black Hawk', 'item_url': 'https://telegra.ph//file/9a9d724e992a3ae0f2806.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 21.5", 1920 x 1080px, VA\nCzęstotliwość odświeżania obrazu [Hz]: 75\nCzas reakcji matrycy [ms]: 1\nJasność ekranu [cd/m2]: 250\nProporcje ekranu: 16:9\nZłącza: Wyjście liniowe audio, HDMI x 1, DisplayPort x 1', 'item_price': '9,99', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVGGTbeES0huovHrD-iytya0rmPTptAAIkuzEbeNjZUi-Nj9DNo2QxAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 6, 16, 539244)}]
+db.py:119 #INFO     [2023-08-15 13:06:40,402] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-15 13:06:40,552] - aiogram.event - Update id=449045382 is handled. Duration 153 ms by bot id=6027584024
+db.py:119 #INFO     [2023-08-15 13:09:24,716] - db - Trying to get all items
+admin.py:117 #INFO     [2023-08-15 13:09:24,717] - tgbot.handlers.admin - [{'id': '5', 'item': 'Monitor iiyama G-Master G2450HS-B1 Black Hawk', 'item_url': 'https://telegra.ph//file/9a9d724e992a3ae0f2806.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 21.5", 1920 x 1080px, VA\nCzęstotliwość odświeżania obrazu [Hz]: 75\nCzas reakcji matrycy [ms]: 1\nJasność ekranu [cd/m2]: 250\nProporcje ekranu: 16:9\nZłącza: Wyjście liniowe audio, HDMI x 1, DisplayPort x 1', 'item_price': '9,99', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVGGTbeES0huovHrD-iytya0rmPTptAAIkuzEbeNjZUi-Nj9DNo2QxAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 6, 16, 539244)}]
+db.py:119 #INFO     [2023-08-15 13:09:24,717] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-15 13:09:24,884] - aiogram.event - Update id=449045383 is handled. Duration 168 ms by bot id=6027584024
+db.py:119 #INFO     [2023-08-15 13:09:30,707] - db - Trying to get all items
+admin.py:117 #INFO     [2023-08-15 13:09:30,708] - tgbot.handlers.admin - [{'id': '5', 'item': 'Monitor iiyama G-Master G2450HS-B1 Black Hawk', 'item_url': 'https://telegra.ph//file/9a9d724e992a3ae0f2806.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 21.5", 1920 x 1080px, VA\nCzęstotliwość odświeżania obrazu [Hz]: 75\nCzas reakcji matrycy [ms]: 1\nJasność ekranu [cd/m2]: 250\nProporcje ekranu: 16:9\nZłącza: Wyjście liniowe audio, HDMI x 1, DisplayPort x 1', 'item_price': '9,99', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVGGTbeES0huovHrD-iytya0rmPTptAAIkuzEbeNjZUi-Nj9DNo2QxAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 6, 16, 539244)}]
+db.py:119 #INFO     [2023-08-15 13:09:30,708] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-15 13:09:30,769] - aiogram.event - Update id=449045384 is handled. Duration 61 ms by bot id=6027584024
+db.py:119 #INFO     [2023-08-15 13:13:59,472] - db - Trying to get all items
+admin.py:117 #INFO     [2023-08-15 13:13:59,474] - tgbot.handlers.admin - [{'id': '5', 'item': 'Monitor iiyama G-Master G2450HS-B1 Black Hawk', 'item_url': 'https://telegra.ph//file/9a9d724e992a3ae0f2806.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 21.5", 1920 x 1080px, VA\nCzęstotliwość odświeżania obrazu [Hz]: 75\nCzas reakcji matrycy [ms]: 1\nJasność ekranu [cd/m2]: 250\nProporcje ekranu: 16:9\nZłącza: Wyjście liniowe audio, HDMI x 1, DisplayPort x 1', 'item_price': '9,99', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVGGTbeES0huovHrD-iytya0rmPTptAAIkuzEbeNjZUi-Nj9DNo2QxAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 6, 16, 539244)}]
+db.py:119 #INFO     [2023-08-15 13:13:59,474] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-15 13:13:59,629] - aiogram.event - Update id=449045385 is handled. Duration 156 ms by bot id=6027584024
+db.py:119 #INFO     [2023-08-15 13:14:44,111] - db - Trying to get all items
+admin.py:117 #INFO     [2023-08-15 13:14:44,112] - tgbot.handlers.admin - [{'id': '5', 'item': 'Monitor iiyama G-Master G2450HS-B1 Black Hawk', 'item_url': 'https://telegra.ph//file/9a9d724e992a3ae0f2806.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 21.5", 1920 x 1080px, VA\nCzęstotliwość odświeżania obrazu [Hz]: 75\nCzas reakcji matrycy [ms]: 1\nJasność ekranu [cd/m2]: 250\nProporcje ekranu: 16:9\nZłącza: Wyjście liniowe audio, HDMI x 1, DisplayPort x 1', 'item_price': '9,99', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVGGTbeES0huovHrD-iytya0rmPTptAAIkuzEbeNjZUi-Nj9DNo2QxAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 6, 16, 539244)}]
+db.py:119 #INFO     [2023-08-15 13:14:44,112] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-15 13:14:44,316] - aiogram.event - Update id=449045386 is handled. Duration 205 ms by bot id=6027584024
+db.py:119 #INFO     [2023-08-15 13:14:50,089] - db - Trying to get all items
+admin.py:117 #INFO     [2023-08-15 13:14:50,090] - tgbot.handlers.admin - [{'id': '5', 'item': 'Monitor iiyama G-Master G2450HS-B1 Black Hawk', 'item_url': 'https://telegra.ph//file/9a9d724e992a3ae0f2806.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 21.5", 1920 x 1080px, VA\nCzęstotliwość odświeżania obrazu [Hz]: 75\nCzas reakcji matrycy [ms]: 1\nJasność ekranu [cd/m2]: 250\nProporcje ekranu: 16:9\nZłącza: Wyjście liniowe audio, HDMI x 1, DisplayPort x 1', 'item_price': '9,99', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVGGTbeES0huovHrD-iytya0rmPTptAAIkuzEbeNjZUi-Nj9DNo2QxAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 6, 16, 539244)}]
+db.py:119 #INFO     [2023-08-15 13:14:50,090] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-15 13:14:50,197] - aiogram.event - Update id=449045387 is handled. Duration 109 ms by bot id=6027584024
+db.py:119 #INFO     [2023-08-15 13:15:17,758] - db - Trying to get all items
+admin.py:117 #INFO     [2023-08-15 13:15:17,759] - tgbot.handlers.admin - [{'id': '5', 'item': 'Monitor iiyama G-Master G2450HS-B1 Black Hawk', 'item_url': 'https://telegra.ph//file/9a9d724e992a3ae0f2806.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 21.5", 1920 x 1080px, VA\nCzęstotliwość odświeżania obrazu [Hz]: 75\nCzas reakcji matrycy [ms]: 1\nJasność ekranu [cd/m2]: 250\nProporcje ekranu: 16:9\nZłącza: Wyjście liniowe audio, HDMI x 1, DisplayPort x 1', 'item_price': '9,99', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVGGTbeES0huovHrD-iytya0rmPTptAAIkuzEbeNjZUi-Nj9DNo2QxAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 6, 16, 539244)}]
+db.py:119 #INFO     [2023-08-15 13:15:17,759] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-15 13:15:17,908] - aiogram.event - Update id=449045388 is handled. Duration 151 ms by bot id=6027584024
+db.py:119 #INFO     [2023-08-15 13:15:24,750] - db - Trying to get all items
+admin.py:117 #INFO     [2023-08-15 13:15:24,751] - tgbot.handlers.admin - [{'id': '5', 'item': 'Monitor iiyama G-Master G2450HS-B1 Black Hawk', 'item_url': 'https://telegra.ph//file/9a9d724e992a3ae0f2806.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 21.5", 1920 x 1080px, VA\nCzęstotliwość odświeżania obrazu [Hz]: 75\nCzas reakcji matrycy [ms]: 1\nJasność ekranu [cd/m2]: 250\nProporcje ekranu: 16:9\nZłącza: Wyjście liniowe audio, HDMI x 1, DisplayPort x 1', 'item_price': '9,99', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVGGTbeES0huovHrD-iytya0rmPTptAAIkuzEbeNjZUi-Nj9DNo2QxAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 6, 16, 539244)}]
+db.py:119 #INFO     [2023-08-15 13:15:24,751] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-15 13:15:24,901] - aiogram.event - Update id=449045389 is handled. Duration 151 ms by bot id=6027584024
+db.py:119 #INFO     [2023-08-15 13:20:26,501] - db - Trying to get all items
+admin.py:117 #INFO     [2023-08-15 13:20:26,502] - tgbot.handlers.admin - [{'id': '5', 'item': 'Monitor iiyama G-Master G2450HS-B1 Black Hawk', 'item_url': 'https://telegra.ph//file/9a9d724e992a3ae0f2806.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 21.5", 1920 x 1080px, VA\nCzęstotliwość odświeżania obrazu [Hz]: 75\nCzas reakcji matrycy [ms]: 1\nJasność ekranu [cd/m2]: 250\nProporcje ekranu: 16:9\nZłącza: Wyjście liniowe audio, HDMI x 1, DisplayPort x 1', 'item_price': '9,99', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVGGTbeES0huovHrD-iytya0rmPTptAAIkuzEbeNjZUi-Nj9DNo2QxAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 6, 16, 539244)}]
+db.py:119 #INFO     [2023-08-15 13:20:26,502] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-15 13:20:26,760] - aiogram.event - Update id=449045390 is handled. Duration 260 ms by bot id=6027584024
+db.py:119 #INFO     [2023-08-15 13:20:31,100] - db - Trying to get all items
+admin.py:117 #INFO     [2023-08-15 13:20:31,101] - tgbot.handlers.admin - [{'id': '5', 'item': 'Monitor iiyama G-Master G2450HS-B1 Black Hawk', 'item_url': 'https://telegra.ph//file/9a9d724e992a3ae0f2806.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 21.5", 1920 x 1080px, VA\nCzęstotliwość odświeżania obrazu [Hz]: 75\nCzas reakcji matrycy [ms]: 1\nJasność ekranu [cd/m2]: 250\nProporcje ekranu: 16:9\nZłącza: Wyjście liniowe audio, HDMI x 1, DisplayPort x 1', 'item_price': '9,99', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVGGTbeES0huovHrD-iytya0rmPTptAAIkuzEbeNjZUi-Nj9DNo2QxAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 6, 16, 539244)}]
+db.py:119 #INFO     [2023-08-15 13:20:31,102] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-15 13:20:31,150] - aiogram.event - Update id=449045391 is handled. Duration 50 ms by bot id=6027584024
+db.py:119 #INFO     [2023-08-15 13:20:41,212] - db - Trying to get all items
+admin.py:117 #INFO     [2023-08-15 13:20:41,213] - tgbot.handlers.admin - [{'id': '5', 'item': 'Monitor iiyama G-Master G2450HS-B1 Black Hawk', 'item_url': 'https://telegra.ph//file/9a9d724e992a3ae0f2806.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 21.5", 1920 x 1080px, VA\nCzęstotliwość odświeżania obrazu [Hz]: 75\nCzas reakcji matrycy [ms]: 1\nJasność ekranu [cd/m2]: 250\nProporcje ekranu: 16:9\nZłącza: Wyjście liniowe audio, HDMI x 1, DisplayPort x 1', 'item_price': '9,99', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVGGTbeES0huovHrD-iytya0rmPTptAAIkuzEbeNjZUi-Nj9DNo2QxAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 6, 16, 539244)}]
+db.py:119 #INFO     [2023-08-15 13:20:41,214] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-15 13:20:41,265] - aiogram.event - Update id=449045392 is handled. Duration 53 ms by bot id=6027584024
+db.py:119 #INFO     [2023-08-15 13:20:43,533] - db - Trying to get all items
+admin.py:117 #INFO     [2023-08-15 13:20:43,534] - tgbot.handlers.admin - [{'id': '5', 'item': 'Monitor iiyama G-Master G2450HS-B1 Black Hawk', 'item_url': 'https://telegra.ph//file/9a9d724e992a3ae0f2806.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 21.5", 1920 x 1080px, VA\nCzęstotliwość odświeżania obrazu [Hz]: 75\nCzas reakcji matrycy [ms]: 1\nJasność ekranu [cd/m2]: 250\nProporcje ekranu: 16:9\nZłącza: Wyjście liniowe audio, HDMI x 1, DisplayPort x 1', 'item_price': '9,99', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVGGTbeES0huovHrD-iytya0rmPTptAAIkuzEbeNjZUi-Nj9DNo2QxAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 6, 16, 539244)}]
+db.py:119 #INFO     [2023-08-15 13:20:43,534] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-15 13:20:43,598] - aiogram.event - Update id=449045393 is handled. Duration 65 ms by bot id=6027584024
+db.py:119 #INFO     [2023-08-15 13:20:53,210] - db - Trying to get all items
+admin.py:117 #INFO     [2023-08-15 13:20:53,211] - tgbot.handlers.admin - [{'id': '5', 'item': 'Monitor iiyama G-Master G2450HS-B1 Black Hawk', 'item_url': 'https://telegra.ph//file/9a9d724e992a3ae0f2806.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 21.5", 1920 x 1080px, VA\nCzęstotliwość odświeżania obrazu [Hz]: 75\nCzas reakcji matrycy [ms]: 1\nJasność ekranu [cd/m2]: 250\nProporcje ekranu: 16:9\nZłącza: Wyjście liniowe audio, HDMI x 1, DisplayPort x 1', 'item_price': '9,99', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVGGTbeES0huovHrD-iytya0rmPTptAAIkuzEbeNjZUi-Nj9DNo2QxAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 6, 16, 539244)}]
+db.py:119 #INFO     [2023-08-15 13:20:53,211] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-15 13:20:53,270] - aiogram.event - Update id=449045394 is handled. Duration 60 ms by bot id=6027584024
+db.py:119 #INFO     [2023-08-15 13:22:30,928] - db - Trying to get all items
+admin.py:117 #INFO     [2023-08-15 13:22:30,929] - tgbot.handlers.admin - [{'id': '5', 'item': 'Monitor iiyama G-Master G2450HS-B1 Black Hawk', 'item_url': 'https://telegra.ph//file/9a9d724e992a3ae0f2806.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 21.5", 1920 x 1080px, VA\nCzęstotliwość odświeżania obrazu [Hz]: 75\nCzas reakcji matrycy [ms]: 1\nJasność ekranu [cd/m2]: 250\nProporcje ekranu: 16:9\nZłącza: Wyjście liniowe audio, HDMI x 1, DisplayPort x 1', 'item_price': '9,99', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVGGTbeES0huovHrD-iytya0rmPTptAAIkuzEbeNjZUi-Nj9DNo2QxAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 6, 16, 539244)}]
+db.py:119 #INFO     [2023-08-15 13:22:30,929] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-15 13:22:31,157] - aiogram.event - Update id=449045395 is handled. Duration 230 ms by bot id=6027584024
+dispatcher.py:451 #WARNING  [2023-08-15 13:23:51,156] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-08-15 13:23:51,157] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:547 #INFO     [2023-08-15 13:23:51,157] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-08-15 13:24:01,773] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-08-15 13:24:02,145] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-08-15 13:24:02,196] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-08-15 13:24:02,197] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-08-15 13:24:02,240] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Celestial'
+db.py:119 #INFO     [2023-08-15 13:24:08,050] - db - Trying to get all items
+admin.py:117 #INFO     [2023-08-15 13:24:08,056] - tgbot.handlers.admin - [{'id': '5', 'item': 'Monitor iiyama G-Master G2450HS-B1 Black Hawk', 'item_url': 'https://telegra.ph/file/9a9d724e992a3ae0f2806.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 21.5", 1920 x 1080px, VA\r\nCzęstotliwość odświeżania obrazu [Hz]: 75\r\nCzas reakcji matrycy [ms]: 1\r\nJasność ekranu [cd/m2]: 250\r\nProporcje ekranu: 16:9\r\nZłącza: Wyjście liniowe audio, HDMI x 1, DisplayPort x 1', 'item_price': '9,99', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVGGTbeES0huovHrD-iytya0rmPTptAAIkuzEbeNjZUi-Nj9DNo2QxAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 6, 16, 539244)}]
+db.py:119 #INFO     [2023-08-15 13:24:08,056] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-15 13:24:08,227] - aiogram.event - Update id=449045396 is handled. Duration 177 ms by bot id=6027584024
+db.py:119 #INFO     [2023-08-15 13:24:22,247] - db - Trying to get all items
+admin.py:117 #INFO     [2023-08-15 13:24:22,248] - tgbot.handlers.admin - [{'id': '5', 'item': 'Monitor iiyama G-Master G2450HS-B1 Black Hawk', 'item_url': 'https://telegra.ph/file/9a9d724e992a3ae0f2806.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 21.5", 1920 x 1080px, VA\r\nCzęstotliwość odświeżania obrazu [Hz]: 75\r\nCzas reakcji matrycy [ms]: 1\r\nJasność ekranu [cd/m2]: 250\r\nProporcje ekranu: 16:9\r\nZłącza: Wyjście liniowe audio, HDMI x 1, DisplayPort x 1', 'item_price': '9,99', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVGGTbeES0huovHrD-iytya0rmPTptAAIkuzEbeNjZUi-Nj9DNo2QxAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 6, 16, 539244)}]
+db.py:119 #INFO     [2023-08-15 13:24:22,248] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-15 13:24:22,356] - aiogram.event - Update id=449045397 is handled. Duration 109 ms by bot id=6027584024
+db.py:119 #INFO     [2023-08-15 13:26:07,371] - db - Trying to get all items
+admin.py:117 #INFO     [2023-08-15 13:26:07,373] - tgbot.handlers.admin - [{'id': '5', 'item': 'Monitor iiyama G-Master G2450HS-B1 Black Hawk', 'item_url': 'https://telegra.ph/file/9a9d724e992a3ae0f2806.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 21.5", 1920 x 1080px, VA\r\nCzęstotliwość odświeżania obrazu [Hz]: 75\r\nCzas reakcji matrycy [ms]: 1\r\nJasność ekranu [cd/m2]: 250\r\nProporcje ekranu: 16:9\r\nZłącza: Wyjście liniowe audio, HDMI x 1, DisplayPort x 1', 'item_price': '9,99', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVGGTbeES0huovHrD-iytya0rmPTptAAIkuzEbeNjZUi-Nj9DNo2QxAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 6, 16, 539244)}]
+db.py:119 #INFO     [2023-08-15 13:26:07,373] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-15 13:26:07,567] - aiogram.event - Update id=449045398 is handled. Duration 196 ms by bot id=6027584024
+db.py:119 #INFO     [2023-08-15 13:26:14,986] - db - Trying to get all items
+admin.py:117 #INFO     [2023-08-15 13:26:14,987] - tgbot.handlers.admin - [{'id': '5', 'item': 'Monitor iiyama G-Master G2450HS-B1 Black Hawk', 'item_url': 'https://telegra.ph/file/9a9d724e992a3ae0f2806.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 21.5", 1920 x 1080px, VA\r\nCzęstotliwość odświeżania obrazu [Hz]: 75\r\nCzas reakcji matrycy [ms]: 1\r\nJasność ekranu [cd/m2]: 250\r\nProporcje ekranu: 16:9\r\nZłącza: Wyjście liniowe audio, HDMI x 1, DisplayPort x 1', 'item_price': '9,99', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVGGTbeES0huovHrD-iytya0rmPTptAAIkuzEbeNjZUi-Nj9DNo2QxAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 6, 16, 539244)}]
+db.py:119 #INFO     [2023-08-15 13:26:14,987] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-15 13:26:15,037] - aiogram.event - Update id=449045399 is handled. Duration 51 ms by bot id=6027584024
+dispatcher.py:451 #WARNING  [2023-08-15 13:26:59,653] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-08-15 13:26:59,654] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:547 #INFO     [2023-08-15 13:26:59,655] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-08-15 13:27:11,196] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-08-15 13:27:11,502] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-08-15 13:27:11,553] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-08-15 13:27:11,554] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-08-15 13:27:11,598] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Celestial'
+db.py:119 #INFO     [2023-08-15 13:27:35,303] - db - Trying to get all items
+admin.py:117 #INFO     [2023-08-15 13:27:35,309] - tgbot.handlers.admin - [{'id': '5', 'item': 'Monitor iiyama G-Master G2450HS-B1 Black Hawk', 'item_url': 'https://images.morele.net/full/12620467_0_f.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 21.5", 1920 x 1080px, VA\r\nCzęstotliwość odświeżania obrazu [Hz]: 75\r\nCzas reakcji matrycy [ms]: 1\r\nJasność ekranu [cd/m2]: 250\r\nProporcje ekranu: 16:9\r\nZłącza: Wyjście liniowe audio, HDMI x 1, DisplayPort x 1', 'item_price': '9,99', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVGGTbeES0huovHrD-iytya0rmPTptAAIkuzEbeNjZUi-Nj9DNo2QxAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 6, 16, 539244)}]
+db.py:119 #INFO     [2023-08-15 13:27:35,309] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-15 13:27:35,515] - aiogram.event - Update id=449045400 is handled. Duration 213 ms by bot id=6027584024
+dispatcher.py:451 #WARNING  [2023-08-15 13:27:43,508] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-08-15 13:27:43,509] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:547 #INFO     [2023-08-15 13:27:43,509] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-08-15 13:27:52,795] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-08-15 13:27:53,096] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-08-15 13:27:53,147] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-08-15 13:27:53,148] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-08-15 13:27:53,187] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Celestial'
+db.py:119 #INFO     [2023-08-15 13:27:54,684] - db - Trying to get all items
+admin.py:117 #INFO     [2023-08-15 13:27:54,689] - tgbot.handlers.admin - [{'id': '5', 'item': 'Monitor iiyama G-Master G2450HS-B1 Black Hawk', 'item_url': 'https://images.morele.net/full/12620467_0_f.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 21.5", 1920 x 1080px, VA\r\nCzęstotliwość odświeżania obrazu [Hz]: 75\r\nCzas reakcji matrycy [ms]: 1\r\nJasność ekranu [cd/m2]: 250\r\nProporcje ekranu: 16:9\r\nZłącza: Wyjście liniowe audio, HDMI x 1, DisplayPort x 1', 'item_price': '9,99', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVGGTbeES0huovHrD-iytya0rmPTptAAIkuzEbeNjZUi-Nj9DNo2QxAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 6, 16, 539244)}]
+db.py:119 #INFO     [2023-08-15 13:27:54,689] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-15 13:27:54,817] - aiogram.event - Update id=449045401 is handled. Duration 134 ms by bot id=6027584024
+db.py:119 #INFO     [2023-08-15 13:28:26,522] - db - Trying to get all items
+admin.py:117 #INFO     [2023-08-15 13:28:26,525] - tgbot.handlers.admin - [{'id': '5', 'item': 'Monitor iiyama G-Master G2450HS-B1 Black Hawk', 'item_url': 'https://images.morele.net/full/12620467_0_f.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 21.5", 1920 x 1080px, VA\r\nCzęstotliwość odświeżania obrazu [Hz]: 75\r\nCzas reakcji matrycy [ms]: 1\r\nJasność ekranu [cd/m2]: 250\r\nProporcje ekranu: 16:9\r\nZłącza: Wyjście liniowe audio, HDMI x 1, DisplayPort x 1', 'item_price': '9,99', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVGGTbeES0huovHrD-iytya0rmPTptAAIkuzEbeNjZUi-Nj9DNo2QxAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 6, 16, 539244)}]
+db.py:119 #INFO     [2023-08-15 13:28:26,525] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-15 13:28:26,717] - aiogram.event - Update id=449045402 is handled. Duration 195 ms by bot id=6027584024
+db.py:119 #INFO     [2023-08-15 13:29:19,865] - db - Trying to get all items
+admin.py:117 #INFO     [2023-08-15 13:29:19,867] - tgbot.handlers.admin - [{'id': '5', 'item': 'Monitor iiyama G-Master G2450HS-B1 Black Hawk', 'item_url': 'https://images.morele.net/full/12620467_0_f.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 21.5", 1920 x 1080px, VA\r\nCzęstotliwość odświeżania obrazu [Hz]: 75\r\nCzas reakcji matrycy [ms]: 1\r\nJasność ekranu [cd/m2]: 250\r\nProporcje ekranu: 16:9\r\nZłącza: Wyjście liniowe audio, HDMI x 1, DisplayPort x 1', 'item_price': '9,99', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVGGTbeES0huovHrD-iytya0rmPTptAAIkuzEbeNjZUi-Nj9DNo2QxAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 6, 16, 539244)}]
+db.py:119 #INFO     [2023-08-15 13:29:19,867] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-15 13:29:20,034] - aiogram.event - Update id=449045403 is handled. Duration 168 ms by bot id=6027584024
+db.py:119 #INFO     [2023-08-15 13:29:31,905] - db - Trying to get all items
+admin.py:117 #INFO     [2023-08-15 13:29:31,906] - tgbot.handlers.admin - [{'id': '5', 'item': 'Monitor iiyama G-Master G2450HS-B1 Black Hawk', 'item_url': 'https://images.morele.net/full/12620467_0_f.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 21.5", 1920 x 1080px, VA\r\nCzęstotliwość odświeżania obrazu [Hz]: 75\r\nCzas reakcji matrycy [ms]: 1\r\nJasność ekranu [cd/m2]: 250\r\nProporcje ekranu: 16:9\r\nZłącza: Wyjście liniowe audio, HDMI x 1, DisplayPort x 1', 'item_price': '9,99', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVGGTbeES0huovHrD-iytya0rmPTptAAIkuzEbeNjZUi-Nj9DNo2QxAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 6, 16, 539244)}]
+db.py:119 #INFO     [2023-08-15 13:29:31,906] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-15 13:29:32,008] - aiogram.event - Update id=449045404 is handled. Duration 103 ms by bot id=6027584024
+dispatcher.py:451 #WARNING  [2023-08-15 13:29:56,519] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-08-15 13:29:56,520] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:547 #INFO     [2023-08-15 13:29:56,520] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-08-15 13:32:42,546] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-08-15 13:32:42,846] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-08-15 13:32:42,897] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-08-15 13:32:42,898] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-08-15 13:32:42,933] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Celestial'
+db.py:119 #INFO     [2023-08-15 13:33:13,247] - db - Trying to get all items
+admin.py:117 #INFO     [2023-08-15 13:33:13,253] - tgbot.handlers.admin - [{'id': '5', 'item': 'Monitor iiyama G-Master G2450HS-B1 Black Hawk', 'item_url': 'https://images.morele.net/full/12620467_0_f.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 21.5", 1920 x 1080px, VA\r\nCzęstotliwość odświeżania obrazu [Hz]: 75\r\nCzas reakcji matrycy [ms]: 1\r\nJasność ekranu [cd/m2]: 250\r\nProporcje ekranu: 16:9\r\nZłącza: Wyjście liniowe audio, HDMI x 1, DisplayPort x 1', 'item_price': '9,99', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVGGTbeES0huovHrD-iytya0rmPTptAAIkuzEbeNjZUi-Nj9DNo2QxAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 6, 16, 539244)}]
+db.py:119 #INFO     [2023-08-15 13:33:13,253] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-15 13:33:13,463] - aiogram.event - Update id=449045405 is handled. Duration 216 ms by bot id=6027584024
+db.py:119 #INFO     [2023-08-15 13:33:19,340] - db - Trying to get all items
+admin.py:117 #INFO     [2023-08-15 13:33:19,341] - tgbot.handlers.admin - [{'id': '5', 'item': 'Monitor iiyama G-Master G2450HS-B1 Black Hawk', 'item_url': 'https://images.morele.net/full/12620467_0_f.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 21.5", 1920 x 1080px, VA\r\nCzęstotliwość odświeżania obrazu [Hz]: 75\r\nCzas reakcji matrycy [ms]: 1\r\nJasność ekranu [cd/m2]: 250\r\nProporcje ekranu: 16:9\r\nZłącza: Wyjście liniowe audio, HDMI x 1, DisplayPort x 1', 'item_price': '9,99', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVGGTbeES0huovHrD-iytya0rmPTptAAIkuzEbeNjZUi-Nj9DNo2QxAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 6, 16, 539244)}]
+db.py:119 #INFO     [2023-08-15 13:33:19,341] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-15 13:33:19,418] - aiogram.event - Update id=449045406 is handled. Duration 77 ms by bot id=6027584024
+db.py:119 #INFO     [2023-08-15 13:34:52,938] - db - Trying to get all items
+admin.py:117 #INFO     [2023-08-15 13:34:52,939] - tgbot.handlers.admin - [{'id': '5', 'item': 'Monitor iiyama G-Master G2450HS-B1 Black Hawk', 'item_url': 'https://images.morele.net/full/12620467_0_f.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 21.5", 1920 x 1080px, VA\r\nCzęstotliwość odświeżania obrazu [Hz]: 75\r\nCzas reakcji matrycy [ms]: 1\r\nJasność ekranu [cd/m2]: 250\r\nProporcje ekranu: 16:9\r\nZłącza: Wyjście liniowe audio, HDMI x 1, DisplayPort x 1', 'item_price': '9,99', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVGGTbeES0huovHrD-iytya0rmPTptAAIkuzEbeNjZUi-Nj9DNo2QxAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 6, 16, 539244)}]
+db.py:119 #INFO     [2023-08-15 13:34:52,940] - db - Trying to get all items
+admin.py:138 #ERROR    [2023-08-15 13:34:58,032] - tgbot.handlers.admin - HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [None]
+dispatcher.py:171 #INFO     [2023-08-15 13:34:58,033] - aiogram.event - Update id=449045407 is handled. Duration 5094 ms by bot id=6027584024
+dispatcher.py:451 #WARNING  [2023-08-15 13:35:03,679] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-08-15 13:35:03,680] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:547 #INFO     [2023-08-15 13:35:03,680] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-08-15 13:35:16,266] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-08-15 13:35:16,555] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-08-15 13:35:16,606] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-08-15 13:35:16,607] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-08-15 13:35:16,647] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Celestial'
+db.py:119 #INFO     [2023-08-15 13:35:20,483] - db - Trying to get all items
+admin.py:117 #INFO     [2023-08-15 13:35:20,487] - tgbot.handlers.admin - [{'id': '5', 'item': 'Monitor iiyama G-Master G2450HS-B1 Black Hawk', 'item_url': 'https://images.morele.net/full/12620467_0_f.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 21.5", 1920 x 1080px, VA\r\nCzęstotliwość odświeżania obrazu [Hz]: 75\r\nCzas reakcji matrycy [ms]: 1\r\nJasność ekranu [cd/m2]: 250\r\nProporcje ekranu: 16:9\r\nZłącza: Wyjście liniowe audio, HDMI x 1, DisplayPort x 1', 'item_price': '9,99', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVGGTbeES0huovHrD-iytya0rmPTptAAIkuzEbeNjZUi-Nj9DNo2QxAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 6, 16, 539244)}]
+db.py:119 #INFO     [2023-08-15 13:35:20,488] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-15 13:35:20,719] - aiogram.event - Update id=449045408 is handled. Duration 235 ms by bot id=6027584024
+dispatcher.py:171 #INFO     [2023-08-15 13:35:25,632] - aiogram.event - Update id=449045409 is not handled. Duration 0 ms by bot id=6027584024
+db.py:119 #INFO     [2023-08-15 13:35:27,874] - db - Trying to get all items
+admin.py:117 #INFO     [2023-08-15 13:35:27,875] - tgbot.handlers.admin - [{'id': '5', 'item': 'Monitor iiyama G-Master G2450HS-B1 Black Hawk', 'item_url': 'https://images.morele.net/full/12620467_0_f.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 21.5", 1920 x 1080px, VA\r\nCzęstotliwość odświeżania obrazu [Hz]: 75\r\nCzas reakcji matrycy [ms]: 1\r\nJasność ekranu [cd/m2]: 250\r\nProporcje ekranu: 16:9\r\nZłącza: Wyjście liniowe audio, HDMI x 1, DisplayPort x 1', 'item_price': '9,99', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVGGTbeES0huovHrD-iytya0rmPTptAAIkuzEbeNjZUi-Nj9DNo2QxAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 6, 16, 539244)}]
+db.py:119 #INFO     [2023-08-15 13:35:27,876] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-15 13:35:27,926] - aiogram.event - Update id=449045410 is handled. Duration 52 ms by bot id=6027584024
+db.py:119 #INFO     [2023-08-15 13:35:53,078] - db - Trying to get all items
+admin.py:117 #INFO     [2023-08-15 13:35:53,080] - tgbot.handlers.admin - [{'id': '5', 'item': 'Monitor iiyama G-Master G2450HS-B1 Black Hawk', 'item_url': 'https://images.morele.net/full/12620467_0_f.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 21.5", 1920 x 1080px, VA\r\nCzęstotliwość odświeżania obrazu [Hz]: 75\r\nCzas reakcji matrycy [ms]: 1\r\nJasność ekranu [cd/m2]: 250\r\nProporcje ekranu: 16:9\r\nZłącza: Wyjście liniowe audio, HDMI x 1, DisplayPort x 1', 'item_price': '9,99', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVGGTbeES0huovHrD-iytya0rmPTptAAIkuzEbeNjZUi-Nj9DNo2QxAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 6, 16, 539244)}]
+db.py:119 #INFO     [2023-08-15 13:35:53,080] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-15 13:35:53,246] - aiogram.event - Update id=449045411 is handled. Duration 169 ms by bot id=6027584024
+db.py:119 #INFO     [2023-08-15 13:36:14,792] - db - Trying to get all items
+admin.py:117 #INFO     [2023-08-15 13:36:14,793] - tgbot.handlers.admin - [{'id': '5', 'item': 'Monitor iiyama G-Master G2450HS-B1 Black Hawk', 'item_url': 'https://images.morele.net/full/12620467_0_f.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 21.5", 1920 x 1080px, VA\r\nCzęstotliwość odświeżania obrazu [Hz]: 75\r\nCzas reakcji matrycy [ms]: 1\r\nJasność ekranu [cd/m2]: 250\r\nProporcje ekranu: 16:9\r\nZłącza: Wyjście liniowe audio, HDMI x 1, DisplayPort x 1', 'item_price': '9,99', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVGGTbeES0huovHrD-iytya0rmPTptAAIkuzEbeNjZUi-Nj9DNo2QxAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 6, 16, 539244)}]
+db.py:119 #INFO     [2023-08-15 13:36:14,793] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-15 13:36:14,952] - aiogram.event - Update id=449045412 is handled. Duration 160 ms by bot id=6027584024
+dispatcher.py:451 #WARNING  [2023-08-15 13:36:20,336] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-08-15 13:36:20,337] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:547 #INFO     [2023-08-15 13:36:20,337] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-08-15 13:36:36,081] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-08-15 13:36:36,360] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-08-15 13:36:36,410] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-08-15 13:36:36,411] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-08-15 13:36:36,451] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Celestial'
+db.py:119 #INFO     [2023-08-15 13:37:03,138] - db - Trying to get all items
+admin.py:117 #INFO     [2023-08-15 13:37:03,142] - tgbot.handlers.admin - [{'id': '5', 'item': 'Monitor iiyama G-Master G2450HS-B1 Black Hawk', 'item_url': 'https://images.morele.net/full/12620467_0_f.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 21.5", 1920 x 1080px, VA\r\nCzęstotliwość odświeżania obrazu [Hz]: 75\r\nCzas reakcji matrycy [ms]: 1\r\nJasność ekranu [cd/m2]: 250\r\nProporcje ekranu: 16:9\r\nZłącza: Wyjście liniowe audio, HDMI x 1, DisplayPort x 1', 'item_price': '9,99', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVGGTbeES0huovHrD-iytya0rmPTptAAIkuzEbeNjZUi-Nj9DNo2QxAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 6, 16, 539244)}]
+db.py:119 #INFO     [2023-08-15 13:37:03,142] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-15 13:37:03,318] - aiogram.event - Update id=449045413 is handled. Duration 180 ms by bot id=6027584024
+db.py:119 #INFO     [2023-08-15 13:37:19,396] - db - Trying to get all items
+admin.py:117 #INFO     [2023-08-15 13:37:19,397] - tgbot.handlers.admin - [{'id': '5', 'item': 'Monitor iiyama G-Master G2450HS-B1 Black Hawk', 'item_url': 'https://images.morele.net/full/12620467_0_f.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 21.5", 1920 x 1080px, VA\r\nCzęstotliwość odświeżania obrazu [Hz]: 75\r\nCzas reakcji matrycy [ms]: 1\r\nJasność ekranu [cd/m2]: 250\r\nProporcje ekranu: 16:9\r\nZłącza: Wyjście liniowe audio, HDMI x 1, DisplayPort x 1', 'item_price': '9,99', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVGGTbeES0huovHrD-iytya0rmPTptAAIkuzEbeNjZUi-Nj9DNo2QxAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 6, 16, 539244)}]
+db.py:119 #INFO     [2023-08-15 13:37:19,397] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-15 13:37:19,574] - aiogram.event - Update id=449045414 is handled. Duration 178 ms by bot id=6027584024
+dispatcher.py:451 #WARNING  [2023-08-15 13:37:52,563] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-08-15 13:37:52,565] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:547 #INFO     [2023-08-15 13:37:52,565] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-08-15 13:38:01,610] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-08-15 13:38:01,916] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-08-15 13:38:01,967] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-08-15 13:38:01,968] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-08-15 13:38:02,022] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Celestial'
+admin.py:96 #INFO     [2023-08-15 13:38:03,069] - root - [683497406, 'd_w_y_t', 'be31fd64', '123456', 0, 683497406, datetime.datetime(2023, 8, 15, 11, 27, 38, 100178)]
+dispatcher.py:171 #INFO     [2023-08-15 13:38:03,399] - aiogram.event - Update id=449045415 is handled. Duration 341 ms by bot id=6027584024
+reply.py:96 #INFO     [2023-08-15 13:38:04,281] - tgbot.keyboards.reply - You are in main_menu_reply
+dispatcher.py:171 #INFO     [2023-08-15 13:38:04,576] - aiogram.event - Update id=449045416 is handled. Duration 295 ms by bot id=6027584024
+dispatcher.py:171 #INFO     [2023-08-15 13:38:05,387] - aiogram.event - Update id=449045417 is handled. Duration 153 ms by bot id=6027584024
+reply.py:115 #INFO     [2023-08-15 13:38:28,161] - tgbot.keyboards.reply - You are in add_item_reply
+reply.py:119 #INFO     [2023-08-15 13:38:28,161] - tgbot.keyboards.reply - Monitor ACER Predator XB253QGW 24.5" 1920x1080px IPS 280Hz 1 ms
+dispatcher.py:171 #INFO     [2023-08-15 13:38:28,654] - aiogram.event - Update id=449045418 is handled. Duration 493 ms by bot id=6027584024
+reply.py:130 #INFO     [2023-08-15 13:38:30,444] - tgbot.keyboards.reply - You are in add_description_reply
+dispatcher.py:171 #INFO     [2023-08-15 13:38:30,706] - aiogram.event - Update id=449045419 is handled. Duration 263 ms by bot id=6027584024
+reply.py:145 #INFO     [2023-08-15 13:38:33,989] - tgbot.keyboards.reply - You are in add_price_reply
+dispatcher.py:171 #INFO     [2023-08-15 13:38:34,225] - aiogram.event - Update id=449045420 is handled. Duration 236 ms by bot id=6027584024
+reply.py:160 #INFO     [2023-08-15 13:38:35,102] - tgbot.keyboards.reply - You are in add_price_reply
+dispatcher.py:171 #INFO     [2023-08-15 13:38:35,325] - aiogram.event - Update id=449045421 is handled. Duration 224 ms by bot id=6027584024
+reply.py:175 #INFO     [2023-08-15 13:38:49,135] - tgbot.keyboards.reply - You are in add_photo_reply
+reply.py:196 #INFO     [2023-08-15 13:38:49,841] - tgbot.keyboards.reply - https://telegra.ph/upload
+reply.py:199 #INFO     [2023-08-15 13:38:49,842] - tgbot.keyboards.reply - https://telegra.ph//file/5c10f1b92a80f318dc86d.jpg
+dispatcher.py:171 #INFO     [2023-08-15 13:38:50,004] - aiogram.event - Update id=449045422 is handled. Duration 869 ms by bot id=6027584024
+reply.py:227 #INFO     [2023-08-15 13:38:50,979] - tgbot.keyboards.reply - You are in add_item_confirmation_reply
+db.py:109 #INFO     [2023-08-15 13:38:50,980] - db - Trying to save item.
+db.py:116 #INFO     [2023-08-15 13:38:50,987] - db - Item successfully saved!
+dispatcher.py:171 #INFO     [2023-08-15 13:38:51,167] - aiogram.event - Update id=449045423 is handled. Duration 188 ms by bot id=6027584024
+reply.py:246 #INFO     [2023-08-15 13:38:52,185] - tgbot.keyboards.reply - You are in item_added_reply
+dispatcher.py:171 #INFO     [2023-08-15 13:38:52,442] - aiogram.event - Update id=449045424 is handled. Duration 257 ms by bot id=6027584024
+dispatcher.py:171 #INFO     [2023-08-15 13:38:54,664] - aiogram.event - Update id=449045425 is handled. Duration 139 ms by bot id=6027584024
+db.py:119 #INFO     [2023-08-15 13:38:59,117] - db - Trying to get all items
+admin.py:117 #INFO     [2023-08-15 13:38:59,120] - tgbot.handlers.admin - [{'id': '5', 'item': 'Monitor iiyama G-Master G2450HS-B1 Black Hawk', 'item_url': 'https://telegra.ph/file/9a9d724e992a3ae0f2806.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 21.5", 1920 x 1080px, VA\r\nCzęstotliwość odświeżania obrazu [Hz]: 75\r\nCzas reakcji matrycy [ms]: 1\r\nJasność ekranu [cd/m2]: 250\r\nProporcje ekranu: 16:9\r\nZłącza: Wyjście liniowe audio, HDMI x 1, DisplayPort x 1', 'item_price': '9,99', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVGGTbeES0huovHrD-iytya0rmPTptAAIkuzEbeNjZUi-Nj9DNo2QxAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 6, 16, 539244)}, {'id': '6', 'item': 'Monitor ACER Predator XB253QGW 24.5" 1920x1080px IPS 280Hz 1 ms', 'item_url': 'https://telegra.ph//file/5c10f1b92a80f318dc86d.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 24.5", 1920 x 1080px, IPS\nCzęstotliwość odświeżania obrazu [Hz]: 280\nCzas reakcji matrycy [ms]: 1\nJasność ekranu [cd/m2]: 400\nProporcje ekranu: 16:9\nZłącza: Wyjście liniowe audio, USB x 2, HDMI x 2, DisplayPort x 1', 'item_price': '6,45', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVLWTbf-kmoxDSLFOyZL286jr7vqvyAAKRuzEbeNjZUk1lvM7tNo0dAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 38, 50, 980016)}]
+db.py:119 #INFO     [2023-08-15 13:38:59,120] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-15 13:38:59,184] - aiogram.event - Update id=449045426 is handled. Duration 67 ms by bot id=6027584024
+db.py:119 #INFO     [2023-08-15 13:39:07,526] - db - Trying to get all items
+admin.py:117 #INFO     [2023-08-15 13:39:07,528] - tgbot.handlers.admin - [{'id': '5', 'item': 'Monitor iiyama G-Master G2450HS-B1 Black Hawk', 'item_url': 'https://telegra.ph/file/9a9d724e992a3ae0f2806.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 21.5", 1920 x 1080px, VA\r\nCzęstotliwość odświeżania obrazu [Hz]: 75\r\nCzas reakcji matrycy [ms]: 1\r\nJasność ekranu [cd/m2]: 250\r\nProporcje ekranu: 16:9\r\nZłącza: Wyjście liniowe audio, HDMI x 1, DisplayPort x 1', 'item_price': '9,99', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVGGTbeES0huovHrD-iytya0rmPTptAAIkuzEbeNjZUi-Nj9DNo2QxAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 6, 16, 539244)}, {'id': '6', 'item': 'Monitor ACER Predator XB253QGW 24.5" 1920x1080px IPS 280Hz 1 ms', 'item_url': 'https://telegra.ph//file/5c10f1b92a80f318dc86d.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 24.5", 1920 x 1080px, IPS\nCzęstotliwość odświeżania obrazu [Hz]: 280\nCzas reakcji matrycy [ms]: 1\nJasność ekranu [cd/m2]: 400\nProporcje ekranu: 16:9\nZłącza: Wyjście liniowe audio, USB x 2, HDMI x 2, DisplayPort x 1', 'item_price': '6,45', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVLWTbf-kmoxDSLFOyZL286jr7vqvyAAKRuzEbeNjZUk1lvM7tNo0dAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 38, 50, 980016)}]
+db.py:119 #INFO     [2023-08-15 13:39:07,528] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-15 13:39:07,595] - aiogram.event - Update id=449045427 is handled. Duration 68 ms by bot id=6027584024
+dispatcher.py:451 #WARNING  [2023-08-15 13:39:43,536] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-08-15 13:39:43,537] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:547 #INFO     [2023-08-15 13:39:43,537] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-08-15 14:10:18,150] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-08-15 14:10:18,503] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-08-15 14:10:18,553] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-08-15 14:10:18,554] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-08-15 14:10:18,592] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Celestial'
+db.py:119 #INFO     [2023-08-15 14:10:20,290] - db - Trying to get all items
+admin.py:117 #INFO     [2023-08-15 14:10:20,294] - tgbot.handlers.admin - [{'id': '5', 'item': 'Monitor iiyama G-Master G2450HS-B1 Black Hawk', 'item_url': 'https://telegra.ph/file/9a9d724e992a3ae0f2806.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 21.5", 1920 x 1080px, VA\r\nCzęstotliwość odświeżania obrazu [Hz]: 75\r\nCzas reakcji matrycy [ms]: 1\r\nJasność ekranu [cd/m2]: 250\r\nProporcje ekranu: 16:9\r\nZłącza: Wyjście liniowe audio, HDMI x 1, DisplayPort x 1', 'item_price': '9,99', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVGGTbeES0huovHrD-iytya0rmPTptAAIkuzEbeNjZUi-Nj9DNo2QxAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 6, 16, 539244)}, {'id': '6', 'item': 'Monitor ACER Predator XB253QGW 24.5" 1920x1080px IPS 280Hz 1 ms', 'item_url': 'https://telegra.ph//file/5c10f1b92a80f318dc86d.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 24.5", 1920 x 1080px, IPS\nCzęstotliwość odświeżania obrazu [Hz]: 280\nCzas reakcji matrycy [ms]: 1\nJasność ekranu [cd/m2]: 400\nProporcje ekranu: 16:9\nZłącza: Wyjście liniowe audio, USB x 2, HDMI x 2, DisplayPort x 1', 'item_price': '6,45', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVLWTbf-kmoxDSLFOyZL286jr7vqvyAAKRuzEbeNjZUk1lvM7tNo0dAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 38, 50, 980016)}]
+db.py:119 #INFO     [2023-08-15 14:10:20,294] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-15 14:10:20,505] - aiogram.event - Update id=449045429 is handled. Duration 215 ms by bot id=6027584024
+db.py:119 #INFO     [2023-08-15 14:10:25,817] - db - Trying to get all items
+admin.py:117 #INFO     [2023-08-15 14:10:25,818] - tgbot.handlers.admin - [{'id': '5', 'item': 'Monitor iiyama G-Master G2450HS-B1 Black Hawk', 'item_url': 'https://telegra.ph/file/9a9d724e992a3ae0f2806.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 21.5", 1920 x 1080px, VA\r\nCzęstotliwość odświeżania obrazu [Hz]: 75\r\nCzas reakcji matrycy [ms]: 1\r\nJasność ekranu [cd/m2]: 250\r\nProporcje ekranu: 16:9\r\nZłącza: Wyjście liniowe audio, HDMI x 1, DisplayPort x 1', 'item_price': '9,99', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVGGTbeES0huovHrD-iytya0rmPTptAAIkuzEbeNjZUi-Nj9DNo2QxAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 6, 16, 539244)}, {'id': '6', 'item': 'Monitor ACER Predator XB253QGW 24.5" 1920x1080px IPS 280Hz 1 ms', 'item_url': 'https://telegra.ph//file/5c10f1b92a80f318dc86d.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 24.5", 1920 x 1080px, IPS\nCzęstotliwość odświeżania obrazu [Hz]: 280\nCzas reakcji matrycy [ms]: 1\nJasność ekranu [cd/m2]: 400\nProporcje ekranu: 16:9\nZłącza: Wyjście liniowe audio, USB x 2, HDMI x 2, DisplayPort x 1', 'item_price': '6,45', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVLWTbf-kmoxDSLFOyZL286jr7vqvyAAKRuzEbeNjZUk1lvM7tNo0dAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 38, 50, 980016)}]
+db.py:119 #INFO     [2023-08-15 14:10:25,818] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-15 14:10:25,901] - aiogram.event - Update id=449045430 is handled. Duration 84 ms by bot id=6027584024
+dispatcher.py:171 #INFO     [2023-08-15 14:10:48,814] - aiogram.event - Update id=449045431 is not handled. Duration 0 ms by bot id=6027584024
+dispatcher.py:451 #WARNING  [2023-08-15 14:11:59,578] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-08-15 14:11:59,579] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:547 #INFO     [2023-08-15 14:11:59,579] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-08-15 14:13:43,410] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-08-15 14:13:43,797] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-08-15 14:13:43,848] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-08-15 14:13:43,849] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-08-15 14:13:43,886] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Celestial'
+db.py:119 #INFO     [2023-08-15 14:13:49,331] - db - Trying to get all items
+admin.py:117 #INFO     [2023-08-15 14:13:49,335] - tgbot.handlers.admin - [{'id': '6', 'item': 'Monitor ACER Predator XB253QGW 24.5" 1920x1080px IPS 280Hz 1 ms', 'item_url': 'https://telegra.ph//file/5c10f1b92a80f318dc86d.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 24.5", 1920 x 1080px, IPS\nCzęstotliwość odświeżania obrazu [Hz]: 280\nCzas reakcji matrycy [ms]: 1\nJasność ekranu [cd/m2]: 400\nProporcje ekranu: 16:9\nZłącza: Wyjście liniowe audio, USB x 2, HDMI x 2, DisplayPort x 1', 'item_price': '6,45', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVLWTbf-kmoxDSLFOyZL286jr7vqvyAAKRuzEbeNjZUk1lvM7tNo0dAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 38, 50, 980016)}, {'id': '5', 'item': 'Monitor iiyama G-Master G2450HS-B1 Black Hawk', 'item_url': 'https://lowcygier.pl/wp-content/uploads/2022/08/ACER_Predator_XB253QGW_facebook-scaled.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 21.5", 1920 x 1080px, VA\r\nCzęstotliwość odświeżania obrazu [Hz]: 75\r\nCzas reakcji matrycy [ms]: 1\r\nJasność ekranu [cd/m2]: 250\r\nProporcje ekranu: 16:9\r\nZłącza: Wyjście liniowe audio, HDMI x 1, DisplayPort x 1', 'item_price': '9,99', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVGGTbeES0huovHrD-iytya0rmPTptAAIkuzEbeNjZUi-Nj9DNo2QxAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 6, 16, 539244)}]
+db.py:119 #INFO     [2023-08-15 14:13:49,335] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-15 14:13:49,471] - aiogram.event - Update id=449045432 is handled. Duration 141 ms by bot id=6027584024
+db.py:119 #INFO     [2023-08-15 14:13:54,607] - db - Trying to get all items
+admin.py:117 #INFO     [2023-08-15 14:13:54,608] - tgbot.handlers.admin - [{'id': '6', 'item': 'Monitor ACER Predator XB253QGW 24.5" 1920x1080px IPS 280Hz 1 ms', 'item_url': 'https://telegra.ph//file/5c10f1b92a80f318dc86d.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 24.5", 1920 x 1080px, IPS\nCzęstotliwość odświeżania obrazu [Hz]: 280\nCzas reakcji matrycy [ms]: 1\nJasność ekranu [cd/m2]: 400\nProporcje ekranu: 16:9\nZłącza: Wyjście liniowe audio, USB x 2, HDMI x 2, DisplayPort x 1', 'item_price': '6,45', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVLWTbf-kmoxDSLFOyZL286jr7vqvyAAKRuzEbeNjZUk1lvM7tNo0dAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 38, 50, 980016)}, {'id': '5', 'item': 'Monitor iiyama G-Master G2450HS-B1 Black Hawk', 'item_url': 'https://lowcygier.pl/wp-content/uploads/2022/08/ACER_Predator_XB253QGW_facebook-scaled.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 21.5", 1920 x 1080px, VA\r\nCzęstotliwość odświeżania obrazu [Hz]: 75\r\nCzas reakcji matrycy [ms]: 1\r\nJasność ekranu [cd/m2]: 250\r\nProporcje ekranu: 16:9\r\nZłącza: Wyjście liniowe audio, HDMI x 1, DisplayPort x 1', 'item_price': '9,99', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVGGTbeES0huovHrD-iytya0rmPTptAAIkuzEbeNjZUi-Nj9DNo2QxAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 6, 16, 539244)}]
+db.py:119 #INFO     [2023-08-15 14:13:54,608] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-15 14:13:54,660] - aiogram.event - Update id=449045433 is handled. Duration 53 ms by bot id=6027584024
+dispatcher.py:451 #WARNING  [2023-08-15 14:14:31,134] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-08-15 14:14:31,135] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:547 #INFO     [2023-08-15 14:14:31,135] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-08-15 15:26:29,557] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-08-15 15:26:29,921] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-08-15 15:26:29,971] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-08-15 15:26:29,972] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-08-15 15:26:30,011] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Celestial'
+admin.py:96 #INFO     [2023-08-15 15:26:32,141] - root - [683497406, 'd_w_y_t', 'be31fd64', '123456', 0, 683497406, datetime.datetime(2023, 8, 15, 11, 27, 38, 100178)]
+dispatcher.py:171 #INFO     [2023-08-15 15:26:32,412] - aiogram.event - Update id=449045437 is handled. Duration 276 ms by bot id=6027584024
+reply.py:97 #INFO     [2023-08-15 15:26:35,686] - tgbot.keyboards.reply - You are in main_menu_reply
+dispatcher.py:171 #INFO     [2023-08-15 15:26:35,796] - aiogram.event - Update id=449045438 is not handled. Duration 110 ms by bot id=6027584024
+dispatcher.py:313 #ERROR    [2023-08-15 15:26:35,796] - aiogram.event - Cause exception while process update id=449045438 by bot id=6027584024
+KeyError: 'market'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 307, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 274, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 153, in process_callback_query
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/app/Celestial/tgbot/middlewares/config.py", line 18, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 135, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 128, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager_middleware.py", line 45, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 165, in context_saver_middleware
+    result = await handler(event, data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/dialog.py", line 150, in _callback_handler
+    await window.process_callback(cleaned_callback, self, dialog_manager)
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/window.py", line 90, in process_callback
+    await self.keyboard.process_callback(callback, dialog, manager)
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 79, in process_callback
+    return await self._process_other_callback(callback, dialog, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/group.py", line 73, in _process_other_callback
+    if await b.process_callback(callback, dialog, manager):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 79, in process_callback
+    return await self._process_other_callback(callback, dialog, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/group.py", line 73, in _process_other_callback
+    if await b.process_callback(callback, dialog, manager):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 73, in process_callback
+    return await self._process_item_callback(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/select.py", line 88, in _process_item_callback
+    await self.on_click.process_event(
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/widget_event.py", line 34, in process_event
+    await self.callback(event, source, manager, *args, **kwargs)
+  File "/usr/src/app/Celestial/tgbot/keyboards/reply.py", line 106, in main_menu_reply
+    await dialog_manager.switch_to(g[menu_option])
+                                   ~^^^^^^^^^^^^^
+KeyError: 'market'
+dispatcher.py:451 #WARNING  [2023-08-15 15:26:43,005] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-08-15 15:26:43,007] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:547 #INFO     [2023-08-15 15:26:43,008] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-08-15 15:32:30,789] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-08-15 15:32:31,144] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-08-15 15:32:31,195] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-08-15 15:32:31,196] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-08-15 15:32:31,236] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Celestial'
+admin.py:96 #INFO     [2023-08-15 15:32:34,339] - root - [683497406, 'd_w_y_t', 'be31fd64', '123456', 0, 683497406, datetime.datetime(2023, 8, 15, 11, 27, 38, 100178)]
+dispatcher.py:171 #INFO     [2023-08-15 15:32:34,568] - aiogram.event - Update id=449045439 is not handled. Duration 233 ms by bot id=6027584024
+dispatcher.py:313 #ERROR    [2023-08-15 15:32:34,569] - aiogram.event - Cause exception while process update id=449045439 by bot id=6027584024
+TelegramBadRequest: Telegram server says - Bad Request: inline keyboard button URL '@Clstl_bot' is invalid: Wrong HTTP URL
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 307, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 274, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 118, in process_message
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/app/Celestial/tgbot/middlewares/config.py", line 18, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 135, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 128, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager_middleware.py", line 45, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 165, in context_saver_middleware
+    result = await handler(event, data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/src/app/Celestial/tgbot/handlers/admin.py", line 107, in admin_start
+    await dialog_manager.start(
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 207, in start
+    await self._start_normal(state, data)
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 254, in _start_normal
+    await self.show()
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 289, in show
+    sent_message = await self.message_manager.show_message(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/message_manager.py", line 115, in show_message
+    return await self.send_message(bot, new_message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/message_manager.py", line 246, in send_message
+    return await self.send_text(bot, new_message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/message_manager.py", line 250, in send_text
+    return await bot.send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/client/bot.py", line 2708, in send_message
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/client/bot.py", line 431, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/client/session/base.py", line 257, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/client/session/aiohttp.py", line 170, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/client/session/base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: inline keyboard button URL '@Clstl_bot' is invalid: Wrong HTTP URL
+dispatcher.py:451 #WARNING  [2023-08-15 15:32:54,191] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-08-15 15:32:54,192] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:547 #INFO     [2023-08-15 15:32:54,193] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-08-15 15:47:37,526] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-08-15 15:47:37,835] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-08-15 15:47:37,886] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-08-15 15:47:37,887] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-08-15 15:47:37,923] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Celestial'
+admin.py:96 #INFO     [2023-08-15 15:47:39,113] - root - [683497406, 'd_w_y_t', 'be31fd64', '123456', 0, 683497406, datetime.datetime(2023, 8, 15, 11, 27, 38, 100178)]
+dispatcher.py:171 #INFO     [2023-08-15 15:47:39,377] - aiogram.event - Update id=449045440 is handled. Duration 268 ms by bot id=6027584024
+db.py:119 #INFO     [2023-08-15 15:48:12,017] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-15 15:48:12,193] - aiogram.event - Update id=449045441 is handled. Duration 177 ms by bot id=6027584024
+dispatcher.py:451 #WARNING  [2023-08-15 16:06:02,977] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-08-15 16:06:02,978] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:547 #INFO     [2023-08-15 16:06:02,979] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-08-15 16:14:01,698] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-08-15 16:14:02,048] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-08-15 16:14:02,099] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-08-15 16:14:02,100] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-08-15 16:14:02,139] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Celestial'
+admin.py:96 #INFO     [2023-08-15 16:14:05,709] - root - [683497406, 'd_w_y_t', 'be31fd64', '123456', 0, 683497406, datetime.datetime(2023, 8, 15, 11, 27, 38, 100178)]
+dispatcher.py:171 #INFO     [2023-08-15 16:14:06,020] - aiogram.event - Update id=449045442 is handled. Duration 315 ms by bot id=6027584024
+db.py:119 #INFO     [2023-08-15 16:14:09,405] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-15 16:14:09,465] - aiogram.event - Update id=449045443 is handled. Duration 60 ms by bot id=6027584024
+db.py:119 #INFO     [2023-08-15 16:14:27,192] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-15 16:14:27,422] - aiogram.event - Update id=449045444 is handled. Duration 231 ms by bot id=6027584024
+db.py:119 #INFO     [2023-08-15 16:14:28,202] - db - Trying to get all items
+admin.py:117 #INFO     [2023-08-15 16:14:28,203] - tgbot.handlers.admin - [{'id': '6', 'item': 'Monitor ACER Predator XB253QGW 24.5" 1920x1080px IPS 280Hz 1 ms', 'item_url': 'https://telegra.ph//file/5c10f1b92a80f318dc86d.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 24.5", 1920 x 1080px, IPS\nCzęstotliwość odświeżania obrazu [Hz]: 280\nCzas reakcji matrycy [ms]: 1\nJasność ekranu [cd/m2]: 400\nProporcje ekranu: 16:9\nZłącza: Wyjście liniowe audio, USB x 2, HDMI x 2, DisplayPort x 1', 'item_price': '6,45', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVLWTbf-kmoxDSLFOyZL286jr7vqvyAAKRuzEbeNjZUk1lvM7tNo0dAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 38, 50, 980016)}, {'id': '5', 'item': 'Monitor iiyama G-Master G2450HS-B1 Black Hawk', 'item_url': 'https://lowcygier.pl/wp-content/uploads/2022/08/ACER_Predator_XB253QGW_facebook-scaled.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 21.5", 1920 x 1080px, VA\r\nCzęstotliwość odświeżania obrazu [Hz]: 75\r\nCzas reakcji matrycy [ms]: 1\r\nJasność ekranu [cd/m2]: 250\r\nProporcje ekranu: 16:9\r\nZłącza: Wyjście liniowe audio, HDMI x 1, DisplayPort x 1', 'item_price': '9,99', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVGGTbeES0huovHrD-iytya0rmPTptAAIkuzEbeNjZUi-Nj9DNo2QxAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 6, 16, 539244)}]
+db.py:119 #INFO     [2023-08-15 16:14:28,203] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-15 16:14:28,254] - aiogram.event - Update id=449045445 is handled. Duration 52 ms by bot id=6027584024
+db.py:119 #INFO     [2023-08-15 16:16:22,393] - db - Trying to get all items
+admin.py:117 #INFO     [2023-08-15 16:16:22,394] - tgbot.handlers.admin - [{'id': '6', 'item': 'Monitor ACER Predator XB253QGW 24.5" 1920x1080px IPS 280Hz 1 ms', 'item_url': 'https://telegra.ph//file/5c10f1b92a80f318dc86d.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 24.5", 1920 x 1080px, IPS\nCzęstotliwość odświeżania obrazu [Hz]: 280\nCzas reakcji matrycy [ms]: 1\nJasność ekranu [cd/m2]: 400\nProporcje ekranu: 16:9\nZłącza: Wyjście liniowe audio, USB x 2, HDMI x 2, DisplayPort x 1', 'item_price': '6,45', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVLWTbf-kmoxDSLFOyZL286jr7vqvyAAKRuzEbeNjZUk1lvM7tNo0dAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 38, 50, 980016)}, {'id': '5', 'item': 'Monitor iiyama G-Master G2450HS-B1 Black Hawk', 'item_url': 'https://lowcygier.pl/wp-content/uploads/2022/08/ACER_Predator_XB253QGW_facebook-scaled.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 21.5", 1920 x 1080px, VA\r\nCzęstotliwość odświeżania obrazu [Hz]: 75\r\nCzas reakcji matrycy [ms]: 1\r\nJasność ekranu [cd/m2]: 250\r\nProporcje ekranu: 16:9\r\nZłącza: Wyjście liniowe audio, HDMI x 1, DisplayPort x 1', 'item_price': '9,99', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVGGTbeES0huovHrD-iytya0rmPTptAAIkuzEbeNjZUi-Nj9DNo2QxAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 6, 16, 539244)}]
+db.py:119 #INFO     [2023-08-15 16:16:22,394] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-15 16:16:22,557] - aiogram.event - Update id=449045446 is handled. Duration 164 ms by bot id=6027584024
+dispatcher.py:451 #WARNING  [2023-08-15 16:21:26,725] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-08-15 16:21:26,726] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:547 #INFO     [2023-08-15 16:21:26,727] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-08-15 16:22:49,700] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-08-15 16:22:50,035] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-08-15 16:22:50,086] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-08-15 16:22:50,087] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-08-15 16:22:50,124] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Celestial'
+admin.py:96 #INFO     [2023-08-15 16:22:53,141] - root - [683497406, 'd_w_y_t', 'be31fd64', '123456', 0, 683497406, datetime.datetime(2023, 8, 15, 11, 27, 38, 100178)]
+dispatcher.py:171 #INFO     [2023-08-15 16:22:53,318] - aiogram.event - Update id=449045447 is not handled. Duration 181 ms by bot id=6027584024
+dispatcher.py:313 #ERROR    [2023-08-15 16:22:53,318] - aiogram.event - Cause exception while process update id=449045447 by bot id=6027584024
+AttributeError: 'str' object has no attribute 'render_text'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 307, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 274, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 118, in process_message
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/app/Celestial/tgbot/middlewares/config.py", line 18, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 135, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 128, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager_middleware.py", line 45, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 165, in context_saver_middleware
+    result = await handler(event, data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/src/app/Celestial/tgbot/handlers/admin.py", line 107, in admin_start
+    await dialog_manager.start(
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 207, in start
+    await self._start_normal(state, data)
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 254, in _start_normal
+    await self.show()
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 284, in show
+    new_message = await self.dialog().render(self)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/dialog.py", line 122, in render
+    new_message = await window.render(self, manager)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/window.py", line 102, in render
+    reply_markup=await self.render_kbd(current_data, manager),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/window.py", line 67, in render_kbd
+    keyboard = await self.keyboard.render_keyboard(data, manager)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/group.py", line 40, in _render_keyboard
+    b_kbd = await b.render_keyboard(data, manager)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/group.py", line 40, in _render_keyboard
+    b_kbd = await b.render_keyboard(data, manager)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/app/Celestial/tgbot/keyboards/custom_buttons.py", line 40, in _render_keyboard
+    switch_inline_query_current_chat=await self.switch_inline.render_text(
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'render_text'
+dispatcher.py:451 #WARNING  [2023-08-15 16:24:37,874] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-08-15 16:24:37,876] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:547 #INFO     [2023-08-15 16:24:37,876] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-08-15 16:24:46,270] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-08-15 16:24:46,621] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-08-15 16:24:46,671] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-08-15 16:24:46,672] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-08-15 16:24:46,710] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Celestial'
+admin.py:96 #INFO     [2023-08-15 16:24:47,832] - root - [683497406, 'd_w_y_t', 'be31fd64', '123456', 0, 683497406, datetime.datetime(2023, 8, 15, 11, 27, 38, 100178)]
+dispatcher.py:171 #INFO     [2023-08-15 16:24:48,372] - aiogram.event - Update id=449045448 is handled. Duration 544 ms by bot id=6027584024
+db.py:119 #INFO     [2023-08-15 16:24:51,201] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-15 16:24:51,283] - aiogram.event - Update id=449045449 is handled. Duration 83 ms by bot id=6027584024
+dispatcher.py:451 #WARNING  [2023-08-15 16:25:54,901] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-08-15 16:25:54,902] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:547 #INFO     [2023-08-15 16:25:54,903] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-08-15 16:26:36,224] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-08-15 16:26:36,521] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-08-15 16:26:36,571] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-08-15 16:26:36,572] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-08-15 16:26:36,609] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Celestial'
+admin.py:96 #INFO     [2023-08-15 16:26:38,684] - root - [683497406, 'd_w_y_t', 'be31fd64', '123456', 0, 683497406, datetime.datetime(2023, 8, 15, 11, 27, 38, 100178)]
+dispatcher.py:171 #INFO     [2023-08-15 16:26:38,995] - aiogram.event - Update id=449045451 is handled. Duration 315 ms by bot id=6027584024
+db.py:119 #INFO     [2023-08-15 16:26:40,324] - db - Trying to get all items
+admin.py:117 #INFO     [2023-08-15 16:26:40,326] - tgbot.handlers.admin - [{'id': '6', 'item': 'Monitor ACER Predator XB253QGW 24.5" 1920x1080px IPS 280Hz 1 ms', 'item_url': 'https://telegra.ph//file/5c10f1b92a80f318dc86d.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 24.5", 1920 x 1080px, IPS\nCzęstotliwość odświeżania obrazu [Hz]: 280\nCzas reakcji matrycy [ms]: 1\nJasność ekranu [cd/m2]: 400\nProporcje ekranu: 16:9\nZłącza: Wyjście liniowe audio, USB x 2, HDMI x 2, DisplayPort x 1', 'item_price': '6,45', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVLWTbf-kmoxDSLFOyZL286jr7vqvyAAKRuzEbeNjZUk1lvM7tNo0dAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 38, 50, 980016)}, {'id': '5', 'item': 'Monitor iiyama G-Master G2450HS-B1 Black Hawk', 'item_url': 'https://lowcygier.pl/wp-content/uploads/2022/08/ACER_Predator_XB253QGW_facebook-scaled.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 21.5", 1920 x 1080px, VA\r\nCzęstotliwość odświeżania obrazu [Hz]: 75\r\nCzas reakcji matrycy [ms]: 1\r\nJasność ekranu [cd/m2]: 250\r\nProporcje ekranu: 16:9\r\nZłącza: Wyjście liniowe audio, HDMI x 1, DisplayPort x 1', 'item_price': '9,99', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVGGTbeES0huovHrD-iytya0rmPTptAAIkuzEbeNjZUi-Nj9DNo2QxAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 6, 16, 539244)}]
+db.py:119 #INFO     [2023-08-15 16:26:40,326] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-15 16:26:40,383] - aiogram.event - Update id=449045452 is handled. Duration 58 ms by bot id=6027584024
+db.py:119 #INFO     [2023-08-15 16:26:48,469] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-15 16:26:48,519] - aiogram.event - Update id=449045453 is handled. Duration 50 ms by bot id=6027584024
+db.py:119 #INFO     [2023-08-15 16:26:55,782] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-15 16:26:55,834] - aiogram.event - Update id=449045454 is handled. Duration 53 ms by bot id=6027584024
+db.py:119 #INFO     [2023-08-15 16:26:59,759] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-15 16:26:59,829] - aiogram.event - Update id=449045455 is handled. Duration 70 ms by bot id=6027584024
+dispatcher.py:451 #WARNING  [2023-08-15 16:27:09,442] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-08-15 16:27:09,443] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:547 #INFO     [2023-08-15 16:27:09,443] - aiogram.dispatcher - Polling stopped

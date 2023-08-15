@@ -123,7 +123,7 @@ async def show_user_links(query: InlineQuery):
                     message_text="You don`t need to press it",
 
                 ),
-                thumbnail_url="https://previews.dropbox.com/p/thumb/AB_gDHkkSWT0eePXePCHpxj1g2IhrVtiLdY0XMtrrIYslT3hnblQzcRTVWFeUz3DY7V4ZHWnAXugmbErPolrFtZdUjJz6uLbHZ22xOAkuDWUaSmoiybW95ljUUykSNnaB3l-Z1dMhdwjykronJOqrK5zxRy86dTWDX-XZLGcRBahepS03mY_Mk57HeuXfFLVaPxouPt7MN1zxJ_jgx2-EWw6pNjhGdMsu_JhQNBvI740g9GRhHuUKmc9fkLwLtz1WSyTrleM2XmzJoT84942noeRUB-QemTvjUh7ecYTH0ikkiz2VtG2U8buEe9vBgruf1lIhGjsP-_omqsDd7MD9My_/p.png",
+                thumbnail_url=item["item_url"],
                 description=item["item_details"],
                 parse_mode="HTML",
             )

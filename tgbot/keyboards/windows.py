@@ -3,10 +3,11 @@ import operator
 from aiogram.enums import ParseMode, ContentType
 from aiogram_dialog import Window
 from aiogram_dialog.widgets.input import MessageInput
-from aiogram_dialog.widgets.kbd import Row, Select, SwitchTo, Column
+from aiogram_dialog.widgets.kbd import Row, Select, SwitchTo, Column, Url, SwitchInlineQuery
 from aiogram_dialog.widgets.media import StaticMedia, DynamicMedia
 from aiogram_dialog.widgets.text import Const, Format
 
+from tgbot.keyboards.custom_buttons import SwitchInlineQuery_2
 from tgbot.keyboards.inline import gate_inline, access_inline, main_window_inline, admin_panel_inline, add_item_inline, \
     add_description_inline, add_price_inline, add_photo_inline, add_item_confirmation_inline, item_added_inline, \
     add_quantity_inline, delete_item_inline, confirmed_item_delete_inline
@@ -54,6 +55,10 @@ access_window = Window(
 main_window = Window(
     Format("{title}"),
     Row(
+        SwitchInlineQuery_2(
+            Const("Market"),
+            Const(''),
+        ),
         Select(
             Format("{item[0]}"),
             id="menu1",
