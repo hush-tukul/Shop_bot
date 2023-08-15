@@ -1,18 +1,25 @@
 
 import logging
+import os
 import re
+import secrets
 from datetime import datetime
 from io import BytesIO
 from typing import Any
 
+import aiofiles
+import aiohttp
 from aiogram.types import CallbackQuery, Message, BufferedInputFile
 from aiogram_dialog import DialogManager
 from aiogram_dialog.widgets.input import MessageInput
+from telegraph.aio import Telegraph
 
 from db import Users, Items
 from tgbot.keyboards.states import States
+from tgbot.keyboards.telegraph import UploadedFile
 
 logger = logging.getLogger(__name__)
+
 
 
 # user_data_router = Router()
@@ -166,18 +173,47 @@ async def add_quantity_reply(m: Message, input: MessageInput, dialog_manager: Di
 
 async def add_photo_reply(m: Message, input: MessageInput, dialog_manager: DialogManager):
     logger.info('You are in add_photo_reply')
+
     user_id = dialog_manager.start_data.get('user_id')
     user_name = dialog_manager.start_data.get('user_name')
     item_photo = m.photo[-1].file_id
-    save_to_io = BytesIO()
-    await m.bot.download(item_photo, destination=save_to_io)
-    input_file_p = BufferedInputFile(save_to_io.getvalue(), filename=f"{item_photo}")
-    r = await m.bot.send_photo(chat_id=-1001911085133, photo=input_file_p, caption="Test")
-    logger.info(r.get_url())
+    downloaded_photo = await m.bot.download(item_photo, destination=BytesIO())
+    # telegraph = Telegraph()
+    # await telegraph.create_account(short_name='1337')
+    # response = await telegraph.create_page(
+    #     title='Hey',
+    #     content=downloaded_photo,
+    #     html_content='<p>Hello, world!</p>',
+    # )
+    # logger.info(response['url'])
+    form = aiohttp.FormData(quote_fields=False)
+    form.add_field(secrets.token_urlsafe(8), downloaded_photo)
+    new_session = aiohttp.ClientSession()
+    response = await new_session.post(
+        os.getenv("BASE_TELEGRAPH_API_LINK").format(endpoint="upload"),
+        data=form
+    )
+    logger.info(response.url)
+    json_response = await response.json()
+    photo_url = [UploadedFile.model_validate(obj) for obj in json_response][0]
+    logger.info(photo_url)
+    await new_session.close()
+
+
+
+    # doc_path = "/usr/src/app/tg_bot/tgbot/keyboards/photos"
+    # db_path =f"/hush_tukul_photos/{item_photo}.png"
+    # destination_filename = os.path.join(doc_path, item_photo + '.png')
+    #photo_link = drop.get_shared_link(db_path)
+    #logger.info(photo_link)
+
+    #input_file_p = BufferedInputFile(save_to_io.getvalue(), filename=f"{item_photo}")
+    #r = await m.bot.send_photo(chat_id=-1001911085133, photo=input_file_p, caption="Test")
+    #logger.info(r.get_url())
 
     if item_photo:
         dialog_manager.dialog_data.update(item_photo=item_photo)
-        dialog_manager.dialog_data.update(photo_url=r.get_url())
+        dialog_manager.dialog_data.update(photo_url=f"")
         await dialog_manager.switch_to(States.add_item_confirmation_state)
     else:
         await m.reply(text="Please upload correct photo, using one of the formats -> JPEG or PNG."

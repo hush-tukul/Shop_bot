@@ -115,9 +115,6 @@ async def admin_start(m: Message, dialog_manager: DialogManager):
 async def show_user_links(query: InlineQuery):
     results = []
     logger.info(Items.get_items())
-
-
-
     for item in Items.get_items():
         results.append(InlineQueryResultArticle(
                 id=str(item["id"]),
@@ -126,17 +123,19 @@ async def show_user_links(query: InlineQuery):
                     message_text="You don`t need to press it",
 
                 ),
+                thumbnail_url="https://previews.dropbox.com/p/thumb/AB_gDHkkSWT0eePXePCHpxj1g2IhrVtiLdY0XMtrrIYslT3hnblQzcRTVWFeUz3DY7V4ZHWnAXugmbErPolrFtZdUjJz6uLbHZ22xOAkuDWUaSmoiybW95ljUUykSNnaB3l-Z1dMhdwjykronJOqrK5zxRy86dTWDX-XZLGcRBahepS03mY_Mk57HeuXfFLVaPxouPt7MN1zxJ_jgx2-EWw6pNjhGdMsu_JhQNBvI740g9GRhHuUKmc9fkLwLtz1WSyTrleM2XmzJoT84942noeRUB-QemTvjUh7ecYTH0ikkiz2VtG2U8buEe9vBgruf1lIhGjsP-_omqsDd7MD9My_/p.png",
                 description=item["item_details"],
                 parse_mode="HTML",
             )
         )
-
-    await query.answer(
-        results=results,
-        cache_time=5,
-        is_personal=True,
-    )
-
+    try:
+        await query.answer(
+            results=results,
+            cache_time=5,
+            is_personal=True,
+        )
+    except Exception as e:
+        logger.error(e)
 @admin_router.inline_query()
 async def some_query(query: InlineQuery):
     user_id = query.from_user.id
