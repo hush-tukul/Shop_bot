@@ -61,18 +61,9 @@ main_window = Window(
         ),
         Select(
             Format("{item[0]}"),
-            id="menu1",
+            id="menu",
             item_id_getter=operator.itemgetter(1),
-            items='main_menu_1',
-            on_click=main_menu_reply
-        ),
-    ),
-    Row(
-        Select(
-            Format("{item[0]}"),
-            id="menu2",
-            item_id_getter=operator.itemgetter(1),
-            items='main_menu_2',
+            items='main_menu',
             on_click=main_menu_reply
         ),
     ),

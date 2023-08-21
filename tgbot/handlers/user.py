@@ -50,6 +50,7 @@ async def on_user_join(event: ChatMemberUpdated, bot: Bot):
 
 @user_router.message(CommandStart(deep_link=True))
 async def user_dl_start(m: Message, command: CommandObject, dialog_manager: DialogManager):
+    logger.info(f"You are in user_dl_start")
     parameter = command.args
     logger.info(parameter)
     reg_time = datetime.now()
@@ -103,6 +104,7 @@ async def user_dl_start(m: Message, command: CommandObject, dialog_manager: Dial
 
 @user_router.message(CommandStart())
 async def user_start(m: Message, dialog_manager: DialogManager):
+    logger.info(f"You are in user_start")
     reg_time = datetime.now()
     user_id = m.from_user.id
     user_name = m.from_user.username
@@ -117,6 +119,7 @@ async def user_start(m: Message, dialog_manager: DialogManager):
         "user_balance": user_data[4] if user_data else 0,
     }
     if user_data is None:
+        logger.info(f"if user_data is None: ")
         Users.add_user(user_id, user_name, None, 0, chat_id, reg_time)
         await dialog_manager.start(
             States.access_state,
@@ -124,17 +127,13 @@ async def user_start(m: Message, dialog_manager: DialogManager):
             mode=StartMode.RESET_STACK,
         )
     elif user_data[3]:
+        logger.info(f"elif user_data[3]:")
         await dialog_manager.start(
             States.main_menu_state,
             data=dialog_data,
             mode=StartMode.RESET_STACK,
         )
-    else:
-        await dialog_manager.start(
-            States.access_state,
-            data=dialog_data,
-            mode=StartMode.RESET_STACK,
-        )
+
 
 
 
@@ -147,6 +146,7 @@ async def user_start(m: Message, dialog_manager: DialogManager):
 
 @user_router.inline_query(F.query == "")
 async def show_user_links(query: InlineQuery):
+    logger.info(f"You are in show_user_links")
     await query.answer(
         results=[
             InlineQueryResultArticle(
@@ -164,6 +164,7 @@ async def show_user_links(query: InlineQuery):
 
 @user_router.inline_query()
 async def some_query(query: InlineQuery):
+    logger.info(f"You are in some_query")
     user_id = query.from_user.id
     if Users.get_user(user_id) is None:
         await query.answer(

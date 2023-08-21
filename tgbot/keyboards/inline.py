@@ -9,7 +9,7 @@ from environs import Env
 
 from db import Users
 from tgbot.keyboards.states import States
-
+logger = logging.getLogger(__name__)
 
 env = Env()
 
@@ -37,7 +37,8 @@ async def access_inline(dialog_manager: DialogManager, **kwargs):
     user_id = dialog_manager.start_data.get('user_id')
     user_name = dialog_manager.start_data.get('user_name')
     user_data = Users.get_user(user_id)
-    header = "Please provide 8-digit access code below: "
+    header = "Please provide 8-character access code below or use invite link to access the bot: " \
+             f"\n(In other case please subscribe on Our channel https://t.me/+4fBl3YZ4Vrc3MTU0 to get Your invite link)"
 
     return {
         "header": header,
@@ -49,6 +50,7 @@ async def access_inline(dialog_manager: DialogManager, **kwargs):
 
 async def main_window_inline(dialog_manager: DialogManager, **kwargs):
     user_id = dialog_manager.start_data.get('user_id')
+    logger.info(user_id)
     title = "┏━━━━━ 🛍️ Main Menu 🛍️ ━━━━━┓"
     main_menu = [
          ('📝 Feedback / Contact 📝', 'contact'), ('🎁 Referral link / key 🎁', 'key'),
@@ -57,8 +59,7 @@ async def main_window_inline(dialog_manager: DialogManager, **kwargs):
 
     return {
         "title": title,
-        "main_menu_1": main_menu[:2],
-        "main_menu_2": main_menu[2:] if main_menu[-1] else main_menu[2:3],
+        "main_menu": main_menu if main_menu[2] else main_menu[:2]
 
     }
 

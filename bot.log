@@ -20900,3 +20900,2237 @@ dispatcher.py:171 #INFO     [2023-08-15 16:26:59,829] - aiogram.event - Update i
 dispatcher.py:451 #WARNING  [2023-08-15 16:27:09,442] - aiogram.dispatcher - Received SIGINT signal
 dispatcher.py:355 #INFO     [2023-08-15 16:27:09,443] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
 dispatcher.py:547 #INFO     [2023-08-15 16:27:09,443] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-08-15 16:35:46,829] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-08-15 16:35:47,195] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-08-15 16:35:47,245] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-08-15 16:35:47,246] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-08-15 16:35:47,287] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Celestial'
+admin.py:96 #INFO     [2023-08-15 16:35:49,684] - root - [683497406, 'd_w_y_t', 'be31fd64', '123456', 0, 683497406, datetime.datetime(2023, 8, 15, 11, 27, 38, 100178)]
+dispatcher.py:171 #INFO     [2023-08-15 16:35:49,938] - aiogram.event - Update id=449045456 is handled. Duration 259 ms by bot id=6027584024
+reply.py:97 #INFO     [2023-08-15 16:35:51,246] - tgbot.keyboards.reply - You are in main_menu_reply
+dispatcher.py:171 #INFO     [2023-08-15 16:35:51,407] - aiogram.event - Update id=449045457 is handled. Duration 161 ms by bot id=6027584024
+dispatcher.py:171 #INFO     [2023-08-15 16:35:53,223] - aiogram.event - Update id=449045458 is handled. Duration 108 ms by bot id=6027584024
+db.py:119 #INFO     [2023-08-15 16:35:55,970] - db - Trying to get all items
+admin.py:117 #INFO     [2023-08-15 16:35:55,972] - tgbot.handlers.admin - [{'id': '6', 'item': 'Monitor ACER Predator XB253QGW 24.5" 1920x1080px IPS 280Hz 1 ms', 'item_url': 'https://telegra.ph//file/5c10f1b92a80f318dc86d.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 24.5", 1920 x 1080px, IPS\nCzęstotliwość odświeżania obrazu [Hz]: 280\nCzas reakcji matrycy [ms]: 1\nJasność ekranu [cd/m2]: 400\nProporcje ekranu: 16:9\nZłącza: Wyjście liniowe audio, USB x 2, HDMI x 2, DisplayPort x 1', 'item_price': '6,45', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVLWTbf-kmoxDSLFOyZL286jr7vqvyAAKRuzEbeNjZUk1lvM7tNo0dAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 38, 50, 980016)}, {'id': '5', 'item': 'Monitor iiyama G-Master G2450HS-B1 Black Hawk', 'item_url': 'https://lowcygier.pl/wp-content/uploads/2022/08/ACER_Predator_XB253QGW_facebook-scaled.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 21.5", 1920 x 1080px, VA\r\nCzęstotliwość odświeżania obrazu [Hz]: 75\r\nCzas reakcji matrycy [ms]: 1\r\nJasność ekranu [cd/m2]: 250\r\nProporcje ekranu: 16:9\r\nZłącza: Wyjście liniowe audio, HDMI x 1, DisplayPort x 1', 'item_price': '9,99', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVGGTbeES0huovHrD-iytya0rmPTptAAIkuzEbeNjZUi-Nj9DNo2QxAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 6, 16, 539244)}]
+db.py:119 #INFO     [2023-08-15 16:35:55,972] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-15 16:35:56,027] - aiogram.event - Update id=449045459 is handled. Duration 58 ms by bot id=6027584024
+reply.py:97 #INFO     [2023-08-15 16:36:01,238] - tgbot.keyboards.reply - You are in main_menu_reply
+dispatcher.py:171 #INFO     [2023-08-15 16:36:01,693] - aiogram.event - Update id=449045460 is handled. Duration 455 ms by bot id=6027584024
+dispatcher.py:171 #INFO     [2023-08-15 16:36:04,127] - aiogram.event - Update id=449045461 is handled. Duration 142 ms by bot id=6027584024
+reply.py:120 #INFO     [2023-08-15 16:36:40,714] - tgbot.keyboards.reply - You are in add_item_reply
+reply.py:124 #INFO     [2023-08-15 16:36:40,714] - tgbot.keyboards.reply - Monitor AOC G2 C27G2ZE 27" 1920x1080px 240Hz 0.5 ms Curved
+dispatcher.py:171 #INFO     [2023-08-15 16:36:41,017] - aiogram.event - Update id=449045462 is handled. Duration 303 ms by bot id=6027584024
+reply.py:135 #INFO     [2023-08-15 16:36:47,310] - tgbot.keyboards.reply - You are in add_description_reply
+dispatcher.py:171 #INFO     [2023-08-15 16:36:47,527] - aiogram.event - Update id=449045463 is handled. Duration 217 ms by bot id=6027584024
+reply.py:150 #INFO     [2023-08-15 16:36:54,502] - tgbot.keyboards.reply - You are in add_price_reply
+dispatcher.py:171 #INFO     [2023-08-15 16:36:54,675] - aiogram.event - Update id=449045464 is handled. Duration 174 ms by bot id=6027584024
+dispatcher.py:171 #INFO     [2023-08-15 16:36:58,876] - aiogram.event - Update id=449045465 is handled. Duration 286 ms by bot id=6027584024
+reply.py:150 #INFO     [2023-08-15 16:37:01,373] - tgbot.keyboards.reply - You are in add_price_reply
+dispatcher.py:171 #INFO     [2023-08-15 16:37:01,648] - aiogram.event - Update id=449045466 is handled. Duration 275 ms by bot id=6027584024
+dispatcher.py:451 #WARNING  [2023-08-15 16:37:19,142] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-08-15 16:37:19,143] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:547 #INFO     [2023-08-15 16:37:19,144] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-08-15 16:38:51,471] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-08-15 16:38:51,764] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-08-15 16:38:51,814] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-08-15 16:38:51,815] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-08-15 16:38:51,853] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Celestial'
+admin.py:96 #INFO     [2023-08-15 16:39:39,982] - root - [683497406, 'd_w_y_t', 'be31fd64', '123456', 0, 683497406, datetime.datetime(2023, 8, 15, 11, 27, 38, 100178)]
+dispatcher.py:171 #INFO     [2023-08-15 16:39:40,319] - aiogram.event - Update id=449045467 is handled. Duration 341 ms by bot id=6027584024
+reply.py:97 #INFO     [2023-08-15 16:39:46,699] - tgbot.keyboards.reply - You are in main_menu_reply
+dispatcher.py:171 #INFO     [2023-08-15 16:39:46,866] - aiogram.event - Update id=449045468 is handled. Duration 167 ms by bot id=6027584024
+dispatcher.py:171 #INFO     [2023-08-15 16:39:47,554] - aiogram.event - Update id=449045469 is handled. Duration 143 ms by bot id=6027584024
+reply.py:120 #INFO     [2023-08-15 16:39:49,619] - tgbot.keyboards.reply - You are in add_item_reply
+reply.py:124 #INFO     [2023-08-15 16:39:49,619] - tgbot.keyboards.reply - Monitor AOC G2 C27G2ZE 27" 1920x1080px 240Hz 0.5 ms Curved
+dispatcher.py:171 #INFO     [2023-08-15 16:39:49,808] - aiogram.event - Update id=449045470 is handled. Duration 190 ms by bot id=6027584024
+reply.py:135 #INFO     [2023-08-15 16:39:58,076] - tgbot.keyboards.reply - You are in add_description_reply
+dispatcher.py:171 #INFO     [2023-08-15 16:39:58,289] - aiogram.event - Update id=449045471 is handled. Duration 214 ms by bot id=6027584024
+reply.py:150 #INFO     [2023-08-15 16:40:03,884] - tgbot.keyboards.reply - You are in add_price_reply
+dispatcher.py:171 #INFO     [2023-08-15 16:40:04,066] - aiogram.event - Update id=449045472 is handled. Duration 182 ms by bot id=6027584024
+dispatcher.py:451 #WARNING  [2023-08-15 16:40:10,389] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-08-15 16:40:10,390] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:547 #INFO     [2023-08-15 16:40:10,390] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-08-15 16:40:52,344] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-08-15 16:40:52,670] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-08-15 16:40:52,720] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-08-15 16:40:52,722] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-08-15 16:40:52,771] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Celestial'
+admin.py:96 #INFO     [2023-08-15 16:40:54,576] - root - [683497406, 'd_w_y_t', 'be31fd64', '123456', 0, 683497406, datetime.datetime(2023, 8, 15, 11, 27, 38, 100178)]
+dispatcher.py:171 #INFO     [2023-08-15 16:40:54,897] - aiogram.event - Update id=449045473 is handled. Duration 324 ms by bot id=6027584024
+reply.py:97 #INFO     [2023-08-15 16:40:57,877] - tgbot.keyboards.reply - You are in main_menu_reply
+dispatcher.py:171 #INFO     [2023-08-15 16:40:58,083] - aiogram.event - Update id=449045474 is handled. Duration 206 ms by bot id=6027584024
+dispatcher.py:171 #INFO     [2023-08-15 16:40:58,730] - aiogram.event - Update id=449045475 is handled. Duration 104 ms by bot id=6027584024
+reply.py:120 #INFO     [2023-08-15 16:41:00,273] - tgbot.keyboards.reply - You are in add_item_reply
+reply.py:124 #INFO     [2023-08-15 16:41:00,273] - tgbot.keyboards.reply - Monitor AOC G2 C27G2ZE 27" 1920x1080px 240Hz 0.5 ms Curved
+dispatcher.py:171 #INFO     [2023-08-15 16:41:00,447] - aiogram.event - Update id=449045476 is handled. Duration 174 ms by bot id=6027584024
+reply.py:135 #INFO     [2023-08-15 16:41:05,461] - tgbot.keyboards.reply - You are in add_description_reply
+dispatcher.py:171 #INFO     [2023-08-15 16:41:05,735] - aiogram.event - Update id=449045477 is handled. Duration 275 ms by bot id=6027584024
+reply.py:150 #INFO     [2023-08-15 16:41:09,368] - tgbot.keyboards.reply - You are in add_price_reply
+dispatcher.py:171 #INFO     [2023-08-15 16:41:09,542] - aiogram.event - Update id=449045478 is handled. Duration 174 ms by bot id=6027584024
+dispatcher.py:451 #WARNING  [2023-08-15 16:41:58,640] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-08-15 16:41:58,641] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:547 #INFO     [2023-08-15 16:41:58,641] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-08-15 16:42:23,445] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-08-15 16:42:23,800] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-08-15 16:42:23,851] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-08-15 16:42:23,852] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-08-15 16:42:23,890] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Celestial'
+admin.py:96 #INFO     [2023-08-15 16:42:33,448] - root - [683497406, 'd_w_y_t', 'be31fd64', '123456', 0, 683497406, datetime.datetime(2023, 8, 15, 11, 27, 38, 100178)]
+dispatcher.py:171 #INFO     [2023-08-15 16:42:33,876] - aiogram.event - Update id=449045479 is handled. Duration 433 ms by bot id=6027584024
+reply.py:97 #INFO     [2023-08-15 16:42:34,883] - tgbot.keyboards.reply - You are in main_menu_reply
+dispatcher.py:171 #INFO     [2023-08-15 16:42:35,033] - aiogram.event - Update id=449045480 is handled. Duration 150 ms by bot id=6027584024
+dispatcher.py:171 #INFO     [2023-08-15 16:42:35,690] - aiogram.event - Update id=449045481 is handled. Duration 132 ms by bot id=6027584024
+reply.py:120 #INFO     [2023-08-15 16:42:40,495] - tgbot.keyboards.reply - You are in add_item_reply
+reply.py:124 #INFO     [2023-08-15 16:42:40,495] - tgbot.keyboards.reply - Monitor AOC G2 C27G2ZE 27" 1920x1080px 240Hz 0.5 ms Curved
+dispatcher.py:171 #INFO     [2023-08-15 16:42:40,812] - aiogram.event - Update id=449045482 is handled. Duration 318 ms by bot id=6027584024
+reply.py:135 #INFO     [2023-08-15 16:42:45,297] - tgbot.keyboards.reply - You are in add_description_reply
+dispatcher.py:171 #INFO     [2023-08-15 16:42:45,495] - aiogram.event - Update id=449045483 is handled. Duration 199 ms by bot id=6027584024
+reply.py:150 #INFO     [2023-08-15 16:42:49,490] - tgbot.keyboards.reply - You are in add_price_reply
+dispatcher.py:171 #INFO     [2023-08-15 16:42:49,677] - aiogram.event - Update id=449045484 is handled. Duration 187 ms by bot id=6027584024
+dispatcher.py:171 #INFO     [2023-08-15 16:43:00,568] - aiogram.event - Update id=449045485 is handled. Duration 159 ms by bot id=6027584024
+reply.py:150 #INFO     [2023-08-15 16:43:10,034] - tgbot.keyboards.reply - You are in add_price_reply
+dispatcher.py:171 #INFO     [2023-08-15 16:43:10,357] - aiogram.event - Update id=449045486 is handled. Duration 324 ms by bot id=6027584024
+dispatcher.py:171 #INFO     [2023-08-15 16:43:16,445] - aiogram.event - Update id=449045487 is handled. Duration 133 ms by bot id=6027584024
+reply.py:150 #INFO     [2023-08-15 16:43:22,202] - tgbot.keyboards.reply - You are in add_price_reply
+dispatcher.py:171 #INFO     [2023-08-15 16:43:22,390] - aiogram.event - Update id=449045488 is handled. Duration 188 ms by bot id=6027584024
+reply.py:165 #INFO     [2023-08-15 16:43:31,880] - tgbot.keyboards.reply - You are in add_price_reply
+dispatcher.py:171 #INFO     [2023-08-15 16:43:32,091] - aiogram.event - Update id=449045489 is handled. Duration 211 ms by bot id=6027584024
+reply.py:180 #INFO     [2023-08-15 16:43:51,904] - tgbot.keyboards.reply - You are in add_photo_reply
+reply.py:193 #INFO     [2023-08-15 16:43:52,934] - tgbot.keyboards.reply - https://telegra.ph/upload
+reply.py:196 #INFO     [2023-08-15 16:43:52,934] - tgbot.keyboards.reply - https://telegra.ph//file/9268f11cc1faf4e1d567b.jpg
+dispatcher.py:171 #INFO     [2023-08-15 16:43:53,125] - aiogram.event - Update id=449045490 is handled. Duration 1221 ms by bot id=6027584024
+reply.py:212 #INFO     [2023-08-15 16:43:54,974] - tgbot.keyboards.reply - You are in add_item_confirmation_reply
+db.py:109 #INFO     [2023-08-15 16:43:54,975] - db - Trying to save item.
+db.py:116 #INFO     [2023-08-15 16:43:54,983] - db - Item successfully saved!
+dispatcher.py:171 #INFO     [2023-08-15 16:43:55,284] - aiogram.event - Update id=449045491 is handled. Duration 310 ms by bot id=6027584024
+reply.py:231 #INFO     [2023-08-15 16:43:57,978] - tgbot.keyboards.reply - You are in item_added_reply
+dispatcher.py:171 #INFO     [2023-08-15 16:43:58,400] - aiogram.event - Update id=449045492 is handled. Duration 422 ms by bot id=6027584024
+dispatcher.py:171 #INFO     [2023-08-15 16:43:59,380] - aiogram.event - Update id=449045493 is handled. Duration 111 ms by bot id=6027584024
+db.py:119 #INFO     [2023-08-15 16:44:00,703] - db - Trying to get all items
+admin.py:117 #INFO     [2023-08-15 16:44:00,705] - tgbot.handlers.admin - [{'id': '6', 'item': 'Monitor ACER Predator XB253QGW 24.5" 1920x1080px IPS 280Hz 1 ms', 'item_url': 'https://telegra.ph//file/5c10f1b92a80f318dc86d.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 24.5", 1920 x 1080px, IPS\nCzęstotliwość odświeżania obrazu [Hz]: 280\nCzas reakcji matrycy [ms]: 1\nJasność ekranu [cd/m2]: 400\nProporcje ekranu: 16:9\nZłącza: Wyjście liniowe audio, USB x 2, HDMI x 2, DisplayPort x 1', 'item_price': '6,45', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVLWTbf-kmoxDSLFOyZL286jr7vqvyAAKRuzEbeNjZUk1lvM7tNo0dAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 38, 50, 980016)}, {'id': '5', 'item': 'Monitor iiyama G-Master G2450HS-B1 Black Hawk', 'item_url': 'https://lowcygier.pl/wp-content/uploads/2022/08/ACER_Predator_XB253QGW_facebook-scaled.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 21.5", 1920 x 1080px, VA\r\nCzęstotliwość odświeżania obrazu [Hz]: 75\r\nCzas reakcji matrycy [ms]: 1\r\nJasność ekranu [cd/m2]: 250\r\nProporcje ekranu: 16:9\r\nZłącza: Wyjście liniowe audio, HDMI x 1, DisplayPort x 1', 'item_price': '9,99', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVGGTbeES0huovHrD-iytya0rmPTptAAIkuzEbeNjZUi-Nj9DNo2QxAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 6, 16, 539244)}, {'id': '7', 'item': 'Monitor AOC G2 C27G2ZE 27" 1920x1080px 240Hz 0.5 ms Curved', 'item_url': 'https://telegra.ph//file/9268f11cc1faf4e1d567b.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 27", 1920 x 1080px, VA, Zakrzywiony ekran\nCzęstotliwość odświeżania obrazu [Hz]: 240\nCzas reakcji matrycy [ms]: 0.5\nJasność ekranu [cd/m2]: 300\nProporcje ekranu: 16:9\nZłącza: Wyjście liniowe audio, HDMI 2.0 x 2, DisplayPort 1.2 x 1', 'item_price': '25.43', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVfmTbq0gFh57I4QPK3XFy9LcJKoG2AALYuzEbeNjZUqBZDM_uHycUAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 16, 43, 54, 975133)}]
+db.py:119 #INFO     [2023-08-15 16:44:00,705] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-15 16:44:00,764] - aiogram.event - Update id=449045494 is handled. Duration 61 ms by bot id=6027584024
+user.py:111 #INFO     [2023-08-15 16:45:29,915] - tgbot.handlers.user - None
+db.py:49 #INFO     [2023-08-15 16:45:29,915] - db - Trying to save user.
+db.py:55 #INFO     [2023-08-15 16:45:29,928] - root - User successfully saved!
+dispatcher.py:171 #INFO     [2023-08-15 16:45:30,147] - aiogram.event - Update id=449045495 is handled. Duration 234 ms by bot id=6027584024
+reply.py:69 #INFO     [2023-08-15 16:45:35,141] - tgbot.keyboards.reply - You are in access_reply
+db.py:40 #INFO     [2023-08-15 16:45:35,142] - db - wewew
+dispatcher.py:171 #INFO     [2023-08-15 16:45:35,372] - aiogram.event - Update id=449045496 is handled. Duration 231 ms by bot id=6027584024
+user.py:111 #INFO     [2023-08-15 16:48:58,333] - tgbot.handlers.user - [5675977680, 'emperor_priferiti', 'c921ff44', None, 0, 5675977680, datetime.datetime(2023, 8, 15, 16, 45, 29, 913640)]
+dispatcher.py:171 #INFO     [2023-08-15 16:48:58,595] - aiogram.event - Update id=449045497 is handled. Duration 263 ms by bot id=6027584024
+dispatcher.py:451 #WARNING  [2023-08-15 16:49:11,663] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-08-15 16:49:11,664] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:547 #INFO     [2023-08-15 16:49:11,665] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-08-15 16:51:06,657] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-08-15 16:51:06,972] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-08-15 16:51:07,022] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-08-15 16:51:07,023] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-08-15 16:51:07,066] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Celestial'
+user.py:111 #INFO     [2023-08-15 16:51:19,740] - tgbot.handlers.user - [5675977680, 'emperor_priferiti', 'c921ff44', None, 0, 5675977680, datetime.datetime(2023, 8, 15, 16, 45, 29, 913640)]
+dispatcher.py:171 #INFO     [2023-08-15 16:51:19,969] - aiogram.event - Update id=449045498 is handled. Duration 233 ms by bot id=6027584024
+user.py:32 #INFO     [2023-08-15 16:51:31,053] - tgbot.handlers.user - -1001911085133
+dispatcher.py:171 #INFO     [2023-08-15 16:51:31,053] - aiogram.event - Update id=449045499 is handled. Duration 0 ms by bot id=6027584024
+db.py:73 #INFO     [2023-08-15 16:51:34,063] - db - User_key updated successfully!
+user.py:42 #INFO     [2023-08-15 16:51:34,063] - tgbot.handlers.user - 5675977680
+user.py:43 #INFO     [2023-08-15 16:51:34,063] - tgbot.handlers.user - -1001911085133
+dispatcher.py:171 #INFO     [2023-08-15 16:51:34,137] - aiogram.event - Update id=449045500 is handled. Duration 80 ms by bot id=6027584024
+user.py:111 #INFO     [2023-08-15 16:51:39,730] - tgbot.handlers.user - [5675977680, 'emperor_priferiti', 'c921ff44', 'be31fd64', 0, 5675977680, datetime.datetime(2023, 8, 15, 16, 45, 29, 913640)]
+dispatcher.py:171 #INFO     [2023-08-15 16:51:39,731] - aiogram.event - Update id=449045501 is not handled. Duration 2 ms by bot id=6027584024
+dispatcher.py:313 #ERROR    [2023-08-15 16:51:39,731] - aiogram.event - Cause exception while process update id=449045501 by bot id=6027584024
+TypeError: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 307, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 274, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 118, in process_message
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/app/Celestial/tgbot/middlewares/config.py", line 18, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 135, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 128, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager_middleware.py", line 45, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 165, in context_saver_middleware
+    result = await handler(event, data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/src/app/Celestial/tgbot/handlers/user.py", line 127, in user_start
+    await dialog_manager.start(
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 207, in start
+    await self._start_normal(state, data)
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 254, in _start_normal
+    await self.show()
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 284, in show
+    new_message = await self.dialog().render(self)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/dialog.py", line 122, in render
+    new_message = await window.render(self, manager)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/window.py", line 102, in render
+    reply_markup=await self.render_kbd(current_data, manager),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/window.py", line 67, in render_kbd
+    keyboard = await self.keyboard.render_keyboard(data, manager)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/group.py", line 40, in _render_keyboard
+    b_kbd = await b.render_keyboard(data, manager)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/group.py", line 40, in _render_keyboard
+    b_kbd = await b.render_keyboard(data, manager)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/select.py", line 64, in _render_keyboard
+    [
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/select.py", line 65, in <listcomp>
+    await self._render_button(pos, item, data, manager)
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/select.py", line 75, in _render_button
+    item_id = self.item_id_getter(item)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+dispatcher.py:171 #INFO     [2023-08-15 16:55:11,791] - aiogram.event - Update id=449045502 is not handled. Duration 0 ms by bot id=6027584024
+dispatcher.py:313 #ERROR    [2023-08-15 16:55:11,791] - aiogram.event - Cause exception while process update id=449045502 by bot id=6027584024
+UnknownIntent: Context not found for intent id: zgUhE6
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 307, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 274, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 117, in process_message
+    await self._load_context(event, None, DEFAULT_STACK_ID, data)
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 82, in _load_context
+    context = await proxy.load_context(stack.last_intent_id())
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/storage.py", line 34, in load_context
+    raise UnknownIntent(
+aiogram_dialog.api.exceptions.UnknownIntent: Context not found for intent id: zgUhE6
+dispatcher.py:171 #INFO     [2023-08-15 16:56:13,391] - aiogram.event - Update id=449045503 is not handled. Duration 0 ms by bot id=6027584024
+dispatcher.py:313 #ERROR    [2023-08-15 16:56:13,392] - aiogram.event - Cause exception while process update id=449045503 by bot id=6027584024
+UnknownIntent: Context not found for intent id: zgUhE6
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 307, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 274, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 117, in process_message
+    await self._load_context(event, None, DEFAULT_STACK_ID, data)
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 82, in _load_context
+    context = await proxy.load_context(stack.last_intent_id())
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/storage.py", line 34, in load_context
+    raise UnknownIntent(
+aiogram_dialog.api.exceptions.UnknownIntent: Context not found for intent id: zgUhE6
+dispatcher.py:171 #INFO     [2023-08-15 16:56:32,436] - aiogram.event - Update id=449045504 is not handled. Duration 0 ms by bot id=6027584024
+dispatcher.py:313 #ERROR    [2023-08-15 16:56:32,437] - aiogram.event - Cause exception while process update id=449045504 by bot id=6027584024
+UnknownIntent: Context not found for intent id: zgUhE6
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 307, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 274, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 117, in process_message
+    await self._load_context(event, None, DEFAULT_STACK_ID, data)
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 82, in _load_context
+    context = await proxy.load_context(stack.last_intent_id())
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/storage.py", line 34, in load_context
+    raise UnknownIntent(
+aiogram_dialog.api.exceptions.UnknownIntent: Context not found for intent id: zgUhE6
+dispatcher.py:451 #WARNING  [2023-08-15 16:57:02,833] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-08-15 16:57:02,835] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:547 #INFO     [2023-08-15 16:57:02,835] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-08-15 16:57:12,066] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-08-15 16:57:12,362] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-08-15 16:57:12,413] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-08-15 16:57:12,414] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-08-15 16:57:12,449] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Celestial'
+user.py:111 #INFO     [2023-08-15 16:57:13,866] - tgbot.handlers.user - None
+db.py:49 #INFO     [2023-08-15 16:57:13,866] - db - Trying to save user.
+db.py:55 #INFO     [2023-08-15 16:57:13,872] - root - User successfully saved!
+dispatcher.py:171 #INFO     [2023-08-15 16:57:14,066] - aiogram.event - Update id=449045505 is handled. Duration 204 ms by bot id=6027584024
+user.py:32 #INFO     [2023-08-15 16:57:25,232] - tgbot.handlers.user - -1001911085133
+dispatcher.py:171 #INFO     [2023-08-15 16:57:25,232] - aiogram.event - Update id=449045506 is handled. Duration 1 ms by bot id=6027584024
+db.py:73 #INFO     [2023-08-15 16:57:29,026] - db - User_key updated successfully!
+user.py:42 #INFO     [2023-08-15 16:57:29,027] - tgbot.handlers.user - 5675977680
+user.py:43 #INFO     [2023-08-15 16:57:29,027] - tgbot.handlers.user - -1001911085133
+dispatcher.py:171 #INFO     [2023-08-15 16:57:29,140] - aiogram.event - Update id=449045507 is handled. Duration 119 ms by bot id=6027584024
+user.py:111 #INFO     [2023-08-15 16:57:31,762] - tgbot.handlers.user - [5675977680, 'emperor_priferiti', 'c921ff44', 'be31fd64', 0, 5675977680, datetime.datetime(2023, 8, 15, 16, 57, 13, 861947)]
+dispatcher.py:171 #INFO     [2023-08-15 16:57:31,763] - aiogram.event - Update id=449045508 is not handled. Duration 3 ms by bot id=6027584024
+dispatcher.py:313 #ERROR    [2023-08-15 16:57:31,764] - aiogram.event - Cause exception while process update id=449045508 by bot id=6027584024
+TypeError: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 307, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 274, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 118, in process_message
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/app/Celestial/tgbot/middlewares/config.py", line 18, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 135, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 128, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager_middleware.py", line 45, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 165, in context_saver_middleware
+    result = await handler(event, data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/src/app/Celestial/tgbot/handlers/user.py", line 127, in user_start
+    await dialog_manager.start(
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 207, in start
+    await self._start_normal(state, data)
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 254, in _start_normal
+    await self.show()
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 284, in show
+    new_message = await self.dialog().render(self)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/dialog.py", line 122, in render
+    new_message = await window.render(self, manager)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/window.py", line 102, in render
+    reply_markup=await self.render_kbd(current_data, manager),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/window.py", line 67, in render_kbd
+    keyboard = await self.keyboard.render_keyboard(data, manager)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/group.py", line 40, in _render_keyboard
+    b_kbd = await b.render_keyboard(data, manager)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/group.py", line 40, in _render_keyboard
+    b_kbd = await b.render_keyboard(data, manager)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/select.py", line 64, in _render_keyboard
+    [
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/select.py", line 65, in <listcomp>
+    await self._render_button(pos, item, data, manager)
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/select.py", line 75, in _render_button
+    item_id = self.item_id_getter(item)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+dispatcher.py:451 #WARNING  [2023-08-15 17:01:58,531] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-08-15 17:01:58,532] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:547 #INFO     [2023-08-15 17:01:58,532] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-08-15 17:02:07,325] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-08-15 17:02:07,783] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-08-15 17:02:07,833] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-08-15 17:02:07,834] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-08-15 17:02:07,872] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Celestial'
+user.py:111 #INFO     [2023-08-15 17:02:08,699] - tgbot.handlers.user - [5675977680, 'emperor_priferiti', 'c921ff44', 'be31fd64', 0, 5675977680, datetime.datetime(2023, 8, 15, 16, 57, 13, 861947)]
+dispatcher.py:171 #INFO     [2023-08-15 17:02:08,700] - aiogram.event - Update id=449045509 is not handled. Duration 5 ms by bot id=6027584024
+dispatcher.py:313 #ERROR    [2023-08-15 17:02:08,700] - aiogram.event - Cause exception while process update id=449045509 by bot id=6027584024
+TypeError: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 307, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 274, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 118, in process_message
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/app/Celestial/tgbot/middlewares/config.py", line 18, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 135, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 128, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager_middleware.py", line 45, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 165, in context_saver_middleware
+    result = await handler(event, data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/src/app/Celestial/tgbot/handlers/user.py", line 127, in user_start
+    await dialog_manager.start(
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 207, in start
+    await self._start_normal(state, data)
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 254, in _start_normal
+    await self.show()
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 284, in show
+    new_message = await self.dialog().render(self)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/dialog.py", line 122, in render
+    new_message = await window.render(self, manager)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/window.py", line 102, in render
+    reply_markup=await self.render_kbd(current_data, manager),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/window.py", line 67, in render_kbd
+    keyboard = await self.keyboard.render_keyboard(data, manager)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/group.py", line 40, in _render_keyboard
+    b_kbd = await b.render_keyboard(data, manager)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/group.py", line 40, in _render_keyboard
+    b_kbd = await b.render_keyboard(data, manager)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/select.py", line 64, in _render_keyboard
+    [
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/select.py", line 65, in <listcomp>
+    await self._render_button(pos, item, data, manager)
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/select.py", line 75, in _render_button
+    item_id = self.item_id_getter(item)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+user.py:111 #INFO     [2023-08-15 17:02:11,081] - tgbot.handlers.user - [5675977680, 'emperor_priferiti', 'c921ff44', 'be31fd64', 0, 5675977680, datetime.datetime(2023, 8, 15, 16, 57, 13, 861947)]
+dispatcher.py:171 #INFO     [2023-08-15 17:02:11,082] - aiogram.event - Update id=449045510 is not handled. Duration 1 ms by bot id=6027584024
+dispatcher.py:313 #ERROR    [2023-08-15 17:02:11,082] - aiogram.event - Cause exception while process update id=449045510 by bot id=6027584024
+TypeError: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 307, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 274, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 118, in process_message
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/app/Celestial/tgbot/middlewares/config.py", line 18, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 135, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 128, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager_middleware.py", line 45, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 165, in context_saver_middleware
+    result = await handler(event, data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/src/app/Celestial/tgbot/handlers/user.py", line 127, in user_start
+    await dialog_manager.start(
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 207, in start
+    await self._start_normal(state, data)
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 254, in _start_normal
+    await self.show()
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 284, in show
+    new_message = await self.dialog().render(self)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/dialog.py", line 122, in render
+    new_message = await window.render(self, manager)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/window.py", line 102, in render
+    reply_markup=await self.render_kbd(current_data, manager),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/window.py", line 67, in render_kbd
+    keyboard = await self.keyboard.render_keyboard(data, manager)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/group.py", line 40, in _render_keyboard
+    b_kbd = await b.render_keyboard(data, manager)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/group.py", line 40, in _render_keyboard
+    b_kbd = await b.render_keyboard(data, manager)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/select.py", line 64, in _render_keyboard
+    [
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/select.py", line 65, in <listcomp>
+    await self._render_button(pos, item, data, manager)
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/select.py", line 75, in _render_button
+    item_id = self.item_id_getter(item)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+dispatcher.py:451 #WARNING  [2023-08-15 17:03:22,327] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-08-15 17:03:22,328] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:547 #INFO     [2023-08-15 17:03:22,329] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-08-15 17:03:30,571] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-08-15 17:03:30,965] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-08-15 17:03:31,016] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-08-15 17:03:31,017] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-08-15 17:03:31,058] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Celestial'
+user.py:60 #INFO     [2023-08-15 17:03:32,150] - tgbot.handlers.user - [5675977680, 'emperor_priferiti', 'c921ff44', 'be31fd64', 0, 5675977680, datetime.datetime(2023, 8, 15, 16, 57, 13, 861947)]
+dispatcher.py:171 #INFO     [2023-08-15 17:03:32,151] - aiogram.event - Update id=449045511 is not handled. Duration 6 ms by bot id=6027584024
+dispatcher.py:313 #ERROR    [2023-08-15 17:03:32,151] - aiogram.event - Cause exception while process update id=449045511 by bot id=6027584024
+TypeError: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 307, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 274, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 118, in process_message
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/app/Celestial/tgbot/middlewares/config.py", line 18, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 135, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 128, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager_middleware.py", line 45, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 165, in context_saver_middleware
+    result = await handler(event, data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/src/app/Celestial/tgbot/handlers/user.py", line 76, in user_start
+    await dialog_manager.start(
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 207, in start
+    await self._start_normal(state, data)
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 254, in _start_normal
+    await self.show()
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 284, in show
+    new_message = await self.dialog().render(self)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/dialog.py", line 122, in render
+    new_message = await window.render(self, manager)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/window.py", line 102, in render
+    reply_markup=await self.render_kbd(current_data, manager),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/window.py", line 67, in render_kbd
+    keyboard = await self.keyboard.render_keyboard(data, manager)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/group.py", line 40, in _render_keyboard
+    b_kbd = await b.render_keyboard(data, manager)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/group.py", line 40, in _render_keyboard
+    b_kbd = await b.render_keyboard(data, manager)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/select.py", line 64, in _render_keyboard
+    [
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/select.py", line 65, in <listcomp>
+    await self._render_button(pos, item, data, manager)
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/select.py", line 75, in _render_button
+    item_id = self.item_id_getter(item)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+dispatcher.py:451 #WARNING  [2023-08-15 17:06:35,514] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-08-15 17:06:35,516] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:547 #INFO     [2023-08-15 17:06:35,516] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-08-15 17:06:45,501] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-08-15 17:06:45,860] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-08-15 17:06:45,911] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-08-15 17:06:45,912] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-08-15 17:06:45,962] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Celestial'
+user.py:107 #INFO     [2023-08-15 17:06:50,509] - tgbot.handlers.user - You are in user_start
+user.py:113 #INFO     [2023-08-15 17:06:50,514] - tgbot.handlers.user - [5675977680, 'emperor_priferiti', 'c921ff44', 'be31fd64', 0, 5675977680, datetime.datetime(2023, 8, 15, 16, 57, 13, 861947)]
+dispatcher.py:171 #INFO     [2023-08-15 17:06:50,515] - aiogram.event - Update id=449045512 is not handled. Duration 6 ms by bot id=6027584024
+dispatcher.py:313 #ERROR    [2023-08-15 17:06:50,515] - aiogram.event - Cause exception while process update id=449045512 by bot id=6027584024
+TypeError: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 307, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 274, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 118, in process_message
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/app/Celestial/tgbot/middlewares/config.py", line 18, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 135, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 128, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager_middleware.py", line 45, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 165, in context_saver_middleware
+    result = await handler(event, data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/src/app/Celestial/tgbot/handlers/user.py", line 129, in user_start
+    await dialog_manager.start(
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 207, in start
+    await self._start_normal(state, data)
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 254, in _start_normal
+    await self.show()
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 284, in show
+    new_message = await self.dialog().render(self)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/dialog.py", line 122, in render
+    new_message = await window.render(self, manager)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/window.py", line 102, in render
+    reply_markup=await self.render_kbd(current_data, manager),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/window.py", line 67, in render_kbd
+    keyboard = await self.keyboard.render_keyboard(data, manager)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/group.py", line 40, in _render_keyboard
+    b_kbd = await b.render_keyboard(data, manager)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/group.py", line 40, in _render_keyboard
+    b_kbd = await b.render_keyboard(data, manager)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/select.py", line 64, in _render_keyboard
+    [
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/select.py", line 65, in <listcomp>
+    await self._render_button(pos, item, data, manager)
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/select.py", line 75, in _render_button
+    item_id = self.item_id_getter(item)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+dispatcher.py:451 #WARNING  [2023-08-15 17:08:50,222] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-08-15 17:08:50,223] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:547 #INFO     [2023-08-15 17:08:50,223] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-08-21 13:13:20,062] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-08-21 13:13:20,474] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-08-21 13:13:20,524] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-08-21 13:13:20,525] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-08-21 13:13:20,566] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Celestial'
+admin.py:96 #INFO     [2023-08-21 13:20:21,993] - root - [683497406, 'd_w_y_t', 'be31fd64', '123456', 0, 683497406, datetime.datetime(2023, 8, 15, 11, 27, 38, 100178)]
+dispatcher.py:171 #INFO     [2023-08-21 13:20:22,412] - aiogram.event - Update id=449045524 is handled. Duration 474 ms by bot id=6027584024
+db.py:119 #INFO     [2023-08-21 13:20:30,298] - db - Trying to get all items
+admin.py:117 #INFO     [2023-08-21 13:20:30,301] - tgbot.handlers.admin - [{'id': '6', 'item': 'Monitor ACER Predator XB253QGW 24.5" 1920x1080px IPS 280Hz 1 ms', 'item_url': 'https://telegra.ph//file/5c10f1b92a80f318dc86d.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 24.5", 1920 x 1080px, IPS\nCzęstotliwość odświeżania obrazu [Hz]: 280\nCzas reakcji matrycy [ms]: 1\nJasność ekranu [cd/m2]: 400\nProporcje ekranu: 16:9\nZłącza: Wyjście liniowe audio, USB x 2, HDMI x 2, DisplayPort x 1', 'item_price': '6,45', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVLWTbf-kmoxDSLFOyZL286jr7vqvyAAKRuzEbeNjZUk1lvM7tNo0dAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 38, 50, 980016)}, {'id': '5', 'item': 'Monitor iiyama G-Master G2450HS-B1 Black Hawk', 'item_url': 'https://lowcygier.pl/wp-content/uploads/2022/08/ACER_Predator_XB253QGW_facebook-scaled.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 21.5", 1920 x 1080px, VA\r\nCzęstotliwość odświeżania obrazu [Hz]: 75\r\nCzas reakcji matrycy [ms]: 1\r\nJasność ekranu [cd/m2]: 250\r\nProporcje ekranu: 16:9\r\nZłącza: Wyjście liniowe audio, HDMI x 1, DisplayPort x 1', 'item_price': '9,99', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVGGTbeES0huovHrD-iytya0rmPTptAAIkuzEbeNjZUi-Nj9DNo2QxAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 6, 16, 539244)}, {'id': '7', 'item': 'Monitor AOC G2 C27G2ZE 27" 1920x1080px 240Hz 0.5 ms Curved', 'item_url': 'https://telegra.ph//file/9268f11cc1faf4e1d567b.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 27", 1920 x 1080px, VA, Zakrzywiony ekran\nCzęstotliwość odświeżania obrazu [Hz]: 240\nCzas reakcji matrycy [ms]: 0.5\nJasność ekranu [cd/m2]: 300\nProporcje ekranu: 16:9\nZłącza: Wyjście liniowe audio, HDMI 2.0 x 2, DisplayPort 1.2 x 1', 'item_price': '25.43', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVfmTbq0gFh57I4QPK3XFy9LcJKoG2AALYuzEbeNjZUqBZDM_uHycUAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 16, 43, 54, 975133)}]
+db.py:119 #INFO     [2023-08-21 13:20:30,302] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-21 13:20:30,403] - aiogram.event - Update id=449045525 is handled. Duration 106 ms by bot id=6027584024
+user.py:107 #INFO     [2023-08-21 13:20:55,004] - tgbot.handlers.user - You are in user_start
+user.py:113 #INFO     [2023-08-21 13:20:55,006] - tgbot.handlers.user - [5675977680, 'emperor_priferiti', 'c921ff44', 'be31fd64', 0, 5675977680, datetime.datetime(2023, 8, 15, 16, 57, 13, 861947)]
+dispatcher.py:171 #INFO     [2023-08-21 13:20:55,006] - aiogram.event - Update id=449045526 is not handled. Duration 3 ms by bot id=6027584024
+dispatcher.py:313 #ERROR    [2023-08-21 13:20:55,007] - aiogram.event - Cause exception while process update id=449045526 by bot id=6027584024
+TypeError: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 307, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 274, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 118, in process_message
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/app/Celestial/tgbot/middlewares/config.py", line 18, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 135, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 128, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager_middleware.py", line 45, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 165, in context_saver_middleware
+    result = await handler(event, data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/src/app/Celestial/tgbot/handlers/user.py", line 129, in user_start
+    await dialog_manager.start(
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 207, in start
+    await self._start_normal(state, data)
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 254, in _start_normal
+    await self.show()
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 284, in show
+    new_message = await self.dialog().render(self)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/dialog.py", line 122, in render
+    new_message = await window.render(self, manager)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/window.py", line 102, in render
+    reply_markup=await self.render_kbd(current_data, manager),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/window.py", line 67, in render_kbd
+    keyboard = await self.keyboard.render_keyboard(data, manager)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/group.py", line 40, in _render_keyboard
+    b_kbd = await b.render_keyboard(data, manager)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/group.py", line 40, in _render_keyboard
+    b_kbd = await b.render_keyboard(data, manager)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/select.py", line 64, in _render_keyboard
+    [
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/select.py", line 65, in <listcomp>
+    await self._render_button(pos, item, data, manager)
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/select.py", line 75, in _render_button
+    item_id = self.item_id_getter(item)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+dispatcher.py:451 #WARNING  [2023-08-21 13:22:04,970] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-08-21 13:22:04,972] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:547 #INFO     [2023-08-21 13:22:04,972] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-08-21 13:22:15,199] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-08-21 13:22:15,590] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-08-21 13:22:15,641] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-08-21 13:22:15,642] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-08-21 13:22:15,681] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Celestial'
+user.py:56 #INFO     [2023-08-21 13:22:18,382] - tgbot.handlers.user - You are in user_start
+user.py:62 #INFO     [2023-08-21 13:22:18,387] - tgbot.handlers.user - [5675977680, 'emperor_priferiti', 'c921ff44', 'be31fd64', 0, 5675977680, datetime.datetime(2023, 8, 15, 16, 57, 13, 861947)]
+dispatcher.py:171 #INFO     [2023-08-21 13:22:18,387] - aiogram.event - Update id=449045527 is not handled. Duration 5 ms by bot id=6027584024
+dispatcher.py:313 #ERROR    [2023-08-21 13:22:18,388] - aiogram.event - Cause exception while process update id=449045527 by bot id=6027584024
+TypeError: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 307, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 274, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 118, in process_message
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/app/Celestial/tgbot/middlewares/config.py", line 18, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 135, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 128, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager_middleware.py", line 45, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 165, in context_saver_middleware
+    result = await handler(event, data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/src/app/Celestial/tgbot/handlers/user.py", line 78, in user_start
+    await dialog_manager.start(
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 207, in start
+    await self._start_normal(state, data)
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 254, in _start_normal
+    await self.show()
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 284, in show
+    new_message = await self.dialog().render(self)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/dialog.py", line 122, in render
+    new_message = await window.render(self, manager)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/window.py", line 102, in render
+    reply_markup=await self.render_kbd(current_data, manager),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/window.py", line 67, in render_kbd
+    keyboard = await self.keyboard.render_keyboard(data, manager)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/group.py", line 40, in _render_keyboard
+    b_kbd = await b.render_keyboard(data, manager)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/group.py", line 40, in _render_keyboard
+    b_kbd = await b.render_keyboard(data, manager)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/select.py", line 64, in _render_keyboard
+    [
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/select.py", line 65, in <listcomp>
+    await self._render_button(pos, item, data, manager)
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/select.py", line 75, in _render_button
+    item_id = self.item_id_getter(item)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+dispatcher.py:451 #WARNING  [2023-08-21 13:29:02,072] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-08-21 13:29:02,074] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:547 #INFO     [2023-08-21 13:29:02,074] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-08-21 13:29:11,326] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-08-21 13:29:11,646] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-08-21 13:29:11,696] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-08-21 13:29:11,697] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-08-21 13:29:11,734] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Celestial'
+user.py:56 #INFO     [2023-08-21 13:29:16,911] - tgbot.handlers.user - You are in user_start
+user.py:62 #INFO     [2023-08-21 13:29:16,915] - tgbot.handlers.user - [5675977680, 'emperor_priferiti', 'c921ff44', 'be31fd64', 0, 5675977680, datetime.datetime(2023, 8, 15, 16, 57, 13, 861947)]
+dispatcher.py:171 #INFO     [2023-08-21 13:29:16,916] - aiogram.event - Update id=449045528 is not handled. Duration 5 ms by bot id=6027584024
+dispatcher.py:313 #ERROR    [2023-08-21 13:29:16,916] - aiogram.event - Cause exception while process update id=449045528 by bot id=6027584024
+TypeError: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 307, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 274, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 118, in process_message
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/app/Celestial/tgbot/middlewares/config.py", line 18, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 135, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 128, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager_middleware.py", line 45, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 165, in context_saver_middleware
+    result = await handler(event, data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/src/app/Celestial/tgbot/handlers/user.py", line 78, in user_start
+    await dialog_manager.start(
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 207, in start
+    await self._start_normal(state, data)
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 254, in _start_normal
+    await self.show()
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 284, in show
+    new_message = await self.dialog().render(self)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/dialog.py", line 122, in render
+    new_message = await window.render(self, manager)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/window.py", line 102, in render
+    reply_markup=await self.render_kbd(current_data, manager),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/window.py", line 67, in render_kbd
+    keyboard = await self.keyboard.render_keyboard(data, manager)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/group.py", line 40, in _render_keyboard
+    b_kbd = await b.render_keyboard(data, manager)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/group.py", line 40, in _render_keyboard
+    b_kbd = await b.render_keyboard(data, manager)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/select.py", line 64, in _render_keyboard
+    [
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/select.py", line 65, in <listcomp>
+    await self._render_button(pos, item, data, manager)
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/select.py", line 75, in _render_button
+    item_id = self.item_id_getter(item)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+dispatcher.py:451 #WARNING  [2023-08-21 13:29:27,622] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-08-21 13:29:27,623] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:547 #INFO     [2023-08-21 13:29:27,623] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-08-21 13:29:36,005] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-08-21 13:29:36,302] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-08-21 13:29:36,352] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-08-21 13:29:36,353] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-08-21 13:29:36,391] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Celestial'
+user.py:56 #INFO     [2023-08-21 13:29:37,387] - tgbot.handlers.user - You are in user_start
+user.py:62 #INFO     [2023-08-21 13:29:37,392] - tgbot.handlers.user - [5675977680, 'emperor_priferiti', 'c921ff44', 'be31fd64', 0, 5675977680, datetime.datetime(2023, 8, 15, 16, 57, 13, 861947)]
+dispatcher.py:171 #INFO     [2023-08-21 13:29:37,392] - aiogram.event - Update id=449045529 is not handled. Duration 5 ms by bot id=6027584024
+dispatcher.py:313 #ERROR    [2023-08-21 13:29:37,392] - aiogram.event - Cause exception while process update id=449045529 by bot id=6027584024
+TypeError: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 307, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 274, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 118, in process_message
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/app/Celestial/tgbot/middlewares/config.py", line 18, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 135, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 128, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager_middleware.py", line 45, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 165, in context_saver_middleware
+    result = await handler(event, data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/src/app/Celestial/tgbot/handlers/user.py", line 78, in user_start
+    await dialog_manager.start(
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 207, in start
+    await self._start_normal(state, data)
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 254, in _start_normal
+    await self.show()
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 284, in show
+    new_message = await self.dialog().render(self)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/dialog.py", line 122, in render
+    new_message = await window.render(self, manager)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/window.py", line 102, in render
+    reply_markup=await self.render_kbd(current_data, manager),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/window.py", line 67, in render_kbd
+    keyboard = await self.keyboard.render_keyboard(data, manager)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/group.py", line 40, in _render_keyboard
+    b_kbd = await b.render_keyboard(data, manager)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/group.py", line 40, in _render_keyboard
+    b_kbd = await b.render_keyboard(data, manager)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/select.py", line 64, in _render_keyboard
+    [
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/select.py", line 65, in <listcomp>
+    await self._render_button(pos, item, data, manager)
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/select.py", line 75, in _render_button
+    item_id = self.item_id_getter(item)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+dispatcher.py:451 #WARNING  [2023-08-21 13:29:59,501] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-08-21 13:29:59,502] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:547 #INFO     [2023-08-21 13:29:59,502] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-08-21 13:30:09,009] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-08-21 13:30:09,302] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-08-21 13:30:09,353] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-08-21 13:30:09,354] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-08-21 13:30:09,391] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Celestial'
+user.py:56 #INFO     [2023-08-21 13:30:11,206] - tgbot.handlers.user - You are in user_start
+user.py:62 #INFO     [2023-08-21 13:30:11,210] - tgbot.handlers.user - [5675977680, 'emperor_priferiti', 'c921ff44', 'be31fd64', 0, 5675977680, datetime.datetime(2023, 8, 15, 16, 57, 13, 861947)]
+dispatcher.py:171 #INFO     [2023-08-21 13:30:11,211] - aiogram.event - Update id=449045530 is not handled. Duration 5 ms by bot id=6027584024
+dispatcher.py:313 #ERROR    [2023-08-21 13:30:11,211] - aiogram.event - Cause exception while process update id=449045530 by bot id=6027584024
+TypeError: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 307, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 274, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 118, in process_message
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/app/Celestial/tgbot/middlewares/config.py", line 18, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 135, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 128, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager_middleware.py", line 45, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 165, in context_saver_middleware
+    result = await handler(event, data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/src/app/Celestial/tgbot/handlers/user.py", line 78, in user_start
+    await dialog_manager.start(
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 207, in start
+    await self._start_normal(state, data)
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 254, in _start_normal
+    await self.show()
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 284, in show
+    new_message = await self.dialog().render(self)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/dialog.py", line 122, in render
+    new_message = await window.render(self, manager)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/window.py", line 102, in render
+    reply_markup=await self.render_kbd(current_data, manager),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/window.py", line 67, in render_kbd
+    keyboard = await self.keyboard.render_keyboard(data, manager)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/group.py", line 40, in _render_keyboard
+    b_kbd = await b.render_keyboard(data, manager)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/group.py", line 40, in _render_keyboard
+    b_kbd = await b.render_keyboard(data, manager)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/select.py", line 64, in _render_keyboard
+    [
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/select.py", line 65, in <listcomp>
+    await self._render_button(pos, item, data, manager)
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/select.py", line 75, in _render_button
+    item_id = self.item_id_getter(item)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+dispatcher.py:451 #WARNING  [2023-08-21 13:34:07,413] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-08-21 13:34:07,414] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:547 #INFO     [2023-08-21 13:34:07,414] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-08-21 13:34:44,868] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-08-21 13:34:45,272] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-08-21 13:34:45,322] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-08-21 13:34:45,323] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-08-21 13:34:45,361] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Celestial'
+user.py:56 #INFO     [2023-08-21 13:34:46,194] - tgbot.handlers.user - You are in user_start
+user.py:62 #INFO     [2023-08-21 13:34:46,200] - tgbot.handlers.user - [5675977680, 'emperor_priferiti', 'c921ff44', 'be31fd64', 0, 5675977680, datetime.datetime(2023, 8, 15, 16, 57, 13, 861947)]
+dispatcher.py:171 #INFO     [2023-08-21 13:34:46,201] - aiogram.event - Update id=449045531 is not handled. Duration 7 ms by bot id=6027584024
+dispatcher.py:313 #ERROR    [2023-08-21 13:34:46,201] - aiogram.event - Cause exception while process update id=449045531 by bot id=6027584024
+TypeError: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 307, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 274, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 118, in process_message
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/app/Celestial/tgbot/middlewares/config.py", line 18, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 135, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 128, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager_middleware.py", line 45, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 165, in context_saver_middleware
+    result = await handler(event, data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/src/app/Celestial/tgbot/handlers/user.py", line 78, in user_start
+    await dialog_manager.start(
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 207, in start
+    await self._start_normal(state, data)
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 254, in _start_normal
+    await self.show()
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 284, in show
+    new_message = await self.dialog().render(self)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/dialog.py", line 122, in render
+    new_message = await window.render(self, manager)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/window.py", line 102, in render
+    reply_markup=await self.render_kbd(current_data, manager),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/window.py", line 67, in render_kbd
+    keyboard = await self.keyboard.render_keyboard(data, manager)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/group.py", line 40, in _render_keyboard
+    b_kbd = await b.render_keyboard(data, manager)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/group.py", line 40, in _render_keyboard
+    b_kbd = await b.render_keyboard(data, manager)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/select.py", line 64, in _render_keyboard
+    [
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/select.py", line 65, in <listcomp>
+    await self._render_button(pos, item, data, manager)
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/select.py", line 75, in _render_button
+    item_id = self.item_id_getter(item)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+dispatcher.py:451 #WARNING  [2023-08-21 14:22:46,656] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-08-21 14:22:46,657] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:547 #INFO     [2023-08-21 14:22:46,657] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-08-21 14:23:00,574] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-08-21 14:23:00,885] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-08-21 14:23:00,936] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-08-21 14:23:00,937] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-08-21 14:23:00,979] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Celestial'
+user.py:107 #INFO     [2023-08-21 14:23:01,912] - tgbot.handlers.user - You are in user_start
+user.py:113 #INFO     [2023-08-21 14:23:01,916] - tgbot.handlers.user - [5675977680, 'emperor_priferiti', 'c921ff44', 'be31fd64', 0, 5675977680, datetime.datetime(2023, 8, 15, 16, 57, 13, 861947)]
+dispatcher.py:171 #INFO     [2023-08-21 14:23:01,917] - aiogram.event - Update id=449045532 is not handled. Duration 5 ms by bot id=6027584024
+dispatcher.py:313 #ERROR    [2023-08-21 14:23:01,917] - aiogram.event - Cause exception while process update id=449045532 by bot id=6027584024
+TypeError: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 307, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 274, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 118, in process_message
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/app/Celestial/tgbot/middlewares/config.py", line 18, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 135, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 128, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager_middleware.py", line 45, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 165, in context_saver_middleware
+    result = await handler(event, data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/src/app/Celestial/tgbot/handlers/user.py", line 129, in user_start
+    await dialog_manager.start(
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 207, in start
+    await self._start_normal(state, data)
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 254, in _start_normal
+    await self.show()
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 284, in show
+    new_message = await self.dialog().render(self)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/dialog.py", line 122, in render
+    new_message = await window.render(self, manager)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/window.py", line 102, in render
+    reply_markup=await self.render_kbd(current_data, manager),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/window.py", line 67, in render_kbd
+    keyboard = await self.keyboard.render_keyboard(data, manager)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/group.py", line 40, in _render_keyboard
+    b_kbd = await b.render_keyboard(data, manager)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/group.py", line 40, in _render_keyboard
+    b_kbd = await b.render_keyboard(data, manager)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/select.py", line 64, in _render_keyboard
+    [
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/select.py", line 65, in <listcomp>
+    await self._render_button(pos, item, data, manager)
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/select.py", line 75, in _render_button
+    item_id = self.item_id_getter(item)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+dispatcher.py:451 #WARNING  [2023-08-21 14:24:56,520] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-08-21 14:24:56,520] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:547 #INFO     [2023-08-21 14:24:56,521] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-08-21 14:25:04,907] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-08-21 14:25:05,205] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-08-21 14:25:05,256] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-08-21 14:25:05,257] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-08-21 14:25:05,295] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Celestial'
+user.py:107 #INFO     [2023-08-21 14:25:05,939] - tgbot.handlers.user - You are in user_start
+user.py:113 #INFO     [2023-08-21 14:25:05,943] - tgbot.handlers.user - [5675977680, 'emperor_priferiti', 'c921ff44', 'be31fd64', 0, 5675977680, datetime.datetime(2023, 8, 15, 16, 57, 13, 861947)]
+user.py:130 #INFO     [2023-08-21 14:25:05,943] - tgbot.handlers.user - elif user_data[3]:
+dispatcher.py:171 #INFO     [2023-08-21 14:25:05,944] - aiogram.event - Update id=449045533 is not handled. Duration 6 ms by bot id=6027584024
+dispatcher.py:313 #ERROR    [2023-08-21 14:25:05,944] - aiogram.event - Cause exception while process update id=449045533 by bot id=6027584024
+TypeError: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 307, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 274, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 118, in process_message
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/app/Celestial/tgbot/middlewares/config.py", line 18, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 135, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 128, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager_middleware.py", line 45, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 165, in context_saver_middleware
+    result = await handler(event, data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/src/app/Celestial/tgbot/handlers/user.py", line 131, in user_start
+    await dialog_manager.start(
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 207, in start
+    await self._start_normal(state, data)
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 254, in _start_normal
+    await self.show()
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 284, in show
+    new_message = await self.dialog().render(self)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/dialog.py", line 122, in render
+    new_message = await window.render(self, manager)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/window.py", line 102, in render
+    reply_markup=await self.render_kbd(current_data, manager),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/window.py", line 67, in render_kbd
+    keyboard = await self.keyboard.render_keyboard(data, manager)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/group.py", line 40, in _render_keyboard
+    b_kbd = await b.render_keyboard(data, manager)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/group.py", line 40, in _render_keyboard
+    b_kbd = await b.render_keyboard(data, manager)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/select.py", line 64, in _render_keyboard
+    [
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/select.py", line 65, in <listcomp>
+    await self._render_button(pos, item, data, manager)
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/select.py", line 75, in _render_button
+    item_id = self.item_id_getter(item)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+dispatcher.py:451 #WARNING  [2023-08-21 14:27:06,882] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-08-21 14:27:06,884] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:547 #INFO     [2023-08-21 14:27:06,884] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-08-21 14:27:17,470] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-08-21 14:27:17,845] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-08-21 14:27:17,895] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-08-21 14:27:17,896] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-08-21 14:27:17,934] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Celestial'
+user.py:107 #INFO     [2023-08-21 14:27:21,793] - tgbot.handlers.user - You are in user_start
+user.py:113 #INFO     [2023-08-21 14:27:21,798] - tgbot.handlers.user - [5675977680, 'emperor_priferiti', 'c921ff44', 'be31fd64', 0, 5675977680, datetime.datetime(2023, 8, 15, 16, 57, 13, 861947)]
+user.py:130 #INFO     [2023-08-21 14:27:21,798] - tgbot.handlers.user - elif user_data[3]:
+inline.py:53 #INFO     [2023-08-21 14:27:21,798] - tgbot.keyboards.inline - 5675977680
+dispatcher.py:171 #INFO     [2023-08-21 14:27:21,799] - aiogram.event - Update id=449045534 is not handled. Duration 6 ms by bot id=6027584024
+dispatcher.py:313 #ERROR    [2023-08-21 14:27:21,799] - aiogram.event - Cause exception while process update id=449045534 by bot id=6027584024
+TypeError: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 307, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 274, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 118, in process_message
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/app/Celestial/tgbot/middlewares/config.py", line 18, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 135, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 128, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager_middleware.py", line 45, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 165, in context_saver_middleware
+    result = await handler(event, data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/src/app/Celestial/tgbot/handlers/user.py", line 131, in user_start
+    await dialog_manager.start(
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 207, in start
+    await self._start_normal(state, data)
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 254, in _start_normal
+    await self.show()
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 284, in show
+    new_message = await self.dialog().render(self)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/dialog.py", line 122, in render
+    new_message = await window.render(self, manager)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/window.py", line 102, in render
+    reply_markup=await self.render_kbd(current_data, manager),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/window.py", line 67, in render_kbd
+    keyboard = await self.keyboard.render_keyboard(data, manager)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/group.py", line 40, in _render_keyboard
+    b_kbd = await b.render_keyboard(data, manager)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/group.py", line 40, in _render_keyboard
+    b_kbd = await b.render_keyboard(data, manager)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/select.py", line 64, in _render_keyboard
+    [
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/select.py", line 65, in <listcomp>
+    await self._render_button(pos, item, data, manager)
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/select.py", line 75, in _render_button
+    item_id = self.item_id_getter(item)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+dispatcher.py:451 #WARNING  [2023-08-21 14:31:18,930] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-08-21 14:31:18,932] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:547 #INFO     [2023-08-21 14:31:18,932] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-08-21 14:31:29,988] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-08-21 14:31:30,294] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-08-21 14:31:30,345] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-08-21 14:31:30,346] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-08-21 14:31:30,384] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Celestial'
+user.py:107 #INFO     [2023-08-21 14:31:31,508] - tgbot.handlers.user - You are in user_start
+user.py:113 #INFO     [2023-08-21 14:31:31,513] - tgbot.handlers.user - [5675977680, 'emperor_priferiti', 'c921ff44', 'be31fd64', 0, 5675977680, datetime.datetime(2023, 8, 15, 16, 57, 13, 861947)]
+user.py:130 #INFO     [2023-08-21 14:31:31,513] - tgbot.handlers.user - elif user_data[3]:
+inline.py:53 #INFO     [2023-08-21 14:31:31,513] - tgbot.keyboards.inline - 5675977680
+dispatcher.py:171 #INFO     [2023-08-21 14:31:31,514] - aiogram.event - Update id=449045535 is not handled. Duration 6 ms by bot id=6027584024
+dispatcher.py:313 #ERROR    [2023-08-21 14:31:31,514] - aiogram.event - Cause exception while process update id=449045535 by bot id=6027584024
+TypeError: 'NoneType' object is not iterable
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 307, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 274, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 118, in process_message
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/app/Celestial/tgbot/middlewares/config.py", line 18, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 135, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 128, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager_middleware.py", line 45, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 165, in context_saver_middleware
+    result = await handler(event, data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/src/app/Celestial/tgbot/handlers/user.py", line 131, in user_start
+    await dialog_manager.start(
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 207, in start
+    await self._start_normal(state, data)
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 254, in _start_normal
+    await self.show()
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 284, in show
+    new_message = await self.dialog().render(self)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/dialog.py", line 122, in render
+    new_message = await window.render(self, manager)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/window.py", line 102, in render
+    reply_markup=await self.render_kbd(current_data, manager),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/window.py", line 67, in render_kbd
+    keyboard = await self.keyboard.render_keyboard(data, manager)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/group.py", line 40, in _render_keyboard
+    b_kbd = await b.render_keyboard(data, manager)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/group.py", line 40, in _render_keyboard
+    b_kbd = await b.render_keyboard(data, manager)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/select.py", line 66, in _render_keyboard
+    for pos, item in enumerate(self.items_getter(data))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not iterable
+dispatcher.py:451 #WARNING  [2023-08-21 14:39:01,997] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-08-21 14:39:01,998] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:547 #INFO     [2023-08-21 14:39:01,999] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-08-21 14:39:11,260] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-08-21 14:39:11,648] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-08-21 14:39:11,699] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-08-21 14:39:11,699] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-08-21 14:39:11,736] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Celestial'
+user.py:107 #INFO     [2023-08-21 14:39:13,408] - tgbot.handlers.user - You are in user_start
+user.py:113 #INFO     [2023-08-21 14:39:13,413] - tgbot.handlers.user - [5675977680, 'emperor_priferiti', 'c921ff44', 'be31fd64', 0, 5675977680, datetime.datetime(2023, 8, 15, 16, 57, 13, 861947)]
+user.py:130 #INFO     [2023-08-21 14:39:13,413] - tgbot.handlers.user - elif user_data[3]:
+inline.py:53 #INFO     [2023-08-21 14:39:13,413] - tgbot.keyboards.inline - 5675977680
+dispatcher.py:171 #INFO     [2023-08-21 14:39:13,414] - aiogram.event - Update id=449045537 is not handled. Duration 6 ms by bot id=6027584024
+dispatcher.py:313 #ERROR    [2023-08-21 14:39:13,414] - aiogram.event - Cause exception while process update id=449045537 by bot id=6027584024
+TypeError: 'NoneType' object is not iterable
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 307, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 274, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 118, in process_message
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/app/Celestial/tgbot/middlewares/config.py", line 18, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 135, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 128, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager_middleware.py", line 45, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 165, in context_saver_middleware
+    result = await handler(event, data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/src/app/Celestial/tgbot/handlers/user.py", line 131, in user_start
+    await dialog_manager.start(
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 207, in start
+    await self._start_normal(state, data)
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 254, in _start_normal
+    await self.show()
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/manager/manager.py", line 284, in show
+    new_message = await self.dialog().render(self)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/dialog.py", line 122, in render
+    new_message = await window.render(self, manager)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/window.py", line 102, in render
+    reply_markup=await self.render_kbd(current_data, manager),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/window.py", line 67, in render_kbd
+    keyboard = await self.keyboard.render_keyboard(data, manager)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/group.py", line 40, in _render_keyboard
+    b_kbd = await b.render_keyboard(data, manager)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/group.py", line 40, in _render_keyboard
+    b_kbd = await b.render_keyboard(data, manager)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/base.py", line 31, in render_keyboard
+    return await self._render_keyboard(data, manager)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/widgets/kbd/select.py", line 66, in _render_keyboard
+    for pos, item in enumerate(self.items_getter(data))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not iterable
+dispatcher.py:451 #WARNING  [2023-08-21 14:39:30,987] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-08-21 14:39:30,988] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:547 #INFO     [2023-08-21 14:39:30,988] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-08-21 14:39:39,429] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-08-21 14:39:39,823] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-08-21 14:39:39,874] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-08-21 14:39:39,875] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-08-21 14:39:39,913] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Celestial'
+user.py:107 #INFO     [2023-08-21 14:39:41,152] - tgbot.handlers.user - You are in user_start
+user.py:113 #INFO     [2023-08-21 14:39:41,156] - tgbot.handlers.user - [5675977680, 'emperor_priferiti', 'c921ff44', 'be31fd64', 0, 5675977680, datetime.datetime(2023, 8, 15, 16, 57, 13, 861947)]
+user.py:130 #INFO     [2023-08-21 14:39:41,157] - tgbot.handlers.user - elif user_data[3]:
+inline.py:53 #INFO     [2023-08-21 14:39:41,157] - tgbot.keyboards.inline - 5675977680
+dispatcher.py:171 #INFO     [2023-08-21 14:39:41,335] - aiogram.event - Update id=449045539 is handled. Duration 184 ms by bot id=6027584024
+dispatcher.py:451 #WARNING  [2023-08-21 14:43:36,736] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-08-21 14:43:36,737] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:547 #INFO     [2023-08-21 14:43:36,737] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-08-21 14:43:51,146] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-08-21 14:43:51,527] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-08-21 14:43:51,578] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-08-21 14:43:51,579] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-08-21 14:43:51,617] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Celestial'
+user.py:107 #INFO     [2023-08-21 14:43:52,899] - tgbot.handlers.user - You are in user_start
+user.py:113 #INFO     [2023-08-21 14:43:52,903] - tgbot.handlers.user - [5675977680, 'emperor_priferiti', 'c921ff44', 'be31fd64', 0, 5675977680, datetime.datetime(2023, 8, 15, 16, 57, 13, 861947)]
+user.py:130 #INFO     [2023-08-21 14:43:52,904] - tgbot.handlers.user - elif user_data[3]:
+inline.py:53 #INFO     [2023-08-21 14:43:52,904] - tgbot.keyboards.inline - 5675977680
+dispatcher.py:171 #INFO     [2023-08-21 14:43:53,049] - aiogram.event - Update id=449045540 is handled. Duration 151 ms by bot id=6027584024
+db.py:119 #INFO     [2023-08-21 14:44:08,914] - db - Trying to get all items
+admin.py:117 #INFO     [2023-08-21 14:44:08,920] - tgbot.handlers.admin - [{'id': '6', 'item': 'Monitor ACER Predator XB253QGW 24.5" 1920x1080px IPS 280Hz 1 ms', 'item_url': 'https://telegra.ph//file/5c10f1b92a80f318dc86d.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 24.5", 1920 x 1080px, IPS\nCzęstotliwość odświeżania obrazu [Hz]: 280\nCzas reakcji matrycy [ms]: 1\nJasność ekranu [cd/m2]: 400\nProporcje ekranu: 16:9\nZłącza: Wyjście liniowe audio, USB x 2, HDMI x 2, DisplayPort x 1', 'item_price': '6,45', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVLWTbf-kmoxDSLFOyZL286jr7vqvyAAKRuzEbeNjZUk1lvM7tNo0dAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 38, 50, 980016)}, {'id': '5', 'item': 'Monitor iiyama G-Master G2450HS-B1 Black Hawk', 'item_url': 'https://lowcygier.pl/wp-content/uploads/2022/08/ACER_Predator_XB253QGW_facebook-scaled.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 21.5", 1920 x 1080px, VA\r\nCzęstotliwość odświeżania obrazu [Hz]: 75\r\nCzas reakcji matrycy [ms]: 1\r\nJasność ekranu [cd/m2]: 250\r\nProporcje ekranu: 16:9\r\nZłącza: Wyjście liniowe audio, HDMI x 1, DisplayPort x 1', 'item_price': '9,99', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVGGTbeES0huovHrD-iytya0rmPTptAAIkuzEbeNjZUi-Nj9DNo2QxAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 13, 6, 16, 539244)}, {'id': '7', 'item': 'Monitor AOC G2 C27G2ZE 27" 1920x1080px 240Hz 0.5 ms Curved', 'item_url': 'https://telegra.ph//file/9268f11cc1faf4e1d567b.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Ekran: 27", 1920 x 1080px, VA, Zakrzywiony ekran\nCzęstotliwość odświeżania obrazu [Hz]: 240\nCzas reakcji matrycy [ms]: 0.5\nJasność ekranu [cd/m2]: 300\nProporcje ekranu: 16:9\nZłącza: Wyjście liniowe audio, HDMI 2.0 x 2, DisplayPort 1.2 x 1', 'item_price': '25.43', 'item_quantity': 1, 'item_photo': 'AgACAgQAAxkBAAIVfmTbq0gFh57I4QPK3XFy9LcJKoG2AALYuzEbeNjZUqBZDM_uHycUAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 8, 15, 16, 43, 54, 975133)}]
+db.py:119 #INFO     [2023-08-21 14:44:08,920] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-08-21 14:44:09,090] - aiogram.event - Update id=449045541 is handled. Duration 177 ms by bot id=6027584024
+dispatcher.py:451 #WARNING  [2023-08-21 14:44:19,724] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-08-21 14:44:19,725] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Celestial'
+dispatcher.py:547 #INFO     [2023-08-21 14:44:19,726] - aiogram.dispatcher - Polling stopped

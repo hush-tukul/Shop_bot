@@ -36,14 +36,14 @@ async def filter_float(input_str):
     if pattern_comma.match(input_str):
         float_str = input_str.replace(',', '.')
         try:
-            result = float(float_str)
+            result = round(float(float_str), 2)
             return result
         except ValueError:
             return None
 
     elif pattern_dot.match(input_str):
         try:
-            result = float(input_str)
+            result = round(float(input_str), 2)
             return result
         except ValueError:
             return None
@@ -153,7 +153,7 @@ async def add_price_reply(m: Message, input: MessageInput, dialog_manager: Dialo
     item_price = m.text
     correct_price_format = await filter_float(item_price)
     if item_price and correct_price_format:
-        dialog_manager.dialog_data.update(item_price=item_price)
+        dialog_manager.dialog_data.update(item_price=correct_price_format)
         await dialog_manager.switch_to(States.add_quantity_state)
     else:
         await m.reply(text="No no no, please type the price of the item, using format '0.0'. Thanks!",
