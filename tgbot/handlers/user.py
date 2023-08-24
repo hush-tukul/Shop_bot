@@ -22,15 +22,43 @@ user_router = Router()
 
 
 
+async def query_builder(letters):
+    results = []
+    if letters:
+        for item in Items.get_items_by_letters(letters):
+            results.append(InlineQueryResultArticle(
+                id=str(item["id"]),
+                title=item["item"],
+                input_message_content=InputTextMessageContent(
+                    message_text="You don`t need to press it",
 
+                ),
+                thumbnail_url=item["item_url"],
+                description=item["item_details"],
+                parse_mode="HTML",
+            )
+            )
+        return results
+    else:
+        for item in Items.get_items():
+            results.append(InlineQueryResultArticle(
+                id=str(item["id"]),
+                title=item["item"],
+                input_message_content=InputTextMessageContent(
+                    message_text="You don`t need to press it",
 
-
+                ),
+                thumbnail_url=item["item_url"],
+                description=item["item_details"],
+                parse_mode="HTML",
+            )
+            )
+        return results
 
 @user_router.chat_member(ChatMemberUpdatedFilter(IS_MEMBER >> IS_NOT_MEMBER), F.chat.type == ChatType.CHANNEL)
 async def on_user_leave(event: ChatMemberUpdated):
     user_id = event.from_user.id
     logger.info(event.chat.id)
-    #logging.info(user_id)
 
 
 
@@ -142,30 +170,12 @@ async def user_start(m: Message, dialog_manager: DialogManager):
 
 
 
-
-
-@user_router.inline_query(F.query == "")
-async def show_user_links(query: InlineQuery):
-    logger.info(f"You are in show_user_links")
-    await query.answer(
-        results=[
-            InlineQueryResultArticle(
-                id="list",
-                title="Type something...",
-                input_message_content=InputTextMessageContent(
-                    message_text="You don`t need to press it",
-
-                )
-
-            )
-        ],
-        cache_time=5
-    )
-
 @user_router.inline_query()
-async def some_query(query: InlineQuery):
-    logger.info(f"You are in some_query")
+async def user_query(query: InlineQuery):
+    logger.info(f"You are in user_query")
     user_id = query.from_user.id
+    letters = query.query
+    logger.info(f"letters: {letters}")
     if Users.get_user(user_id) is None:
         await query.answer(
             results=[],
@@ -176,23 +186,81 @@ async def some_query(query: InlineQuery):
         )
         return
 
-    item_list = Items.get_items()
-    results = []
+    if letters == "":
+        logger.info(f"letters is '': ")
+        results = await query_builder(None)
+        try:
+            await query.answer(
+                results=results,
+                cache_time=5,
+                is_personal=True,
+            )
+        except Exception as e:
+            logger.error(e)
 
-    for item in item_list:
-        results.append(InlineQueryResultArticle(
-            id=item["id"],
-            title=item["item"],
-            description=item["item_details"],
+    else:
+        logger.info(f"letters is not '': ")
+        not_found = InlineQueryResultArticle(
+            id="not_found",
+            title="Not Found...",
             input_message_content=InputTextMessageContent(
-                message_text="TEST",
-                parse_mode="HTML"
+                message_text="",
+
             ),
+            thumbnail_url="https://miro.medium.com/v2/resize:fit:800/1*hFwwQAW45673VGKrMPE2qQ.png",
+            description="Please try again...",
+            parse_mode="HTML",
+        )
+        results = await query_builder(letters)
+        logger.info(f"letters is not '' results: {results}")
+
+        try:
+            await query.answer(
+                results=results if results else not_found,
+                cache_time=5,
+                is_personal=True,
+            )
+        except Exception as e:
+            logger.error(e)
 
 
-        ))
 
-    await query.answer(results, is_personal=True, cache_time=5)
+
+
+
+
+
+# @user_router.inline_query()
+# async def some_query(query: InlineQuery):
+#     logger.info(f"You are in some_query")
+#     user_id = query.from_user.id
+#     if Users.get_user(user_id) is None:
+#         await query.answer(
+#             results=[],
+#             switch_pm_text="Bot is unavailable. Please register first",
+#             switch_pm_parameter="connect_user",
+#             cache_time=5,
+#
+#         )
+#         return
+#
+#     item_list = Items.get_items()
+#     results = []
+#
+#     for item in item_list:
+#         results.append(InlineQueryResultArticle(
+#             id=item["id"],
+#             title=item["item"],
+#             description=item["item_details"],
+#             input_message_content=InputTextMessageContent(
+#                 message_text="TEST",
+#                 parse_mode="HTML"
+#             ),
+#
+#
+#         ))
+#
+#     await query.answer(results, is_personal=True, cache_time=5)
 
 
 

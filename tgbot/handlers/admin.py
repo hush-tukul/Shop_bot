@@ -111,60 +111,36 @@ async def admin_start(m: Message, dialog_manager: DialogManager):
     )
 
 
-@admin_router.inline_query(F.query == "")
-async def show_user_links(query: InlineQuery):
-    results = []
-    logger.info(Items.get_items())
-    for item in Items.get_items():
-        results.append(InlineQueryResultArticle(
-                id=str(item["id"]),
-                title=item["item"],
-                input_message_content=InputTextMessageContent(
-                    message_text="You don`t need to press it",
 
-                ),
-                thumbnail_url=item["item_url"],
-                description=item["item_details"],
-                parse_mode="HTML",
-            )
-        )
-    try:
-        await query.answer(
-            results=results,
-            cache_time=5,
-            is_personal=True,
-        )
-    except Exception as e:
-        logger.error(e)
-@admin_router.inline_query()
-async def some_query(query: InlineQuery):
-    user_id = query.from_user.id
-    if Users.get_user(user_id) is None:
-        await query.answer(
-            results=[],
-            switch_pm_text="Bot is unavailable. Please register first",
-            switch_pm_parameter="connect_user",
-            cache_time=5,
-
-        )
-        return
-
-    item_list = Items.get_items()
-    results = []
-
-    for item in item_list:
-        results.append(InlineQueryResultArticle(
-            id=item["id"],
-            title=item["item"],
-            description=item["item_details"],
-            input_message_content=InputTextMessageContent(
-                message_text="TEST",
-                parse_mode="HTML"
-            ),
-
-        ))
-
-    await query.answer(results, is_personal=True, cache_time=5)
+# @admin_router.inline_query()
+# async def some_query(query: InlineQuery):
+#     user_id = query.from_user.id
+#     if Users.get_user(user_id) is None:
+#         await query.answer(
+#             results=[],
+#             switch_pm_text="Bot is unavailable. Please register first",
+#             switch_pm_parameter="connect_user",
+#             cache_time=5,
+#
+#         )
+#         return
+#
+#     item_list = Items.get_items()
+#     results = []
+#
+#     for item in item_list:
+#         results.append(InlineQueryResultArticle(
+#             id=item["id"],
+#             title=item["item"],
+#             description=item["item_details"],
+#             input_message_content=InputTextMessageContent(
+#                 message_text="TEST",
+#                 parse_mode="HTML"
+#             ),
+#
+#         ))
+#
+#     await query.answer(results, is_personal=True, cache_time=5)
 
 
 

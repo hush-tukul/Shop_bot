@@ -58,15 +58,17 @@ main_window = Window(
         SwitchInlineQuery_2(
             Const("Market"),
             Const(''),
-        ),
+            ),
+    ),
+    Row(
         Select(
             Format("{item[0]}"),
             id="menu",
             item_id_getter=operator.itemgetter(1),
             items='main_menu',
             on_click=main_menu_reply
+            ),
         ),
-    ),
     parse_mode=ParseMode.HTML,
     state=States.main_menu_state,
     getter=main_window_inline

@@ -10,6 +10,8 @@ from sqlalchemy import Column, String
 from sqlalchemy.orm import sessionmaker, declarative_base
 import hashlib
 
+from sqlalchemy.sql.elements import or_
+
 logger = logging.getLogger(__name__)
 
 engine = create_engine('postgresql://postgres:123456@db:5432/postgres')
@@ -105,6 +107,25 @@ class Items(Base):
     registry_datetime = Column(DateTime)
 
     @classmethod
+    def _construct_item_list(cls, item_data):
+        item_list = [{
+            "id": str(i.id),
+            "item": i.item,
+            "item_url": i.item_url,
+            "user_id": i.user_id,
+            "user_tg_name": i.user_tg_name,
+            "item_details": i.item_details,
+            "item_price": i.item_price,
+            "item_quantity": i.item_quantity,
+            "item_photo": i.item_photo,
+            "registry_datetime": i.registry_datetime
+        } for i in item_data]
+        sorted_item_list = sorted(item_list, key=lambda x: x["item"])
+        return sorted_item_list
+
+
+
+    @classmethod
     def add_item(cls, item, item_url, user_id, user_tg_name, item_details, item_price, item_quantity, item_photo, registry_datetime):
         logger.info("Trying to save item.")
 
@@ -119,21 +140,9 @@ class Items(Base):
         logger.info("Trying to get all items")
         item_data = session.query(Items).all()
         if item_data:
-            item_list = [{
-                "id": str(i.id),
-                "item": i.item,
-                "item_url": i.item_url,
-                "user_id": i.user_id,
-                "user_tg_name": i.user_tg_name,
-                "item_details": i.item_details,
-                "item_price": i.item_price,
-                "item_quantity": i.item_quantity,
-                "item_photo": i.item_photo,
-                "registry_datetime": i.registry_datetime
-            } for i in item_data]
-
-            return item_list
+            sorted_item_list = cls._construct_item_list(item_data)
             logger.info("All items were extracted")
+            return sorted_item_list
         else:
             return None
 
@@ -150,6 +159,24 @@ class Items(Base):
             logger.warning("Item not found.")
             return None
 
+    @classmethod
+    def get_items_by_letters(cls, first_letters):
+        logger.info(f"Trying to get items by first letter: {first_letters}")
+        item_data = session.query(Items).filter(
+            or_(
+                Items.item.like(f"{first_letters}%"),
+                Items.item.like(f"% {first_letters}%")  # For words with spaces before them
+            )
+        ).all()
+        logger.info(f"item_data: {item_data}")
+        if item_data:
+            sorted_item_list = cls._construct_item_list(item_data)
+            logger.info(f"Items by {len(first_letters)} letter(s) were extracted")
+            logger.info(f"sorted_item_list: {sorted_item_list}")
+            return sorted_item_list
+        else:
+            logger.info("No items found for the given first letter.")
+            return None
 
 
 
@@ -159,8 +186,20 @@ class Items(Base):
 
 
 
+Base.metadata.create_all(engine)
+Session = sessionmaker(bind=engine)
+session = Session()
+session.commit()
 
 
+
+
+
+async def shorten_url(url):
+    hash_object = hashlib.sha256(url.encode())
+    hash_digest = hash_object.hexdigest()
+    short_url = hash_digest[:8]
+    return short_url
 
 
 
@@ -353,17 +392,7 @@ class Items(Base):
 
 
 #[[i.id, i.filetype, i.option, i.user_id, i.user_name, i.datetime] for i in session.query(File).all()]
-Base.metadata.create_all(engine)
-Session = sessionmaker(bind=engine)
-session = Session()
-session.commit()
 
-
-async def shorten_url(url):
-    hash_object = hashlib.sha256(url.encode())
-    hash_digest = hash_object.hexdigest()
-    short_url = hash_digest[:8]
-    return short_url
 
 
 
