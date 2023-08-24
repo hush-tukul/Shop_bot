@@ -10,8 +10,6 @@ from sqlalchemy import Column, String
 from sqlalchemy.orm import sessionmaker, declarative_base
 import hashlib
 
-from sqlalchemy.sql.elements import or_
-
 logger = logging.getLogger(__name__)
 
 engine = create_engine('postgresql://postgres:123456@db:5432/postgres')
@@ -162,12 +160,7 @@ class Items(Base):
     @classmethod
     def get_items_by_letters(cls, first_letters):
         logger.info(f"Trying to get items by first letter: {first_letters}")
-        item_data = session.query(Items).filter(
-            or_(
-                Items.item.like(f"{first_letters}%"),
-                Items.item.like(f"% {first_letters}%")  # For words with spaces before them
-            )
-        ).all()
+        item_data = session.query(Items).filter(Items.item.like(f"%{first_letters}%")).all()
         logger.info(f"item_data: {item_data}")
         if item_data:
             sorted_item_list = cls._construct_item_list(item_data)

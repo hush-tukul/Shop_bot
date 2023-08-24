@@ -23,9 +23,12 @@ user_router = Router()
 
 
 async def query_builder(letters):
-    results = []
-    if letters:
-        for item in Items.get_items_by_letters(letters):
+    logger.info(f"query_builder: ")
+    items = Items.get_items_by_letters(letters)
+    if items:
+        logger.info(f"query_builder: if None not in [letters, items]: ")
+        results = []
+        for item in items:
             results.append(InlineQueryResultArticle(
                 id=str(item["id"]),
                 title=item["item"],
@@ -38,8 +41,12 @@ async def query_builder(letters):
                 parse_mode="HTML",
             )
             )
+        logger.info(f"results = {results}")
         return results
-    else:
+
+    elif letters is None:
+        logger.info(f"query_builder: elif letters is None: ")
+        results = []
         for item in Items.get_items():
             results.append(InlineQueryResultArticle(
                 id=str(item["id"]),
@@ -53,7 +60,12 @@ async def query_builder(letters):
                 parse_mode="HTML",
             )
             )
+        logger.info(f"results = {results}")
         return results
+    else:
+        logger.info(f"query_builder: else: ")
+        return None
+
 
 @user_router.chat_member(ChatMemberUpdatedFilter(IS_MEMBER >> IS_NOT_MEMBER), F.chat.type == ChatType.CHANNEL)
 async def on_user_leave(event: ChatMemberUpdated):
@@ -200,17 +212,19 @@ async def user_query(query: InlineQuery):
 
     else:
         logger.info(f"letters is not '': ")
-        not_found = InlineQueryResultArticle(
+        not_found = [
+            InlineQueryResultArticle(
             id="not_found",
             title="Not Found...",
             input_message_content=InputTextMessageContent(
-                message_text="",
+                message_text="Not Found...",
 
             ),
             thumbnail_url="https://miro.medium.com/v2/resize:fit:800/1*hFwwQAW45673VGKrMPE2qQ.png",
             description="Please try again...",
             parse_mode="HTML",
-        )
+            )
+        ]
         results = await query_builder(letters)
         logger.info(f"letters is not '' results: {results}")
 

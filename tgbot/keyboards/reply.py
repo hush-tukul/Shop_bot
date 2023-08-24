@@ -136,12 +136,12 @@ async def add_description_reply(m: Message, input: MessageInput, dialog_manager:
     user_id = dialog_manager.start_data.get('user_id')
     user_name = dialog_manager.start_data.get('user_name')
     item_description = m.text
-    if 50 < len(item_description) < 300:
+    if 50 < len(item_description) < 400:
         dialog_manager.dialog_data.update(item_description=item_description)
         await dialog_manager.switch_to(States.add_price_state)
     else:
         await m.reply(text="Please provide a description of the item using only letters and digits, "
-                           "ensuring it falls within the character limit of 50 to 300 characters.\nThanks!",
+                           "ensuring it falls within the character limit of 50 to 400 characters.\nThanks!",
                       parse_mode="HTML")
 
 
