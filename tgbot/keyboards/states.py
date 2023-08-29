@@ -1,6 +1,8 @@
 from aiogram.fsm.state import StatesGroup, State
 
 
+
+
 class States(StatesGroup):
     """FOR NEW USERS / ZERO WINDOW"""
     gate_state = State()
@@ -11,13 +13,11 @@ class States(StatesGroup):
     main_menu_state = State()
 
     """SECOND WINDOW"""
-
     contact_state = State()
     key_state = State()
     admin_panel_state = State()
 
     """THIRD WINDOW"""
-
     add_item_state = State()
     delete_item_state = State()
     us_state = State()

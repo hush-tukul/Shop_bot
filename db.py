@@ -106,21 +106,40 @@ class Items(Base):
 
     @classmethod
     def _construct_item_list(cls, item_data):
-        item_list = [{
-            "id": str(i.id),
-            "item": i.item,
-            "item_url": i.item_url,
-            "user_id": i.user_id,
-            "user_tg_name": i.user_tg_name,
-            "item_details": i.item_details,
-            "item_price": i.item_price,
-            "item_quantity": i.item_quantity,
-            "item_photo": i.item_photo,
-            "registry_datetime": i.registry_datetime
-        } for i in item_data]
-        sorted_item_list = sorted(item_list, key=lambda x: x["item"])
-        return sorted_item_list
-
+        logger.info(f"You are in _construct_item_list")
+        if type(item_data) is list:
+            logger.info(f"if type(item_data) is list: ")
+            item_list = [{
+                "id": str(i.id),
+                "item": i.item,
+                "item_url": i.item_url,
+                "user_id": i.user_id,
+                "user_tg_name": i.user_tg_name,
+                "item_details": i.item_details,
+                "item_price": i.item_price,
+                "item_quantity": i.item_quantity,
+                "item_photo": i.item_photo,
+                "registry_datetime": i.registry_datetime
+            } for i in item_data]
+            sorted_item_list = sorted(item_list, key=lambda x: x["item"])
+            logger.info(f"sorted_item_list: {sorted_item_list} ")
+            return sorted_item_list
+        else:
+            logger.info(f"else: ")
+            item_list = {
+                "id": str(item_data.id),
+                "item": item_data.item,
+                "item_url": item_data.item_url,
+                "user_id": item_data.user_id,
+                "user_tg_name": item_data.user_tg_name,
+                "item_details": item_data.item_details,
+                "item_price": item_data.item_price,
+                "item_quantity": item_data.item_quantity,
+                "item_photo": item_data.item_photo,
+                "registry_datetime": item_data.registry_datetime
+            }
+            logger.info(f"item_list: {item_list} ")
+            return item_list
 
 
     @classmethod
@@ -171,6 +190,18 @@ class Items(Base):
             logger.info("No items found for the given first letter.")
             return None
 
+    @classmethod
+    def get_item_by_id(cls, item_id):
+        logger.info(f"Trying to get item with id: {item_id}")
+        item_data = session.query(Items).filter_by(id=item_id).first()
+        logger.info(f"item_data: {item_data}")
+        if item_data:
+            sorted_item_list = cls._construct_item_list(item_data)
+            logger.info(f"Item with id {item_id} was found")
+            return sorted_item_list
+        else:
+            logger.info(f"No item found with id {item_id}.")
+            return None
 
 
 

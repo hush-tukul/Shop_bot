@@ -80,6 +80,23 @@ async def admin_panel_inline(dialog_manager: DialogManager, **kwargs):
         "admin_2": admin_buttons[2:],
     }
 
+
+
+
+# async def item_info_inline(dialog_manager: DialogManager, **kwargs):
+#     user_id = dialog_manager.start_data.get('user_id')
+#     user_name = dialog_manager.start_data.get('user_name')
+#     user_data = Users.get_user(user_id)
+#     title = "📝 Item info 📝"
+#     item_buttons = [
+#         ('➕ Buy item ➕', 'buy')
+#     ]
+#
+#     return {
+#         "title": title,
+#         "item_buttons": item_buttons,
+#     }
+
 async def add_item_inline(dialog_manager: DialogManager, **kwargs):
     user_id = dialog_manager.start_data.get('user_id')
     user_name = dialog_manager.start_data.get('user_name')

@@ -81,6 +81,29 @@
 #                 parse_mode="HTML"
 #             )
 #         ))
+import re
 
 
-print(None == "")
+def filter_float(input_str):
+    pattern_comma = re.compile(r"^\d+(\,\d+)?$")
+    pattern_dot = re.compile(r"^\d+(\.\d+)?$")
+
+    if pattern_comma.match(input_str):
+        float_str = input_str.replace(',', '.')
+        try:
+            result = round(float(float_str), 2)
+            return result
+        except ValueError:
+            return None
+
+    elif pattern_dot.match(input_str):
+        try:
+            result = round(float(input_str), 2)
+            return result
+        except ValueError:
+            return None
+    else:
+        return None
+
+
+print(type(filter_float('34,6')))

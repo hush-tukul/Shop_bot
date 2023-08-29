@@ -3,7 +3,7 @@ import operator
 from aiogram.enums import ParseMode, ContentType
 from aiogram_dialog import Window
 from aiogram_dialog.widgets.input import MessageInput
-from aiogram_dialog.widgets.kbd import Row, Select, SwitchTo, Column, Url, SwitchInlineQuery
+from aiogram_dialog.widgets.kbd import Row, Select, SwitchTo, Column, Url, SwitchInlineQuery, Button
 from aiogram_dialog.widgets.media import StaticMedia, DynamicMedia
 from aiogram_dialog.widgets.text import Const, Format
 
@@ -54,6 +54,9 @@ access_window = Window(
 
 main_window = Window(
     Format("{title}"),
+    # Row(
+    #     Button(Const("Market"), id="Market", on_click=item_info_reply),
+    # ),
     Row(
         SwitchInlineQuery_2(
             Const("Market"),
@@ -100,6 +103,32 @@ admin_window = Window(
     state=States.admin_panel_state,
     getter=admin_panel_inline
 )
+
+
+# item_info_window = Window(
+#     Format("{title}"),
+#     Row(
+#         SwitchInlineQuery_2(
+#             Const("Return to Market"),
+#             Const(''),
+#             ),
+#     ),
+#     Row(
+#         Select(
+#             Format("{item[0]}"),
+#             id="item_info",
+#             item_id_getter=operator.itemgetter(1),
+#             items='item_buttons',
+#             on_click=,
+#         ),
+#     ),
+#     parse_mode=ParseMode.HTML,
+#     state=States.item_info_state,
+#     getter=item_info_inline
+# )
+
+
+
 
 
 add_item_window = Window(
