@@ -64,6 +64,15 @@ async def main_window_inline(dialog_manager: DialogManager, **kwargs):
     }
 
 
+async def market_inline(dialog_manager: DialogManager, **kwargs):
+    user_id = dialog_manager.start_data.get('user_id')
+    logger.info(user_id)
+    title = "Market"
+
+    return {
+        "title": title,
+    }
+
 async def admin_panel_inline(dialog_manager: DialogManager, **kwargs):
     user_id = dialog_manager.start_data.get('user_id')
     user_name = dialog_manager.start_data.get('user_name')

@@ -203,7 +203,16 @@ class Items(Base):
             logger.info(f"No item found with id {item_id}.")
             return None
 
-
+    @classmethod
+    def subtract_quantity(cls, item_id, quantity_to_subtract):
+        item_to_update = session.query(Items).filter_by(id=item_id).first()
+        if item_to_update:
+            item_to_update.item_quantity -= quantity_to_subtract
+            session.commit()
+            logger.info(
+                f"Subtracted {quantity_to_subtract} from item with id {item_id}. New quantity: {item_to_update.item_quantity}")
+        else:
+            logger.info(f"No item found with id {item_id}.")
 
 
 

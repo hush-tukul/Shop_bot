@@ -13,6 +13,7 @@ class States(StatesGroup):
     main_menu_state = State()
 
     """SECOND WINDOW"""
+    market_state = State()
     contact_state = State()
     key_state = State()
     admin_panel_state = State()

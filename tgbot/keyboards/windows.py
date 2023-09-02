@@ -10,10 +10,10 @@ from aiogram_dialog.widgets.text import Const, Format
 from tgbot.keyboards.custom_buttons import SwitchInlineQuery_2
 from tgbot.keyboards.inline import gate_inline, access_inline, main_window_inline, admin_panel_inline, add_item_inline, \
     add_description_inline, add_price_inline, add_photo_inline, add_item_confirmation_inline, item_added_inline, \
-    add_quantity_inline, delete_item_inline, confirmed_item_delete_inline
+    add_quantity_inline, delete_item_inline, confirmed_item_delete_inline, market_inline
 from tgbot.keyboards.reply import gate_reply, access_reply, main_menu_reply, admin_panel_reply, add_item_reply, \
     add_description_reply, add_price_reply, add_photo_reply, item_added_reply, add_item_confirmation_reply, \
-    add_quantity_reply, delete_item_reply
+    add_quantity_reply, delete_item_reply, market_reply
 
 from tgbot.keyboards.states import States
 
@@ -54,9 +54,6 @@ access_window = Window(
 
 main_window = Window(
     Format("{title}"),
-    # Row(
-    #     Button(Const("Market"), id="Market", on_click=item_info_reply),
-    # ),
     Row(
         SwitchInlineQuery_2(
             Const("Market"),
@@ -76,6 +73,15 @@ main_window = Window(
     state=States.main_menu_state,
     getter=main_window_inline
 )
+
+
+market_window = Window(
+    Format("{title}"),
+    parse_mode=ParseMode.HTML,
+    state=States.market_state,
+    getter=market_inline
+)
+
 
 
 admin_window = Window(

@@ -9,7 +9,7 @@ from typing import Any
 
 
 import aiohttp
-from aiogram.types import CallbackQuery, Message, BufferedInputFile
+from aiogram.types import CallbackQuery, Message, BufferedInputFile, InlineQuery
 from aiogram_dialog import DialogManager, BaseDialogManager
 from aiogram_dialog.widgets.input import MessageInput
 from aiogram_dialog.widgets.kbd import Button
@@ -98,14 +98,18 @@ async def main_menu_reply(c: CallbackQuery, widget: Any, dialog_manager: DialogM
     chat_id = c.message.chat.id
     logger.info('You are in main_menu_reply')
     g = {
+        'market': States.market_state,
         # 'contact': States.,
         # 'key': States.,
         'admin_panel': States.admin_panel_state,
 
     }
-    if menu_option == 'market':
-        await c.bot.send_message(chat_id=chat_id, text='@Clstl_bot')
     await dialog_manager.switch_to(g[menu_option])
+
+async def market_reply(m: Message, input: MessageInput, dialog_manager: DialogManager):
+    logger.info('You are in add_item_reply')
+    quantity_to_buy = m.text
+    dialog_manager.dialog_data.update(quantity_to_buy=quantity_to_buy)
 
 
 async def admin_panel_reply(c: CallbackQuery, widget: Any, dialog_manager: DialogManager, admin_option: str):
@@ -118,27 +122,13 @@ async def admin_panel_reply(c: CallbackQuery, widget: Any, dialog_manager: Dialo
     await dialog_manager.switch_to(g[admin_option])
 
 
-
-
-
-# async def item_info_reply(callback: CallbackQuery, button: Button, manager: DialogManager):
-#     logger.info(f"You are in item_info_reply")
-#     await manager.start(States.item_info_state)
-#     asyncio.create_task(user_callback_handler(callback, manager.bg()))
-
-    # g = {
-    #     'buy': States.,
-    #     'return': States.,
-    # }
-
-
-async def user_callback_handler(query: CallbackQuery, manager: BaseDialogManager):
-    logger.info(f"You are in user_callback_handler")
-    callback = int(query.data)
-    logger.info(f"callback: {callback}")
-    item = Items.get_item_by_id(callback)
-    chat_id = query.from_user.id
-    await manager.switch_to(States.item_info_state)
+# async def user_callback_handler(query: CallbackQuery, manager: BaseDialogManager):
+#     logger.info(f"You are in user_callback_handler")
+#     callback = int(query.data)
+#     logger.info(f"callback: {callback}")
+#     item = Items.get_item_by_id(callback)
+#     chat_id = query.from_user.id
+#     await manager.switch_to(States.item_info_state)
 
 
 async def add_item_reply(m: Message, input: MessageInput, dialog_manager: DialogManager):

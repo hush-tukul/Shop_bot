@@ -8,8 +8,9 @@ from typing import Optional
 from aiogram import Router, F, Bot
 from aiogram.enums import ContentType, ChatType
 from aiogram.filters import CommandStart, CommandObject, ChatMemberUpdatedFilter, IS_NOT_MEMBER, IS_MEMBER, \
-    callback_data
+    callback_data, StateFilter
 from aiogram.filters.callback_data import CallbackData
+from aiogram.fsm.context import FSMContext
 from aiogram.types import Message, chat_member, ChatMemberUpdated, InlineQuery, InlineQueryResultArticle, \
     InputTextMessageContent, InputInvoiceMessageContent, LabeledPrice, InlineKeyboardButton, InlineKeyboardMarkup, \
     CallbackQuery
@@ -37,10 +38,10 @@ async def query_builder(letters):
         results = []
 
         for item in items:
-            cb1 = MyCallback(foo="show_item", bar=item["id"]).pack()
+            cb1 = MyCallback(foo="buy_item", bar=item["id"]).pack()
             keyboard = [
                 [
-                    InlineKeyboardButton(text="Show item", callback_data=cb1),
+                    InlineKeyboardButton(text="Buy item", callback_data=cb1),
                 ]
             ]
             results.append(InlineQueryResultArticle(
@@ -48,8 +49,10 @@ async def query_builder(letters):
                 title=item["item"],
 
                 input_message_content=InputTextMessageContent(
-                    message_text="You don`t need to press it",
-
+                    message_text=f"\nItem: {item['item']}"
+                                 f"\nDescription: {item['item_details']}"
+                                 f"\nPrice: {item['item_price']} USD"
+                                 f"\n{item['item_url']}",
                 ),
                 reply_markup=InlineKeyboardMarkup(inline_keyboard=keyboard),
                 thumbnail_url=item["item_url"],
@@ -65,17 +68,20 @@ async def query_builder(letters):
         results = []
 
         for item in Items.get_items():
-            cb1 = MyCallback(foo="show_item", bar=item["id"]).pack()
+            cb1 = MyCallback(foo="buy_item", bar=item["id"]).pack()
             keyboard = [
                 [
-                    InlineKeyboardButton(text="Show item", callback_data=cb1),
+                    InlineKeyboardButton(text="Buy item", callback_data=cb1),
                 ]
             ]
             results.append(InlineQueryResultArticle(
                 id=str(item["id"]),
                 title=item["item"],
                 input_message_content=InputTextMessageContent(
-                    message_text="You don`t need to press it",
+                    message_text=f"\nItem: {item['item']}"
+                                 f"\nDescription: {item['item_details']}"
+                                 f"\nPrice: {item['item_price']} USD"
+                                 f"\n{item['item_url']}",
 
                 ),
                 reply_markup=InlineKeyboardMarkup(inline_keyboard=keyboard),
@@ -203,7 +209,6 @@ async def user_start(m: Message, dialog_manager: DialogManager):
         )
     elif user_data[3]:
         logger.info(f"elif user_data[3]: ")
-        Users.referral_bonus(user_data[3])
         await dialog_manager.start(
             States.main_menu_state,
             data=dialog_data,
@@ -220,11 +225,12 @@ async def user_start(m: Message, dialog_manager: DialogManager):
 
 
 @user_router.inline_query()
-async def user_query(query: InlineQuery):
+async def user_query(query: InlineQuery, state: FSMContext):
     logger.info(f"You are in user_query")
     user_id = query.from_user.id
     letters = query.query
     logger.info(f"letters: {letters}")
+    await state.clear()
     if Users.get_user(user_id)[3] is None:
         await query.answer(
             results=[],
@@ -275,22 +281,58 @@ async def user_query(query: InlineQuery):
             logger.error(e)
 
 
-@user_router.callback_query(MyCallback.filter(F.foo == "show_item"))
-async def user_callback_handler(query: CallbackQuery, callback_data: MyCallback):
+@user_router.callback_query(MyCallback.filter(F.foo == "buy_item"))
+async def user_callback_handler(query: CallbackQuery, state: FSMContext, callback_data: MyCallback):
     logger.info(f"You are in user_callback_handler")
     item_id = callback_data.bar
     logger.info(f"item_id: {item_id}")
     item = Items.get_item_by_id(item_id)
     chat_id = query.from_user.id
     logger.info(f"chat_id: {chat_id}")
-    keyboard = [
-        [
-            InlineKeyboardButton(text="Buy item", callback_data=str(item["id"])),
-        ]
-    ]
-    reply_markup = InlineKeyboardMarkup(inline_keyboard=keyboard)
-    await query.bot.send_photo(chat_id=chat_id, photo=item["item_url"])
-    await query.bot.send_message(chat_id=chat_id, text=item["item"], parse_mode="HTML", reply_markup=reply_markup)
+    await state.update_data(item_id=item_id)
+    await query.bot.send_message(chat_id=chat_id, text='Please enter quantity: ', parse_mode="HTML")
+
+
+    # keyboard = [
+    #     [
+    #         InlineKeyboardButton(text="Buy item", callback_data=str(item["id"])),
+    #     ]
+    # ]
+    # reply_markup = InlineKeyboardMarkup(inline_keyboard=keyboard)
+    # await query.bot.send_photo(chat_id=chat_id, photo=item["item_url"])
+
+
+@user_router.message(F.text.regexp(r'^(?!.*\d.*\d)\d+$'))
+async def market(message: Message, state: FSMContext, dialog_manager: DialogManager):
+    logger.info(f"You are in market")
+    chat_id = message.chat.id
+    item_id = await state.get_data()
+    quantity = int(message.text)
+    logger.info(f"item_id: {item_id['item_id']}")
+    item = Items.get_item_by_id(item_id['item_id'])
+    if item_id['item_id']:
+        if 0 < quantity <= item['item_quantity']:
+            Items.subtract_quantity(item_id['item_id'], quantity)
+            logger.info(f"quantity - {quantity} subtracted in DB")
+            # await message.answer(text='Thanks. Please provide delivery address: City, Street, Postal Code, Apartment')
+        elif quantity > item['item_quantity'] > 0:
+            logger.info(f"Can`t sell this item - quantity > item['item_quantity']")
+            await message.answer(text='Unfortunately it`s not enough quantity.\nPlease provide less quantity.',
+                                 parse_mode="HTML")
+            return
+        elif item['item_quantity'] == 0:
+            logger.info(f"Can`t sell this item - item_quantity == 0")
+            await message.answer(text='Unfortunately this item is not available.',
+                                 parse_mode="HTML")
+            return
+    else:
+        logger.info(f"market: else: ")
+
+    #dialog_manager.dialog_data.update(message)
+
+
+
+
 
 # @user_router.inline_query()
 # async def some_query(query: InlineQuery):
