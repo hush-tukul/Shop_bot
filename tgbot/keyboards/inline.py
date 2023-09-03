@@ -1,4 +1,5 @@
 import logging
+import os
 
 from aiogram.enums import ContentType
 from aiogram.types import KeyboardButton, ReplyKeyboardMarkup
@@ -23,7 +24,7 @@ env = Env()
 async def gate_inline(dialog_manager: DialogManager, **kwargs):
     user_name = dialog_manager.start_data.get('user_name')
     access_denied_info = f"Access denied for user {user_name}!\nPlease provide access code below or use invite link to access the bot: " \
-                         f"\n(In other case please subscribe on Our channel https://t.me/+4fBl3YZ4Vrc3MTU0 to get Your invite link)"
+                         f"\n(In other case please subscribe on Our channel https://t.me/+4fBl3YZ4Vrc3MTU0 to get access to bot)"
     access_button = [
             ('🔑 Access key', 'access'),
         ]
@@ -38,7 +39,7 @@ async def access_inline(dialog_manager: DialogManager, **kwargs):
     user_name = dialog_manager.start_data.get('user_name')
     user_data = Users.get_user(user_id)
     header = "Please provide 8-character access code below or use invite link to access the bot: " \
-             f"\n(In other case please subscribe on Our channel https://t.me/+4fBl3YZ4Vrc3MTU0 to get Your invite link)"
+             f"\n(In other case please subscribe on Our channel https://t.me/+4fBl3YZ4Vrc3MTU0 to get access to bot)"
 
     return {
         "header": header,
@@ -53,7 +54,7 @@ async def main_window_inline(dialog_manager: DialogManager, **kwargs):
     logger.info(user_id)
     title = "┏━━━━━ 🛍️ Main Menu 🛍️ ━━━━━┓"
     main_menu = [
-         ('📝 Feedback / Contact 📝', 'contact'), ('🎁 Referral link / key 🎁', 'key'),
+         ('📝 Feedback / Contact 📝', 'contact'), ('🔗 Referral link / key 🔐', 'key'),
                  ('🕹️Admin panel🕹️', 'admin_panel') if user_id in list(map(int, env.list("ADMINS"))) else None
     ]
 
@@ -64,14 +65,45 @@ async def main_window_inline(dialog_manager: DialogManager, **kwargs):
     }
 
 
-async def market_inline(dialog_manager: DialogManager, **kwargs):
+
+async def ref_link_inline(dialog_manager: DialogManager, **kwargs):
+    logger.info("You are in ref_link_inline")
     user_id = dialog_manager.start_data.get('user_id')
+    user_data = Users.get_user(user_id)
+
     logger.info(user_id)
-    title = "Market"
+    title = "┏━━━━━ 🔗 Referral link / key 🔐 ━━━━━┓"
+    ref_info = (f"Please find Your invite-link and key for friends below: "
+                f"\n(🎉🎉Remember that You get 10 extra points for each friend"
+                f"\nthat use Your link to join this Bot🤝🤖🎉🎉)"
+                f"\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+                f"\n<b>Invite-link:</b> {os.getenv('BOT_LINK')}?start={user_data[2]}"
+                f"\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+                f"\n<b>Invite-key:</b> {user_data[2]}")
 
     return {
         "title": title,
+        "ref_info": ref_info
+
     }
+
+
+async def feedback_inline(dialog_manager: DialogManager, **kwargs):
+    logger.info("You are in feedback_inline")
+    user_id = dialog_manager.start_data.get('user_id')
+    user_data = Users.get_user(user_id)
+
+    logger.info(user_id)
+    title = "┏━━━━━ 📝 Feedback / Contact 📝 ━━━━━┓"
+    contact = (f"<b>\n❗For specific infoℹ️ or bug report🚩 please contact - @emperor_priferiti❗</b>")
+
+    return {
+        "title": title,
+        "contact": contact
+
+    }
+
+
 
 async def admin_panel_inline(dialog_manager: DialogManager, **kwargs):
     user_id = dialog_manager.start_data.get('user_id')

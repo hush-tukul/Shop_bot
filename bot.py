@@ -15,7 +15,7 @@ from tgbot.handlers.echo import echo_router
 from tgbot.handlers.user import user_router
 from tgbot.keyboards.windows import gate_window, access_window, main_window, admin_window, add_item_window, \
     add_description_window, add_price_window, add_photo_window, add_item_confirmation_window, item_added_window, \
-    add_quantity_window, market_window
+    add_quantity_window, ref_link_window, feedback_window
 
 # from tgbot.keyboards.windows import choose_lang_window, main_menu_window, links_list_window, link_options_window, \
 #     option_action_window, del_link_window, add_link_window
@@ -53,6 +53,8 @@ async def main():
         gate_window,
         access_window,
         main_window,
+        ref_link_window,
+        feedback_window,
         admin_window,
         add_item_window,
         add_description_window,
@@ -61,7 +63,6 @@ async def main():
         add_photo_window,
         add_item_confirmation_window,
         item_added_window,
-        market_window,
         )
     routers = [
         admin_router,

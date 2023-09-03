@@ -21,9 +21,6 @@ from tgbot.keyboards.telegraph import UploadedFile
 logger = logging.getLogger(__name__)
 
 
-
-# user_data_router = Router()
-
 # async def close_menu(c: CallbackQuery, widget: Any, dialog_manager: DialogManager):
 #     await dialog_manager.done()
 
@@ -98,18 +95,12 @@ async def main_menu_reply(c: CallbackQuery, widget: Any, dialog_manager: DialogM
     chat_id = c.message.chat.id
     logger.info('You are in main_menu_reply')
     g = {
-        'market': States.market_state,
-        # 'contact': States.,
-        # 'key': States.,
+        'contact': States.feedback_state,
+        'key': States.ref_link_state,
         'admin_panel': States.admin_panel_state,
 
     }
     await dialog_manager.switch_to(g[menu_option])
-
-async def market_reply(m: Message, input: MessageInput, dialog_manager: DialogManager):
-    logger.info('You are in add_item_reply')
-    quantity_to_buy = m.text
-    dialog_manager.dialog_data.update(quantity_to_buy=quantity_to_buy)
 
 
 async def admin_panel_reply(c: CallbackQuery, widget: Any, dialog_manager: DialogManager, admin_option: str):
@@ -121,14 +112,6 @@ async def admin_panel_reply(c: CallbackQuery, widget: Any, dialog_manager: Dialo
     }
     await dialog_manager.switch_to(g[admin_option])
 
-
-# async def user_callback_handler(query: CallbackQuery, manager: BaseDialogManager):
-#     logger.info(f"You are in user_callback_handler")
-#     callback = int(query.data)
-#     logger.info(f"callback: {callback}")
-#     item = Items.get_item_by_id(callback)
-#     chat_id = query.from_user.id
-#     await manager.switch_to(States.item_info_state)
 
 
 async def add_item_reply(m: Message, input: MessageInput, dialog_manager: DialogManager):

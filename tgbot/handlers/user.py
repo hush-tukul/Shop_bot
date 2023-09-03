@@ -1,6 +1,7 @@
 import html
 import logging
 import os
+import re
 import time
 from datetime import datetime
 from typing import Optional
@@ -38,28 +39,47 @@ async def query_builder(letters):
         results = []
 
         for item in items:
-            cb1 = MyCallback(foo="buy_item", bar=item["id"]).pack()
-            keyboard = [
-                [
-                    InlineKeyboardButton(text="Buy item", callback_data=cb1),
+            if item['item_quantity'] > 0:
+                cb1 = MyCallback(foo="buy_item", bar=item["id"]).pack()
+                keyboard = [
+                    [
+                        InlineKeyboardButton(text="Buy item", callback_data=cb1),
+                    ]
                 ]
-            ]
-            results.append(InlineQueryResultArticle(
-                id=str(item["id"]),
-                title=item["item"],
+                results.append(InlineQueryResultArticle(
+                    id=str(item["id"]),
+                    title=item["item"],
 
-                input_message_content=InputTextMessageContent(
-                    message_text=f"\nItem: {item['item']}"
-                                 f"\nDescription: {item['item_details']}"
-                                 f"\nPrice: {item['item_price']} USD"
-                                 f"\n{item['item_url']}",
-                ),
-                reply_markup=InlineKeyboardMarkup(inline_keyboard=keyboard),
-                thumbnail_url=item["item_url"],
-                description=item["item_details"],
-                parse_mode="HTML",
-            )
-            )
+                    input_message_content=InputTextMessageContent(
+                        message_text=f"\nItem: {item['item']}"
+                                     f"\nDescription: {item['item_details']}"
+                                     f"\nPrice: {item['item_price']} USD"
+                                     f"\n{item['item_url']}",
+                    ),
+                    reply_markup=InlineKeyboardMarkup(inline_keyboard=keyboard),
+                    thumbnail_url=item["item_url"],
+                    description=item["item_details"],
+                    parse_mode="HTML",
+                )
+                )
+            else:
+                results.append(InlineQueryResultArticle(
+                    id=str(item["id"]),
+                    title=f"🚫OUT OF STOCK🚫 - {item['item']}",
+                    input_message_content=InputTextMessageContent(
+                        message_text=f"❗️❗️❗️🚫 OUT OF STOCK 🚫❗️❗️❗"
+                                     f"\nItem: {item['item']}"
+                                     f"\nDescription: {item['item_details']}"
+                                     f"\nPrice: {item['item_price']} USD"
+                                     f"\n{item['item_url']}",
+
+                    ),
+                    thumbnail_url=item["item_url"],
+                    description=item["item_details"],
+                    parse_mode="HTML",
+                )
+                )
+
         logger.info(f"results = {results}")
         return results
 
@@ -68,28 +88,46 @@ async def query_builder(letters):
         results = []
 
         for item in Items.get_items():
-            cb1 = MyCallback(foo="buy_item", bar=item["id"]).pack()
-            keyboard = [
-                [
-                    InlineKeyboardButton(text="Buy item", callback_data=cb1),
+            if item['item_quantity'] > 0:
+                cb1 = MyCallback(foo="buy_item", bar=item["id"]).pack()
+                keyboard = [
+                    [
+                        InlineKeyboardButton(text="Buy item", callback_data=cb1),
+                    ]
                 ]
-            ]
-            results.append(InlineQueryResultArticle(
-                id=str(item["id"]),
-                title=item["item"],
-                input_message_content=InputTextMessageContent(
-                    message_text=f"\nItem: {item['item']}"
-                                 f"\nDescription: {item['item_details']}"
-                                 f"\nPrice: {item['item_price']} USD"
-                                 f"\n{item['item_url']}",
+                results.append(InlineQueryResultArticle(
+                    id=str(item["id"]),
+                    title=item["item"],
+                    input_message_content=InputTextMessageContent(
+                        message_text=f"\nItem: {item['item']}"
+                                     f"\nDescription: {item['item_details']}"
+                                     f"\nPrice: {item['item_price']} USD"
+                                     f"\n{item['item_url']}",
 
-                ),
-                reply_markup=InlineKeyboardMarkup(inline_keyboard=keyboard),
-                thumbnail_url=item["item_url"],
-                description=item["item_details"],
-                parse_mode="HTML",
-            )
-            )
+                    ),
+                    reply_markup=InlineKeyboardMarkup(inline_keyboard=keyboard),
+                    thumbnail_url=item["item_url"],
+                    description=item["item_details"],
+                    parse_mode="HTML",
+                )
+                )
+            else:
+                results.append(InlineQueryResultArticle(
+                    id=str(item["id"]),
+                    title=f"🚫OUT OF STOCK🚫 - {item['item']}",
+                    input_message_content=InputTextMessageContent(
+                        message_text=f"❗️❗️❗️🚫 OUT OF STOCK 🚫❗️❗️❗"
+                                     f"\nItem: {item['item']}"
+                                     f"\nDescription: {item['item_details']}"
+                                     f"\nPrice: {item['item_price']} USD"
+                                     f"\n{item['item_url']}",
+
+                    ),
+                    thumbnail_url=item["item_url"],
+                    description=item["item_details"],
+                    parse_mode="HTML",
+                )
+                )
         logger.info(f"results = {results}")
         return results
     else:
@@ -291,30 +329,34 @@ async def user_callback_handler(query: CallbackQuery, state: FSMContext, callbac
     logger.info(f"chat_id: {chat_id}")
     await state.update_data(item_id=item_id)
     await query.bot.send_message(chat_id=chat_id, text='Please enter quantity: ', parse_mode="HTML")
+    await state.set_state(States.market_state)
 
 
-    # keyboard = [
-    #     [
-    #         InlineKeyboardButton(text="Buy item", callback_data=str(item["id"])),
-    #     ]
-    # ]
-    # reply_markup = InlineKeyboardMarkup(inline_keyboard=keyboard)
-    # await query.bot.send_photo(chat_id=chat_id, photo=item["item_url"])
-
-
-@user_router.message(F.text.regexp(r'^(?!.*\d.*\d)\d+$'))
-async def market(message: Message, state: FSMContext, dialog_manager: DialogManager):
-    logger.info(f"You are in market")
+@user_router.message(StateFilter(States.market_state))
+async def market_prepare(message: Message, state: FSMContext, dialog_manager: DialogManager):
+    logger.info(f"You are in market_prepare")
+    text = message.text
+    pattern = r'^(?!.*\d.*\d)\d+$'
     chat_id = message.chat.id
     item_id = await state.get_data()
-    quantity = int(message.text)
-    logger.info(f"item_id: {item_id['item_id']}")
-    item = Items.get_item_by_id(item_id['item_id'])
-    if item_id['item_id']:
+    if item_id['item_id'] and re.match(pattern, text):
+        logger.info(f"item_id: {item_id['item_id']}")
+        quantity = int(message.text)
+        logger.info(f"quantity: {quantity}")
+
+        item = Items.get_item_by_id(item_id['item_id'])
+        dialog_data = {
+            "buy_item_id": item['id'],
+            "buy_item": item['item'],
+            "buy_item_details": item['item_details'],
+            "buy_item_price": item['item_price'],
+            "buy_item_url": item['item_url'],
+        }
+        await state.update_data(dialog_data)
         if 0 < quantity <= item['item_quantity']:
-            Items.subtract_quantity(item_id['item_id'], quantity)
-            logger.info(f"quantity - {quantity} subtracted in DB")
-            # await message.answer(text='Thanks. Please provide delivery address: City, Street, Postal Code, Apartment')
+            logger.info(f"if item_id['item_id']:  if 0 < quantity <= item['item_quantity']: ")
+            await message.answer(text='Thanks. Please provide delivery address: City, Street, Apartment, Postal Code')
+            await state.set_state(States.buy_item_state)
         elif quantity > item['item_quantity'] > 0:
             logger.info(f"Can`t sell this item - quantity > item['item_quantity']")
             await message.answer(text='Unfortunately it`s not enough quantity.\nPlease provide less quantity.',
@@ -328,10 +370,28 @@ async def market(message: Message, state: FSMContext, dialog_manager: DialogMana
     else:
         logger.info(f"market: else: ")
 
-    #dialog_manager.dialog_data.update(message)
 
-
-
+@user_router.message(StateFilter(States.buy_item_state))
+async def market_sell(message: Message, state: FSMContext, dialog_manager: DialogManager):
+    logger.info(f"You are in market_sell")
+    # Items.subtract_quantity(item_id['item_id'], quantity)
+    # logger.info(f"quantity - {quantity} subtracted in DB")
+    address = message.text
+    logger.info(f"Package will be sent on this address: {address}")
+    buy_item_data = await state.get_data()
+    logger.info(f"buy_item_data: {buy_item_data}")
+    prices = [LabeledPrice(label="Test", amount=float(buy_item_data["buy_item_price"]) * 100)]
+    await message.answer_invoice(
+        title=buy_item_data["buy_item"],
+        description=buy_item_data["buy_item_details"],
+        payload="Custom-Payload",
+        provider_token=os.getenv('PAYMENT_TOKEN'),
+        currency='USD',
+        prices=prices,
+        photo_url=buy_item_data["buy_item_url"],
+        need_shipping_address=True,
+    )
+    await state.clear()
 
 
 # @user_router.inline_query()

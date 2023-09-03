@@ -10,10 +10,10 @@ from aiogram_dialog.widgets.text import Const, Format
 from tgbot.keyboards.custom_buttons import SwitchInlineQuery_2
 from tgbot.keyboards.inline import gate_inline, access_inline, main_window_inline, admin_panel_inline, add_item_inline, \
     add_description_inline, add_price_inline, add_photo_inline, add_item_confirmation_inline, item_added_inline, \
-    add_quantity_inline, delete_item_inline, confirmed_item_delete_inline, market_inline
+    add_quantity_inline, delete_item_inline, confirmed_item_delete_inline, ref_link_inline, feedback_inline
 from tgbot.keyboards.reply import gate_reply, access_reply, main_menu_reply, admin_panel_reply, add_item_reply, \
     add_description_reply, add_price_reply, add_photo_reply, item_added_reply, add_item_confirmation_reply, \
-    add_quantity_reply, delete_item_reply, market_reply
+    add_quantity_reply, delete_item_reply
 
 from tgbot.keyboards.states import States
 
@@ -56,7 +56,7 @@ main_window = Window(
     Format("{title}"),
     Row(
         SwitchInlineQuery_2(
-            Const("Market"),
+            Const("🛒 Market 🛒"),
             Const(''),
             ),
     ),
@@ -75,14 +75,23 @@ main_window = Window(
 )
 
 
-market_window = Window(
+ref_link_window = Window(
     Format("{title}"),
+    Format("{ref_info}"),
+    SwitchTo(Const("Back"), id="Back", state=States.main_menu_state),
     parse_mode=ParseMode.HTML,
-    state=States.market_state,
-    getter=market_inline
+    state=States.ref_link_state,
+    getter=ref_link_inline,
 )
 
-
+feedback_window = Window(
+    Format("{title}"),
+    Format("{contact}"),
+    SwitchTo(Const("Back"), id="Back", state=States.main_menu_state),
+    parse_mode=ParseMode.HTML,
+    state=States.feedback_state,
+    getter=feedback_inline,
+)
 
 admin_window = Window(
     Format("{title}"),
@@ -109,30 +118,6 @@ admin_window = Window(
     state=States.admin_panel_state,
     getter=admin_panel_inline
 )
-
-
-# item_info_window = Window(
-#     Format("{title}"),
-#     Row(
-#         SwitchInlineQuery_2(
-#             Const("Return to Market"),
-#             Const(''),
-#             ),
-#     ),
-#     Row(
-#         Select(
-#             Format("{item[0]}"),
-#             id="item_info",
-#             item_id_getter=operator.itemgetter(1),
-#             items='item_buttons',
-#             on_click=,
-#         ),
-#     ),
-#     parse_mode=ParseMode.HTML,
-#     state=States.item_info_state,
-#     getter=item_info_inline
-# )
-
 
 
 

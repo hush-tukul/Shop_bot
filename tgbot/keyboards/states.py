@@ -15,10 +15,12 @@ class States(StatesGroup):
     """SECOND WINDOW"""
     market_state = State()
     contact_state = State()
-    key_state = State()
+    ref_link_state = State()
+    feedback_state = State()
     admin_panel_state = State()
 
     """THIRD WINDOW"""
+    buy_item_state = State()
     add_item_state = State()
     delete_item_state = State()
     us_state = State()

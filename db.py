@@ -179,7 +179,7 @@ class Items(Base):
     @classmethod
     def get_items_by_letters(cls, first_letters):
         logger.info(f"Trying to get items by first letter: {first_letters}")
-        item_data = session.query(Items).filter(Items.item.like(f"%{first_letters}%")).all()
+        item_data = session.query(Items).filter(Items.item.ilike(f"%{first_letters}%")).all()
         logger.info(f"item_data: {item_data}")
         if item_data:
             sorted_item_list = cls._construct_item_list(item_data)
