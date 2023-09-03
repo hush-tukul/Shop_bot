@@ -14,7 +14,7 @@ from aiogram.filters.callback_data import CallbackData
 from aiogram.fsm.context import FSMContext
 from aiogram.types import Message, chat_member, ChatMemberUpdated, InlineQuery, InlineQueryResultArticle, \
     InputTextMessageContent, InputInvoiceMessageContent, LabeledPrice, InlineKeyboardButton, InlineKeyboardMarkup, \
-    CallbackQuery
+    CallbackQuery, PreCheckoutQuery
 from aiogram_dialog import DialogManager, StartMode
 from aiogram_dialog.manager.bg_manager import BgManager
 
@@ -205,7 +205,6 @@ async def user_dl_start(m: Message, command: CommandObject, dialog_manager: Dial
     else:
         if user_data is None:
             Users.add_user(user_id, user_name, None, 0, chat_id, reg_time)
-            # await m.reply(f"Access denied! Wrong access key - {parameter}!\nPlease provide correct key below or use correct referral link.", parse_mode="HTML")
             await dialog_manager.start(
                 States.gate_state,
                 data=dialog_data,
@@ -337,33 +336,27 @@ async def market_prepare(message: Message, state: FSMContext, dialog_manager: Di
     logger.info(f"You are in market_prepare")
     text = message.text
     chat_id = message.chat.id
-    item_id = await state.get_data()
-    if item_id['item_id']:
-        logger.info(f"item_id: {item_id['item_id']}")
+    item_dict = await state.get_data()
+    if item_dict['item_id']:
+        logger.info(f"item_id: {item_dict['item_id']}")
         quantity = int(message.text)
         logger.info(f"quantity: {quantity}")
 
-        item = Items.get_item_by_id(item_id['item_id'])
+        item = Items.get_item_by_id(item_dict['item_id'])
         if 0 < quantity <= item['item_quantity']:
             logger.info(f"if item_id['item_id']:  if 0 < quantity <= item['item_quantity']: ")
-            prices = [LabeledPrice(label="Test", amount=float(item['item_price']) * 100 * quantity) ]
-            stripe.api_key = os.getenv('PAYMENT_TOKEN')
-            stripe.Invoice.create(
-                customer='{{CUSTOMER_ID}}',
-                collection_method="send_invoice",
-                days_until_due=30,
+            dialog_manager.dialog_data.update(quantity=quantity, item_id_to_sell=item_dict['item_id'])
+            prices = [LabeledPrice(label="Test", amount=float(item['item_price']) * 100 * quantity)]
+            await message.answer_invoice(
+                title=item['item'],
+                description=item['item_details'],
+                payload="Custom-Payload",
+                provider_token=os.getenv('PAYMENT_TOKEN'),
+                currency='USD',
+                prices=prices,
+                photo_url=item['item_url'],
+                need_shipping_address=True,
             )
-           
-            # await message.answer_invoice(
-            #     title=item['item'],
-            #     description=item['item_details'],
-            #     payload="Custom-Payload",
-            #     provider_token=os.getenv('PAYMENT_TOKEN'),
-            #     currency='USD',
-            #     prices=prices,
-            #     photo_url=item['item_url'],
-            #     need_shipping_address=True,
-            # )
             await state.clear()
         elif quantity > item['item_quantity'] > 0:
             logger.info(f"Can`t sell this item - quantity > item['item_quantity']")
@@ -379,3 +372,19 @@ async def market_prepare(message: Message, state: FSMContext, dialog_manager: Di
         logger.info(f"market: else: ")
 
 
+@user_router.pre_checkout_query(lambda query: True)
+async def pre_checkout_query(pre_checkout_q: PreCheckoutQuery, bot: Bot):
+    data = str(pre_checkout_q.id)
+    await bot.answer_pre_checkout_query(data, ok=True)
+
+
+@user_router.message(F.content_type == ContentType.SUCCESSFUL_PAYMENT)
+async def successful_payment(m: Message, bot: Bot, dialog_manager: DialogManager):
+    logger.info('SUCCESSFUL_PAYMENT')
+    total_amount = m.successful_payment.total_amount // 100  # Convert to the appropriate currency
+    currency = m.successful_payment.currency
+    quantity = dialog_manager.dialog_data.get('quantity')
+    item_id_to_sell = dialog_manager.dialog_data.get('item_id_to_sell')
+    Items.subtract_quantity(item_id_to_sell, quantity)
+
+    await bot.send_message(m.chat.id, f"Payment for the amount {total_amount} {currency} passed successfully!!!")
