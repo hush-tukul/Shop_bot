@@ -5,7 +5,7 @@ import re
 import time
 from datetime import datetime
 from typing import Optional
-
+import stripe
 from aiogram import Router, F, Bot
 from aiogram.enums import ContentType, ChatType
 from aiogram.filters import CommandStart, CommandObject, ChatMemberUpdatedFilter, IS_NOT_MEMBER, IS_MEMBER, \
@@ -346,7 +346,7 @@ async def market_prepare(message: Message, state: FSMContext, dialog_manager: Di
         item = Items.get_item_by_id(item_id['item_id'])
         if 0 < quantity <= item['item_quantity']:
             logger.info(f"if item_id['item_id']:  if 0 < quantity <= item['item_quantity']: ")
-            prices = [LabeledPrice(label="Test", amount=float(item['item_price']) * 100)]
+            prices = [LabeledPrice(label="Test", amount=float(item['item_price']) * 100 * quantity) ]
             await message.answer_invoice(
                 title=item['item'],
                 description=item['item_details'],
