@@ -345,18 +345,20 @@ async def market_prepare(message: Message, state: FSMContext, dialog_manager: Di
         logger.info(f"quantity: {quantity}")
 
         item = Items.get_item_by_id(item_id['item_id'])
-        dialog_data = {
-            "buy_item_id": item['id'],
-            "buy_item": item['item'],
-            "buy_item_details": item['item_details'],
-            "buy_item_price": item['item_price'],
-            "buy_item_url": item['item_url'],
-        }
-        await state.update_data(dialog_data)
         if 0 < quantity <= item['item_quantity']:
             logger.info(f"if item_id['item_id']:  if 0 < quantity <= item['item_quantity']: ")
-            await message.answer(text='Thanks. Please provide delivery address: City, Street, Apartment, Postal Code')
-            await state.set_state(States.buy_item_state)
+            prices = [LabeledPrice(label="Test", amount=float(item['item_price']) * 100)]
+            await message.answer_invoice(
+                title=item['item'],
+                description=item['item_details'],
+                payload="Custom-Payload",
+                provider_token=os.getenv('PAYMENT_TOKEN'),
+                currency='USD',
+                prices=prices,
+                photo_url=item['item_url'],
+                need_shipping_address=True,
+            )
+            await state.clear()
         elif quantity > item['item_quantity'] > 0:
             logger.info(f"Can`t sell this item - quantity > item['item_quantity']")
             await message.answer(text='Unfortunately it`s not enough quantity.\nPlease provide less quantity.',
@@ -371,27 +373,8 @@ async def market_prepare(message: Message, state: FSMContext, dialog_manager: Di
         logger.info(f"market: else: ")
 
 
-@user_router.message(StateFilter(States.buy_item_state))
-async def market_sell(message: Message, state: FSMContext, dialog_manager: DialogManager):
-    logger.info(f"You are in market_sell")
-    # Items.subtract_quantity(item_id['item_id'], quantity)
-    # logger.info(f"quantity - {quantity} subtracted in DB")
-    address = message.text
-    logger.info(f"Package will be sent on this address: {address}")
-    buy_item_data = await state.get_data()
-    logger.info(f"buy_item_data: {buy_item_data}")
-    prices = [LabeledPrice(label="Test", amount=float(buy_item_data["buy_item_price"]) * 100)]
-    await message.answer_invoice(
-        title=buy_item_data["buy_item"],
-        description=buy_item_data["buy_item_details"],
-        payload="Custom-Payload",
-        provider_token=os.getenv('PAYMENT_TOKEN'),
-        currency='USD',
-        prices=prices,
-        photo_url=buy_item_data["buy_item_url"],
-        need_shipping_address=True,
-    )
-    await state.clear()
+
+
 
 
 # @user_router.inline_query()
