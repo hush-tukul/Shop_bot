@@ -120,7 +120,7 @@ async def add_item_reply(m: Message, input: MessageInput, dialog_manager: Dialog
     user_name = dialog_manager.start_data.get('user_name')
     item_name = m.text
     logger.info(item_name)
-    if 15 < len(item_name) < 100:
+    if 15 < len(item_name) < 200:
         dialog_manager.dialog_data.update(item_name=item_name)
         await dialog_manager.switch_to(States.add_description_state)
     else:

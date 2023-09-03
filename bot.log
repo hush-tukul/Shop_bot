@@ -18515,3 +18515,275 @@ dispatcher.py:171 #INFO     [2023-09-03 17:15:35,051] - aiogram.event - Update i
 dispatcher.py:451 #WARNING  [2023-09-03 17:16:35,888] - aiogram.dispatcher - Received SIGINT signal
 dispatcher.py:355 #INFO     [2023-09-03 17:16:35,890] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Shop-bot'
 dispatcher.py:547 #INFO     [2023-09-03 17:16:35,891] - aiogram.dispatcher - Polling stopped
+bot.py:47 #INFO     [2023-09-03 17:29:22,443] - __main__ - Starting bot!
+broadcaster.py:20 #INFO     [2023-09-03 17:29:22,635] - root - Target [ID:683497406]: success
+broadcaster.py:37 #INFO     [2023-09-03 17:29:22,685] - root - 1 messages successful sent.
+dispatcher.py:520 #INFO     [2023-09-03 17:29:22,687] - aiogram.dispatcher - Start polling
+dispatcher.py:339 #INFO     [2023-09-03 17:29:22,705] - aiogram.dispatcher - Run polling for bot @Clstl_bot id=6027584024 - 'Shop-bot'
+user.py:267 #INFO     [2023-09-03 17:29:30,360] - tgbot.handlers.user - You are in user_query
+user.py:270 #INFO     [2023-09-03 17:29:30,360] - tgbot.handlers.user - letters: 
+user.py:283 #INFO     [2023-09-03 17:29:30,371] - tgbot.handlers.user - letters is '': 
+user.py:35 #INFO     [2023-09-03 17:29:30,371] - tgbot.handlers.user - query_builder: 
+db.py:181 #INFO     [2023-09-03 17:29:30,371] - db - Trying to get items by first letter: None
+db.py:183 #INFO     [2023-09-03 17:29:30,382] - db - item_data: []
+db.py:190 #INFO     [2023-09-03 17:29:30,382] - db - No items found for the given first letter.
+user.py:87 #INFO     [2023-09-03 17:29:30,382] - tgbot.handlers.user - query_builder: elif letters is None: 
+db.py:157 #INFO     [2023-09-03 17:29:30,382] - db - Trying to get all items
+dispatcher.py:171 #INFO     [2023-09-03 17:29:30,385] - aiogram.event - Update id=449046545 is not handled. Duration 26 ms by bot id=6027584024
+dispatcher.py:313 #ERROR    [2023-09-03 17:29:30,386] - aiogram.event - Cause exception while process update id=449046545 by bot id=6027584024
+TypeError: 'NoneType' object is not iterable
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 307, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 274, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 135, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 128, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/src/app/Shop-bot/tgbot/handlers/user.py", line 284, in user_query
+    results = await query_builder(None)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/app/Shop-bot/tgbot/handlers/user.py", line 90, in query_builder
+    for item in Items.get_items():
+TypeError: 'NoneType' object is not iterable
+dispatcher.py:171 #INFO     [2023-09-03 17:29:54,246] - aiogram.event - Update id=449046546 is not handled. Duration 0 ms by bot id=6027584024
+dispatcher.py:313 #ERROR    [2023-09-03 17:29:54,246] - aiogram.event - Cause exception while process update id=449046546 by bot id=6027584024
+UnknownIntent: Context not found for intent id: aPeUA3
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 307, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/telegram.py", line 124, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/event/handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 274, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 151, in process_callback_query
+    await self._load_context(event, intent_id, DEFAULT_STACK_ID, data)
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/intent_middleware.py", line 74, in _load_context
+    context = await proxy.load_context(intent_id)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/aiogram_dialog/context/storage.py", line 34, in load_context
+    raise UnknownIntent(
+aiogram_dialog.api.exceptions.UnknownIntent: Context not found for intent id: aPeUA3
+admin.py:96 #INFO     [2023-09-03 17:29:56,111] - root - [683497406, 'd_w_y_t', 'be31fd64', '123456', 0, 683497406, datetime.datetime(2023, 9, 3, 12, 37, 24, 877472)]
+inline.py:54 #INFO     [2023-09-03 17:29:56,187] - tgbot.keyboards.inline - 683497406
+dispatcher.py:171 #INFO     [2023-09-03 17:29:56,257] - aiogram.event - Update id=449046547 is handled. Duration 150 ms by bot id=6027584024
+reply.py:96 #INFO     [2023-09-03 17:29:58,356] - tgbot.keyboards.reply - You are in main_menu_reply
+dispatcher.py:171 #INFO     [2023-09-03 17:29:58,505] - aiogram.event - Update id=449046548 is handled. Duration 150 ms by bot id=6027584024
+reply.py:107 #INFO     [2023-09-03 17:29:59,159] - tgbot.keyboards.reply - You are in admin_panel_reply
+dispatcher.py:171 #INFO     [2023-09-03 17:29:59,234] - aiogram.event - Update id=449046549 is handled. Duration 75 ms by bot id=6027584024
+reply.py:118 #INFO     [2023-09-03 17:30:03,871] - tgbot.keyboards.reply - You are in add_item_reply
+reply.py:122 #INFO     [2023-09-03 17:30:03,871] - tgbot.keyboards.reply - Acer KC242Y Hbi 23.8" Full HD (1920 x 1080) Zero-Frame Gaming Office Monitor | AMD FreeSync Technology | 100Hz | 1ms (VRB) | Low Blue Light | Tilt | HDMI & VGA Ports,Black
+dispatcher.py:171 #INFO     [2023-09-03 17:30:04,079] - aiogram.event - Update id=449046550 is handled. Duration 210 ms by bot id=6027584024
+reply.py:133 #INFO     [2023-09-03 17:30:24,604] - tgbot.keyboards.reply - You are in add_description_reply
+dispatcher.py:171 #INFO     [2023-09-03 17:30:24,767] - aiogram.event - Update id=449046551 is handled. Duration 164 ms by bot id=6027584024
+reply.py:148 #INFO     [2023-09-03 17:30:49,149] - tgbot.keyboards.reply - You are in add_price_reply
+dispatcher.py:171 #INFO     [2023-09-03 17:30:49,347] - aiogram.event - Update id=449046552 is handled. Duration 199 ms by bot id=6027584024
+reply.py:163 #INFO     [2023-09-03 17:30:54,551] - tgbot.keyboards.reply - You are in add_price_reply
+dispatcher.py:171 #INFO     [2023-09-03 17:30:54,736] - aiogram.event - Update id=449046553 is handled. Duration 187 ms by bot id=6027584024
+reply.py:178 #INFO     [2023-09-03 17:31:10,791] - tgbot.keyboards.reply - You are in add_photo_reply
+reply.py:191 #INFO     [2023-09-03 17:31:11,466] - tgbot.keyboards.reply - https://telegra.ph/upload
+reply.py:194 #INFO     [2023-09-03 17:31:11,467] - tgbot.keyboards.reply - https://telegra.ph//file/8ddf87e735f4dc38b7984.jpg
+dispatcher.py:171 #INFO     [2023-09-03 17:31:11,675] - aiogram.event - Update id=449046554 is handled. Duration 886 ms by bot id=6027584024
+reply.py:210 #INFO     [2023-09-03 17:31:13,114] - tgbot.keyboards.reply - You are in add_item_confirmation_reply
+db.py:147 #INFO     [2023-09-03 17:31:13,114] - db - Trying to save item.
+db.py:154 #INFO     [2023-09-03 17:31:13,134] - db - Item successfully saved!
+dispatcher.py:171 #INFO     [2023-09-03 17:31:13,457] - aiogram.event - Update id=449046555 is handled. Duration 343 ms by bot id=6027584024
+reply.py:229 #INFO     [2023-09-03 17:31:14,789] - tgbot.keyboards.reply - You are in item_added_reply
+dispatcher.py:171 #INFO     [2023-09-03 17:31:15,096] - aiogram.event - Update id=449046556 is handled. Duration 307 ms by bot id=6027584024
+reply.py:107 #INFO     [2023-09-03 17:31:16,619] - tgbot.keyboards.reply - You are in admin_panel_reply
+dispatcher.py:171 #INFO     [2023-09-03 17:31:16,774] - aiogram.event - Update id=449046557 is handled. Duration 155 ms by bot id=6027584024
+dispatcher.py:171 #INFO     [2023-09-03 17:31:34,828] - aiogram.event - Update id=449046558 is handled. Duration 172 ms by bot id=6027584024
+reply.py:107 #INFO     [2023-09-03 17:31:35,647] - tgbot.keyboards.reply - You are in admin_panel_reply
+dispatcher.py:171 #INFO     [2023-09-03 17:31:35,759] - aiogram.event - Update id=449046559 is handled. Duration 112 ms by bot id=6027584024
+reply.py:118 #INFO     [2023-09-03 17:31:40,128] - tgbot.keyboards.reply - You are in add_item_reply
+reply.py:122 #INFO     [2023-09-03 17:31:40,128] - tgbot.keyboards.reply - ASUS TUF Gaming 27" 1080P Gaming Monitor - Full HD, 165Hz (Supports 144Hz), 1ms, Extreme Low Motion Blur, FreeSync Premium, Shadow Boost, Eye Care, HDMI, DisplayPort, Tilt Adjustable - VG277Q1A,Black
+dispatcher.py:171 #INFO     [2023-09-03 17:31:40,386] - aiogram.event - Update id=449046560 is handled. Duration 258 ms by bot id=6027584024
+reply.py:133 #INFO     [2023-09-03 17:32:50,400] - tgbot.keyboards.reply - You are in add_description_reply
+dispatcher.py:171 #INFO     [2023-09-03 17:32:50,743] - aiogram.event - Update id=449046561 is handled. Duration 351 ms by bot id=6027584024
+reply.py:133 #INFO     [2023-09-03 17:34:03,428] - tgbot.keyboards.reply - You are in add_description_reply
+dispatcher.py:171 #INFO     [2023-09-03 17:34:03,636] - aiogram.event - Update id=449046562 is handled. Duration 208 ms by bot id=6027584024
+reply.py:148 #INFO     [2023-09-03 17:34:14,010] - tgbot.keyboards.reply - You are in add_price_reply
+dispatcher.py:171 #INFO     [2023-09-03 17:34:14,239] - aiogram.event - Update id=449046563 is handled. Duration 229 ms by bot id=6027584024
+reply.py:163 #INFO     [2023-09-03 17:34:17,440] - tgbot.keyboards.reply - You are in add_price_reply
+dispatcher.py:171 #INFO     [2023-09-03 17:34:17,700] - aiogram.event - Update id=449046564 is handled. Duration 261 ms by bot id=6027584024
+reply.py:178 #INFO     [2023-09-03 17:34:24,862] - tgbot.keyboards.reply - You are in add_photo_reply
+reply.py:191 #INFO     [2023-09-03 17:34:25,236] - tgbot.keyboards.reply - https://telegra.ph/upload
+reply.py:194 #INFO     [2023-09-03 17:34:25,237] - tgbot.keyboards.reply - https://telegra.ph//file/5b902b23cd7790bf34658.jpg
+dispatcher.py:171 #INFO     [2023-09-03 17:34:25,359] - aiogram.event - Update id=449046565 is handled. Duration 498 ms by bot id=6027584024
+reply.py:210 #INFO     [2023-09-03 17:34:26,713] - tgbot.keyboards.reply - You are in add_item_confirmation_reply
+db.py:147 #INFO     [2023-09-03 17:34:26,713] - db - Trying to save item.
+db.py:154 #INFO     [2023-09-03 17:34:26,718] - db - Item successfully saved!
+dispatcher.py:171 #INFO     [2023-09-03 17:34:26,822] - aiogram.event - Update id=449046566 is handled. Duration 109 ms by bot id=6027584024
+reply.py:229 #INFO     [2023-09-03 17:34:27,974] - tgbot.keyboards.reply - You are in item_added_reply
+dispatcher.py:171 #INFO     [2023-09-03 17:34:28,179] - aiogram.event - Update id=449046567 is handled. Duration 206 ms by bot id=6027584024
+reply.py:107 #INFO     [2023-09-03 17:34:29,605] - tgbot.keyboards.reply - You are in admin_panel_reply
+dispatcher.py:171 #INFO     [2023-09-03 17:34:29,710] - aiogram.event - Update id=449046568 is handled. Duration 105 ms by bot id=6027584024
+dispatcher.py:171 #INFO     [2023-09-03 17:35:20,259] - aiogram.event - Update id=449046569 is handled. Duration 128 ms by bot id=6027584024
+reply.py:107 #INFO     [2023-09-03 17:35:29,540] - tgbot.keyboards.reply - You are in admin_panel_reply
+dispatcher.py:171 #INFO     [2023-09-03 17:35:29,739] - aiogram.event - Update id=449046570 is handled. Duration 199 ms by bot id=6027584024
+reply.py:118 #INFO     [2023-09-03 17:35:31,235] - tgbot.keyboards.reply - You are in add_item_reply
+reply.py:122 #INFO     [2023-09-03 17:35:31,235] - tgbot.keyboards.reply - Apple iPhone 11, 64GB, White - Unlocked (Renewed Premium)
+dispatcher.py:171 #INFO     [2023-09-03 17:35:31,367] - aiogram.event - Update id=449046571 is handled. Duration 134 ms by bot id=6027584024
+reply.py:133 #INFO     [2023-09-03 17:36:32,892] - tgbot.keyboards.reply - You are in add_description_reply
+dispatcher.py:171 #INFO     [2023-09-03 17:36:33,147] - aiogram.event - Update id=449046572 is handled. Duration 258 ms by bot id=6027584024
+reply.py:148 #INFO     [2023-09-03 17:36:42,976] - tgbot.keyboards.reply - You are in add_price_reply
+dispatcher.py:171 #INFO     [2023-09-03 17:36:43,140] - aiogram.event - Update id=449046573 is handled. Duration 165 ms by bot id=6027584024
+reply.py:163 #INFO     [2023-09-03 17:36:49,099] - tgbot.keyboards.reply - You are in add_price_reply
+dispatcher.py:171 #INFO     [2023-09-03 17:36:49,308] - aiogram.event - Update id=449046574 is handled. Duration 209 ms by bot id=6027584024
+reply.py:178 #INFO     [2023-09-03 17:37:00,027] - tgbot.keyboards.reply - You are in add_photo_reply
+reply.py:191 #INFO     [2023-09-03 17:37:00,301] - tgbot.keyboards.reply - https://telegra.ph/upload
+reply.py:194 #INFO     [2023-09-03 17:37:00,301] - tgbot.keyboards.reply - https://telegra.ph//file/e594a16573242033aff7f.jpg
+dispatcher.py:171 #INFO     [2023-09-03 17:37:00,472] - aiogram.event - Update id=449046575 is handled. Duration 446 ms by bot id=6027584024
+reply.py:210 #INFO     [2023-09-03 17:37:03,549] - tgbot.keyboards.reply - You are in add_item_confirmation_reply
+db.py:147 #INFO     [2023-09-03 17:37:03,549] - db - Trying to save item.
+db.py:154 #INFO     [2023-09-03 17:37:03,555] - db - Item successfully saved!
+dispatcher.py:171 #INFO     [2023-09-03 17:37:03,709] - aiogram.event - Update id=449046576 is handled. Duration 160 ms by bot id=6027584024
+reply.py:229 #INFO     [2023-09-03 17:37:05,206] - tgbot.keyboards.reply - You are in item_added_reply
+dispatcher.py:171 #INFO     [2023-09-03 17:37:05,371] - aiogram.event - Update id=449046577 is handled. Duration 165 ms by bot id=6027584024
+reply.py:107 #INFO     [2023-09-03 17:37:06,831] - tgbot.keyboards.reply - You are in admin_panel_reply
+dispatcher.py:171 #INFO     [2023-09-03 17:37:06,933] - aiogram.event - Update id=449046578 is handled. Duration 103 ms by bot id=6027584024
+reply.py:118 #INFO     [2023-09-03 17:37:53,871] - tgbot.keyboards.reply - You are in add_item_reply
+reply.py:122 #INFO     [2023-09-03 17:37:53,871] - tgbot.keyboards.reply - Google Pixel 7a - Unlocked Android Cell Phone - Smartphone with Wide Angle Lens and 24-Hour Battery - 128 GB – Charcoal
+dispatcher.py:171 #INFO     [2023-09-03 17:37:54,048] - aiogram.event - Update id=449046579 is handled. Duration 178 ms by bot id=6027584024
+reply.py:133 #INFO     [2023-09-03 17:38:40,474] - tgbot.keyboards.reply - You are in add_description_reply
+dispatcher.py:171 #INFO     [2023-09-03 17:38:40,707] - aiogram.event - Update id=449046580 is handled. Duration 235 ms by bot id=6027584024
+reply.py:148 #INFO     [2023-09-03 17:38:46,458] - tgbot.keyboards.reply - You are in add_price_reply
+dispatcher.py:171 #INFO     [2023-09-03 17:38:46,607] - aiogram.event - Update id=449046581 is handled. Duration 150 ms by bot id=6027584024
+reply.py:163 #INFO     [2023-09-03 17:38:48,772] - tgbot.keyboards.reply - You are in add_price_reply
+dispatcher.py:171 #INFO     [2023-09-03 17:38:48,885] - aiogram.event - Update id=449046582 is handled. Duration 113 ms by bot id=6027584024
+reply.py:178 #INFO     [2023-09-03 17:39:03,936] - tgbot.keyboards.reply - You are in add_photo_reply
+reply.py:191 #INFO     [2023-09-03 17:39:04,427] - tgbot.keyboards.reply - https://telegra.ph/upload
+reply.py:194 #INFO     [2023-09-03 17:39:04,427] - tgbot.keyboards.reply - https://telegra.ph//file/d52ef458e081f22106dee.jpg
+dispatcher.py:171 #INFO     [2023-09-03 17:39:04,755] - aiogram.event - Update id=449046583 is handled. Duration 820 ms by bot id=6027584024
+reply.py:210 #INFO     [2023-09-03 17:39:06,538] - tgbot.keyboards.reply - You are in add_item_confirmation_reply
+db.py:147 #INFO     [2023-09-03 17:39:06,539] - db - Trying to save item.
+db.py:154 #INFO     [2023-09-03 17:39:06,550] - db - Item successfully saved!
+dispatcher.py:171 #INFO     [2023-09-03 17:39:06,728] - aiogram.event - Update id=449046584 is handled. Duration 190 ms by bot id=6027584024
+reply.py:229 #INFO     [2023-09-03 17:39:07,734] - tgbot.keyboards.reply - You are in item_added_reply
+dispatcher.py:171 #INFO     [2023-09-03 17:39:07,959] - aiogram.event - Update id=449046585 is handled. Duration 225 ms by bot id=6027584024
+inline.py:54 #INFO     [2023-09-03 17:39:14,474] - tgbot.keyboards.inline - 683497406
+dispatcher.py:171 #INFO     [2023-09-03 17:39:14,558] - aiogram.event - Update id=449046586 is handled. Duration 84 ms by bot id=6027584024
+user.py:267 #INFO     [2023-09-03 17:39:16,678] - tgbot.handlers.user - You are in user_query
+user.py:270 #INFO     [2023-09-03 17:39:16,678] - tgbot.handlers.user - letters: 
+user.py:283 #INFO     [2023-09-03 17:39:16,681] - tgbot.handlers.user - letters is '': 
+user.py:35 #INFO     [2023-09-03 17:39:16,681] - tgbot.handlers.user - query_builder: 
+db.py:181 #INFO     [2023-09-03 17:39:16,681] - db - Trying to get items by first letter: None
+db.py:183 #INFO     [2023-09-03 17:39:16,691] - db - item_data: []
+db.py:190 #INFO     [2023-09-03 17:39:16,691] - db - No items found for the given first letter.
+user.py:87 #INFO     [2023-09-03 17:39:16,692] - tgbot.handlers.user - query_builder: elif letters is None: 
+db.py:157 #INFO     [2023-09-03 17:39:16,692] - db - Trying to get all items
+db.py:109 #INFO     [2023-09-03 17:39:16,693] - db - You are in _construct_item_list
+db.py:111 #INFO     [2023-09-03 17:39:16,693] - db - if type(item_data) is list: 
+db.py:125 #INFO     [2023-09-03 17:39:16,694] - db - sorted_item_list: [{'id': '7', 'item': 'ASUS TUF Gaming 27" 1080P Gaming Monitor - Full HD, 165Hz (Supports 144Hz), 1ms, Extreme Low Motion Blur, FreeSync Premium, Shadow Boost, Eye Care, HDMI, DisplayPort, Tilt Adjustable - VG277Q1A,Black', 'item_url': 'https://telegra.ph//file/5b902b23cd7790bf34658.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Standing screen display size: \u200e27 Inches\nScreen Resolution:\u200e1920 x 1080\nMax Screen Resolution: 1920 x 1080 Pixels\nItem Weight: \u200e9.85 pounds\nColor: \u200eBLACK', 'item_price': '154.0', 'item_quantity': 5, 'item_photo': 'AgACAgQAAxkBAAIaIWT0w6DbwJKC0IYmKjMqbqdmImX1AAIMuzEbZFmpU9lFBPHx6yv8AQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 9, 3, 17, 34, 26, 713872)}, {'id': '6', 'item': 'Acer KC242Y Hbi 23.8" Full HD (1920 x 1080) Zero-Frame Gaming Office Monitor | AMD FreeSync Technology | 100Hz | 1ms (VRB) | Low Blue Light | Tilt | HDMI & VGA Ports,Black', 'item_url': 'https://telegra.ph//file/8ddf87e735f4dc38b7984.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': '23.8" Full HD (1920 x 1080) Monitor For Home, Gaming or Office\nAMD FreeSync Technology\nResponse Time: 1ms VRB | Refresh Rate: 100Hz (Using HDMI Port) | Brightness: 250 nits | Pixel Pitch: 0.275mm\nErgonomic Tilt: -5° to 15° | VESA Mounting Compliant (100 x 100mm)\nPorts: 1 x HDMI 1.4 Port & 1 x VGA Port (HDMI Cable Included)', 'item_price': '89.99', 'item_quantity': 10, 'item_photo': 'AgACAgQAAxkBAAIaE2T0wt5dc-Xq4rj60ECcy3e7UwP1AAILuzEbZFmpU4RWHBaFZhTcAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 9, 3, 17, 31, 13, 114680)}, {'id': '8', 'item': 'Apple iPhone 11, 64GB, White - Unlocked (Renewed Premium)', 'item_url': 'https://telegra.ph//file/e594a16573242033aff7f.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'OS: IOS 12\nRAM: 64 GB\nWireless communication technologies: Bluetooth, Cellular, Wi-Fi\nConnectivity technologies: Bluetooth, Wi-Fi\nColor: White\nMemory Storage Capacity: 64 GB\nStanding screen display size: 6 Inches\nRam Memory Installed Size: 64 GB', 'item_price': '344.1', 'item_quantity': 7, 'item_photo': 'AgACAgQAAxkBAAIaLGT0xDuSo3YS6fHmvoRY1kk98fTQAAIOuzEbZFmpUzX1GJJvQ9aJAQADAgADeAADMAQ', 'registry_datetime': datetime.datetime(2023, 9, 3, 17, 37, 3, 549560)}, {'id': '9', 'item': 'Google Pixel 7a - Unlocked Android Cell Phone - Smartphone with Wide Angle Lens and 24-Hour Battery - 128 GB – Charcoal', 'item_url': 'https://telegra.ph//file/d52ef458e081f22106dee.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Brand: Google\nModel Name: Pixel 7a\nWireless Carrier: Unlocked for All Carriers\nOperating System: Android 13.0\nCellular Technology: 5G\nMemory Storage Capacity: 128 GB\nConnectivity Technology: Bluetooth, Wi-Fi, USB, NFC\nColor: Charcoal\nScreen Size: 6.1 Inches\nWireless network technology: GSM, LTE', 'item_price': '499.0', 'item_quantity': 3, 'item_photo': 'AgACAgQAAxkBAAIaN2T0xLcFeuQNWRam2w_fMXFOtV2yAAIPuzEbZFmpU96PQxlmAwWLAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 9, 3, 17, 39, 6, 539332)}] 
+db.py:161 #INFO     [2023-09-03 17:39:16,694] - db - All items were extracted
+user.py:131 #INFO     [2023-09-03 17:39:16,695] - tgbot.handlers.user - results = [InlineQueryResultArticle(type=<InlineQueryResultType.ARTICLE: 'article'>, id='7', title='ASUS TUF Gaming 27" 1080P Gaming Monitor - Full HD, 165Hz (Supports 144Hz), 1ms, Extreme Low Motion Blur, FreeSync Premium, Shadow Boost, Eye Care, HDMI, DisplayPort, Tilt Adjustable - VG277Q1A,Black', input_message_content=InputTextMessageContent(message_text='\nItem: ASUS TUF Gaming 27" 1080P Gaming Monitor - Full HD, 165Hz (Supports 144Hz), 1ms, Extreme Low Motion Blur, FreeSync Premium, Shadow Boost, Eye Care, HDMI, DisplayPort, Tilt Adjustable - VG277Q1A,Black\nDescription: Standing screen display size: \u200e27 Inches\nScreen Resolution:\u200e1920 x 1080\nMax Screen Resolution: 1920 x 1080 Pixels\nItem Weight: \u200e9.85 pounds\nColor: \u200eBLACK\nPrice: 154.0 USD\nhttps://telegra.ph//file/5b902b23cd7790bf34658.jpg', parse_mode=sentinel.UNSET_PARSE_MODE, entities=None, disable_web_page_preview=sentinel.UNSET_DISABLE_WEB_PAGE_PREVIEW), reply_markup=InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text='Buy item', url=None, callback_data='my:buy_item:7', web_app=None, login_url=None, switch_inline_query=None, switch_inline_query_current_chat=None, switch_inline_query_chosen_chat=None, callback_game=None, pay=None)]]), url=None, hide_url=None, description='Standing screen display size: \u200e27 Inches\nScreen Resolution:\u200e1920 x 1080\nMax Screen Resolution: 1920 x 1080 Pixels\nItem Weight: \u200e9.85 pounds\nColor: \u200eBLACK', thumbnail_url='https://telegra.ph//file/5b902b23cd7790bf34658.jpg', thumbnail_width=None, thumbnail_height=None, parse_mode='HTML'), InlineQueryResultArticle(type=<InlineQueryResultType.ARTICLE: 'article'>, id='6', title='Acer KC242Y Hbi 23.8" Full HD (1920 x 1080) Zero-Frame Gaming Office Monitor | AMD FreeSync Technology | 100Hz | 1ms (VRB) | Low Blue Light | Tilt | HDMI & VGA Ports,Black', input_message_content=InputTextMessageContent(message_text='\nItem: Acer KC242Y Hbi 23.8" Full HD (1920 x 1080) Zero-Frame Gaming Office Monitor | AMD FreeSync Technology | 100Hz | 1ms (VRB) | Low Blue Light | Tilt | HDMI & VGA Ports,Black\nDescription: 23.8" Full HD (1920 x 1080) Monitor For Home, Gaming or Office\nAMD FreeSync Technology\nResponse Time: 1ms VRB | Refresh Rate: 100Hz (Using HDMI Port) | Brightness: 250 nits | Pixel Pitch: 0.275mm\nErgonomic Tilt: -5° to 15° | VESA Mounting Compliant (100 x 100mm)\nPorts: 1 x HDMI 1.4 Port & 1 x VGA Port (HDMI Cable Included)\nPrice: 89.99 USD\nhttps://telegra.ph//file/8ddf87e735f4dc38b7984.jpg', parse_mode=sentinel.UNSET_PARSE_MODE, entities=None, disable_web_page_preview=sentinel.UNSET_DISABLE_WEB_PAGE_PREVIEW), reply_markup=InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text='Buy item', url=None, callback_data='my:buy_item:6', web_app=None, login_url=None, switch_inline_query=None, switch_inline_query_current_chat=None, switch_inline_query_chosen_chat=None, callback_game=None, pay=None)]]), url=None, hide_url=None, description='23.8" Full HD (1920 x 1080) Monitor For Home, Gaming or Office\nAMD FreeSync Technology\nResponse Time: 1ms VRB | Refresh Rate: 100Hz (Using HDMI Port) | Brightness: 250 nits | Pixel Pitch: 0.275mm\nErgonomic Tilt: -5° to 15° | VESA Mounting Compliant (100 x 100mm)\nPorts: 1 x HDMI 1.4 Port & 1 x VGA Port (HDMI Cable Included)', thumbnail_url='https://telegra.ph//file/8ddf87e735f4dc38b7984.jpg', thumbnail_width=None, thumbnail_height=None, parse_mode='HTML'), InlineQueryResultArticle(type=<InlineQueryResultType.ARTICLE: 'article'>, id='8', title='Apple iPhone 11, 64GB, White - Unlocked (Renewed Premium)', input_message_content=InputTextMessageContent(message_text='\nItem: Apple iPhone 11, 64GB, White - Unlocked (Renewed Premium)\nDescription: OS: IOS 12\nRAM: 64 GB\nWireless communication technologies: Bluetooth, Cellular, Wi-Fi\nConnectivity technologies: Bluetooth, Wi-Fi\nColor: White\nMemory Storage Capacity: 64 GB\nStanding screen display size: 6 Inches\nRam Memory Installed Size: 64 GB\nPrice: 344.1 USD\nhttps://telegra.ph//file/e594a16573242033aff7f.jpg', parse_mode=sentinel.UNSET_PARSE_MODE, entities=None, disable_web_page_preview=sentinel.UNSET_DISABLE_WEB_PAGE_PREVIEW), reply_markup=InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text='Buy item', url=None, callback_data='my:buy_item:8', web_app=None, login_url=None, switch_inline_query=None, switch_inline_query_current_chat=None, switch_inline_query_chosen_chat=None, callback_game=None, pay=None)]]), url=None, hide_url=None, description='OS: IOS 12\nRAM: 64 GB\nWireless communication technologies: Bluetooth, Cellular, Wi-Fi\nConnectivity technologies: Bluetooth, Wi-Fi\nColor: White\nMemory Storage Capacity: 64 GB\nStanding screen display size: 6 Inches\nRam Memory Installed Size: 64 GB', thumbnail_url='https://telegra.ph//file/e594a16573242033aff7f.jpg', thumbnail_width=None, thumbnail_height=None, parse_mode='HTML'), InlineQueryResultArticle(type=<InlineQueryResultType.ARTICLE: 'article'>, id='9', title='Google Pixel 7a - Unlocked Android Cell Phone - Smartphone with Wide Angle Lens and 24-Hour Battery - 128 GB – Charcoal', input_message_content=InputTextMessageContent(message_text='\nItem: Google Pixel 7a - Unlocked Android Cell Phone - Smartphone with Wide Angle Lens and 24-Hour Battery - 128 GB – Charcoal\nDescription: Brand: Google\nModel Name: Pixel 7a\nWireless Carrier: Unlocked for All Carriers\nOperating System: Android 13.0\nCellular Technology: 5G\nMemory Storage Capacity: 128 GB\nConnectivity Technology: Bluetooth, Wi-Fi, USB, NFC\nColor: Charcoal\nScreen Size: 6.1 Inches\nWireless network technology: GSM, LTE\nPrice: 499.0 USD\nhttps://telegra.ph//file/d52ef458e081f22106dee.jpg', parse_mode=sentinel.UNSET_PARSE_MODE, entities=None, disable_web_page_preview=sentinel.UNSET_DISABLE_WEB_PAGE_PREVIEW), reply_markup=InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text='Buy item', url=None, callback_data='my:buy_item:9', web_app=None, login_url=None, switch_inline_query=None, switch_inline_query_current_chat=None, switch_inline_query_chosen_chat=None, callback_game=None, pay=None)]]), url=None, hide_url=None, description='Brand: Google\nModel Name: Pixel 7a\nWireless Carrier: Unlocked for All Carriers\nOperating System: Android 13.0\nCellular Technology: 5G\nMemory Storage Capacity: 128 GB\nConnectivity Technology: Bluetooth, Wi-Fi, USB, NFC\nColor: Charcoal\nScreen Size: 6.1 Inches\nWireless network technology: GSM, LTE', thumbnail_url='https://telegra.ph//file/d52ef458e081f22106dee.jpg', thumbnail_width=None, thumbnail_height=None, parse_mode='HTML')]
+dispatcher.py:171 #INFO     [2023-09-03 17:39:16,734] - aiogram.event - Update id=449046587 is handled. Duration 56 ms by bot id=6027584024
+user.py:267 #INFO     [2023-09-03 17:39:28,352] - tgbot.handlers.user - You are in user_query
+user.py:270 #INFO     [2023-09-03 17:39:28,352] - tgbot.handlers.user - letters: 
+user.py:283 #INFO     [2023-09-03 17:39:28,355] - tgbot.handlers.user - letters is '': 
+user.py:35 #INFO     [2023-09-03 17:39:28,355] - tgbot.handlers.user - query_builder: 
+db.py:181 #INFO     [2023-09-03 17:39:28,355] - db - Trying to get items by first letter: None
+db.py:183 #INFO     [2023-09-03 17:39:28,357] - db - item_data: []
+db.py:190 #INFO     [2023-09-03 17:39:28,357] - db - No items found for the given first letter.
+user.py:87 #INFO     [2023-09-03 17:39:28,357] - tgbot.handlers.user - query_builder: elif letters is None: 
+db.py:157 #INFO     [2023-09-03 17:39:28,357] - db - Trying to get all items
+db.py:109 #INFO     [2023-09-03 17:39:28,358] - db - You are in _construct_item_list
+db.py:111 #INFO     [2023-09-03 17:39:28,358] - db - if type(item_data) is list: 
+db.py:125 #INFO     [2023-09-03 17:39:28,358] - db - sorted_item_list: [{'id': '7', 'item': 'ASUS TUF Gaming 27" 1080P Gaming Monitor - Full HD, 165Hz (Supports 144Hz), 1ms, Extreme Low Motion Blur, FreeSync Premium, Shadow Boost, Eye Care, HDMI, DisplayPort, Tilt Adjustable - VG277Q1A,Black', 'item_url': 'https://telegra.ph//file/5b902b23cd7790bf34658.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Standing screen display size: \u200e27 Inches\nScreen Resolution:\u200e1920 x 1080\nMax Screen Resolution: 1920 x 1080 Pixels\nItem Weight: \u200e9.85 pounds\nColor: \u200eBLACK', 'item_price': '154.0', 'item_quantity': 5, 'item_photo': 'AgACAgQAAxkBAAIaIWT0w6DbwJKC0IYmKjMqbqdmImX1AAIMuzEbZFmpU9lFBPHx6yv8AQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 9, 3, 17, 34, 26, 713872)}, {'id': '6', 'item': 'Acer KC242Y Hbi 23.8" Full HD (1920 x 1080) Zero-Frame Gaming Office Monitor | AMD FreeSync Technology | 100Hz | 1ms (VRB) | Low Blue Light | Tilt | HDMI & VGA Ports,Black', 'item_url': 'https://telegra.ph//file/8ddf87e735f4dc38b7984.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': '23.8" Full HD (1920 x 1080) Monitor For Home, Gaming or Office\nAMD FreeSync Technology\nResponse Time: 1ms VRB | Refresh Rate: 100Hz (Using HDMI Port) | Brightness: 250 nits | Pixel Pitch: 0.275mm\nErgonomic Tilt: -5° to 15° | VESA Mounting Compliant (100 x 100mm)\nPorts: 1 x HDMI 1.4 Port & 1 x VGA Port (HDMI Cable Included)', 'item_price': '89.99', 'item_quantity': 10, 'item_photo': 'AgACAgQAAxkBAAIaE2T0wt5dc-Xq4rj60ECcy3e7UwP1AAILuzEbZFmpU4RWHBaFZhTcAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 9, 3, 17, 31, 13, 114680)}, {'id': '8', 'item': 'Apple iPhone 11, 64GB, White - Unlocked (Renewed Premium)', 'item_url': 'https://telegra.ph//file/e594a16573242033aff7f.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'OS: IOS 12\nRAM: 64 GB\nWireless communication technologies: Bluetooth, Cellular, Wi-Fi\nConnectivity technologies: Bluetooth, Wi-Fi\nColor: White\nMemory Storage Capacity: 64 GB\nStanding screen display size: 6 Inches\nRam Memory Installed Size: 64 GB', 'item_price': '344.1', 'item_quantity': 7, 'item_photo': 'AgACAgQAAxkBAAIaLGT0xDuSo3YS6fHmvoRY1kk98fTQAAIOuzEbZFmpUzX1GJJvQ9aJAQADAgADeAADMAQ', 'registry_datetime': datetime.datetime(2023, 9, 3, 17, 37, 3, 549560)}, {'id': '9', 'item': 'Google Pixel 7a - Unlocked Android Cell Phone - Smartphone with Wide Angle Lens and 24-Hour Battery - 128 GB – Charcoal', 'item_url': 'https://telegra.ph//file/d52ef458e081f22106dee.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Brand: Google\nModel Name: Pixel 7a\nWireless Carrier: Unlocked for All Carriers\nOperating System: Android 13.0\nCellular Technology: 5G\nMemory Storage Capacity: 128 GB\nConnectivity Technology: Bluetooth, Wi-Fi, USB, NFC\nColor: Charcoal\nScreen Size: 6.1 Inches\nWireless network technology: GSM, LTE', 'item_price': '499.0', 'item_quantity': 3, 'item_photo': 'AgACAgQAAxkBAAIaN2T0xLcFeuQNWRam2w_fMXFOtV2yAAIPuzEbZFmpU96PQxlmAwWLAQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 9, 3, 17, 39, 6, 539332)}] 
+db.py:161 #INFO     [2023-09-03 17:39:28,358] - db - All items were extracted
+user.py:131 #INFO     [2023-09-03 17:39:28,359] - tgbot.handlers.user - results = [InlineQueryResultArticle(type=<InlineQueryResultType.ARTICLE: 'article'>, id='7', title='ASUS TUF Gaming 27" 1080P Gaming Monitor - Full HD, 165Hz (Supports 144Hz), 1ms, Extreme Low Motion Blur, FreeSync Premium, Shadow Boost, Eye Care, HDMI, DisplayPort, Tilt Adjustable - VG277Q1A,Black', input_message_content=InputTextMessageContent(message_text='\nItem: ASUS TUF Gaming 27" 1080P Gaming Monitor - Full HD, 165Hz (Supports 144Hz), 1ms, Extreme Low Motion Blur, FreeSync Premium, Shadow Boost, Eye Care, HDMI, DisplayPort, Tilt Adjustable - VG277Q1A,Black\nDescription: Standing screen display size: \u200e27 Inches\nScreen Resolution:\u200e1920 x 1080\nMax Screen Resolution: 1920 x 1080 Pixels\nItem Weight: \u200e9.85 pounds\nColor: \u200eBLACK\nPrice: 154.0 USD\nhttps://telegra.ph//file/5b902b23cd7790bf34658.jpg', parse_mode=sentinel.UNSET_PARSE_MODE, entities=None, disable_web_page_preview=sentinel.UNSET_DISABLE_WEB_PAGE_PREVIEW), reply_markup=InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text='Buy item', url=None, callback_data='my:buy_item:7', web_app=None, login_url=None, switch_inline_query=None, switch_inline_query_current_chat=None, switch_inline_query_chosen_chat=None, callback_game=None, pay=None)]]), url=None, hide_url=None, description='Standing screen display size: \u200e27 Inches\nScreen Resolution:\u200e1920 x 1080\nMax Screen Resolution: 1920 x 1080 Pixels\nItem Weight: \u200e9.85 pounds\nColor: \u200eBLACK', thumbnail_url='https://telegra.ph//file/5b902b23cd7790bf34658.jpg', thumbnail_width=None, thumbnail_height=None, parse_mode='HTML'), InlineQueryResultArticle(type=<InlineQueryResultType.ARTICLE: 'article'>, id='6', title='Acer KC242Y Hbi 23.8" Full HD (1920 x 1080) Zero-Frame Gaming Office Monitor | AMD FreeSync Technology | 100Hz | 1ms (VRB) | Low Blue Light | Tilt | HDMI & VGA Ports,Black', input_message_content=InputTextMessageContent(message_text='\nItem: Acer KC242Y Hbi 23.8" Full HD (1920 x 1080) Zero-Frame Gaming Office Monitor | AMD FreeSync Technology | 100Hz | 1ms (VRB) | Low Blue Light | Tilt | HDMI & VGA Ports,Black\nDescription: 23.8" Full HD (1920 x 1080) Monitor For Home, Gaming or Office\nAMD FreeSync Technology\nResponse Time: 1ms VRB | Refresh Rate: 100Hz (Using HDMI Port) | Brightness: 250 nits | Pixel Pitch: 0.275mm\nErgonomic Tilt: -5° to 15° | VESA Mounting Compliant (100 x 100mm)\nPorts: 1 x HDMI 1.4 Port & 1 x VGA Port (HDMI Cable Included)\nPrice: 89.99 USD\nhttps://telegra.ph//file/8ddf87e735f4dc38b7984.jpg', parse_mode=sentinel.UNSET_PARSE_MODE, entities=None, disable_web_page_preview=sentinel.UNSET_DISABLE_WEB_PAGE_PREVIEW), reply_markup=InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text='Buy item', url=None, callback_data='my:buy_item:6', web_app=None, login_url=None, switch_inline_query=None, switch_inline_query_current_chat=None, switch_inline_query_chosen_chat=None, callback_game=None, pay=None)]]), url=None, hide_url=None, description='23.8" Full HD (1920 x 1080) Monitor For Home, Gaming or Office\nAMD FreeSync Technology\nResponse Time: 1ms VRB | Refresh Rate: 100Hz (Using HDMI Port) | Brightness: 250 nits | Pixel Pitch: 0.275mm\nErgonomic Tilt: -5° to 15° | VESA Mounting Compliant (100 x 100mm)\nPorts: 1 x HDMI 1.4 Port & 1 x VGA Port (HDMI Cable Included)', thumbnail_url='https://telegra.ph//file/8ddf87e735f4dc38b7984.jpg', thumbnail_width=None, thumbnail_height=None, parse_mode='HTML'), InlineQueryResultArticle(type=<InlineQueryResultType.ARTICLE: 'article'>, id='8', title='Apple iPhone 11, 64GB, White - Unlocked (Renewed Premium)', input_message_content=InputTextMessageContent(message_text='\nItem: Apple iPhone 11, 64GB, White - Unlocked (Renewed Premium)\nDescription: OS: IOS 12\nRAM: 64 GB\nWireless communication technologies: Bluetooth, Cellular, Wi-Fi\nConnectivity technologies: Bluetooth, Wi-Fi\nColor: White\nMemory Storage Capacity: 64 GB\nStanding screen display size: 6 Inches\nRam Memory Installed Size: 64 GB\nPrice: 344.1 USD\nhttps://telegra.ph//file/e594a16573242033aff7f.jpg', parse_mode=sentinel.UNSET_PARSE_MODE, entities=None, disable_web_page_preview=sentinel.UNSET_DISABLE_WEB_PAGE_PREVIEW), reply_markup=InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text='Buy item', url=None, callback_data='my:buy_item:8', web_app=None, login_url=None, switch_inline_query=None, switch_inline_query_current_chat=None, switch_inline_query_chosen_chat=None, callback_game=None, pay=None)]]), url=None, hide_url=None, description='OS: IOS 12\nRAM: 64 GB\nWireless communication technologies: Bluetooth, Cellular, Wi-Fi\nConnectivity technologies: Bluetooth, Wi-Fi\nColor: White\nMemory Storage Capacity: 64 GB\nStanding screen display size: 6 Inches\nRam Memory Installed Size: 64 GB', thumbnail_url='https://telegra.ph//file/e594a16573242033aff7f.jpg', thumbnail_width=None, thumbnail_height=None, parse_mode='HTML'), InlineQueryResultArticle(type=<InlineQueryResultType.ARTICLE: 'article'>, id='9', title='Google Pixel 7a - Unlocked Android Cell Phone - Smartphone with Wide Angle Lens and 24-Hour Battery - 128 GB – Charcoal', input_message_content=InputTextMessageContent(message_text='\nItem: Google Pixel 7a - Unlocked Android Cell Phone - Smartphone with Wide Angle Lens and 24-Hour Battery - 128 GB – Charcoal\nDescription: Brand: Google\nModel Name: Pixel 7a\nWireless Carrier: Unlocked for All Carriers\nOperating System: Android 13.0\nCellular Technology: 5G\nMemory Storage Capacity: 128 GB\nConnectivity Technology: Bluetooth, Wi-Fi, USB, NFC\nColor: Charcoal\nScreen Size: 6.1 Inches\nWireless network technology: GSM, LTE\nPrice: 499.0 USD\nhttps://telegra.ph//file/d52ef458e081f22106dee.jpg', parse_mode=sentinel.UNSET_PARSE_MODE, entities=None, disable_web_page_preview=sentinel.UNSET_DISABLE_WEB_PAGE_PREVIEW), reply_markup=InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text='Buy item', url=None, callback_data='my:buy_item:9', web_app=None, login_url=None, switch_inline_query=None, switch_inline_query_current_chat=None, switch_inline_query_chosen_chat=None, callback_game=None, pay=None)]]), url=None, hide_url=None, description='Brand: Google\nModel Name: Pixel 7a\nWireless Carrier: Unlocked for All Carriers\nOperating System: Android 13.0\nCellular Technology: 5G\nMemory Storage Capacity: 128 GB\nConnectivity Technology: Bluetooth, Wi-Fi, USB, NFC\nColor: Charcoal\nScreen Size: 6.1 Inches\nWireless network technology: GSM, LTE', thumbnail_url='https://telegra.ph//file/d52ef458e081f22106dee.jpg', thumbnail_width=None, thumbnail_height=None, parse_mode='HTML')]
+dispatcher.py:171 #INFO     [2023-09-03 17:39:28,489] - aiogram.event - Update id=449046588 is handled. Duration 137 ms by bot id=6027584024
+inline.py:54 #INFO     [2023-09-03 17:39:29,940] - tgbot.keyboards.inline - 683497406
+dispatcher.py:171 #INFO     [2023-09-03 17:39:30,104] - aiogram.event - Update id=449046589 is handled. Duration 164 ms by bot id=6027584024
+user.py:324 #INFO     [2023-09-03 17:39:32,493] - tgbot.handlers.user - You are in user_callback_handler
+user.py:326 #INFO     [2023-09-03 17:39:32,494] - tgbot.handlers.user - item_id: 7
+db.py:195 #INFO     [2023-09-03 17:39:32,494] - db - Trying to get item with id: 7
+db.py:197 #INFO     [2023-09-03 17:39:32,499] - db - item_data: <db.Items object at 0x7f1167235b90>
+db.py:109 #INFO     [2023-09-03 17:39:32,500] - db - You are in _construct_item_list
+db.py:128 #INFO     [2023-09-03 17:39:32,500] - db - else: 
+db.py:141 #INFO     [2023-09-03 17:39:32,500] - db - item_list: {'id': '7', 'item': 'ASUS TUF Gaming 27" 1080P Gaming Monitor - Full HD, 165Hz (Supports 144Hz), 1ms, Extreme Low Motion Blur, FreeSync Premium, Shadow Boost, Eye Care, HDMI, DisplayPort, Tilt Adjustable - VG277Q1A,Black', 'item_url': 'https://telegra.ph//file/5b902b23cd7790bf34658.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Standing screen display size: \u200e27 Inches\nScreen Resolution:\u200e1920 x 1080\nMax Screen Resolution: 1920 x 1080 Pixels\nItem Weight: \u200e9.85 pounds\nColor: \u200eBLACK', 'item_price': '154.0', 'item_quantity': 5, 'item_photo': 'AgACAgQAAxkBAAIaIWT0w6DbwJKC0IYmKjMqbqdmImX1AAIMuzEbZFmpU9lFBPHx6yv8AQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 9, 3, 17, 34, 26, 713872)} 
+db.py:200 #INFO     [2023-09-03 17:39:32,500] - db - Item with id 7 was found
+user.py:329 #INFO     [2023-09-03 17:39:32,500] - tgbot.handlers.user - chat_id: 683497406
+dispatcher.py:171 #INFO     [2023-09-03 17:39:32,549] - aiogram.event - Update id=449046590 is handled. Duration 55 ms by bot id=6027584024
+user.py:337 #INFO     [2023-09-03 17:39:37,868] - tgbot.handlers.user - You are in market_prepare
+user.py:373 #INFO     [2023-09-03 17:39:37,869] - tgbot.handlers.user - market: else: 
+dispatcher.py:171 #INFO     [2023-09-03 17:39:37,869] - aiogram.event - Update id=449046591 is handled. Duration 4 ms by bot id=6027584024
+user.py:337 #INFO     [2023-09-03 17:40:20,803] - tgbot.handlers.user - You are in market_prepare
+user.py:373 #INFO     [2023-09-03 17:40:20,803] - tgbot.handlers.user - market: else: 
+dispatcher.py:171 #INFO     [2023-09-03 17:40:20,804] - aiogram.event - Update id=449046592 is handled. Duration 2 ms by bot id=6027584024
+user.py:337 #INFO     [2023-09-03 17:40:29,118] - tgbot.handlers.user - You are in market_prepare
+user.py:343 #INFO     [2023-09-03 17:40:29,120] - tgbot.handlers.user - item_id: 7
+user.py:345 #INFO     [2023-09-03 17:40:29,120] - tgbot.handlers.user - quantity: 1
+db.py:195 #INFO     [2023-09-03 17:40:29,120] - db - Trying to get item with id: 7
+db.py:197 #INFO     [2023-09-03 17:40:29,129] - db - item_data: <db.Items object at 0x7f1167236590>
+db.py:109 #INFO     [2023-09-03 17:40:29,129] - db - You are in _construct_item_list
+db.py:128 #INFO     [2023-09-03 17:40:29,129] - db - else: 
+db.py:141 #INFO     [2023-09-03 17:40:29,129] - db - item_list: {'id': '7', 'item': 'ASUS TUF Gaming 27" 1080P Gaming Monitor - Full HD, 165Hz (Supports 144Hz), 1ms, Extreme Low Motion Blur, FreeSync Premium, Shadow Boost, Eye Care, HDMI, DisplayPort, Tilt Adjustable - VG277Q1A,Black', 'item_url': 'https://telegra.ph//file/5b902b23cd7790bf34658.jpg', 'user_id': '683497406', 'user_tg_name': 'd_w_y_t', 'item_details': 'Standing screen display size: \u200e27 Inches\nScreen Resolution:\u200e1920 x 1080\nMax Screen Resolution: 1920 x 1080 Pixels\nItem Weight: \u200e9.85 pounds\nColor: \u200eBLACK', 'item_price': '154.0', 'item_quantity': 5, 'item_photo': 'AgACAgQAAxkBAAIaIWT0w6DbwJKC0IYmKjMqbqdmImX1AAIMuzEbZFmpU9lFBPHx6yv8AQADAgADeQADMAQ', 'registry_datetime': datetime.datetime(2023, 9, 3, 17, 34, 26, 713872)} 
+db.py:200 #INFO     [2023-09-03 17:40:29,129] - db - Item with id 7 was found
+user.py:349 #INFO     [2023-09-03 17:40:29,129] - tgbot.handlers.user - if item_id['item_id']:  if 0 < quantity <= item['item_quantity']: 
+dispatcher.py:171 #INFO     [2023-09-03 17:40:29,328] - aiogram.event - Update id=449046593 is handled. Duration 211 ms by bot id=6027584024
+dispatcher.py:451 #WARNING  [2023-09-03 17:42:22,913] - aiogram.dispatcher - Received SIGINT signal
+dispatcher.py:355 #INFO     [2023-09-03 17:42:22,916] - aiogram.dispatcher - Polling stopped for bot @Clstl_bot id=6027584024 - 'Shop-bot'
+dispatcher.py:547 #INFO     [2023-09-03 17:42:22,916] - aiogram.dispatcher - Polling stopped
