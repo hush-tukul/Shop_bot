@@ -347,16 +347,23 @@ async def market_prepare(message: Message, state: FSMContext, dialog_manager: Di
         if 0 < quantity <= item['item_quantity']:
             logger.info(f"if item_id['item_id']:  if 0 < quantity <= item['item_quantity']: ")
             prices = [LabeledPrice(label="Test", amount=float(item['item_price']) * 100 * quantity) ]
-            await message.answer_invoice(
-                title=item['item'],
-                description=item['item_details'],
-                payload="Custom-Payload",
-                provider_token=os.getenv('PAYMENT_TOKEN'),
-                currency='USD',
-                prices=prices,
-                photo_url=item['item_url'],
-                need_shipping_address=True,
+            stripe.api_key = os.getenv('PAYMENT_TOKEN')
+            stripe.Invoice.create(
+                customer='{{CUSTOMER_ID}}',
+                collection_method="send_invoice",
+                days_until_due=30,
             )
+           
+            # await message.answer_invoice(
+            #     title=item['item'],
+            #     description=item['item_details'],
+            #     payload="Custom-Payload",
+            #     provider_token=os.getenv('PAYMENT_TOKEN'),
+            #     currency='USD',
+            #     prices=prices,
+            #     photo_url=item['item_url'],
+            #     need_shipping_address=True,
+            # )
             await state.clear()
         elif quantity > item['item_quantity'] > 0:
             logger.info(f"Can`t sell this item - quantity > item['item_quantity']")
