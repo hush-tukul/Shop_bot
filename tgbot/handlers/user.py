@@ -375,8 +375,6 @@ async def market_prepare(message: Message, state: FSMContext, dialog_manager: Di
 
 
 
-
-
 # @user_router.inline_query()
 # async def some_query(query: InlineQuery):
 #     logger.info(f"You are in some_query")
